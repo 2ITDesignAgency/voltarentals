@@ -240,7 +240,7 @@ const page = ({ data }) => {
                   Read more
                 </Link>
               </div>
-              <div className="col enjoy">
+              <div className="col enjoy md-2">
                 <img src={travelExperienceImage} />
               </div>
             </div>
@@ -352,7 +352,7 @@ const page = ({ data }) => {
 
             <div className="section_3_row cta">
               {/* fleet categories col 1*/}
-              <div className="section_3_col cta">
+              <div className="section_3_col cta cta-col">
                 <Link external to={ctaButtonLink1}>
                   <img src={ctaIcon1} className="cta-icon"/>
                 </Link>
@@ -372,7 +372,7 @@ const page = ({ data }) => {
               {/* fleet categories col 1 end */}
 
               {/* fleet categories col 2*/}
-              <div className="section_3_col cta">
+              <div className="section_3_col cta cta-col">
                 <Link external to={ctaButtonLink2}>
                   <img src={ctaIcon2} className="cta-icon"/>
                 </Link>
@@ -392,7 +392,7 @@ const page = ({ data }) => {
               {/* fleet categories col 2 end */}
 
               {/* fleet categories col 3 */}
-              <div className="section_3_col cta">
+              <div className="section_3_col cta cta-col">
                 <Link external to={ctaButtonLink3}>
                   <img src={ctaIcon3} className="cta-icon"/>
                 </Link>
