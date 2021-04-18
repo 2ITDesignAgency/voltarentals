@@ -5020,7 +5020,7 @@ a.to-the-top > * {
   width: 100%;
 }
 .section_3_col {
-  width: 100%;
+  width: 48%;
   flex-wrap: wrap;
 }
 .md-2{
