@@ -170,8 +170,8 @@ path {
   padding-bottom: 5rem;
 }
 .cta-booking {
-  padding-top: 4rem;
-  /* max-width: 688px !important; */
+  padding-top: 0rem;
+  padding-bottom: 4rem;
 }
 .header-cta-title {
   height: 92px;
