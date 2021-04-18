@@ -6943,7 +6943,11 @@ a.to-the-top > * {
   .column-blog {
     flex-wrap: wrap;
   }
-
+  .section-inner {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 66.25rem;
+}
   #GatsbyBody.template-full-width .entry-content > .alignleft {
     /*rtl:ignore*/
     margin-left: calc((100vw - 120rem) / 2);
@@ -6978,6 +6982,11 @@ a.to-the-top > * {
     padding: 50px;
     transform: skew(0deg, -3deg) translateY(-49px);
   }
+  .section-inner {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 66.25rem;
+}
   /* FOOTER COLUMN ITEMS */
   .widget-content li {
     font-size: 1rem;
@@ -7117,7 +7126,11 @@ a.to-the-top > * {
 
 @media (min-width: 1330px) {
   /* Entry Content ------------------------- */
-
+  .section-inner {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90rem;
+}
   /* ALIGNMENT CLASSES */
 
   .alignleft,
