@@ -228,7 +228,6 @@ path {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  text-align: center;
 }
 span.screen-reader-text {
   display: none;
