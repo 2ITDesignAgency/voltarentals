@@ -7007,7 +7007,9 @@ a.to-the-top > * {
     max-width: 66.25rem;
     width: calc(100% - 4rem);
   }
- 
+ .column-blog{
+  max-width: 66.25rem;
+ }
  
   /* SECTION DIVIDER -------------------------------- */
   .section-divider {
@@ -7171,6 +7173,9 @@ a.to-the-top > * {
     max-width: 90rem;
     width: calc(100% - 4rem);
   }
+  .column-blog{
+    max-width: 90rem;
+   }
   /* ALIGNMENT CLASSES */
 
   .alignleft,
