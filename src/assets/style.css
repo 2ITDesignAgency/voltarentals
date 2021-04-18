@@ -6232,7 +6232,11 @@ a.to-the-top > * {
   .header-inner {
     max-width: 66.25rem;
   }
-
+  .entry-content
+    > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+    max-width: 66.25rem;
+    width: calc(100% - 4rem);
+  }
   /* Site Header --------------------------- */
 
   #site-header {
@@ -6248,7 +6252,7 @@ a.to-the-top > * {
 
   .header-titles-wrapper {
     margin-right: 4rem;
-    max-width: 60%;
+    max-width: 100%;
     padding: 0;
     text-align: left;
   }
