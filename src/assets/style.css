@@ -173,6 +173,9 @@ path {
   padding-top: 0rem;
   padding-bottom: 4rem;
 }
+.cta {
+  text-align: center;
+}
 .header-cta-title {
   height: 92px;
   font-stretch: normal;
