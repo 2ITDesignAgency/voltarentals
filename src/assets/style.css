@@ -215,7 +215,7 @@ path {
   margin-bottom: 3rem;
 }
 .col-4 {
-  width: 295px !important;
+  width: 24% !important;
 }
 
 .Offer-btn {
@@ -254,6 +254,7 @@ span.screen-reader-text {
   color: #706c80;
   font-size: 16px;
   line-height: 1.5;
+  margin-bottom: 3rem;
 }
 .enjoy-cta-row h3 {
   align-self: flex-start;
@@ -272,7 +273,7 @@ span.screen-reader-text {
   background-color: #2ca83d;
   color: white !important;
   text-decoration: none;
-  width: 80%;
+  width: 45%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -312,7 +313,7 @@ span.screen-reader-text {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 6rem;
   margin-bottom: 0rem !important;
 }
@@ -321,7 +322,7 @@ span.screen-reader-text {
   flex-wrap: wrap;
 }
 .cta-icon {
-  max-width: 40%;
+  /* max-width: 40%; */
   margin: auto;
 }
 .section_3_title {
@@ -348,16 +349,11 @@ span.screen-reader-text {
 }
 
 .cta-col{
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex !important;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  flex-direction: column;
   margin-top: 2rem;
-  margin-right: -15px;
-  margin-left: -15px;
-  justify-content: space-around;
-  width: 34%;
+  width: 28%;
+  text-align: center;
 }
 .section_3_col .cta {
   display: flex;
@@ -2702,7 +2698,6 @@ button.search-untoggle {
   display: -webkit-box;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
-  min-height: 8rem;
 }
 .article-post .entry-categories-inner a {
   font-size: 12px;
@@ -2751,6 +2746,7 @@ button.search-untoggle {
   box-shadow: 0 0 3px 0 rgb(0 0 0 / 15%);
   border-radius: 2px;
   overflow: hidden;
+  min-height: 30rem;
 }
 
 .article-single-post .featured-media {
@@ -4945,6 +4941,7 @@ a.to-the-top > * {
   .column-blog {
     flex-wrap: wrap;
   }
+  
   /* SECTION DIVIDER -------------------------------- */
 
   li.footerWidgetName {
@@ -5008,6 +5005,37 @@ a.to-the-top > * {
 @media (max-width: 599px) {
   /* Blocks -------------------------------- */
   /* SECTION DIVIDER -------------------------------- */
+  .article-post {
+    width: 100%;
+    margin-right: 0.6rem;
+    margin-left: 0.6rem;
+  }
+  .column-blog {
+    flex-wrap: wrap;
+  }
+  .col-4 {
+    width: 100% !important;
+}
+.cta-col {
+  width: 100%;
+}
+.section_3_col {
+  width: 100%;
+  flex-wrap: wrap;
+}
+.md-2{
+  max-width:100%;
+  padding-bottom: 2rem;
+}
+.offer-post{
+  width: 100%;
+}
+#WheelsBookingEngineWrapper, .WheelsContainer {
+  margin-top: 5rem;
+}
+.header-inner {
+  max-width: 35rem;
+}
   .section-divider {
     background-color: #001a24;
     padding: 40px;
@@ -5890,8 +5918,8 @@ a.to-the-top > * {
   /* Entry Content ------------------------- */
 
   .entry-content {
-    font-size: 1.1rem;
-    text-align: justify;
+    font-size: 1rem;
+    text-align: left;
   }
 
   .entry-content p,
@@ -6214,7 +6242,7 @@ a.to-the-top > * {
 @media (min-width: 1000px) {
   /* Document Setup ------------------------ */
   .article-post {
-    width: 32%;
+    width: 31%;
     margin-right: 0.3rem;
     margin-left: 0.6rem;
     margin-bottom: 1rem;
@@ -6938,7 +6966,7 @@ a.to-the-top > * {
 @media (min-width: 1240px) {
   /* Blocks -------------------------------- */
   .article-post {
-    width: 32%;
+    width: 31%;
     margin-right: 0.3rem;
     margin-left: 0.75rem;
     margin-bottom: 1rem;
