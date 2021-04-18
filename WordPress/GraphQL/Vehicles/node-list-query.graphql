@@ -1,0 +1,107 @@
+query NODE_LIST_QUERY($first: Int!, $after: String) {
+  vehicle(first: $first, after: $after) {
+    nodes {
+      categories(first: 100) {
+        nodes {
+          id
+        }
+      }
+      contentType {
+        node {
+          id
+        }
+      }
+      databaseId
+      date
+      dateGmt
+      desiredSlug
+      enclosure
+      featuredImage {
+        node {
+          __typename
+          id
+        }
+      }
+      featuredImageDatabaseId
+      featuredImageId
+      guid
+      id
+      lastEditedBy {
+        node {
+          id
+        }
+      }
+      link
+      modified
+      modifiedGmt
+      seo {
+        breadcrumbs {
+          text
+          url
+        }
+        canonical
+        cornerstone
+        focuskw
+        fullHead
+        metaDesc
+        metaKeywords
+        metaRobotsNofollow
+        metaRobotsNoindex
+        opengraphAuthor
+        opengraphDescription
+        opengraphImage {
+          __typename
+          id
+        }
+        opengraphModifiedTime
+        opengraphPublishedTime
+        opengraphPublisher
+        opengraphSiteName
+        opengraphTitle
+        opengraphType
+        opengraphUrl
+        readingTime
+        schema {
+          articleType
+          pageType
+          raw
+        }
+        schemaDetails
+        title
+        twitterDescription
+        twitterImage {
+          __typename
+          id
+        }
+        twitterTitle
+      }
+      slug
+      status
+      tags(first: 100) {
+        nodes {
+          id
+        }
+      }
+      template {
+        templateName
+        __typename
+      }
+      terms(first: 100) {
+        nodes {
+          id
+          __typename
+        }
+      }
+      title
+      uri
+      vehicleSpecifications {
+        fieldGroupName
+      }
+      __typename
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}
