@@ -205,7 +205,7 @@ path {
   flex-wrap: wrap;
 }
 .offer-post {
-  width: 400px;
+  width: 31%;
   background: #001a24;
   box-shadow: 0 0 3px 0 rgb(0 0 0 / 15%);
   border-radius: 2px;
@@ -251,14 +251,12 @@ span.screen-reader-text {
   width: 100%;
 }
 .travelParagraph {
-  max-width: 450px;
   color: #706c80;
   font-size: 16px;
   line-height: 1.5;
 }
 .enjoy-cta-row h3 {
   align-self: flex-start;
-  max-width: 445px;
   margin: 1rem 0rem !important;
   text-align: left;
   font-family: OpenSans;
@@ -274,12 +272,16 @@ span.screen-reader-text {
   background-color: #2ca83d;
   color: white !important;
   text-decoration: none;
+  width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .enjoy-btn a {
   color: white;
 }
 .md-2 {
-  max-width: 612px;
+  max-width: 48%;
 }
 .cyan-content {
   background-color: #e8f1f2;
@@ -345,7 +347,7 @@ span.screen-reader-text {
   padding-bottom: 2rem;
 }
 
-.section_3_row .cta {
+.cta-col{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex !important;
@@ -355,17 +357,13 @@ span.screen-reader-text {
   margin-right: -15px;
   margin-left: -15px;
   justify-content: space-around;
-  max-width: 30%;
+  width: 34%;
 }
 .section_3_col .cta {
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 .section_3_title .cta {
   margin: auto !important;
