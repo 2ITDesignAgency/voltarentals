@@ -176,6 +176,9 @@ path {
 .cta {
   text-align: center;
 }
+.cta h2 {
+  text-align: center;
+}
 .header-cta-title {
   height: 92px;
   font-stretch: normal;
