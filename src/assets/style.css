@@ -179,6 +179,7 @@ path {
 .cta h2 {
   text-align: center;
 }
+
 .header-cta-title {
   height: 92px;
   font-stretch: normal;
@@ -713,6 +714,7 @@ a:hover,
 a:focus {
   text-decoration: none;
 }
+
 
 /* Lists ------------------------------------- */
 
@@ -7268,4 +7270,17 @@ a.to-the-top > * {
   .wp-block-pullquote.is-style-solid-color.alignright::before {
     top: 0;
   }
+}
+#WheelsBookingEngineWrapper .calendarContainerFocus input.calendar, #WheelsBookingEngineWrapper .calendarContainerFocusRight input.calendar {
+  background-color: #fff !important;
+}
+
+#WheelsBookingEngineWrapper .calendarContainerFocus>*, #WheelsBookingEngineWrapper .calendarContainerFocusRight>* {
+  background-color: #012a37;
+}
+.WheelsContainer p {
+  color: #fff !important;
+}
+#WheelsBookingEngineWrapper .calendarContainerFocus input.calendar{
+  color: white !important;
 }
