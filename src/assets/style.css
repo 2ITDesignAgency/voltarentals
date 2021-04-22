@@ -7284,3 +7284,7 @@ a.to-the-top > * {
 #WheelsBookingEngineWrapper .calendarContainerFocus input.calendar{
   color: white !important;
 }
+
+#WheelsBookingEngineWrapper .calendarContainerFocus>* {
+  background: #012a37 !important;
+}
