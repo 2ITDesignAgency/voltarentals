@@ -7288,3 +7288,10 @@ a.to-the-top > * {
 #WheelsBookingEngineWrapper .calendarContainerFocus>* {
   background: #012a37 !important;
 }
+#WheelsBookingEngineWrapper .calendarContainerFocusRight>* {
+  background: #012a37 !important;
+
+}
+#WheelsBookingEngineWrapper .calendarContainerFocusRight input.calendar {
+  color: white !important;
+}
