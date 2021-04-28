@@ -62,6 +62,9 @@ export const fragments = graphql`
     content
     date(formatString: "LL")
     excerpt
+    blocks {
+      originalContent
+    }
     featuredImage {
       node {
         localFile {

@@ -173,6 +173,9 @@ path {
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
+.cta-booking-post {
+  padding-bottom: 6rem;
+}
 .cta {
   text-align: center;
 }
@@ -1583,7 +1586,10 @@ ul.social-icons li {
   padding: 1rem;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
-
+#BookingSearch h4 {
+  font-weight: 400 !important;
+  color: white;
+}
 .WheelsContainer label {
   color: white;
 }

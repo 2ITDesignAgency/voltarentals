@@ -4,7 +4,6 @@ import Footer from "./footerelements/Footer"
 import TopBar from "./Topbar"
 import FooterMenusWidgets from "./footerelements/FooterMenusWidgets"
 import MenuModal from "./MenuModal"
-import Helmet from "react-helmet"
 import Seo from "./Seo"
 const backdropClasses = " backdrop"
 
@@ -25,9 +24,9 @@ const Layout = ({ children, bodyClass }) => {
         (backdropActive ? backdropClasses : "")
       }
     >
-      <Helmet>
+      {/* <Helmet>
         <script type="text/javascript" src="https://ecigr.wheelsys.ms/jsHandler.ashx?elementId=wheelsbook&language=en" defer/>
-      </Helmet>
+      </Helmet> */}
       <TopBar />
       <Header toggleBackdrop={toggleBackdrop} />
       <MenuModal isActive={backdropActive} toggleBackdrop={toggleBackdrop} />

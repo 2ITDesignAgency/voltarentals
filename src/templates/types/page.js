@@ -3,7 +3,7 @@ import { graphql, Link } from "gatsby"
 import Layout from "../../components/Layout"
 import Seo from "../../components/Seo"
 import FeaturedMedia from "../../components/FeaturedMedia"
-// import OfferHomePage from "../../components/homepage/OfferHomePage"
+import Helmet from "react-helmet"
 
 const page = ({ data }) => {
   const { page } = data
@@ -15,7 +15,8 @@ const page = ({ data }) => {
   const services = "SERVICES"
 
   // homepage template
-  if (homepage == title) {
+  if (homepage == title) {  
+    
     // section heroCta veriables start
     // slider veriables
     const sliderImage = frontPage.heroCta.imageBackground.sourceUrl
@@ -120,25 +121,29 @@ const page = ({ data }) => {
     const featuredPost1Title = frontPage.section4.featuredPosts1.title
     const featuredPost1Excerpt = frontPage.section4.featuredPosts1.excerpt
     const featuredPost1Slug = frontPage.section4.featuredPosts1.slug
-    const featuredPost1Img = frontPage.section4.featuredPosts1.featuredImage.node.sourceUrl
+    const featuredPost1Img =
+      frontPage.section4.featuredPosts1.featuredImage.node.sourceUrl
 
     // Featuredpost 2
     const featuredPost2Title = frontPage.section4.featuredPosts2.title
     const featuredPost2Excerpt = frontPage.section4.featuredPosts2.excerpt
     const featuredPost2Slug = frontPage.section4.featuredPosts2.slug
-    const featuredPost2Img = frontPage.section4.featuredPosts2.featuredImage.node.sourceUrl
+    const featuredPost2Img =
+      frontPage.section4.featuredPosts2.featuredImage.node.sourceUrl
 
     // Featuredpost 3
     const featuredPost3Title = frontPage.section4.featuredPosts3.title
     const featuredPost3Excerpt = frontPage.section4.featuredPosts3.excerpt
     const featuredPost3Slug = frontPage.section4.featuredPosts3.slug
-    const featuredPost3Img = frontPage.section4.featuredPosts3.featuredImage.node.sourceUrl
-      
+    const featuredPost3Img =
+      frontPage.section4.featuredPosts3.featuredImage.node.sourceUrl
+
     // Featuredpost 4
     const featuredPost4Title = frontPage.section4.featuredPosts4.title
     const featuredPost4Excerpt = frontPage.section4.featuredPosts4.excerpt
     const featuredPost4Slug = frontPage.section4.featuredPosts4.slug
-    const featuredPost4Img = frontPage.section4.featuredPosts4.featuredImage.node.sourceUrl
+    const featuredPost4Img =
+      frontPage.section4.featuredPosts4.featuredImage.node.sourceUrl
 
     // const testpage = frontPage.section4
     // console.log(testpage)
@@ -146,6 +151,9 @@ const page = ({ data }) => {
       <Layout
         bodyClass={`page-template-default page page-id-${databaseId} wp-embed-responsive singular missing-post-thumbnail has-no-pagination not-showing-comments footer-top-visible customize-support`}
       >
+        <Helmet>
+        <script type="text/javascript" src="https://ecigr.wheelsys.ms/jsHandler.ashx?elementId=wheelsbook&language=en" defer/>
+      </Helmet>
         {/*front-page header with booking system start*/}
         <header
           className="header-cta section_1"
@@ -157,7 +165,7 @@ const page = ({ data }) => {
             </h1>
           </div>
           <div className="cta-booking ">
-          <div id="wheelsbook" style={{ maxWidth: `900px` }}></div>
+            <div id="wheelsbook" style={{ maxWidth: `900px` }}></div>
           </div>
         </header>
         {/*front-page header with booking system end*/}
@@ -172,7 +180,7 @@ const page = ({ data }) => {
             <div className="offer-row">
               {/* post 1 */}
               <div className="offer-post">
-                <Link external to={offerPost1Slug}>
+                <Link to={offerPost1Slug}>
                   <img src={offerPost1Img} />
                 </Link>
                 <div>
@@ -183,14 +191,14 @@ const page = ({ data }) => {
                     dangerouslySetInnerHTML={{ __html: offerPost1Excerpt }}
                     className="offer-post-excerpt"
                   />
-                  <Link external to={offerPost1Slug} className="Offer-btn">
+                  <Link to={offerPost1Slug} className="Offer-btn">
                     Read more
                   </Link>
                 </div>
               </div>
               {/* post 2 */}
               <div className="offer-post">
-                <Link external to={offerPost2Slug}>
+                <Link to={offerPost2Slug}>
                   <img src={offerPost2Img} />
                 </Link>
                 <div>
@@ -201,14 +209,14 @@ const page = ({ data }) => {
                     dangerouslySetInnerHTML={{ __html: offerPost2Excerpt }}
                     className="offer-post-excerpt"
                   />
-                  <Link external to={offerPost2Slug} className="Offer-btn">
+                  <Link to={offerPost2Slug} className="Offer-btn">
                     Read more
                   </Link>
                 </div>
               </div>
               {/* post 3 */}
               <div className="offer-post">
-                <Link external to={offerPost3Slug}>
+                <Link to={offerPost3Slug}>
                   <img src={offerPost3Img} />
                 </Link>
                 <div>
@@ -219,7 +227,7 @@ const page = ({ data }) => {
                     dangerouslySetInnerHTML={{ __html: offerPost3Excerpt }}
                     className="offer-post-excerpt"
                   />
-                  <Link external to={offerPost3Slug} className="Offer-btn">
+                  <Link to={offerPost3Slug} className="Offer-btn">
                     Read more
                   </Link>
                 </div>
@@ -233,7 +241,6 @@ const page = ({ data }) => {
                 <h3>{travelExperianceTitle}</h3>
                 <p className="travelParagraph">{travelParagraph}</p>
                 <Link
-                  external
                   to={buttonTravelExperience}
                   className="enjoy-btn"
                 >
@@ -270,7 +277,7 @@ const page = ({ data }) => {
             <div className="section_3_row">
               {/* fleet categories col 1*/}
               <div className="section_3_col">
-                <Link external to={fleetCategorieLink1}>
+                <Link to={fleetCategorieLink1}>
                   <img src={fleetCategorie1Image} />
                 </Link>
                 <div>
@@ -281,7 +288,7 @@ const page = ({ data }) => {
                     dangerouslySetInnerHTML={{ __html: fleetCategorieText1 }}
                     className="offer-post-excerpt"
                   />
-                  <Link external to={fleetCategorieLink1} className="Offer-btn">
+                  <Link to={fleetCategorieLink1} className="Offer-btn">
                     Read more
                   </Link>
                 </div>
@@ -290,7 +297,7 @@ const page = ({ data }) => {
 
               {/* fleet categories col 2*/}
               <div className="section_3_col">
-                <Link external to={fleetCategorieLink2}>
+                <Link to={fleetCategorieLink2}>
                   <img src={fleetCategorie2Image} />
                 </Link>
                 <div>
@@ -301,7 +308,7 @@ const page = ({ data }) => {
                     dangerouslySetInnerHTML={{ __html: fleetCategorieText2 }}
                     className="offer-post-excerpt"
                   />
-                  <Link external to={fleetCategorieLink2} className="Offer-btn">
+                  <Link to={fleetCategorieLink2} className="Offer-btn">
                     Read more
                   </Link>
                 </div>
@@ -310,7 +317,7 @@ const page = ({ data }) => {
 
               {/* fleet categories col 3 */}
               <div className="section_3_col">
-                <Link external to={fleetCategorieLink3}>
+                <Link to={fleetCategorieLink3}>
                   <img src={fleetCategorie3Image} />
                 </Link>
                 <div>
@@ -321,7 +328,7 @@ const page = ({ data }) => {
                     dangerouslySetInnerHTML={{ __html: fleetCategorieText3 }}
                     className="offer-post-excerpt"
                   />
-                  <Link external to={fleetCategorieLink3} className="Offer-btn">
+                  <Link to={fleetCategorieLink3} className="Offer-btn">
                     Read more
                   </Link>
                 </div>
@@ -330,7 +337,7 @@ const page = ({ data }) => {
 
               {/* fleet categories col 4 */}
               <div className="section_3_col">
-                <Link external to={fleetCategorieLink4}>
+                <Link to={fleetCategorieLink4}>
                   <img src={fleetCategorie4Image} />
                 </Link>
                 <div>
@@ -341,7 +348,7 @@ const page = ({ data }) => {
                     dangerouslySetInnerHTML={{ __html: fleetCategorieText4 }}
                     className="offer-post-excerpt"
                   />
-                  <Link external to={fleetCategorieLink4} className="Offer-btn">
+                  <Link to={fleetCategorieLink4} className="Offer-btn">
                     Read more
                   </Link>
                 </div>
@@ -353,8 +360,8 @@ const page = ({ data }) => {
             <div className="section_3_row cta">
               {/* fleet categories col 1*/}
               <div className="cta cta-col">
-                <Link external to={ctaButtonLink1}>
-                  <img src={ctaIcon1} className="cta-icon"/>
+                <Link to={ctaButtonLink1}>
+                  <img src={ctaIcon1} className="cta-icon" />
                 </Link>
                 <div>
                   <h2 className="entry-title heading-size-1 archive-post-title cta">
@@ -364,8 +371,8 @@ const page = ({ data }) => {
                     dangerouslySetInnerHTML={{ __html: ctaSubtitle1 }}
                     className="offer-post-excerpt"
                   />
-                  <Link external to={ctaButtonLink1} className="enjoy-btn cta">
-                  {ctaButtonText1} 
+                  <Link to={ctaButtonLink1} className="enjoy-btn cta">
+                    {ctaButtonText1}
                   </Link>
                 </div>
               </div>
@@ -373,8 +380,8 @@ const page = ({ data }) => {
 
               {/* fleet categories col 2*/}
               <div className="cta cta-col">
-                <Link external to={ctaButtonLink2}>
-                  <img src={ctaIcon2} className="cta-icon"/>
+                <Link to={ctaButtonLink2}>
+                  <img src={ctaIcon2} className="cta-icon" />
                 </Link>
                 <div>
                   <h2 className="entry-title heading-size-1 archive-post-title cta">
@@ -384,8 +391,8 @@ const page = ({ data }) => {
                     dangerouslySetInnerHTML={{ __html: ctaSubtitle2 }}
                     className="offer-post-excerpt"
                   />
-                  <Link external to={ctaButtonLink2} className="enjoy-btn cta">
-                  {ctaButtonText2} 
+                  <Link to={ctaButtonLink2} className="enjoy-btn cta">
+                    {ctaButtonText2}
                   </Link>
                 </div>
               </div>
@@ -393,8 +400,8 @@ const page = ({ data }) => {
 
               {/* fleet categories col 3 */}
               <div className="cta cta-col">
-                <Link external to={ctaButtonLink3}>
-                  <img src={ctaIcon3} className="cta-icon"/>
+                <Link to={ctaButtonLink3}>
+                  <img src={ctaIcon3} className="cta-icon" />
                 </Link>
                 <div>
                   <h2 className="entry-title heading-size-1 archive-post-title cta">
@@ -404,8 +411,8 @@ const page = ({ data }) => {
                     dangerouslySetInnerHTML={{ __html: ctaSubtitle3 }}
                     className="offer-post-excerpt"
                   />
-                  <Link external to={ctaButtonLink3} className="enjoy-btn cta">
-                  {ctaButtonText3} 
+                  <Link to={ctaButtonLink3} className="enjoy-btn cta">
+                    {ctaButtonText3}
                   </Link>
                 </div>
               </div>
@@ -425,13 +432,13 @@ const page = ({ data }) => {
           ></div>
           <div className="entry-content">
             <h1 className="todays-car-rental">{featuredPostTitle}</h1>
-            <h3 className="section_3_sub_title">{featuredPostSutitle }</h3>
+            <h3 className="section_3_sub_title">{featuredPostSutitle}</h3>
             {/* 3 column offers start */}
             <div className="offer-row">
               {/* post 1 */}
               <div className="offer-post col-4">
-                <Link external to={featuredPost1Slug}>
-                  <img src={featuredPost1Img } />
+                <Link to={featuredPost1Slug}>
+                  <img src={featuredPost1Img} />
                 </Link>
                 <div>
                   <h2 className="entry-title heading-size-1 archive-post-title">
@@ -441,14 +448,14 @@ const page = ({ data }) => {
                     dangerouslySetInnerHTML={{ __html: featuredPost1Excerpt }}
                     className="offer-post-excerpt"
                   />
-                  <Link external to={featuredPost1Slug} className="Offer-btn">
+                  <Link to={featuredPost1Slug} className="Offer-btn">
                     Read more
                   </Link>
                 </div>
               </div>
               {/* post 2 */}
               <div className="offer-post col-4">
-                <Link external to={featuredPost2Slug}>
+                <Link to={featuredPost2Slug}>
                   <img src={featuredPost2Img} />
                 </Link>
                 <div>
@@ -459,14 +466,14 @@ const page = ({ data }) => {
                     dangerouslySetInnerHTML={{ __html: featuredPost2Excerpt }}
                     className="offer-post-excerpt"
                   />
-                  <Link external to={featuredPost2Slug} className="Offer-btn">
+                  <Link to={featuredPost2Slug} className="Offer-btn">
                     Read more
                   </Link>
                 </div>
               </div>
               {/* post 3 */}
               <div className="offer-post col-4">
-                <Link external to={featuredPost3Slug}>
+                <Link to={featuredPost3Slug}>
                   <img src={featuredPost3Img} />
                 </Link>
                 <div>
@@ -477,14 +484,14 @@ const page = ({ data }) => {
                     dangerouslySetInnerHTML={{ __html: featuredPost3Excerpt }}
                     className="offer-post-excerpt"
                   />
-                  <Link external to={featuredPost3Slug} className="Offer-btn">
+                  <Link to={featuredPost3Slug} className="Offer-btn">
                     Read more
                   </Link>
                 </div>
               </div>
               {/* post 4 */}
               <div className="offer-post col-4">
-                <Link external to={featuredPost4Slug}>
+                <Link to={featuredPost4Slug}>
                   <img src={featuredPost4Img} />
                 </Link>
                 <div>
@@ -495,7 +502,7 @@ const page = ({ data }) => {
                     dangerouslySetInnerHTML={{ __html: featuredPost4Excerpt }}
                     className="offer-post-excerpt"
                   />
-                  <Link external to={featuredPost4Slug} className="Offer-btn">
+                  <Link to={featuredPost4Slug} className="Offer-btn">
                     Read more
                   </Link>
                 </div>
@@ -503,7 +510,7 @@ const page = ({ data }) => {
             </div>
             {/* 3 column offers end*/}
           </div>
-          
+
           <div
             className="entry-content"
             dangerouslySetInnerHTML={{ __html: content }}
