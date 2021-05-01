@@ -15,6 +15,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-sass',
     `gatsby-plugin-notifications`,
     `gatsby-plugin-sharp`,
     {
