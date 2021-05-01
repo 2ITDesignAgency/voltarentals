@@ -70,7 +70,7 @@ const Menu = () => {
         className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children"
       >
         <a href="#">
-          OUR FLEET1<i className="fa fa-angle-down" aria-hidden="true"></i>
+          OUR FLEET<i className="fa fa-angle-down" aria-hidden="true"></i>
         </a>
         <ul className="secondary-menu fleet-menu reset-list-style">
           <li>
