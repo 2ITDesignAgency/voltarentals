@@ -3,7 +3,7 @@ import { graphql, Link } from "gatsby"
 import Layout from "../../components/Layout"
 import Seo from "../../components/Seo"
 import FeaturedMedia from "../../components/FeaturedMedia"
-// import Helmet from "react-helmet"
+import Helmet from "react-helmet"
 
 const page = ({ data }) => {
   const { page } = data
@@ -15,8 +15,7 @@ const page = ({ data }) => {
   const services = "SERVICES"
 
   // homepage template
-  if (homepage == title) {  
-    
+  if (homepage == title) {
     // section heroCta veriables start
     // slider veriables
     const sliderImage = frontPage.heroCta.imageBackground.sourceUrl
@@ -145,12 +144,16 @@ const page = ({ data }) => {
     const featuredPost4Img =
       frontPage.section4.featuredPosts4.featuredImage.node.sourceUrl
 
-    // const testpage = frontPage.section4
-    // console.log(testpage)
     return (
       <Layout
         bodyClass={`page-template-default page page-id-${databaseId} wp-embed-responsive singular missing-post-thumbnail has-no-pagination not-showing-comments footer-top-visible customize-support`}
       >
+        <Helmet>
+          <script
+            type="text/javascript"
+            src="https://ecigr.wheelsys.ms/jsHandler.ashx?elementId=wheelsbook&language=en"
+          />
+        </Helmet>
         {/*front-page header with booking system start*/}
         <header
           className="header-cta section_1"
@@ -237,10 +240,7 @@ const page = ({ data }) => {
               <div className="col md-2">
                 <h3>{travelExperianceTitle}</h3>
                 <p className="travelParagraph">{travelParagraph}</p>
-                <Link
-                  to={buttonTravelExperience}
-                  className="enjoy-btn"
-                >
+                <Link to={buttonTravelExperience} className="enjoy-btn">
                   Read more
                 </Link>
               </div>
