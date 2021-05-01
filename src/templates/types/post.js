@@ -8,7 +8,7 @@ import AuthorBio from "../../components/AuthorBio"
 import PostMeta from "../../components/PostMeta"
 import PostCategories from "../../components/PostCategories"
 import FeaturedMedia from "../../components/FeaturedMedia"
-import Helmet from "react-helmet"
+import { Helmet } from 'react-helmet'
 
 const post = ({ data }) => {
   const { nextPage, previousPage, page } = data
@@ -27,13 +27,6 @@ const post = ({ data }) => {
     <Layout
       bodyClass={`post-template-default single single-post postid-${databaseId} single-format-standard wp-embed-responsive singular has-post-thumbnail has-single-pagination showing-comments footer-top-visible customize-support`}
     >
-      <Helmet>
-        <script
-          type="text/javascript"
-          src="https://ecigr.wheelsys.ms/jsHandler.ashx?elementId=wheelsbook&language=en"
-          defer
-        />
-      </Helmet>
       <Seo title={title} description={excerpt} />
       <article
         className={`post-${databaseId} post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized`}
@@ -66,6 +59,13 @@ const post = ({ data }) => {
           <div className="cta-booking-post">
             <div id="wheelsbook" style={{ maxWidth: `900px` }}></div>
           </div>
+          <Helmet>
+            <script
+              type="text/javascript"
+              src="https://ecigr.wheelsys.ms/jsHandler.ashx?elementId=wheelsbook&language=en"
+              defer
+            />
+          </Helmet>
           {/* {post.Blocks && <post.Blocks />} */}
           <div
             className="entry-content"
