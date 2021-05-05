@@ -187,13 +187,19 @@ fragment BlockFragment on Block {
     ... on Tag {
       id
     }
-    ... on Vehicles {
-      id
-    }
     ... on PostFormat {
       id
     }
     ... on ReusableBlock {
+      id
+    }
+    ... on Vehicles {
+      id
+    }
+    ... on Brands {
+      id
+    }
+    ... on Types {
       id
     }
     ... on UserRole {
@@ -218,6 +224,2005 @@ fragment BlockFragment on Block {
   ... on YoastSeoBreadcrumbsBlock {
     attributes__typename_YoastSeoBreadcrumbsBlockAttributes: attributes {
       className
+    }
+  }
+  ... on GetwidSectionBlock {
+    attributes__typename_GetwidSectionBlockAttributesUnion: attributes {
+      __typename
+      ... on GetwidSectionBlockAttributes {
+        align
+        anchor
+        backgroundColor
+        backgroundGradient
+        backgroundGradientAngle
+        backgroundGradientFirstColor
+        backgroundGradientFirstColorLocation
+        backgroundGradientSecondColor
+        backgroundGradientSecondColorLocation
+        backgroundGradientType
+        backgroundImageAttachment
+        backgroundImagePosition
+        backgroundImageRepeat
+        backgroundImageSize
+        backgroundVideoAutoplay
+        backgroundVideoControlsPosition
+        backgroundVideoLoop
+        backgroundVideoMute
+        backgroundVideoPoster
+        backgroundVideoType
+        className
+        contentMaxWidth
+        contentMaxWidthPreset
+        customBackgroundColor
+        dividerBottom
+        dividerBottomColor
+        dividerTop
+        dividerTopColor
+        dividersBottomHeight
+        dividersBringTop
+        dividersTopHeight
+        entranceAnimation
+        entranceAnimationDelay
+        entranceAnimationDuration
+        foregroundColor
+        foregroundFilter
+        foregroundGradient
+        foregroundGradientAngle
+        foregroundGradientFirstColor
+        foregroundGradientFirstColorLocation
+        foregroundGradientSecondColor
+        foregroundGradientSecondColorLocation
+        foregroundGradientType
+        foregroundImageAttachment
+        foregroundImagePosition
+        foregroundImageRepeat
+        foregroundImageSize
+        foregroundOpacity
+        gapSize
+        horizontalAlign
+        horizontalAlignMobile
+        horizontalAlignTablet
+        marginBottom
+        marginBottomMobile
+        marginBottomTablet
+        marginBottomValue
+        marginLeft
+        marginLeftMobile
+        marginLeftTablet
+        marginLeftValue
+        marginRight
+        marginRightMobile
+        marginRightTablet
+        marginRightValue
+        marginTop
+        marginTopMobile
+        marginTopTablet
+        marginTopValue
+        minHeight
+        paddingBottom
+        paddingBottomMobile
+        paddingBottomTablet
+        paddingBottomValue
+        paddingLeft
+        paddingLeftMobile
+        paddingLeftTablet
+        paddingLeftValue
+        paddingRight
+        paddingRightMobile
+        paddingRightTablet
+        paddingRightValue
+        paddingTop
+        paddingTopMobile
+        paddingTopTablet
+        paddingTopValue
+        resetMinHeightMobile
+        resetMinHeightTablet
+        skipLayout
+        sliderAnimationDuration
+        sliderAnimationEffect
+        sliderAnimationSpeed
+        sliderImages__typename_GetwidSectionBlockAttributesSliderImages: sliderImages {
+          alt
+          id
+          url
+        }
+        verticalAlign
+        verticalAlignMobile
+        verticalAlignTablet
+        youTubeVideoAutoplay
+        youTubeVideoLoop
+        youTubeVideoMute
+        youTubeVideoScale
+        youTubeVideoUrl
+      }
+      ... on GetwidSectionBlockDeprecatedV1Attributes {
+        align
+        anchor
+        backgroundColor
+        backgroundGradient
+        backgroundGradientAngle
+        backgroundGradientFirstColor
+        backgroundGradientFirstColorLocation
+        backgroundGradientSecondColor
+        backgroundGradientSecondColorLocation
+        backgroundGradientType
+        backgroundImageAttachment
+        backgroundImagePosition
+        backgroundImageRepeat
+        backgroundImageSize
+        backgroundVideoAutoplay
+        backgroundVideoControlsPosition
+        backgroundVideoLoop
+        backgroundVideoMute
+        backgroundVideoPoster
+        backgroundVideoType
+        className
+        contentMaxWidth
+        contentMaxWidthPreset
+        customBackgroundColor
+        dividerBottom
+        dividerBottomColor
+        dividerTop
+        dividerTopColor
+        dividersBottomHeight
+        dividersBringTop
+        dividersTopHeight
+        entranceAnimation
+        entranceAnimationDelay
+        entranceAnimationDuration
+        foregroundColor
+        foregroundFilter
+        foregroundGradient
+        foregroundGradientAngle
+        foregroundGradientFirstColor
+        foregroundGradientFirstColorLocation
+        foregroundGradientSecondColor
+        foregroundGradientSecondColorLocation
+        foregroundGradientType
+        foregroundImageAttachment
+        foregroundImagePosition
+        foregroundImageRepeat
+        foregroundImageSize
+        foregroundOpacity
+        gapSize
+        horizontalAlign
+        horizontalAlignMobile
+        horizontalAlignTablet
+        marginBottom
+        marginBottomMobile
+        marginBottomTablet
+        marginBottomValue
+        marginLeft
+        marginLeftMobile
+        marginLeftTablet
+        marginLeftValue
+        marginRight
+        marginRightMobile
+        marginRightTablet
+        marginRightValue
+        marginTop
+        marginTopMobile
+        marginTopTablet
+        marginTopValue
+        minHeight
+        paddingBottom
+        paddingBottomMobile
+        paddingBottomTablet
+        paddingBottomValue
+        paddingLeft
+        paddingLeftMobile
+        paddingLeftTablet
+        paddingLeftValue
+        paddingRight
+        paddingRightMobile
+        paddingRightTablet
+        paddingRightValue
+        paddingTop
+        paddingTopMobile
+        paddingTopTablet
+        paddingTopValue
+        resetMinHeightMobile
+        resetMinHeightTablet
+        skipLayout
+        sliderAnimationDuration
+        sliderAnimationEffect
+        sliderAnimationSpeed
+        sliderImages__typename_GetwidSectionBlockDeprecatedV1AttributesSliderImages: sliderImages {
+          alt
+          id
+          url
+        }
+        verticalAlign
+        verticalAlignMobile
+        verticalAlignTablet
+        youTubeVideoAutoplay
+        youTubeVideoLoop
+        youTubeVideoMute
+        youTubeVideoScale
+        youTubeVideoUrl
+      }
+      ... on GetwidSectionBlockDeprecatedV2Attributes {
+        align
+        anchor
+        backgroundColor
+        backgroundGradient
+        backgroundGradientAngle
+        backgroundGradientFirstColor
+        backgroundGradientFirstColorLocation
+        backgroundGradientSecondColor
+        backgroundGradientSecondColorLocation
+        backgroundGradientType
+        backgroundImageAttachment
+        backgroundImagePosition
+        backgroundImageRepeat
+        backgroundImageSize
+        backgroundVideoAutoplay
+        backgroundVideoControlsPosition
+        backgroundVideoLoop
+        backgroundVideoMute
+        backgroundVideoPoster
+        backgroundVideoType
+        className
+        contentMaxWidth
+        contentMaxWidthPreset
+        customBackgroundColor
+        dividerBottom
+        dividerBottomColor
+        dividerTop
+        dividerTopColor
+        dividersBottomHeight
+        dividersBringTop
+        dividersTopHeight
+        entranceAnimation
+        entranceAnimationDelay
+        entranceAnimationDuration
+        foregroundColor
+        foregroundFilter
+        foregroundGradient
+        foregroundGradientAngle
+        foregroundGradientFirstColor
+        foregroundGradientFirstColorLocation
+        foregroundGradientSecondColor
+        foregroundGradientSecondColorLocation
+        foregroundGradientType
+        foregroundImageAttachment
+        foregroundImagePosition
+        foregroundImageRepeat
+        foregroundImageSize
+        foregroundOpacity
+        gapSize
+        horizontalAlign
+        horizontalAlignMobile
+        horizontalAlignTablet
+        marginBottom
+        marginBottomMobile
+        marginBottomTablet
+        marginBottomValue
+        marginLeft
+        marginLeftMobile
+        marginLeftTablet
+        marginLeftValue
+        marginRight
+        marginRightMobile
+        marginRightTablet
+        marginRightValue
+        marginTop
+        marginTopMobile
+        marginTopTablet
+        marginTopValue
+        minHeight
+        paddingBottom
+        paddingBottomMobile
+        paddingBottomTablet
+        paddingBottomValue
+        paddingLeft
+        paddingLeftMobile
+        paddingLeftTablet
+        paddingLeftValue
+        paddingRight
+        paddingRightMobile
+        paddingRightTablet
+        paddingRightValue
+        paddingTop
+        paddingTopMobile
+        paddingTopTablet
+        paddingTopValue
+        resetMinHeightMobile
+        resetMinHeightTablet
+        skipLayout
+        sliderAnimationDuration
+        sliderAnimationEffect
+        sliderAnimationSpeed
+        sliderImages__typename_GetwidSectionBlockDeprecatedV2AttributesSliderImages: sliderImages {
+          alt
+          id
+          url
+        }
+        verticalAlign
+        verticalAlignMobile
+        verticalAlignTablet
+        youTubeVideoAutoplay
+        youTubeVideoLoop
+        youTubeVideoMute
+        youTubeVideoScale
+        youTubeVideoUrl
+      }
+      ... on GetwidSectionBlockDeprecatedV3Attributes {
+        align
+        anchor
+        backgroundColor
+        backgroundGradient
+        backgroundGradientAngle
+        backgroundGradientFirstColor
+        backgroundGradientFirstColorLocation
+        backgroundGradientSecondColor
+        backgroundGradientSecondColorLocation
+        backgroundGradientType
+        backgroundImageAttachment
+        backgroundImagePosition
+        backgroundImageRepeat
+        backgroundImageSize
+        backgroundVideoAutoplay
+        backgroundVideoControlsPosition
+        backgroundVideoLoop
+        backgroundVideoMute
+        backgroundVideoPoster
+        backgroundVideoType
+        className
+        contentMaxWidth
+        contentMaxWidthPreset
+        customBackgroundColor
+        dividerBottom
+        dividerBottomColor
+        dividerTop
+        dividerTopColor
+        dividersBottomHeight
+        dividersBringTop
+        dividersTopHeight
+        entranceAnimation
+        entranceAnimationDelay
+        entranceAnimationDuration
+        foregroundColor
+        foregroundFilter
+        foregroundGradient
+        foregroundGradientAngle
+        foregroundGradientFirstColor
+        foregroundGradientFirstColorLocation
+        foregroundGradientSecondColor
+        foregroundGradientSecondColorLocation
+        foregroundGradientType
+        foregroundImageAttachment
+        foregroundImagePosition
+        foregroundImageRepeat
+        foregroundImageSize
+        foregroundOpacity
+        gapSize
+        horizontalAlign
+        horizontalAlignMobile
+        horizontalAlignTablet
+        marginBottom
+        marginBottomMobile
+        marginBottomTablet
+        marginBottomValue
+        marginLeft
+        marginLeftMobile
+        marginLeftTablet
+        marginLeftValue
+        marginRight
+        marginRightMobile
+        marginRightTablet
+        marginRightValue
+        marginTop
+        marginTopMobile
+        marginTopTablet
+        marginTopValue
+        minHeight
+        paddingBottom
+        paddingBottomMobile
+        paddingBottomTablet
+        paddingBottomValue
+        paddingLeft
+        paddingLeftMobile
+        paddingLeftTablet
+        paddingLeftValue
+        paddingRight
+        paddingRightMobile
+        paddingRightTablet
+        paddingRightValue
+        paddingTop
+        paddingTopMobile
+        paddingTopTablet
+        paddingTopValue
+        resetMinHeightMobile
+        resetMinHeightTablet
+        skipLayout
+        sliderAnimationDuration
+        sliderAnimationEffect
+        sliderAnimationSpeed
+        sliderImages {
+          alt
+          id
+          url
+        }
+        verticalAlign
+        verticalAlignMobile
+        verticalAlignTablet
+        youTubeVideoAutoplay
+        youTubeVideoLoop
+        youTubeVideoMute
+        youTubeVideoScale
+        youTubeVideoUrl
+      }
+    }
+  }
+  ... on GetwidMediaTextSliderBlock {
+    attributes__typename_GetwidMediaTextSliderBlockAttributesUnion: attributes {
+      __typename
+      ... on GetwidMediaTextSliderBlockAttributes {
+        align
+        className
+        contentAnimation
+        contentAnimationDelay
+        contentAnimationDuration
+        contentMaxWidth
+        horizontalAlign
+        imageSize
+        minHeight
+        overlayColor
+        overlayOpacity
+        paddingBottom
+        paddingLeft
+        paddingRight
+        paddingTop
+        pauseOnHover
+        slideCount
+        sliderAnimationEffect
+        sliderAnimationSpeed
+        sliderArrays
+        sliderArrows
+        sliderAutoplay
+        sliderAutoplaySpeed
+        sliderDots
+        textColor
+        verticalAlign
+      }
+      ... on GetwidMediaTextSliderBlockDeprecatedV1Attributes {
+        align
+        className
+        contentAnimation
+        contentAnimationDelay
+        contentAnimationDuration
+        contentMaxWidth
+        horizontalAlign
+        imageSize
+        minHeight
+        overlayColor
+        overlayOpacity
+        paddingBottom
+        paddingLeft
+        paddingRight
+        paddingTop
+        pauseOnHover
+        slideCount
+        sliderAnimationEffect
+        sliderAnimationSpeed
+        sliderArrays
+        sliderArrows
+        sliderAutoplay
+        sliderAutoplaySpeed
+        sliderDots
+        textColor
+        verticalAlign
+      }
+    }
+  }
+  ... on GetwidMediaTextSliderSlideBlock {
+    attributes__typename_GetwidMediaTextSliderSlideBlockAttributesUnion: attributes {
+      __typename
+      ... on GetwidMediaTextSliderSlideBlockAttributes {
+        className
+        mediaId
+        outerParent
+        slideId
+        url
+      }
+      ... on GetwidMediaTextSliderSlideBlockDeprecatedV1Attributes {
+        className
+        mediaId
+        outerParent
+        slideId
+        url
+      }
+    }
+  }
+  ... on GetwidMediaTextSliderSlideContentBlock {
+    attributes__typename_GetwidMediaTextSliderSlideContentBlockAttributesUnion: attributes {
+      __typename
+      ... on GetwidMediaTextSliderSlideContentBlockAttributes {
+        className
+        mediaAlt
+        mediaId
+        mediaType
+        mediaUrl
+      }
+      ... on GetwidMediaTextSliderSlideContentBlockDeprecatedV1Attributes {
+        className
+        mediaAlt
+        mediaId
+        mediaType
+        mediaUrl
+      }
+    }
+  }
+  ... on GetwidImagesSliderBlock {
+    attributes__typename_GetwidImagesSliderBlockAttributesUnion: attributes {
+      __typename
+      ... on GetwidImagesSliderBlockAttributes {
+        align
+        captionPosition
+        captionStyle
+        className
+        ids
+        imageAlignment
+        imageFit
+        imageSize
+        images__typename_GetwidImagesSliderBlockAttributesImages: images {
+          alt
+          caption
+          customLink
+          customLinkRel
+          customLinkTarget
+          id
+          link
+          originalUrl
+          url
+        }
+        linkTo
+        showCaption
+        slideHeight
+        sliderAnimationEffect
+        sliderAnimationSpeed
+        sliderArrows
+        sliderAutoplay
+        sliderAutoplaySpeed
+        sliderCenterMode
+        sliderDots
+        sliderInfinite
+        sliderSlidesToScroll
+        sliderSlidesToShow
+        sliderSlidesToShowLaptop
+        sliderSlidesToShowMobile
+        sliderSlidesToShowTablet
+        sliderSpacing
+        sliderVariableWidth
+      }
+      ... on GetwidImagesSliderBlockDeprecatedV1Attributes {
+        align
+        captionPosition
+        captionStyle
+        className
+        ids
+        imageAlignment
+        imageFit
+        imageSize
+        images__typename_GetwidImagesSliderBlockDeprecatedV1AttributesImages: images {
+          alt
+          caption
+          customLink
+          customLinkRel
+          customLinkTarget
+          id
+          link
+          originalUrl
+          url
+        }
+        linkTo
+        showCaption
+        slideHeight
+        sliderAnimationEffect
+        sliderAnimationSpeed
+        sliderArrows
+        sliderAutoplay
+        sliderAutoplaySpeed
+        sliderCenterMode
+        sliderDots
+        sliderInfinite
+        sliderSlidesToScroll
+        sliderSlidesToShow
+        sliderSlidesToShowLaptop
+        sliderSlidesToShowMobile
+        sliderSlidesToShowTablet
+        sliderSpacing
+        sliderVariableWidth
+      }
+      ... on GetwidImagesSliderBlockDeprecatedV2Attributes {
+        align
+        captionPosition
+        captionStyle
+        className
+        ids
+        imageAlignment
+        imageFit
+        imageSize
+        images__typename_GetwidImagesSliderBlockDeprecatedV2AttributesImages: images {
+          alt
+          caption
+          customLink
+          customLinkRel
+          customLinkTarget
+          id
+          link
+          originalUrl
+          url
+        }
+        linkTo
+        showCaption
+        slideHeight
+        sliderAnimationEffect
+        sliderAnimationSpeed
+        sliderArrows
+        sliderAutoplay
+        sliderAutoplaySpeed
+        sliderCenterMode
+        sliderDots
+        sliderInfinite
+        sliderSlidesToScroll
+        sliderSlidesToShow
+        sliderSlidesToShowLaptop
+        sliderSlidesToShowMobile
+        sliderSlidesToShowTablet
+        sliderSpacing
+        sliderVariableWidth
+      }
+      ... on GetwidImagesSliderBlockDeprecatedV3Attributes {
+        align
+        captionPosition
+        captionStyle
+        className
+        ids
+        imageAlignment
+        imageFit
+        imageSize
+        images {
+          alt
+          caption
+          customLink
+          customLinkRel
+          customLinkTarget
+          id
+          link
+          originalUrl
+          url
+        }
+        linkTo
+        showCaption
+        slideHeight
+        sliderAnimationEffect
+        sliderAnimationSpeed
+        sliderArrows
+        sliderAutoplay
+        sliderAutoplaySpeed
+        sliderCenterMode
+        sliderDots
+        sliderInfinite
+        sliderSlidesToScroll
+        sliderSlidesToShow
+        sliderSlidesToShowLaptop
+        sliderSlidesToShowMobile
+        sliderSlidesToShowTablet
+        sliderSpacing
+        sliderVariableWidth
+      }
+    }
+  }
+  ... on GetwidIconBlock {
+    attributes__typename_GetwidIconBlockAttributes: attributes {
+      align
+      backgroundColor
+      borderRadius
+      borderWidth
+      className
+      customBackgroundColor
+      customTextColor
+      hoverAnimation
+      icon
+      iconSize
+      iconStyle
+      link
+      linkTarget
+      marginBottom
+      marginLeft
+      marginRight
+      marginTop
+      padding
+      rel
+      textAlignment
+      textColor
+    }
+  }
+  ... on GetwidIconBoxBlock {
+    attributes__typename_GetwidIconBoxBlockAttributes: attributes {
+      align
+      backgroundColor
+      borderRadius
+      borderWidth
+      className
+      customBackgroundColor
+      customTextColor
+      hoverAnimation
+      icon
+      iconPosition
+      iconSize
+      iconStyle
+      layout
+      link
+      linkTarget
+      marginBottom
+      marginLeft
+      marginRight
+      marginTop
+      padding
+      primaryColor
+      rel
+      secondaryColor
+      textAlignment
+      textColor
+    }
+  }
+  ... on GetwidBannerBlock {
+    attributes__typename_GetwidBannerBlockAttributesUnion: attributes {
+      __typename
+      ... on GetwidBannerBlockAttributes {
+        align
+        backgroundColor
+        backgroundOpacity
+        blockAnimation
+        className
+        contentMaxWidth
+        customBackgroundColor
+        customTextColor
+        horizontalAlign
+        id
+        imageSize
+        link
+        linkTarget
+        minHeight
+        rel
+        text
+        textAnimation
+        textColor
+        title
+        type
+        url
+        verticalAlign
+      }
+      ... on GetwidBannerBlockDeprecatedV1Attributes {
+        align
+        backgroundColor
+        backgroundOpacity
+        blockAnimation
+        className
+        contentMaxWidth
+        customBackgroundColor
+        customTextColor
+        horizontalAlign
+        id
+        imageSize
+        link
+        linkTarget
+        minHeight
+        rel
+        text
+        textAnimation
+        textColor
+        title
+        type
+        url
+        verticalAlign
+      }
+    }
+  }
+  ... on GetwidTabsBlock {
+    attributes__typename_GetwidTabsBlockAttributesUnion: attributes {
+      __typename
+      ... on GetwidTabsBlockAttributes {
+        active
+        align
+        className
+        headerTag
+        type
+      }
+      ... on GetwidTabsBlockDeprecatedV1Attributes {
+        active
+        align
+        className
+        headerTag
+        type
+      }
+    }
+  }
+  ... on GetwidTabsItemBlock {
+    attributes__typename_GetwidTabsItemBlockAttributesUnion: attributes {
+      __typename
+      ... on GetwidTabsItemBlockAttributes {
+        className
+        title
+      }
+      ... on GetwidTabsItemBlockDeprecatedV1Attributes {
+        className
+        title
+      }
+    }
+  }
+  ... on GetwidAccordionBlock {
+    attributes__typename_GetwidAccordionBlockAttributesUnion: attributes {
+      __typename
+      ... on GetwidAccordionBlockAttributes {
+        active
+        align
+        className
+        headerTag
+        iconClose
+        iconOpen
+        iconPosition
+      }
+      ... on GetwidAccordionBlockDeprecatedV1Attributes {
+        active
+        align
+        className
+        headerTag
+        iconClose
+        iconOpen
+        iconPosition
+      }
+    }
+  }
+  ... on GetwidAccordionItemBlock {
+    attributes__typename_GetwidAccordionItemBlockAttributes: attributes {
+      className
+      title
+    }
+  }
+  ... on GetwidToggleBlock {
+    attributes__typename_GetwidToggleBlockAttributesUnion: attributes {
+      __typename
+      ... on GetwidToggleBlockAttributes {
+        align
+        className
+        headerTag
+        iconClose
+        iconOpen
+        iconPosition
+      }
+      ... on GetwidToggleBlockDeprecatedV1Attributes {
+        align
+        className
+        headerTag
+        iconClose
+        iconOpen
+        iconPosition
+      }
+    }
+  }
+  ... on GetwidToggleItemBlock {
+    attributes__typename_GetwidToggleItemBlockAttributes: attributes {
+      active
+      className
+      title
+    }
+  }
+  ... on GetwidImagesStackBlock {
+    attributes__typename_GetwidImagesStackBlockAttributesUnion: attributes {
+      __typename
+      ... on GetwidImagesStackBlockAttributes {
+        align
+        className
+        ids
+        imageSize
+        images__typename_GetwidImagesStackBlockAttributesImages: images {
+          alt
+          caption
+          id
+          link
+          originalUrl
+          url
+        }
+        linkTo
+        stackOverlap
+        stackStyle
+      }
+      ... on GetwidImagesStackBlockDeprecatedV1Attributes {
+        align
+        className
+        ids
+        imageSize
+        images {
+          alt
+          caption
+          id
+          link
+          originalUrl
+          url
+        }
+        linkTo
+        stackOverlap
+        stackStyle
+      }
+    }
+  }
+  ... on GetwidMapBlock {
+    attributes__typename_GetwidMapBlockAttributes: attributes {
+      blockAlignment
+      className
+      customStyle
+      fullscreenControl
+      interaction
+      mapCenter
+      mapHeight
+      mapMarkers
+      mapStyle
+      mapTypeControl
+      mapZoom
+      streetViewControl
+      zoomControl
+    }
+  }
+  ... on GetwidRecentPostsBlock {
+    attributes__typename_GetwidRecentPostsBlockAttributes: attributes {
+      align
+      categories
+      className
+      columns
+      contentLength
+      cropImages
+      imageSize
+      order
+      orderBy
+      postLayout
+      postsToShow
+      showCategories
+      showCommentsCount
+      showContent
+      showDate
+      showFeaturedImage
+      showTitle
+      titleTag
+    }
+  }
+  ... on GetwidAdvancedHeadingBlock {
+    attributes__typename_GetwidAdvancedHeadingBlockAttributesUnion: attributes {
+      __typename
+      ... on GetwidAdvancedHeadingBlockAttributes {
+        align
+        anchor
+        backgroundColor
+        className
+        content
+        customBackgroundColor
+        customTextColor
+        fontFamily
+        fontGroupID
+        fontSize
+        fontSizeMobile
+        fontSizeTablet
+        fontStyle
+        fontWeight
+        letterSpacing
+        lineHeight
+        marginBottom
+        marginLeft
+        marginRight
+        marginTop
+        paddingBottom
+        paddingLeft
+        paddingRight
+        paddingTop
+        textAlignment
+        textColor
+        textTransform
+        titleTag
+      }
+      ... on GetwidAdvancedHeadingBlockDeprecatedV1Attributes {
+        align
+        anchor
+        backgroundColor
+        className
+        content
+        customBackgroundColor
+        customTextColor
+        fontFamily
+        fontGroupID
+        fontSize
+        fontSizeMobile
+        fontSizeTablet
+        fontStyle
+        fontWeight
+        letterSpacing
+        lineHeight
+        marginBottom
+        marginLeft
+        marginRight
+        marginTop
+        paddingBottom
+        paddingLeft
+        paddingRight
+        paddingTop
+        textAlignment
+        textColor
+        textTransform
+        titleTag
+      }
+    }
+  }
+  ... on GetwidImageBoxBlock {
+    attributes__typename_GetwidImageBoxBlockAttributesUnion: attributes {
+      __typename
+      ... on GetwidImageBoxBlockAttributes {
+        align
+        alt
+        className
+        hoverAnimation
+        id
+        imagePosition
+        imageSize
+        layout
+        link
+        linkTarget
+        marginBottom
+        marginLeft
+        marginRight
+        marginTop
+        mobileAlignment
+        mobileLayout
+        rel
+        textAlignment
+        url
+      }
+      ... on GetwidImageBoxBlockDeprecatedV1Attributes {
+        align
+        alt
+        className
+        hoverAnimation
+        id
+        imagePosition
+        imageSize
+        layout
+        link
+        linkTarget
+        marginBottom
+        marginLeft
+        marginRight
+        marginTop
+        mobileAlignment
+        mobileLayout
+        rel
+        textAlignment
+        url
+      }
+    }
+  }
+  ... on GetwidAdvancedSpacerBlock {
+    attributes__typename_GetwidAdvancedSpacerBlockAttributes: attributes {
+      className
+      height
+      isHideDesktop
+      isHideMobile
+      isHideTablet
+    }
+  }
+  ... on GetwidSocialLinksBlock {
+    attributes__typename_GetwidSocialLinksBlockAttributes: attributes {
+      align
+      backgroundColor
+      className
+      customBackgroundColor
+      customTextColor
+      icons {
+        icon
+        link
+        linkTarget
+        rel
+        title
+      }
+      iconsSize
+      iconsSpacing
+      iconsStyle
+      textAlignmentDesktop
+      textAlignmentMobile
+      textAlignmentTablet
+      textColor
+    }
+  }
+  ... on GetwidButtonGroupBlock {
+    attributes__typename_GetwidButtonGroupBlockAttributes: attributes {
+      alignment
+      alignmentMobile
+      alignmentTablet
+      className
+      direction
+      directionMobile
+      directionTablet
+      spacing
+      width
+      widthMobile
+      widthTablet
+    }
+  }
+  ... on GetwidTestimonialBlock {
+    attributes__typename_GetwidTestimonialBlockAttributesUnion: attributes {
+      __typename
+      ... on GetwidTestimonialBlockAttributes {
+        className
+        content
+        imgAlt
+        imgId
+        imgUrl
+        subtitle
+        title
+      }
+      ... on GetwidTestimonialBlockDeprecatedV1Attributes {
+        className
+        content
+        imgAlt
+        imgId
+        imgUrl
+        subtitle
+        title
+      }
+    }
+  }
+  ... on GetwidPersonBlock {
+    attributes__typename_GetwidPersonBlockAttributesUnion: attributes {
+      __typename
+      ... on GetwidPersonBlockAttributes {
+        className
+        content
+        imageCrop
+        imageSize
+        imgAlt
+        imgId
+        imgUrl
+        subtitle
+        title
+      }
+      ... on GetwidPersonBlockDeprecatedV1Attributes {
+        className
+        content
+        imageCrop
+        imageSize
+        imgAlt
+        imgId
+        imgUrl
+        subtitle
+        title
+      }
+    }
+  }
+  ... on GetwidInstagramBlock {
+    attributes__typename_GetwidInstagramBlockAttributes: attributes {
+      align
+      className
+      gridColumns
+      photoCount
+      spacing
+    }
+  }
+  ... on GetwidProgressBarBlock {
+    attributes__typename_GetwidProgressBarBlockAttributes: attributes {
+      align
+      backgroundColor
+      className
+      customBackgroundColor
+      customTextColor
+      fillAmount
+      isAnimated
+      textColor
+      title
+    }
+  }
+  ... on GetwidCircleProgressBarBlock {
+    attributes__typename_GetwidCircleProgressBarBlockAttributes: attributes {
+      align
+      backgroundColor
+      className
+      fillAmount
+      isAnimated
+      size
+      textColor
+      thickness
+      value
+      wrapperAlign
+    }
+  }
+  ... on GetwidCounterBlock {
+    attributes__typename_GetwidCounterBlockAttributesUnion: attributes {
+      __typename
+      ... on GetwidCounterBlockAttributes {
+        align
+        className
+        customTextColor
+        decimal
+        decimalPlaces
+        duration
+        end
+        numerals
+        prefix
+        separator
+        start
+        suffix
+        textColor
+        title
+        useEasing
+        useGrouping
+        wrapperAlign
+      }
+      ... on GetwidCounterBlockDeprecatedV1Attributes {
+        align
+        className
+        customTextColor
+        decimal
+        decimalPlaces
+        duration
+        end
+        numerals
+        prefix
+        separator
+        start
+        suffix
+        textColor
+        title
+        useEasing
+        useGrouping
+        wrapperAlign
+      }
+    }
+  }
+  ... on GetwidPriceBoxBlock {
+    attributes__typename_GetwidPriceBoxBlockAttributesUnion: attributes {
+      __typename
+      ... on GetwidPriceBoxBlockAttributes {
+        align
+        amount
+        backgroundColor
+        className
+        currency
+        customBackgroundColor
+        customTextColor
+        features
+        headerTag
+        period
+        textColor
+        title
+      }
+      ... on GetwidPriceBoxBlockDeprecatedV1Attributes {
+        align
+        amount
+        backgroundColor
+        className
+        currency
+        customBackgroundColor
+        customTextColor
+        features
+        headerTag
+        period
+        textColor
+        title
+      }
+    }
+  }
+  ... on GetwidContactFormBlock {
+    attributes__typename_GetwidContactFormBlockAttributes: attributes {
+      align
+      backgroundColor
+      className
+      customBackgroundColor
+      customTextColor
+      subject
+      text
+      textColor
+    }
+  }
+  ... on GetwidFieldNameBlock {
+    attributes__typename_GetwidFieldNameBlockAttributes: attributes {
+      className
+      id
+      label
+      placeholder
+      required
+    }
+  }
+  ... on GetwidFieldEmailBlock {
+    attributes__typename_GetwidFieldEmailBlockAttributes: attributes {
+      className
+      id
+      label
+      placeholder
+      required
+    }
+  }
+  ... on GetwidFieldTextareaBlock {
+    attributes__typename_GetwidFieldTextareaBlockAttributes: attributes {
+      className
+      id
+      label
+      placeholder
+      required
+    }
+  }
+  ... on GetwidCaptchaBlock {
+    attributes__typename_GetwidCaptchaBlockAttributes: attributes {
+      className
+      size
+      theme
+    }
+  }
+  ... on GetwidPostCarouselBlock {
+    attributes__typename_GetwidPostCarouselBlockAttributesUnion: attributes {
+      __typename
+      ... on GetwidPostCarouselBlockAttributes {
+        align
+        childPagesCurrentPage
+        className
+        excludeById
+        excludeCurrentPost
+        filterById
+        ignoreSticky
+        offset
+        order
+        orderBy
+        parentPageId
+        postTemplate
+        postType
+        postsToShow
+        relation
+        sliderAnimationSpeed
+        sliderArrows
+        sliderAutoplay
+        sliderAutoplaySpeed
+        sliderCenterMode
+        sliderDots
+        sliderInfinite
+        sliderSlidesToScroll
+        sliderSlidesToShowDesktop
+        sliderSlidesToShowLaptop
+        sliderSlidesToShowMobile
+        sliderSlidesToShowTablet
+        sliderSpacing
+        taxonomy
+        terms
+      }
+      ... on GetwidPostCarouselBlockDeprecatedV1Attributes {
+        align
+        childPagesCurrentPage
+        className
+        excludeById
+        excludeCurrentPost
+        filterById
+        ignoreSticky
+        offset
+        order
+        orderBy
+        parentPageId
+        postTemplate
+        postType
+        postsToShow
+        relation
+        sliderAnimationSpeed
+        sliderArrows
+        sliderAutoplay
+        sliderAutoplaySpeed
+        sliderCenterMode
+        sliderDots
+        sliderInfinite
+        sliderSlidesToScroll
+        sliderSlidesToShowDesktop
+        sliderSlidesToShowLaptop
+        sliderSlidesToShowMobile
+        sliderSlidesToShowTablet
+        sliderSpacing
+        taxonomy
+        terms
+      }
+    }
+  }
+  ... on GetwidPostSliderBlock {
+    attributes__typename_GetwidPostSliderBlockAttributesUnion: attributes {
+      __typename
+      ... on GetwidPostSliderBlockAttributes {
+        align
+        childPagesCurrentPage
+        className
+        excludeById
+        excludeCurrentPost
+        filterById
+        ignoreSticky
+        minHeight
+        offset
+        order
+        orderBy
+        parentPageId
+        postTemplate
+        postType
+        postsToShow
+        relation
+        sliderAnimationEffect
+        sliderAnimationSpeed
+        sliderArrows
+        sliderAutoplay
+        sliderAutoplaySpeed
+        sliderDots
+        sliderInfinite
+        taxonomy
+        terms
+        textAlignment
+      }
+      ... on GetwidPostSliderBlockDeprecatedV1Attributes {
+        align
+        childPagesCurrentPage
+        className
+        excludeById
+        excludeCurrentPost
+        filterById
+        ignoreSticky
+        minHeight
+        offset
+        order
+        orderBy
+        parentPageId
+        postTemplate
+        postType
+        postsToShow
+        relation
+        sliderAnimationEffect
+        sliderAnimationSpeed
+        sliderArrows
+        sliderAutoplay
+        sliderAutoplaySpeed
+        sliderDots
+        sliderInfinite
+        taxonomy
+        terms
+        textAlignment
+      }
+    }
+  }
+  ... on GetwidCustomPostTypeBlock {
+    attributes__typename_GetwidCustomPostTypeBlockAttributes: attributes {
+      align
+      childPagesCurrentPage
+      className
+      columns
+      excludeById
+      excludeCurrentPost
+      filterById
+      ignoreSticky
+      offset
+      order
+      orderBy
+      pagination
+      parentPageId
+      postLayout
+      postTemplate
+      postType
+      postsToShow
+      relation
+      spacing
+      taxonomy
+      terms
+    }
+  }
+  ... on GetwidPriceListBlock {
+    attributes__typename_GetwidPriceListBlockAttributesUnion: attributes {
+      __typename
+      ... on GetwidPriceListBlockAttributes {
+        align
+        amount
+        className
+        currency
+        currencyPosition
+        customTextColor
+        description
+        dotted
+        id
+        textColor
+        title
+        titleTag
+        url
+      }
+      ... on GetwidPriceListBlockDeprecatedV1Attributes {
+        align
+        amount
+        className
+        currency
+        currencyPosition
+        customTextColor
+        description
+        dotted
+        id
+        textColor
+        title
+        titleTag
+        url
+      }
+    }
+  }
+  ... on GetwidTemplatePostTitleBlock {
+    attributes__typename_GetwidTemplatePostTitleBlockAttributes: attributes {
+      bold
+      className
+      customFontSize
+      customTextColor
+      fontSize
+      headerTag
+      italic
+      linkTo
+      textAlignment
+      textColor
+    }
+  }
+  ... on GetwidTemplatePostFeaturedImageBlock {
+    attributes__typename_GetwidTemplatePostFeaturedImageBlockAttributes: attributes {
+      align
+      className
+      imageSize
+      linkTo
+    }
+  }
+  ... on GetwidTemplatePostContentBlock {
+    attributes__typename_GetwidTemplatePostContentBlockAttributes: attributes {
+      className
+      contentLength
+      customFontSize
+      customTextColor
+      fontSize
+      showContent
+      textAlignment
+      textColor
+    }
+  }
+  ... on GetwidTemplatePostLinkBlock {
+    attributes__typename_GetwidTemplatePostLinkBlockAttributes: attributes {
+      align
+      buttonText
+      className
+      customTextColor
+      textAlignment
+      textColor
+    }
+  }
+  ... on GetwidTemplatePostButtonBlock {
+    attributes__typename_GetwidTemplatePostButtonBlockAttributes: attributes {
+      align
+      backgroundColor
+      buttonText
+      className
+      customBackgroundColor
+      customTextColor
+      textAlignment
+      textColor
+    }
+  }
+  ... on GetwidTemplatePostAuthorBlock {
+    attributes__typename_GetwidTemplatePostAuthorBlockAttributes: attributes {
+      backgroundColor
+      blockDivider
+      className
+      customBackgroundColor
+      customFontSize
+      customIconColor
+      customTextColor
+      fontSize
+      icon
+      iconColor
+      textAlignment
+      textColor
+    }
+  }
+  ... on GetwidTemplatePostCategoriesBlock {
+    attributes__typename_GetwidTemplatePostCategoriesBlockAttributes: attributes {
+      backgroundColor
+      blockDivider
+      className
+      customBackgroundColor
+      customFontSize
+      customIconColor
+      customTextColor
+      divider
+      fontSize
+      icon
+      iconColor
+      textAlignment
+      textColor
+    }
+  }
+  ... on GetwidTemplatePostCommentsBlock {
+    attributes__typename_GetwidTemplatePostCommentsBlockAttributes: attributes {
+      backgroundColor
+      blockDivider
+      className
+      customBackgroundColor
+      customFontSize
+      customIconColor
+      customTextColor
+      fontSize
+      icon
+      iconColor
+      textAlignment
+      textColor
+    }
+  }
+  ... on GetwidTemplatePostTagsBlock {
+    attributes__typename_GetwidTemplatePostTagsBlockAttributes: attributes {
+      backgroundColor
+      blockDivider
+      className
+      customBackgroundColor
+      customFontSize
+      customIconColor
+      customTextColor
+      divider
+      fontSize
+      icon
+      iconColor
+      textAlignment
+      textColor
+    }
+  }
+  ... on GetwidTemplatePostDateBlock {
+    attributes__typename_GetwidTemplatePostDateBlockAttributes: attributes {
+      backgroundColor
+      blockDivider
+      bold
+      className
+      customBackgroundColor
+      customFontSize
+      customIconColor
+      customTextColor
+      fontSize
+      icon
+      iconColor
+      italic
+      textAlignment
+      textColor
+    }
+  }
+  ... on GetwidTemplatePostFeaturedBackgroundImageBlock {
+    attributes__typename_GetwidTemplatePostFeaturedBackgroundImageBlockAttributes: attributes {
+      className
+      contentMaxWidth
+      foregroundColor
+      foregroundFilter
+      foregroundGradientAngle
+      foregroundGradientFirstColor
+      foregroundGradientFirstColorLocation
+      foregroundGradientSecondColor
+      foregroundGradientSecondColorLocation
+      foregroundGradientType
+      foregroundOpacity
+      horizontalAlign
+      horizontalAlignMobile
+      horizontalAlignTablet
+      imageSize
+      minHeight
+      paddingBottom
+      paddingBottomMobile
+      paddingBottomTablet
+      paddingBottomValue
+      paddingLeft
+      paddingLeftMobile
+      paddingLeftTablet
+      paddingLeftValue
+      paddingRight
+      paddingRightMobile
+      paddingRightTablet
+      paddingRightValue
+      paddingTop
+      paddingTopMobile
+      paddingTopTablet
+      paddingTopValue
+      verticalAlign
+      verticalAlignMobile
+      verticalAlignTablet
+    }
+  }
+  ... on GetwidTemplatePostMetaBlock {
+    attributes__typename_GetwidTemplatePostMetaBlockAttributes: attributes {
+      blockDivider
+      className
+      customTextColor
+      direction
+      textAlignment
+      textColor
+    }
+  }
+  ... on GetwidTemplatePostCustomFieldBlock {
+    attributes__typename_GetwidTemplatePostCustomFieldBlockAttributes: attributes {
+      bold
+      className
+      customField
+      customFontSize
+      customTextColor
+      fontSize
+      italic
+      textAlignment
+      textColor
+    }
+  }
+  ... on GetwidTemplatePostLayoutHelperBlock {
+    attributes__typename_GetwidTemplatePostLayoutHelperBlockAttributes: attributes {
+      align
+    }
+  }
+  ... on GetwidMailchimpBlock {
+    attributes__typename_GetwidMailchimpBlockAttributes: attributes {
+      align
+      backgroundColor
+      className
+      customBackgroundColor
+      customTextColor
+      ids
+      text
+      textColor
+    }
+  }
+  ... on GetwidMailchimpFieldEmailBlock {
+    attributes__typename_GetwidMailchimpFieldEmailBlockAttributes: attributes {
+      className
+      id
+      label
+      name
+      placeholder
+      required
+    }
+  }
+  ... on GetwidMailchimpFieldFirstNameBlock {
+    attributes__typename_GetwidMailchimpFieldFirstNameBlockAttributes: attributes {
+      className
+      id
+      label
+      name
+      placeholder
+      required
+    }
+  }
+  ... on GetwidMailchimpFieldLastNameBlock {
+    attributes__typename_GetwidMailchimpFieldLastNameBlockAttributes: attributes {
+      className
+      id
+      label
+      name
+      placeholder
+      required
+    }
+  }
+  ... on GetwidVideoPopupBlock {
+    attributes__typename_GetwidVideoPopupBlockAttributesUnion: attributes {
+      __typename
+      ... on GetwidVideoPopupBlockAttributes {
+        align
+        buttonAnimation
+        buttonColor
+        buttonColorHEX
+        buttonMaxWidth
+        buttonSize
+        buttonStyle
+        className
+        customButtonColor
+        customIconColor
+        customOverlayColor
+        customTitleColor
+        iconColor
+        id
+        imageAnimation
+        imageSize
+        link
+        minHeight
+        overlayColor
+        overlayOpacity
+        title
+        titleColor
+        url
+      }
+      ... on GetwidVideoPopupBlockDeprecatedV1Attributes {
+        align
+        buttonAnimation
+        buttonColor
+        buttonColorHEX
+        buttonMaxWidth
+        buttonSize
+        buttonStyle
+        className
+        customButtonColor
+        customIconColor
+        customOverlayColor
+        customTitleColor
+        iconColor
+        id
+        imageAnimation
+        imageSize
+        link
+        minHeight
+        overlayColor
+        overlayOpacity
+        title
+        titleColor
+        url
+      }
+    }
+  }
+  ... on GetwidImageHotspotBlock {
+    attributes__typename_GetwidImageHotspotBlockAttributesUnion: attributes {
+      __typename
+      ... on GetwidImageHotspotBlockAttributes {
+        align
+        alt
+        className
+        dotAppearanceAnimation
+        dotBackground
+        dotColor
+        dotIcon
+        dotOpacity
+        dotPaddings
+        dotPulse
+        dotSize
+        hoverAnimation
+        id
+        imagePoints
+        imageSize
+        tooltipAnimation
+        tooltipArrow
+        tooltipTheme
+        tooltipTrigger
+        url
+      }
+      ... on GetwidImageHotspotBlockDeprecatedV1Attributes {
+        align
+        alt
+        className
+        dotAppearanceAnimation
+        dotBackground
+        dotColor
+        dotIcon
+        dotOpacity
+        dotPaddings
+        dotPulse
+        dotSize
+        hoverAnimation
+        id
+        imagePoints
+        imageSize
+        tooltipAnimation
+        tooltipArrow
+        tooltipTheme
+        tooltipTrigger
+        url
+      }
+    }
+  }
+  ... on GetwidCountdownBlock {
+    attributes__typename_GetwidCountdownBlockAttributes: attributes {
+      align
+      backgroundColor
+      className
+      customTextColor
+      dateTime
+      days
+      fontFamily
+      fontGroupID
+      fontSize
+      fontSizeMobile
+      fontSizeTablet
+      fontStyle
+      fontWeight
+      hours
+      innerPadding
+      innerSpacings
+      letterSpacing
+      lineHeight
+      minutes
+      months
+      seconds
+      textAlignment
+      textColor
+      textTransform
+      weeks
+      years
+    }
+  }
+  ... on GetwidContentTimelineBlock {
+    attributes__typename_GetwidContentTimelineBlockAttributes: attributes {
+      align
+      animation
+      backgroundColor
+      className
+      customBackgroundColor
+      customFillColor
+      fillColor
+      filling
+      horizontalSpace
+      marginBottom
+      paddingBottom
+      paddingLeft
+      paddingRight
+      paddingTop
+      wrapperAlign
+    }
+  }
+  ... on GetwidContentTimelineItemBlock {
+    attributes__typename_GetwidContentTimelineItemBlockAttributesUnion: attributes {
+      __typename
+      ... on GetwidContentTimelineItemBlockAttributes {
+        alt
+        cardPosition
+        className
+        id
+        imageSize
+        meta
+        url
+      }
+      ... on GetwidContentTimelineItemBlockDeprecatedV1Attributes {
+        alt
+        cardPosition
+        className
+        id
+        imageSize
+        meta
+        url
+      }
+    }
+  }
+  ... on GetwidTableBlock {
+    attributes__typename_GetwidTableBlockAttributes: attributes {
+      align
+      backgroundColor
+      body {
+        cells {
+          colSpan
+          content
+          rowSpan
+          styles
+        }
+      }
+      borderCollapse
+      caption
+      className
+      customBackgroundColor
+      customTextColor
+      foot {
+        cells {
+          colSpan
+          content
+          rowSpan
+          styles
+        }
+      }
+      head {
+        cells {
+          colSpan
+          content
+          rowSpan
+          styles
+        }
+      }
+      horizontalAlign
+      tableLayout
+      textColor
+      verticalAlign
+    }
+  }
+  ... on GetwidAnchorBlock {
+    attributes__typename_GetwidAnchorBlockAttributes: attributes {
+      anchor
+      className
+    }
+  }
+  ... on GetwidTableOfContentsBlock {
+    attributes__typename_GetwidTableOfContentsBlockAttributes: attributes {
+      align
+      allowedTags
+      className
+      headings
+      listStyle
     }
   }
   ... on YoastHowToBlock {
@@ -1466,13 +3471,19 @@ fragment BlockFragment on Block {
       ... on Tag {
         id
       }
-      ... on Vehicles {
-        id
-      }
       ... on PostFormat {
         id
       }
       ... on ReusableBlock {
+        id
+      }
+      ... on Vehicles {
+        id
+      }
+      ... on Brands {
+        id
+      }
+      ... on Types {
         id
       }
       ... on UserRole {

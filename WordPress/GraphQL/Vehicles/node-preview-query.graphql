@@ -1,6 +1,11 @@
 query PREVIEW_QUERY($id: ID!) {
   vehicles(id: $id, idType: ID, asPreview: true) {
-    categories(first: 100) {
+    brand(first: 100) {
+      nodes {
+        id
+      }
+    }
+    type(first: 100) {
       nodes {
         id
       }
@@ -33,6 +38,18 @@ query PREVIEW_QUERY($id: ID!) {
     link
     modified
     modifiedGmt
+    ourFleet {
+      carType
+      fieldGroupName
+      vehicleSpecifications {
+        doors
+        emissionLevel
+        fieldGroupName
+        luggage
+        people
+        transmission
+      }
+    }
     seo {
       breadcrumbs {
         text
@@ -76,11 +93,6 @@ query PREVIEW_QUERY($id: ID!) {
     }
     slug
     status
-    tags(first: 100) {
-      nodes {
-        id
-      }
-    }
     template {
       templateName
       __typename
@@ -93,9 +105,6 @@ query PREVIEW_QUERY($id: ID!) {
     }
     title
     uri
-    vehicleSpecifications {
-      fieldGroupName
-    }
     __typename
   }
 }

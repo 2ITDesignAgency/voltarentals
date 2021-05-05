@@ -1,7 +1,12 @@
 query NODE_LIST_QUERY($first: Int!, $after: String) {
   vehicle(first: $first, after: $after) {
     nodes {
-      categories(first: 100) {
+      brand(first: 100) {
+        nodes {
+          id
+        }
+      }
+      type(first: 100) {
         nodes {
           id
         }
@@ -34,6 +39,18 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
       link
       modified
       modifiedGmt
+      ourFleet {
+        carType
+        fieldGroupName
+        vehicleSpecifications {
+          doors
+          emissionLevel
+          fieldGroupName
+          luggage
+          people
+          transmission
+        }
+      }
       seo {
         breadcrumbs {
           text
@@ -77,11 +94,6 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
       }
       slug
       status
-      tags(first: 100) {
-        nodes {
-          id
-        }
-      }
       template {
         templateName
         __typename
@@ -94,9 +106,6 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
       }
       title
       uri
-      vehicleSpecifications {
-        fieldGroupName
-      }
       __typename
     }
     pageInfo {

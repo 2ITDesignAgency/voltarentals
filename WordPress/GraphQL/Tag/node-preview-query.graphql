@@ -68,11 +68,6 @@ query PREVIEW_QUERY($id: ID!) {
     termGroupId
     termTaxonomyId
     uri
-    vehicle(first: 100) {
-      nodes {
-        id
-      }
-    }
     __typename
   }
 }
