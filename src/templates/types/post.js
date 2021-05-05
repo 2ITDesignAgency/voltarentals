@@ -8,7 +8,7 @@ import AuthorBio from "../../components/AuthorBio"
 import PostMeta from "../../components/PostMeta"
 import PostCategories from "../../components/PostCategories"
 import FeaturedMedia from "../../components/FeaturedMedia"
-import { Helmet } from 'react-helmet'
+import { Helmet } from "react-helmet"
 
 const post = ({ data }) => {
   const { nextPage, previousPage, page } = data
@@ -32,6 +32,12 @@ const post = ({ data }) => {
         className={`post-${databaseId} post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized`}
         id={`post-${databaseId}`}
       >
+        <Helmet>
+          <script
+            type="text/javascript"
+            src="https://ecigr.wheelsys.ms/jsHandler.ashx?elementId=wheelsbook&language=en"
+          />
+        </Helmet>
         <header
           className="entry-header has-text-align-center header-footer-group"
           style={{ backgroundImage: `url(${featuredImage})` }}
@@ -52,9 +58,7 @@ const post = ({ data }) => {
             <PostMeta title={title} author={author} date={date} />
           </div>
         </header>
-
         <FeaturedMedia image={featuredImage} />
-
         <div className="post-inner thin">
           <div className="cta-booking-post">
             <div id="wheelsbook" style={{ maxWidth: `900px` }}></div>
@@ -65,7 +69,6 @@ const post = ({ data }) => {
             dangerouslySetInnerHTML={{ __html: content }}
           />
         </div>
-
         <div className="section-inner">
           <AuthorBio author={author} />
           <ContentTypePagination

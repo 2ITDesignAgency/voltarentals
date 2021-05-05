@@ -6,11 +6,6 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
           id
         }
       }
-      type(first: 100) {
-        nodes {
-          id
-        }
-      }
       contentType {
         node {
           id
@@ -105,6 +100,11 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
         }
       }
       title
+      type(first: 100) {
+        nodes {
+          id
+        }
+      }
       uri
       __typename
     }
