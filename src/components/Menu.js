@@ -74,7 +74,7 @@ const Menu = () => {
         </a>
         <ul className="secondary-menu fleet-menu reset-list-style">
           <li>
-            <a href="/our-fleet/city-car/"><img
+            <a href="/our-fleet/city-cars/"><img
                   src={CityCar}
                   className="fleet-menu-img"
                 /> CITY CAR</a>
