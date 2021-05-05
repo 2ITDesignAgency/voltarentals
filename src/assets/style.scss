@@ -52,15 +52,14 @@ with others.
 /*	0. CSS Reset
 /* -------------------------------------------------------------------------- */
 
-
-@import 'node_modules/@wordpress/base-styles/_colors';
-@import 'node_modules/@wordpress/base-styles/_variables';
-@import 'node_modules/@wordpress/base-styles/_mixins';
-@import 'node_modules/@wordpress/base-styles/_breakpoints';
-@import 'node_modules/@wordpress/base-styles/_animations';
-@import 'node_modules/@wordpress/base-styles/_z-index';
-@import 'node_modules/@wordpress/base-styles/_default-custom-properties';
-@import 'node_modules/@wordpress/block-library/src/style.scss';
+@import "node_modules/@wordpress/base-styles/_colors";
+@import "node_modules/@wordpress/base-styles/_variables";
+@import "node_modules/@wordpress/base-styles/_mixins";
+@import "node_modules/@wordpress/base-styles/_breakpoints";
+@import "node_modules/@wordpress/base-styles/_animations";
+@import "node_modules/@wordpress/base-styles/_z-index";
+@import "node_modules/@wordpress/base-styles/_default-custom-properties";
+@import "node_modules/@wordpress/block-library/src/style.scss";
 
 html,
 body {
@@ -199,7 +198,6 @@ path {
   font-style: normal;
   line-height: 1.28;
   letter-spacing: normal;
-
 }
 .car-rental-title {
   padding-top: 1rem !important;
@@ -368,7 +366,7 @@ span.screen-reader-text {
   padding-bottom: 2rem;
 }
 
-.cta-col{
+.cta-col {
   display: flex !important;
   flex-direction: column;
   margin-top: 2rem;
@@ -727,7 +725,6 @@ a:hover,
 a:focus {
   text-decoration: none;
 }
-
 
 /* Lists ------------------------------------- */
 
@@ -1619,14 +1616,14 @@ ul.social-icons li {
 .searchClick {
   background-color: #2ca83d !important;
 }
-.WheelsContainer .wbeInputElement{
+.WheelsContainer .wbeInputElement {
   color: #212121 !important;
   font-weight: 300;
 }
-.fa-search{
+.fa-search {
   display: none;
 }
-.wbeInputElementCheck{
+.wbeInputElementCheck {
   background-color: white;
 }
 #WheelsBookingEngineWrapper,
@@ -1641,7 +1638,7 @@ ul.social-icons li {
   height: 20px;
   width: 20px;
   position: absolute;
-  content: '✔';
+  content: "✔";
   display: inline-block;
   font-size: 20px;
   text-align: center;
@@ -1874,7 +1871,7 @@ ul.social-icons li {
   width: 2.6rem;
   color: white;
 }
-.bootstrap-toggle{
+.bootstrap-toggle {
   height: 2.6rem;
   width: 2.6rem;
   color: white;
@@ -1979,7 +1976,7 @@ ul.primary-menu {
 /* SUB MENU */
 
 .primary-menu ul {
-  background: #FFF;
+  background: #fff;
   border-radius: 0.4rem;
   color: #000;
   font-size: 1.7rem;
@@ -1993,7 +1990,7 @@ ul.primary-menu {
   width: 20rem;
   z-index: 1;
 }
-.secondary-menu li a{
+.secondary-menu li a {
   color: #000 !important;
 }
 
@@ -2022,7 +2019,7 @@ ul.primary-menu {
 
 .primary-menu ul::after {
   border: 0.8rem solid transparent;
-  border-bottom-color: #FFF;
+  border-bottom-color: #fff;
   right: 1.8rem;
 }
 
@@ -4972,7 +4969,7 @@ a.to-the-top > * {
   .column-blog {
     flex-wrap: wrap;
   }
-  
+
   /* SECTION DIVIDER -------------------------------- */
 
   li.footerWidgetName {
@@ -5046,27 +5043,28 @@ a.to-the-top > * {
   }
   .col-4 {
     width: 100% !important;
-}
-.cta-col {
-  width: 100%;
-}
-.section_3_col {
-  width: 48%;
-  flex-wrap: wrap;
-}
-.md-2{
-  max-width:100%;
-  padding-bottom: 2rem;
-}
-.offer-post{
-  width: 100%;
-}
-#WheelsBookingEngineWrapper, .WheelsContainer {
-  margin-top: 5rem;
-}
-.header-inner {
-  max-width: 35rem;
-}
+  }
+  .cta-col {
+    width: 100%;
+  }
+  .section_3_col {
+    width: 48%;
+    flex-wrap: wrap;
+  }
+  .md-2 {
+    max-width: 100%;
+    padding-bottom: 2rem;
+  }
+  .offer-post {
+    width: 100%;
+  }
+  #WheelsBookingEngineWrapper,
+  .WheelsContainer {
+    margin-top: 5rem;
+  }
+  .header-inner {
+    max-width: 35rem;
+  }
   .section-divider {
     background-color: #001a24;
     padding: 40px;
@@ -7009,7 +7007,7 @@ a.to-the-top > * {
     margin-left: auto;
     margin-right: auto;
     max-width: 66.25rem;
-}
+  }
   #GatsbyBody.template-full-width .entry-content > .alignleft {
     /*rtl:ignore*/
     margin-left: calc((100vw - 120rem) / 2);
@@ -7038,29 +7036,28 @@ a.to-the-top > * {
 }
 
 @media (min-width: 1280px) {
- 
   .entry-content
     > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
     max-width: 90rem;
     width: calc(100% - 4rem);
   }
-  
+
   #site-footer .section-inner {
     align-items: center;
     display: flex;
     justify-content: space-between;
     max-width: 90rem;
   }
-  
+
   /* content for laptops */
   .section-inner {
     max-width: 66.25rem;
   }
-  
+
   .section-inner.medium {
     max-width: 66.25rem;
   }
-  
+
   .header-inner {
     max-width: 66.25rem;
   }
@@ -7069,10 +7066,10 @@ a.to-the-top > * {
     max-width: 66.25rem;
     width: calc(100% - 4rem);
   }
- .column-blog{
-  max-width: 66.25rem;
- }
- 
+  .column-blog {
+    max-width: 66.25rem;
+  }
+
   /* SECTION DIVIDER -------------------------------- */
   .section-divider {
     background-color: #001a24;
@@ -7222,11 +7219,11 @@ a.to-the-top > * {
   .section-inner {
     max-width: 90rem;
   }
-  
+
   .section-inner.medium {
     max-width: 90rem;
   }
-  
+
   .header-inner {
     max-width: 90rem;
   }
@@ -7235,9 +7232,9 @@ a.to-the-top > * {
     max-width: 90rem;
     width: calc(100% - 4rem);
   }
-  .column-blog{
+  .column-blog {
     max-width: 90rem;
-   }
+  }
   /* ALIGNMENT CLASSES */
 
   .alignleft,
@@ -7294,38 +7291,39 @@ a.to-the-top > * {
     top: 0;
   }
 }
-#WheelsBookingEngineWrapper .calendarContainerFocus input.calendar, #WheelsBookingEngineWrapper .calendarContainerFocusRight input.calendar {
+#WheelsBookingEngineWrapper .calendarContainerFocus input.calendar,
+#WheelsBookingEngineWrapper .calendarContainerFocusRight input.calendar {
   background-color: #fff !important;
 }
 
-#WheelsBookingEngineWrapper .calendarContainerFocus>*, #WheelsBookingEngineWrapper .calendarContainerFocusRight>* {
+#WheelsBookingEngineWrapper .calendarContainerFocus > *,
+#WheelsBookingEngineWrapper .calendarContainerFocusRight > * {
   background-color: #012a37;
 }
 .WheelsContainer p {
   color: #fff !important;
 }
-#WheelsBookingEngineWrapper .calendarContainerFocus input.calendar{
+#WheelsBookingEngineWrapper .calendarContainerFocus input.calendar {
   color: white !important;
 }
 
-#WheelsBookingEngineWrapper .calendarContainerFocus>* {
+#WheelsBookingEngineWrapper .calendarContainerFocus > * {
   background: #012a37 !important;
 }
-#WheelsBookingEngineWrapper .calendarContainerFocusRight>* {
+#WheelsBookingEngineWrapper .calendarContainerFocusRight > * {
   background: #012a37 !important;
-
 }
 #WheelsBookingEngineWrapper .calendarContainerFocusRight input.calendar {
   color: white !important;
 }
 
 /* navigation drop down */
-@media (min-width: 992px){
+@media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav .dropdown-menu {
     position: absolute;
     display: flex;
     flex-direction: row;
-}
+  }
 }
 .navbar-dark .navbar-nav .nav-link {
   color: #fff !important;
@@ -7334,7 +7332,7 @@ a.to-the-top > * {
 }
 
 /* submenu */
-.fleet-menu{
+.fleet-menu {
   display: flex;
   flex-wrap: wrap;
   width: 44rem !important;
@@ -7342,14 +7340,14 @@ a.to-the-top > * {
   padding: 1rem 0 !important;
   // right: -18rem !important;
 }
-.fleet-menu::after{
+.fleet-menu::after {
   border: 0.8rem solid transparent;
   border-bottom-color: #fff;
   // right: 20rem !important;
   right: auto !important;
   left: 90% !important;
 }
-.fleet-menu a{
+.fleet-menu a {
   text-align: center;
   text-decoration: none;
   font-weight: 700;
@@ -7357,13 +7355,13 @@ a.to-the-top > * {
 .menu-item .fa {
   padding-left: 0.5em;
 }
-.fleet-menu-img{
-width: 6.5rem;
+.fleet-menu-img {
+  width: 6.5rem;
 }
-.fleet-menu a:hover{
+.fleet-menu a:hover {
   text-decoration: none;
 }
-.service-menu{
+.service-menu {
   display: flex;
   flex-wrap: wrap;
   width: 44rem !important;
@@ -7371,29 +7369,77 @@ width: 6.5rem;
   padding: 1rem 0 !important;
   // left: -29rem !important;
 }
-.service-menu::after{
+.service-menu::after {
   border: 0.8rem solid transparent;
   border-bottom-color: #fff;
-  
+
   // right: 12rem !important;
   right: auto !important;
   left: 90% !important;
-
 }
-.service-menu a{
+.service-menu a {
   text-align: center;
   text-decoration: none;
   font-weight: 700;
 }
-.service-menu a:hover{
+.service-menu a:hover {
   text-decoration: none;
 }
 .service-item .fa {
   padding-left: 0.5em;
 }
-.service-menu-img{
-width: 10.6rem;
-margin-bottom: 1rem;
-border-radius: 5px;
-box-shadow: 0 0 3px 0 rgb(0 0 0 / 15%);
+.service-menu-img {
+  width: 10.6rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 3px 0 rgb(0 0 0 / 15%);
+}
+
+// fleet css start
+.wp-block-getwid-custom-post-type__post {
+  width: 48%;
+  margin: 1%;
+  justify-content: center;
+  align-items: center;
+}
+.wp-block-getwid-custom-post-type__wrapper.getwid-columns.getwid-columns-3 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.wp-block-getwid-custom-post-type__post-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  box-shadow: 0 0 3px 0 rgb(0 0 0 / 15%);
+  align-items: center;
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+.wp-block-getwid-custom-post-type__content-wrapper {
+  margin-bottom: 2rem;
+  margin-top: -2rem;
+}
+
+.wp-block-getwid-custom-post-type__post-header {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 782px) {
+  .wp-block-getwid-custom-post-type__post {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .wp-block-getwid-custom-post-type__post-wrapper {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 3px 0 rgb(0 0 0 / 15%);
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    border-radius: 15px;
+    padding: 1rem;
+  }
 }
