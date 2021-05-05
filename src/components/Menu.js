@@ -74,25 +74,25 @@ const Menu = () => {
         </a>
         <ul className="secondary-menu fleet-menu reset-list-style">
           <li>
-            <a href="/services/rent-a-car/"><img
+            <a href="/our-fleet/city-car/"><img
                   src={CityCar}
                   className="fleet-menu-img"
                 /> CITY CAR</a>
           </li>
           <li>
-            <a href="/services/chauffeur-services/">               <img
+            <a href="/our-fleet/electric/">               <img
                   src={Electric}
                   className="fleet-menu-img"
                 /> ELECTRIC</a>
           </li>
           <li>
-            <a href="/services/parking-services/"><img
+            <a href="/our-fleet/prestige/"><img
                   src={Prestige}
                   className="fleet-menu-img"
                 /> PRESTIGE</a>
           </li>
           <li>
-            <a href="/services/parking-services/"><img
+            <a href="/our-fleet/van-track/"><img
                   src={Van}
                   className="fleet-menu-img"
                 /> VAN & TRUCK</a>
