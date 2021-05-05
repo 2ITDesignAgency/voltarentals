@@ -167,6 +167,7 @@ query PREVIEW_QUERY($id: ID!) {
   }
 }
 fragment BlockFragment on Block {
+  attributesJSON
   dynamicContent
   isDynamic
   name
@@ -254,7 +255,6 @@ fragment BlockFragment on Block {
         align
         anchor
         backgroundColor
-        backgroundCustomImagePosition
         backgroundGradient
         backgroundGradientAngle
         backgroundGradientFirstColor
@@ -262,7 +262,6 @@ fragment BlockFragment on Block {
         backgroundGradientSecondColor
         backgroundGradientSecondColorLocation
         backgroundGradientType
-        backgroundImage
         backgroundImageAttachment
         backgroundImagePosition
         backgroundImageRepeat
@@ -273,7 +272,6 @@ fragment BlockFragment on Block {
         backgroundVideoMute
         backgroundVideoPoster
         backgroundVideoType
-        backgroundVideoUrl
         className
         contentMaxWidth
         contentMaxWidthPreset
@@ -289,7 +287,6 @@ fragment BlockFragment on Block {
         entranceAnimationDelay
         entranceAnimationDuration
         foregroundColor
-        foregroundCustomImagePosition
         foregroundFilter
         foregroundGradient
         foregroundGradientAngle
@@ -298,7 +295,6 @@ fragment BlockFragment on Block {
         foregroundGradientSecondColor
         foregroundGradientSecondColorLocation
         foregroundGradientType
-        foregroundImage
         foregroundImageAttachment
         foregroundImagePosition
         foregroundImageRepeat
@@ -365,7 +361,6 @@ fragment BlockFragment on Block {
         align
         anchor
         backgroundColor
-        backgroundCustomImagePosition
         backgroundGradient
         backgroundGradientAngle
         backgroundGradientFirstColor
@@ -373,7 +368,6 @@ fragment BlockFragment on Block {
         backgroundGradientSecondColor
         backgroundGradientSecondColorLocation
         backgroundGradientType
-        backgroundImage
         backgroundImageAttachment
         backgroundImagePosition
         backgroundImageRepeat
@@ -384,7 +378,6 @@ fragment BlockFragment on Block {
         backgroundVideoMute
         backgroundVideoPoster
         backgroundVideoType
-        backgroundVideoUrl
         className
         contentMaxWidth
         contentMaxWidthPreset
@@ -400,7 +393,6 @@ fragment BlockFragment on Block {
         entranceAnimationDelay
         entranceAnimationDuration
         foregroundColor
-        foregroundCustomImagePosition
         foregroundFilter
         foregroundGradient
         foregroundGradientAngle
@@ -409,7 +401,6 @@ fragment BlockFragment on Block {
         foregroundGradientSecondColor
         foregroundGradientSecondColorLocation
         foregroundGradientType
-        foregroundImage
         foregroundImageAttachment
         foregroundImagePosition
         foregroundImageRepeat
@@ -476,7 +467,6 @@ fragment BlockFragment on Block {
         align
         anchor
         backgroundColor
-        backgroundCustomImagePosition
         backgroundGradient
         backgroundGradientAngle
         backgroundGradientFirstColor
@@ -484,7 +474,6 @@ fragment BlockFragment on Block {
         backgroundGradientSecondColor
         backgroundGradientSecondColorLocation
         backgroundGradientType
-        backgroundImage
         backgroundImageAttachment
         backgroundImagePosition
         backgroundImageRepeat
@@ -495,7 +484,6 @@ fragment BlockFragment on Block {
         backgroundVideoMute
         backgroundVideoPoster
         backgroundVideoType
-        backgroundVideoUrl
         className
         contentMaxWidth
         contentMaxWidthPreset
@@ -511,7 +499,6 @@ fragment BlockFragment on Block {
         entranceAnimationDelay
         entranceAnimationDuration
         foregroundColor
-        foregroundCustomImagePosition
         foregroundFilter
         foregroundGradient
         foregroundGradientAngle
@@ -520,7 +507,6 @@ fragment BlockFragment on Block {
         foregroundGradientSecondColor
         foregroundGradientSecondColorLocation
         foregroundGradientType
-        foregroundImage
         foregroundImageAttachment
         foregroundImagePosition
         foregroundImageRepeat
@@ -587,7 +573,6 @@ fragment BlockFragment on Block {
         align
         anchor
         backgroundColor
-        backgroundCustomImagePosition
         backgroundGradient
         backgroundGradientAngle
         backgroundGradientFirstColor
@@ -595,7 +580,6 @@ fragment BlockFragment on Block {
         backgroundGradientSecondColor
         backgroundGradientSecondColorLocation
         backgroundGradientType
-        backgroundImage
         backgroundImageAttachment
         backgroundImagePosition
         backgroundImageRepeat
@@ -606,7 +590,6 @@ fragment BlockFragment on Block {
         backgroundVideoMute
         backgroundVideoPoster
         backgroundVideoType
-        backgroundVideoUrl
         className
         contentMaxWidth
         contentMaxWidthPreset
@@ -622,7 +605,6 @@ fragment BlockFragment on Block {
         entranceAnimationDelay
         entranceAnimationDuration
         foregroundColor
-        foregroundCustomImagePosition
         foregroundFilter
         foregroundGradient
         foregroundGradientAngle
@@ -631,7 +613,6 @@ fragment BlockFragment on Block {
         foregroundGradientSecondColor
         foregroundGradientSecondColorLocation
         foregroundGradientType
-        foregroundImage
         foregroundImageAttachment
         foregroundImagePosition
         foregroundImageRepeat
@@ -781,7 +762,6 @@ fragment BlockFragment on Block {
       __typename
       ... on GetwidMediaTextSliderSlideContentBlockAttributes {
         className
-        innerParent
         mediaAlt
         mediaId
         mediaType
@@ -789,7 +769,6 @@ fragment BlockFragment on Block {
       }
       ... on GetwidMediaTextSliderSlideContentBlockDeprecatedV1Attributes {
         className
-        innerParent
         mediaAlt
         mediaId
         mediaType
@@ -1089,12 +1068,10 @@ fragment BlockFragment on Block {
       __typename
       ... on GetwidTabsItemBlockAttributes {
         className
-        outerParent
         title
       }
       ... on GetwidTabsItemBlockDeprecatedV1Attributes {
         className
-        outerParent
         title
       }
     }
@@ -1125,7 +1102,6 @@ fragment BlockFragment on Block {
   ... on GetwidAccordionItemBlock {
     attributes__typename_GetwidAccordionItemBlockAttributes: attributes {
       className
-      outerParent
       title
     }
   }
@@ -1154,7 +1130,6 @@ fragment BlockFragment on Block {
     attributes__typename_GetwidToggleItemBlockAttributes: attributes {
       active
       className
-      outerParent
       title
     }
   }
@@ -2205,7 +2180,6 @@ fragment BlockFragment on Block {
         id
         imageSize
         meta
-        outerParent
         url
       }
       ... on GetwidContentTimelineItemBlockDeprecatedV1Attributes {
@@ -2215,7 +2189,6 @@ fragment BlockFragment on Block {
         id
         imageSize
         meta
-        outerParent
         url
       }
     }
@@ -2282,13 +2255,11 @@ fragment BlockFragment on Block {
         className
         days
         defaultDurationText
-        description
         durationText
         hasDuration
         hours
         jsonDescription
         minutes
-        steps
         unorderedList
       }
       ... on YoastHowToBlockDeprecatedV1Attributes {
@@ -2296,13 +2267,11 @@ fragment BlockFragment on Block {
         className
         days
         defaultDurationText
-        description
         durationText
         hasDuration
         hours
         jsonDescription
         minutes
-        steps
         unorderedList
       }
       ... on YoastHowToBlockDeprecatedV2Attributes {
@@ -2310,13 +2279,11 @@ fragment BlockFragment on Block {
         className
         days
         defaultDurationText
-        description
         durationText
         hasDuration
         hours
         jsonDescription
         minutes
-        steps
         unorderedList
       }
     }
@@ -2327,12 +2294,10 @@ fragment BlockFragment on Block {
       ... on YoastFaqBlockAttributes {
         additionalListCssClasses
         className
-        questions
       }
       ... on YoastFaqBlockDeprecatedV1Attributes {
         additionalListCssClasses
         className
-        questions
       }
     }
   }
@@ -2349,7 +2314,6 @@ fragment BlockFragment on Block {
         dropCap
         fontSize
         placeholder
-        style
         textColor
       }
       ... on CoreParagraphBlockDeprecatedV1Attributes {
@@ -2362,7 +2326,6 @@ fragment BlockFragment on Block {
         dropCap
         fontSize
         placeholder
-        style
         textColor
       }
       ... on CoreParagraphBlockDeprecatedV2Attributes {
@@ -2375,7 +2338,6 @@ fragment BlockFragment on Block {
         dropCap
         fontSize
         placeholder
-        style
         textColor
       }
       ... on CoreParagraphBlockDeprecatedV3Attributes {
@@ -2388,7 +2350,6 @@ fragment BlockFragment on Block {
         dropCap
         fontSize
         placeholder
-        style
         textColor
       }
       ... on CoreParagraphBlockDeprecatedV4Attributes {
@@ -2401,7 +2362,6 @@ fragment BlockFragment on Block {
         dropCap
         fontSize
         placeholder
-        style
         textColor
       }
       ... on CoreParagraphBlockDeprecatedV5Attributes {
@@ -2414,7 +2374,6 @@ fragment BlockFragment on Block {
         dropCap
         fontSize
         placeholder
-        style
         textColor
       }
     }
@@ -2436,7 +2395,6 @@ fragment BlockFragment on Block {
         linkTarget
         rel
         sizeSlug
-        style
         title
         url
         width
@@ -2455,7 +2413,6 @@ fragment BlockFragment on Block {
         linkTarget
         rel
         sizeSlug
-        style
         title
         url
         width
@@ -2474,7 +2431,6 @@ fragment BlockFragment on Block {
         linkTarget
         rel
         sizeSlug
-        style
         title
         url
         width
@@ -2493,7 +2449,6 @@ fragment BlockFragment on Block {
         linkTarget
         rel
         sizeSlug
-        style
         title
         url
         width
@@ -2512,7 +2467,6 @@ fragment BlockFragment on Block {
         fontSize
         level
         placeholder
-        style
         textAlign
         textColor
       }
@@ -2525,7 +2479,6 @@ fragment BlockFragment on Block {
         fontSize
         level
         placeholder
-        style
         textAlign
         textColor
       }
@@ -2538,7 +2491,6 @@ fragment BlockFragment on Block {
         fontSize
         level
         placeholder
-        style
         textAlign
         textColor
       }
@@ -2551,7 +2503,6 @@ fragment BlockFragment on Block {
         fontSize
         level
         placeholder
-        style
         textAlign
         textColor
       }
@@ -2564,7 +2515,6 @@ fragment BlockFragment on Block {
         fontSize
         level
         placeholder
-        style
         textAlign
         textColor
       }
@@ -2699,7 +2649,6 @@ fragment BlockFragment on Block {
       ordered
       reversed
       start
-      style
       textColor
       type
       values
@@ -2791,7 +2740,6 @@ fragment BlockFragment on Block {
         linkTarget
         placeholder
         rel
-        style
         text
         textColor
         title
@@ -2808,7 +2756,6 @@ fragment BlockFragment on Block {
         linkTarget
         placeholder
         rel
-        style
         text
         textColor
         title
@@ -2825,7 +2772,6 @@ fragment BlockFragment on Block {
         linkTarget
         placeholder
         rel
-        style
         text
         textColor
         title
@@ -2842,7 +2788,6 @@ fragment BlockFragment on Block {
         linkTarget
         placeholder
         rel
-        style
         text
         textColor
         title
@@ -2859,7 +2804,6 @@ fragment BlockFragment on Block {
         linkTarget
         placeholder
         rel
-        style
         text
         textColor
         title
@@ -2876,7 +2820,6 @@ fragment BlockFragment on Block {
         linkTarget
         placeholder
         rel
-        style
         text
         textColor
         title
@@ -2893,7 +2836,6 @@ fragment BlockFragment on Block {
         linkTarget
         placeholder
         rel
-        style
         text
         textColor
         title
@@ -2944,7 +2886,6 @@ fragment BlockFragment on Block {
       className
       content
       fontSize
-      style
     }
   }
   ... on CoreColumnsBlock {
@@ -2956,7 +2897,6 @@ fragment BlockFragment on Block {
         backgroundColor
         className
         gradient
-        style
         textColor
         verticalAlignment
       }
@@ -2966,7 +2906,6 @@ fragment BlockFragment on Block {
         backgroundColor
         className
         gradient
-        style
         textColor
         verticalAlignment
       }
@@ -2976,7 +2915,6 @@ fragment BlockFragment on Block {
         backgroundColor
         className
         gradient
-        style
         textColor
         verticalAlignment
       }
@@ -2986,7 +2924,6 @@ fragment BlockFragment on Block {
         backgroundColor
         className
         gradient
-        style
         textColor
         verticalAlignment
       }
@@ -3023,7 +2960,6 @@ fragment BlockFragment on Block {
         customGradient
         customOverlayColor
         dimRatio
-        focalPoint
         gradient
         hasParallax
         id
@@ -3031,7 +2967,6 @@ fragment BlockFragment on Block {
         minHeight
         minHeightUnit
         overlayColor
-        style
         url
       }
       ... on CoreCoverBlockDeprecatedV1Attributes {
@@ -3043,7 +2978,6 @@ fragment BlockFragment on Block {
         customGradient
         customOverlayColor
         dimRatio
-        focalPoint
         gradient
         hasParallax
         id
@@ -3051,7 +2985,6 @@ fragment BlockFragment on Block {
         minHeight
         minHeightUnit
         overlayColor
-        style
         url
       }
       ... on CoreCoverBlockDeprecatedV2Attributes {
@@ -3063,7 +2996,6 @@ fragment BlockFragment on Block {
         customGradient
         customOverlayColor
         dimRatio
-        focalPoint
         gradient
         hasParallax
         id
@@ -3071,7 +3003,6 @@ fragment BlockFragment on Block {
         minHeight
         minHeightUnit
         overlayColor
-        style
         url
       }
       ... on CoreCoverBlockDeprecatedV3Attributes {
@@ -3083,7 +3014,6 @@ fragment BlockFragment on Block {
         customGradient
         customOverlayColor
         dimRatio
-        focalPoint
         gradient
         hasParallax
         id
@@ -3091,7 +3021,6 @@ fragment BlockFragment on Block {
         minHeight
         minHeightUnit
         overlayColor
-        style
         url
       }
       ... on CoreCoverBlockDeprecatedV4Attributes {
@@ -3103,7 +3032,6 @@ fragment BlockFragment on Block {
         customGradient
         customOverlayColor
         dimRatio
-        focalPoint
         gradient
         hasParallax
         id
@@ -3111,7 +3039,6 @@ fragment BlockFragment on Block {
         minHeight
         minHeightUnit
         overlayColor
-        style
         url
       }
       ... on CoreCoverBlockDeprecatedV5Attributes {
@@ -3123,7 +3050,6 @@ fragment BlockFragment on Block {
         customGradient
         customOverlayColor
         dimRatio
-        focalPoint
         gradient
         hasParallax
         id
@@ -3131,7 +3057,6 @@ fragment BlockFragment on Block {
         minHeight
         minHeightUnit
         overlayColor
-        style
         url
       }
       ... on CoreCoverBlockDeprecatedV6Attributes {
@@ -3143,7 +3068,6 @@ fragment BlockFragment on Block {
         customGradient
         customOverlayColor
         dimRatio
-        focalPoint
         gradient
         hasParallax
         id
@@ -3151,7 +3075,6 @@ fragment BlockFragment on Block {
         minHeight
         minHeightUnit
         overlayColor
-        style
         url
       }
     }
@@ -3206,7 +3129,6 @@ fragment BlockFragment on Block {
         backgroundColor
         className
         gradient
-        style
         tagName
         templateLock
         textColor
@@ -3217,7 +3139,6 @@ fragment BlockFragment on Block {
         backgroundColor
         className
         gradient
-        style
         tagName
         templateLock
         textColor
@@ -3228,7 +3149,6 @@ fragment BlockFragment on Block {
         backgroundColor
         className
         gradient
-        style
         tagName
         templateLock
         textColor
@@ -3239,7 +3159,6 @@ fragment BlockFragment on Block {
         backgroundColor
         className
         gradient
-        style
         tagName
         templateLock
         textColor
@@ -3264,7 +3183,6 @@ fragment BlockFragment on Block {
         anchor
         backgroundColor
         className
-        focalPoint
         gradient
         href
         imageFill
@@ -3281,7 +3199,6 @@ fragment BlockFragment on Block {
         mediaUrl
         mediaWidth
         rel
-        style
         textColor
         verticalAlignment
       }
@@ -3290,7 +3207,6 @@ fragment BlockFragment on Block {
         anchor
         backgroundColor
         className
-        focalPoint
         gradient
         href
         imageFill
@@ -3307,7 +3223,6 @@ fragment BlockFragment on Block {
         mediaUrl
         mediaWidth
         rel
-        style
         textColor
         verticalAlignment
       }
@@ -3316,7 +3231,6 @@ fragment BlockFragment on Block {
         anchor
         backgroundColor
         className
-        focalPoint
         gradient
         href
         imageFill
@@ -3333,7 +3247,6 @@ fragment BlockFragment on Block {
         mediaUrl
         mediaWidth
         rel
-        style
         textColor
         verticalAlignment
       }
@@ -3342,7 +3255,6 @@ fragment BlockFragment on Block {
         anchor
         backgroundColor
         className
-        focalPoint
         gradient
         href
         imageFill
@@ -3359,7 +3271,6 @@ fragment BlockFragment on Block {
         mediaUrl
         mediaWidth
         rel
-        style
         textColor
         verticalAlignment
       }
@@ -3443,7 +3354,6 @@ fragment BlockFragment on Block {
       className
       content
       fontSize
-      style
     }
   }
   ... on CorePullquoteBlock {
@@ -3763,7 +3673,6 @@ fragment BlockFragment on Block {
         className
         content
         fontSize
-        style
         textAlign
       }
       ... on CoreVerseBlockDeprecatedV1Attributes {
@@ -3771,7 +3680,6 @@ fragment BlockFragment on Block {
         className
         content
         fontSize
-        style
         textAlign
       }
     }
