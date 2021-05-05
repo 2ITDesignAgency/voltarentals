@@ -3,7 +3,6 @@ import { graphql, Link } from "gatsby"
 import Layout from "../../components/Layout"
 import Seo from "../../components/Seo"
 import FeaturedMedia from "../../components/FeaturedMedia"
-import Helmet from "react-helmet"
 
 const page = ({ data }) => {
   const { page } = data
@@ -148,12 +147,7 @@ const page = ({ data }) => {
       <Layout
         bodyClass={`page-template-default page page-id-${databaseId} wp-embed-responsive singular missing-post-thumbnail has-no-pagination not-showing-comments footer-top-visible customize-support`}
       >
-        <Helmet>
-          <script
-            type="text/javascript"
-            src="https://ecigr.wheelsys.ms/jsHandler.ashx?elementId=wheelsbook&language=en"
-          />
-        </Helmet>
+
         {/*front-page header with booking system start*/}
         <header
           className="header-cta section_1"
@@ -274,7 +268,7 @@ const page = ({ data }) => {
             <div className="section_3_row">
               {/* fleet categories col 1*/}
               <div className="section_3_col">
-                <Link to={fleetCategorieLink1}>
+                <Link to={`/our-fleet/cyti-cars/`}>
                   <img src={fleetCategorie1Image} />
                 </Link>
                 <div>
@@ -285,7 +279,7 @@ const page = ({ data }) => {
                     dangerouslySetInnerHTML={{ __html: fleetCategorieText1 }}
                     className="offer-post-excerpt"
                   />
-                  <Link to={fleetCategorieLink1} className="Offer-btn">
+                  <Link to={`/our-fleet/cyti-cars/`} className="Offer-btn">
                     Read more
                   </Link>
                 </div>
@@ -294,7 +288,7 @@ const page = ({ data }) => {
 
               {/* fleet categories col 2*/}
               <div className="section_3_col">
-                <Link to={fleetCategorieLink2}>
+                <Link to={`/our-fleet/electric/`}>
                   <img src={fleetCategorie2Image} />
                 </Link>
                 <div>
