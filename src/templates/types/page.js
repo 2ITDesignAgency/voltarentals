@@ -148,12 +148,6 @@ const page = ({ data }) => {
       <Layout
         bodyClass={`page-template-default page page-id-${databaseId} wp-embed-responsive singular missing-post-thumbnail has-no-pagination not-showing-comments footer-top-visible customize-support`}
       >
-        <Helmet>
-          <script
-            type="text/javascript"
-            src="https://ecigr.wheelsys.ms/jsHandler.ashx?elementId=wheelsbook&language=en"
-          />
-        </Helmet>
         {/*front-page header with booking system start*/}
         <header
           className="header-cta section_1"

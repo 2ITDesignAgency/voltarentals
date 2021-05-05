@@ -59,13 +59,6 @@ const post = ({ data }) => {
           <div className="cta-booking-post">
             <div id="wheelsbook" style={{ maxWidth: `900px` }}></div>
           </div>
-          <Helmet>
-            <script
-              type="text/javascript"
-              src="https://ecigr.wheelsys.ms/jsHandler.ashx?elementId=wheelsbook&language=en"
-              defer
-            />
-          </Helmet>
           {/* {post.Blocks && <post.Blocks />} */}
           <div
             className="entry-content"
