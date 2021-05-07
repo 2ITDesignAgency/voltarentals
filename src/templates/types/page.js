@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect} from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../../components/Layout"
 import Seo from "../../components/Seo"
@@ -7,6 +7,12 @@ import FeaturedMedia from "../../components/FeaturedMedia"
 const page = ({ data }) => {
   const { page } = data
   const { title, content, featuredImage, excerpt, databaseId, frontPage } = page
+
+  useEffect(() => {
+    if(window.startWheels){
+        window.reloadTheEngine()
+    }
+}, [])
 
   let pageName = title
   const homepage = "HOME"

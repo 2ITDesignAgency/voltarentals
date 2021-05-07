@@ -3,8 +3,6 @@ import { graphql, Link, useStaticQuery } from "gatsby"
 import Menu from "./Menu"
 import ToggleIcon from "../assets/svg/toggle.inline.svg"
 import Logo from "../assets/images/logo-icon.png"
-// import Helmet from "react-helmet"
-
 
 const Header = ({ pageContext, toggleBackdrop, ...props }) => {
   const { wp } = useStaticQuery(graphql`

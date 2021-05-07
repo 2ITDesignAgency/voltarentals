@@ -38,7 +38,6 @@ const Layout = ({ children, bodyClass }) => {
       </main>
       <FooterMenusWidgets />
       <Footer />
-  
     </div>
   )
 }
