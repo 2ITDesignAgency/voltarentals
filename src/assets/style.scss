@@ -1586,78 +1586,7 @@ ul.social-icons li {
 .cover-modal.show-modal > * {
   cursor: default;
 }
-#WheelsBookingEngineWrapper,
-.WheelsContainer {
-  background-color: #012a37 !important;
-  border: 1px solid black;
-  padding: 1rem;
-  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
-}
-#BookingSearch h4 {
-  font-weight: 400 !important;
-  color: white;
-}
-.WheelsContainer label {
-  color: white;
-}
-.WheelsContainer span {
-  color: white;
-}
-.WheelsContainer .wbeInputElement {
-  font-size: 1rem !important;
-  background-color: white !important;
-}
-.WheelsContainer span {
-  font-size: 1rem !important;
-}
-.WheelsContainer .wbeInputIcon {
-  background-color: white !important;
-}
-.searchClick {
-  background-color: #2ca83d !important;
-}
-.WheelsContainer .wbeInputElement {
-  color: #212121 !important;
-  font-weight: 300;
-}
-.fa-search {
-  display: none;
-}
-.wbeInputElementCheck {
-  background-color: white;
-}
-#WheelsBookingEngineWrapper,
-.WheelsContainer {
-  line-height: 1;
-  --background-color: #012a37 !important;
-  --button-background-color-hover: #012a37 !important;
-  --button-secondary-background-color: #2ca83d !important;
-  --button-secondary-background-color-hover: #2ca83d !important;
-}
-.WheelsContainer .wbeInputElementCheck:checked::before {
-  height: 20px;
-  width: 20px;
-  position: absolute;
-  content: "✔";
-  display: inline-block;
-  font-size: 20px;
-  text-align: center;
-  line-height: 20px;
-  background-color: white;
-  color: #212121;
-}
-.WheelsContainer .wbeInputElementCheck:hover {
-  background-color: white !important;
-}
-.WheelsContainer .wbeInputElementCheck {
-  background-color: white !important;
-}
-.WheelsContainer .wbeInputElementCheck:checked::before {
-  left: 4px;
-  font-size: 13px !important;
-  text-align: center;
-  line-height: 20px;
-}
+
 /* -------------------------------------------------------------------------- */
 
 /*	4.	Site Header
@@ -7442,4 +7371,176 @@ a.to-the-top > * {
     border-radius: 15px;
     padding: 1rem;
   }
+}
+
+// booking form
+
+#WheelsBookingEngineWrapper,
+.WheelsContainer {
+  background-color: #012a37 !important;
+  border: 1px solid black;
+  padding: 1rem;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+#BookingSearch h4 {
+  font-weight: 400 !important;
+  color: white;
+}
+.WheelsContainer label {
+  color: white;
+}
+.WheelsContainer span {
+  color: white;
+}
+.WheelsContainer .wbeInputElement {
+  font-size: 1rem !important;
+  background-color: white !important;
+}
+.WheelsContainer span {
+  font-size: 1rem !important;
+}
+.WheelsContainer .wbeInputIcon {
+  background-color: white !important;
+}
+.searchClick {
+  background-color: #2ca83d !important;
+}
+.WheelsContainer .wbeInputElement {
+  color: #212121 !important;
+  font-weight: 300;
+}
+.fa-search {
+  display: none;
+}
+.wbeInputElementCheck {
+  background-color: white;
+}
+#WheelsBookingEngineWrapper,
+.WheelsContainer {
+  line-height: 1;
+  --background-color: #012a37 !important;
+  --button-background-color-hover: #012a37 !important;
+  --button-secondary-background-color: #2ca83d !important;
+  --button-secondary-background-color-hover: #2ca83d !important;
+}
+.WheelsContainer .wbeInputElementCheck:checked::before {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  content: "✔";
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+  line-height: 20px;
+  background-color: white;
+  color: #212121;
+}
+.WheelsContainer .wbeInputElementCheck:hover {
+  background-color: white !important;
+}
+.WheelsContainer .wbeInputElementCheck {
+  background-color: white !important;
+}
+.WheelsContainer .wbeInputElementCheck:checked::before {
+  left: 4px;
+  font-size: 13px !important;
+  text-align: center;
+  line-height: 20px;
+}
+
+#responseResults .wbeDealImageContainer {
+  background: #2ca83d;
+  color: #212121;
+}
+
+#responseResults .wbeDealInfoContainer {
+  background: #2ca83d;
+  color: #212121;
+}
+
+#responseResults .wbeDealBook {
+  background: #2ca83d;
+  color: #212121;
+}
+#responseResults button.DealInfoBook:hover {
+  background-color: #012a37 !important;
+}
+#responseResults button.DealInfoBook {
+  background-color: #012a37 !important;
+}
+
+#wbeFiltersMenu {
+  background: #2ca83d !important;
+}
+
+.WheelsContainer div,
+.WheelsContainer p {
+  color: #fff !important;
+}
+
+#dealBookTemplate {
+  margin-top: 0px !important;
+}
+#dealImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+#OptionsMenu .wbeDealOptionsSummaryContainer h5,
+#OptionsMenu #DealPriceDiv,
+#BookingSearchRes .wbeManageBookVehicle h3,
+#BookingSearchRes .wbeManageBookPriceButtonContainer {
+  background: #2ca83d !important;
+}
+#WheelsBookingEngineWrapper #dealOptions button {
+  padding-bottom: 2.8rem !important;
+  padding-top: 0.5rem !important;
+}
+.WheelsContainer ol, .WheelsContainer ul {
+  list-style: none;
+  background-color: grey !important;
+}
+
+#WheelsBookingEngineWrapper
+  #dealOptions
+  .wbeDealOptionsSummaryButtonContainer
+  button {
+  // background-color: #2ca83d !important;
+  color: #fff !important;
+  padding-bottom: 2rem;
+  padding-top: 0.5rem;
+}
+#WheelsBookingEngineWrapper #dealOptions button{
+  min-width: 30%;
+  background-color: var(--button-background-color);
+  height: 34px;
+  font-size: inherit;
+  outline: none;
+  border: none;
+  color: var(--button-color);
+  font-weight: bold;
+  margin: 0;
+  margin-left: 5%;
+  float: right;
+  cursor: pointer;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding-bottom: 2rem;
+  padding-top: 0.5rem;
+}
+.wbeDealOptionsSummaryContent{
+  background: #2ca83d !important;
+
+}
+#CDMRprice {
+  font-size: 1.8rem !important;
+}
+
+#ResultsCategories,
+#ResultsPassengers {
+  border-bottom: 0px var(--text-color) solid !important;
+  margin-bottom: 0.5em;
 }

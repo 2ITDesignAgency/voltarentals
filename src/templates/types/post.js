@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect} from "react"
 import { graphql } from "gatsby"
 import Layout from "../../components/Layout"
 import Seo from "../../components/Seo"
@@ -22,6 +22,13 @@ const post = ({ data }) => {
     date,
     Blocks,
   } = page
+
+  useEffect(() => {
+    if (window.startWheels) {
+      window.reloadTheEngine()
+    }
+  }, [])
+
   return (
     <Layout
       bodyClass={`post-template-default single single-post postid-${databaseId} single-format-standard wp-embed-responsive singular has-post-thumbnail has-single-pagination showing-comments footer-top-visible customize-support`}
