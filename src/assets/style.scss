@@ -175,12 +175,12 @@ path {
 }
 /* header cta css */
 .header-cta-title {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 11rem;
+  padding-bottom: 2rem;
 }
 .cta-booking {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
 }
 .cta-booking-post {
   padding-bottom: 6rem;
@@ -288,7 +288,7 @@ span.screen-reader-text {
   padding: 10px 15px 10px 12px;
   border-radius: 3px;
   box-shadow: 0 0 5px 0 #00000033;
-  background-color: #2ca83d;
+  background-color: #2DC84D;
   color: white !important;
   text-decoration: none;
   width: 45%;
@@ -406,7 +406,7 @@ span.screen-reader-text {
   padding: 10px 15px 10px 12px;
   border-radius: 3px;
   box-shadow: 0 0 5px 0 #00000033;
-  background-color: #2ca83d;
+  background-color: #2DC84D;
   color: white !important;
   text-decoration: none;
   width: 65%;
@@ -515,8 +515,7 @@ Inter variable font. Usage:
   font-display: swap;
   src: url(./fonts/inter/Inter-italic-var.woff2) format("woff2");
 }
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 /* Accessibility Settings -------------------- */
 
 @media (prefers-reduced-motion: reduce) {
@@ -717,7 +716,7 @@ hr.styled-separator::after {
 }
 
 a {
-  color: #2ca83d;
+  color: #2DC84D;
   text-decoration: underline;
 }
 
@@ -798,7 +797,7 @@ dd + dt {
 /* Quotes ------------------------------------ */
 
 blockquote {
-  border-color: #2ca83d;
+  border-color: #2DC84D;
   border-style: solid;
 
   /*rtl:ignore*/
@@ -1090,7 +1089,7 @@ input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: none;
   -moz-appearance: none;
-  background: #2ca83d;
+  background: #2DC84D;
   border: none;
   border-radius: 0;
   color: #fff;
@@ -1340,7 +1339,7 @@ button.toggle {
 .color-accent,
 .color-accent-hover:focus,
 .color-accent-hover:hover {
-  color: #2ca83d;
+  color: #2DC84D;
 }
 
 /* BACKGROUND COLOR */
@@ -1348,7 +1347,7 @@ button.toggle {
 .bg-accent,
 .bg-accent-hover:focus,
 .bg-accent-hover:hover {
-  background-color: #2ca83d;
+  background-color: #2DC84D;
 }
 
 /* BORDER COLOR */
@@ -1356,14 +1355,14 @@ button.toggle {
 .border-color-accent,
 .border-color-accent-hover:focus,
 .border-color-accent-hover:hover {
-  border-color: #2ca83d;
+  border-color: #2DC84D;
 }
 
 /* FILL COLOR */
 
 .fill-children-accent,
 .fill-children-accent * {
-  fill: #2ca83d;
+  fill: #2DC84D;
 }
 
 .fill-children-current-color,
@@ -1548,7 +1547,7 @@ ul.social-icons li {
 
 .social-icons a {
   align-items: center;
-  background: #2ca83d;
+  background: #2DC84D;
   border-radius: 50%;
   color: #fff;
   display: flex;
@@ -1593,7 +1592,7 @@ ul.social-icons li {
 /* -------------------------------------------------------------------------- */
 
 #site-header {
-  background: #2ca83d;
+  background: #e8f1f2;
   position: relative;
 }
 
@@ -1798,12 +1797,12 @@ ul.social-icons li {
 .nav-toggle svg {
   height: 2.6rem;
   width: 2.6rem;
-  color: white;
+  color: #2DC84D;
 }
 .bootstrap-toggle {
   height: 2.6rem;
   width: 2.6rem;
-  color: white;
+  color: #2DC84D;
 }
 
 .nav-toggle .toggle-inner {
@@ -1875,7 +1874,8 @@ ul.primary-menu {
 }
 
 .primary-menu a {
-  color: #fff !important;
+  color: #212121 !important;
+  font-weight: 600;
   font-size: 1rem;
   display: block;
   line-height: 1.2;
@@ -1887,7 +1887,7 @@ ul.primary-menu {
 .primary-menu a:hover,
 .primary-menu a:focus,
 .primary-menu .current_page_ancestor {
-  text-decoration: underline;
+  text-decoration: underline; 
 }
 
 .primary-menu li > a.current-menu-item,
@@ -2079,7 +2079,7 @@ ul.primary-menu {
 }
 
 .menu-modal-inner {
-  background: #2ca83d;
+  background: #2DC84D;
   display: flex;
   justify-content: stretch;
   overflow: auto;
@@ -2168,7 +2168,7 @@ button.close-nav-toggle .toggle-text {
 .modal-menu a:hover,
 .modal-menu li.current-menu-item > .ancestor-wrapper > a,
 .modal-menu li.current_page_ancestor > .ancestor-wrapper > a {
-  text-decoration: underline;
+  // text-decoration: underline;
 }
 
 button.sub-menu-toggle {
@@ -2480,7 +2480,7 @@ button.search-untoggle {
 }
 
 .cover-header .entry-header * {
-  color: #2ca83d;
+  color: #2DC84D;
   cursor: none;
 }
 
@@ -2661,7 +2661,7 @@ button.search-untoggle {
   line-height: 1.5;
   letter-spacing: 1.23px;
   text-transform: uppercase !important;
-  color: #2ca83d !important;
+  color: #2DC84D !important;
 }
 .article-post .entry-categories-inner {
   justify-content: flex-start;
@@ -3089,11 +3089,11 @@ h2.entry-title {
 /* CUSTOM COLORS */
 
 :root .has-accent-color {
-  color: #2ca83d;
+  color: #2DC84D;
 }
 
 :root .has-accent-background-color {
-  background-color: #2ca83d;
+  background-color: #2DC84D;
   color: #fff;
 }
 
@@ -3149,7 +3149,7 @@ h2.entry-title {
 }
 
 .has-drop-cap:not(:focus)::first-letter {
-  color: #2ca83d;
+  color: #2DC84D;
   font-family: -apple-system, BlinkMacSystemFont, "Open Sans", sans-serif;
   font-size: 5.1em;
   font-weight: 800;
@@ -3364,7 +3364,7 @@ h2.entry-title {
 }
 
 .wp-block-button.is-style-outline {
-  color: #2ca83d;
+  color: #2DC84D;
 }
 
 .is-style-outline .wp-block-button__link:not(.has-text-color) {
@@ -3551,7 +3551,7 @@ figure.wp-block-gallery.alignfull {
 .wp-block-pullquote::before {
   background: #fff;
   border-radius: 50%;
-  color: #2ca83d;
+  color: #2DC84D;
   content: "”";
   display: block;
   font-size: 6.2rem;
@@ -4174,7 +4174,7 @@ div.comment:first-of-type {
 }
 
 .comment-reply-link {
-  background-color: #2ca83d;
+  background-color: #2DC84D;
   color: #fff;
   display: block;
   padding: 0.7rem;
@@ -4776,7 +4776,7 @@ ul.footer-social li {
 }
 
 .footer-social a {
-  background-color: #2ca83d;
+  background-color: #2DC84D;
   height: 1.6rem;
   width: 1.6rem;
 }
@@ -7227,7 +7227,7 @@ a.to-the-top > * {
 
 #WheelsBookingEngineWrapper .calendarContainerFocus > *,
 #WheelsBookingEngineWrapper .calendarContainerFocusRight > * {
-  background-color: #012a37;
+  background-color: #e8f1f2;
 }
 .WheelsContainer p {
   color: #fff !important;
@@ -7237,10 +7237,10 @@ a.to-the-top > * {
 }
 
 #WheelsBookingEngineWrapper .calendarContainerFocus > * {
-  background: #012a37 !important;
+  background: #e8f1f2 !important;
 }
 #WheelsBookingEngineWrapper .calendarContainerFocusRight > * {
-  background: #012a37 !important;
+  background: #e8f1f2 !important;
 }
 #WheelsBookingEngineWrapper .calendarContainerFocusRight input.calendar {
   color: white !important;
@@ -7377,8 +7377,8 @@ a.to-the-top > * {
 
 #WheelsBookingEngineWrapper,
 .WheelsContainer {
-  background-color: #012a37 !important;
-  border: 1px solid black;
+  background-color: #e8f1f2 !important;
+  // border: 1px solid black;
   padding: 1rem;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
@@ -7387,7 +7387,13 @@ a.to-the-top > * {
   color: white;
 }
 .WheelsContainer label {
-  color: white;
+  color: #212121;
+}
+.WebString_Text_alreadybook{
+  color: #212121 !important;
+}
+#locationResults li span {
+  color: #212121;
 }
 .WheelsContainer span {
   color: white;
@@ -7403,7 +7409,7 @@ a.to-the-top > * {
   background-color: white !important;
 }
 .searchClick {
-  background-color: #2ca83d !important;
+  background-color: #2DC84D !important;
 }
 .WheelsContainer .wbeInputElement {
   color: #212121 !important;
@@ -7418,10 +7424,10 @@ a.to-the-top > * {
 #WheelsBookingEngineWrapper,
 .WheelsContainer {
   line-height: 1;
-  --background-color: #012a37 !important;
-  --button-background-color-hover: #012a37 !important;
-  --button-secondary-background-color: #2ca83d !important;
-  --button-secondary-background-color-hover: #2ca83d !important;
+  --background-color: #e8f1f2 !important;
+  --button-background-color-hover: #e8f1f2 !important;
+  --button-secondary-background-color: #2DC84D !important;
+  --button-secondary-background-color-hover: #2DC84D !important;
 }
 .WheelsContainer .wbeInputElementCheck:checked::before {
   height: 20px;
@@ -7449,28 +7455,28 @@ a.to-the-top > * {
 }
 
 #responseResults .wbeDealImageContainer {
-  background: #2ca83d;
+  background: #2DC84D;
   color: #212121;
 }
 
 #responseResults .wbeDealInfoContainer {
-  background: #2ca83d;
+  background: #2DC84D;
   color: #212121;
 }
 
 #responseResults .wbeDealBook {
-  background: #2ca83d;
+  background: #2DC84D;
   color: #212121;
 }
 #responseResults button.DealInfoBook:hover {
-  background-color: #012a37 !important;
+  background-color: #e8f1f2 !important;
 }
 #responseResults button.DealInfoBook {
-  background-color: #012a37 !important;
+  background-color: #e8f1f2 !important;
 }
 
 #wbeFiltersMenu {
-  background: #2ca83d !important;
+  background: #2DC84D !important;
 }
 
 .WheelsContainer div,
@@ -7492,7 +7498,7 @@ a.to-the-top > * {
 #OptionsMenu #DealPriceDiv,
 #BookingSearchRes .wbeManageBookVehicle h3,
 #BookingSearchRes .wbeManageBookPriceButtonContainer {
-  background: #2ca83d !important;
+  background: #2DC84D !important;
 }
 #WheelsBookingEngineWrapper #dealOptions button {
   padding-bottom: 2.8rem !important;
@@ -7532,7 +7538,7 @@ a.to-the-top > * {
   padding-top: 0.5rem;
 }
 .wbeDealOptionsSummaryContent{
-  background: #2ca83d !important;
+  background: #2DC84D !important;
 
 }
 #CDMRprice {
