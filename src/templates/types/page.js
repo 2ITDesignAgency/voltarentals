@@ -535,7 +535,7 @@ const page = ({ data }) => {
         >
           <header
             className="entry-header has-text-align-center header-footer-group header-cta"
-            style={{ background: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url('${featuredImage.node.sourceUrl}') center center no-repeat` }}
+            // style={{ background: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url('${featuredImage.node.sourceUrl}') center center no-repeat` }}
           >
             <div className="entry-header-inner section-inner medium">
               <h1
