@@ -157,14 +157,14 @@ const page = ({ data }) => {
         <header
           className="header-cta section_1"
           style={{
-            background: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url(${sliderImage}) center center`,
+            background: `url(${sliderImage}) center center`
           }}
         >
           <div className="entry-content">
             <h1 className="header-cta-title">{sliderText}</h1>
           </div>
           <div className="cta-booking ">
-            <div id="wheelsbook" style={{ maxWidth: `900px` }}></div>
+            <div id="wheelsbook" style={{ maxWidth: `1040px` }}></div>
           </div>
         </header>
         {/*front-page header with booking system end*/}

@@ -175,12 +175,7 @@ path {
 }
 /* header cta css */
 .header-cta-title {
-  // padding-top: 11rem;
   padding-bottom: 3rem;
-}
-.cta-booking {
-  // padding-top: 9rem;
-  // padding-bottom: 9rem;
 }
 .cta-booking-post {
   padding-bottom: 6rem;
@@ -7381,7 +7376,9 @@ a.to-the-top > * {
     padding: 1rem;
   }
 }
-
+.header-cta {
+  background-size: cover !important;
+}
 // booking form
 
 #WheelsBookingEngineWrapper,
@@ -7606,4 +7603,31 @@ a.to-the-top > * {
   font-size: 1.3rem;
   font-weight: 300;
   text-align: center;
+}
+
+#WheelsBookingEngineWrapper .calendarContainerFocus input.calendar, #WheelsBookingEngineWrapper .calendarContainerFocusRight input.calendar {
+  background-color: #fff !important;
+  color: #212121 !important;
+  font-family: "Open Sans", sans-serif, -apple-system, BlinkMacSystemFont !important;
+}
+#wbeFiltersMenu .WebString_Text_Filters, .filterButton span{
+  color: #212121 !important;
+  font-weight: 600 !important;
+}
+
+#wbeFiltersMenu .WebString_Text_Filters{
+  font-weight: 600 !important;
+  text-decoration: none !important;
+}
+
+#wbeFiltersMenu .WebString_Text_CarType span {
+  font-weight: 600 !important;
+}
+
+label.inline, input[type=checkbox] + label {
+  display: inline;
+  font-weight: 400;
+  margin-left: 0.5rem;
+  color: #706c80;
+  font-size: 14px;
 }
