@@ -310,6 +310,9 @@ export const fragments = graphql`
     }
     featuredImage {
       node {
+        link
+        uri
+        sourceUrl
         localFile {
           ...HeroImage
         }

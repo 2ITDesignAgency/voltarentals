@@ -175,12 +175,12 @@ path {
 }
 /* header cta css */
 .header-cta-title {
-  padding-top: 11rem;
-  padding-bottom: 2rem;
+  // padding-top: 11rem;
+  padding-bottom: 3rem;
 }
 .cta-booking {
-  padding-top: 9rem;
-  padding-bottom: 9rem;
+  // padding-top: 9rem;
+  // padding-bottom: 9rem;
 }
 .cta-booking-post {
   padding-bottom: 6rem;
@@ -530,20 +530,24 @@ Inter variable font. Usage:
 /*	2. Element Base
 /* ---------------------------------------------*---------------------------- */
 .header-cta {
-  min-height: 50vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , var(--image-url) center center;
+
 }
+
 .header-cta h1 {
   color: white;
   font-size: 36px;
   font-weight: 600;
-  max-width: 430px;
+  // max-width: 430px;
   text-align: center;
 }
 main {
@@ -2752,7 +2756,10 @@ button.search-untoggle {
 
 .singular .entry-header {
   background-color: #e8f1f2;
-  padding: 4rem 0;
+  height: 33vh;
+  background-position: center;
+  display: flex;
+  align-items: center;
 }
 
 .entry-categories {
@@ -2786,6 +2793,8 @@ button.search-untoggle {
 h1.entry-title,
 h2.entry-title {
   margin: 0;
+  font-size: 2.3rem;
+  font-weight: 600;
 }
 
 .entry-title a {
@@ -7380,11 +7389,15 @@ a.to-the-top > * {
   background-color: #e8f1f2 !important;
   // border: 1px solid black;
   padding: 1rem;
-  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  box-shadow: 0 0 4px 0 #00000033;
 }
+
 #BookingSearch h4 {
   font-weight: 400 !important;
   color: white;
+}
+.WebString_Text_managebooking, .WebString_Text_BookedBtn {
+  color: white !important;
 }
 .WheelsContainer label {
   color: #212121;
@@ -7395,21 +7408,28 @@ a.to-the-top > * {
 #locationResults li span {
   color: #212121;
 }
+#responseResults h4 {
+  font-size: 36px !important;
+  padding-bottom: 40px !important;
+}
 .WheelsContainer span {
-  color: white;
+  font-size: 1.2rem !important;
+  font-weight: 400 !important;
 }
 .WheelsContainer .wbeInputElement {
-  font-size: 1rem !important;
+  font-size: 1.2rem !important;
   background-color: white !important;
 }
-.WheelsContainer span {
-  font-size: 1rem !important;
+@media (min-width: 600px){
+  #responseResults .wbeDealBook {
+    padding: 20px 20px 20px !important;
+}
 }
 .WheelsContainer .wbeInputIcon {
   background-color: white !important;
 }
 .searchClick {
-  background-color: #2DC84D !important;
+  background-color: #108740 !important;
 }
 .WheelsContainer .wbeInputElement {
   color: #212121 !important;
@@ -7426,8 +7446,8 @@ a.to-the-top > * {
   line-height: 1;
   --background-color: #e8f1f2 !important;
   --button-background-color-hover: #e8f1f2 !important;
-  --button-secondary-background-color: #2DC84D !important;
-  --button-secondary-background-color-hover: #2DC84D !important;
+  --button-secondary-background-color: #108740 !important;
+  --button-secondary-background-color-hover: #108740 !important;
 }
 .WheelsContainer .wbeInputElementCheck:checked::before {
   height: 20px;
@@ -7455,33 +7475,38 @@ a.to-the-top > * {
 }
 
 #responseResults .wbeDealImageContainer {
-  background: #2DC84D;
+  background: #fff;
   color: #212121;
 }
 
 #responseResults .wbeDealInfoContainer {
-  background: #2DC84D;
+  background: #fff;
   color: #212121;
 }
 
 #responseResults .wbeDealBook {
-  background: #2DC84D;
-  color: #212121;
+  background: #fff;
+  color: #fff;
 }
 #responseResults button.DealInfoBook:hover {
-  background-color: #e8f1f2 !important;
+  background-color: #108740 !important;
+  box-shadow: 0 0 5px 0 #00000033;
 }
 #responseResults button.DealInfoBook {
-  background-color: #e8f1f2 !important;
+  background-color: #108740 !important;
+  box-shadow: 0 0 5px 0 #00000033;
 }
 
 #wbeFiltersMenu {
-  background: #2DC84D !important;
+  background: #fff !important;
+  box-shadow: 0 0 4px 0 #00000033 !important;  
 }
-
+.WebString_Text_Book{
+  color: #fff !important;
+}
 .WheelsContainer div,
 .WheelsContainer p {
-  color: #fff !important;
+  color: #212121 !important;
 }
 
 #dealBookTemplate {
@@ -7514,7 +7539,7 @@ a.to-the-top > * {
   .wbeDealOptionsSummaryButtonContainer
   button {
   // background-color: #2ca83d !important;
-  color: #fff !important;
+  color: #212121 !important;
   padding-bottom: 2rem;
   padding-top: 0.5rem;
 }
@@ -7537,6 +7562,15 @@ a.to-the-top > * {
   padding-bottom: 2rem;
   padding-top: 0.5rem;
 }
+#wbeFiltersMenu .fa {
+  color: black !important;
+}
+#responseResults .cardata p {
+  font-size: 1.2rem !important;
+}
+.fa-info-circle:before {
+  font-size: 1.2rem !important;
+}
 .wbeDealOptionsSummaryContent{
   background: #2DC84D !important;
 
@@ -7557,4 +7591,19 @@ a.to-the-top > * {
 
 .WebString_Text_DriverAge {
   color: #212121 !important;
+}
+
+.fa-times:before {
+  content: "\f00d";
+  font-weight: 300;
+  font-size: 2.3rem;
+  text-align: center;
+}
+
+#responseResults .warningIndicator {
+  position: relative;
+  padding-left: 40px;
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-align: center;
 }

@@ -1,4 +1,4 @@
-import React, {useEffect} from "react"
+import React, { useEffect } from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../../components/Layout"
 import Seo from "../../components/Seo"
@@ -9,10 +9,10 @@ const page = ({ data }) => {
   const { title, content, featuredImage, excerpt, databaseId, frontPage } = page
 
   useEffect(() => {
-    if(window.startWheels){
-        window.reloadTheEngine()
+    if (window.startWheels) {
+      window.reloadTheEngine()
     }
-}, [])
+  }, [])
 
   let pageName = title
   const homepage = "HOME"
@@ -153,16 +153,15 @@ const page = ({ data }) => {
       <Layout
         bodyClass={`page-template-default page page-id-${databaseId} wp-embed-responsive singular missing-post-thumbnail has-no-pagination not-showing-comments footer-top-visible customize-support`}
       >
-
         {/*front-page header with booking system start*/}
         <header
           className="header-cta section_1"
-          style={{ backgroundImage: `url(${sliderImage})` }}
+          style={{
+            background: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url(${sliderImage}) center center`,
+          }}
         >
           <div className="entry-content">
-            <h1 className="header-cta-title" style={{ maxWidth: `450px` }}>
-              {sliderText}
-            </h1>
+            <h1 className="header-cta-title">{sliderText}</h1>
           </div>
           <div className="cta-booking ">
             <div id="wheelsbook" style={{ maxWidth: `900px` }}></div>
@@ -523,6 +522,7 @@ const page = ({ data }) => {
   }
   // page template that dont have a special page
   else {
+    console.log(featuredImage);
     return (
       <Layout
         bodyClass={`page-template-default page page-id-${databaseId} wp-embed-responsive singular missing-post-thumbnail has-no-pagination not-showing-comments footer-top-visible customize-support`}
@@ -533,7 +533,10 @@ const page = ({ data }) => {
           className={`post-${databaseId} post page type-page status-publish hentry`}
           id={`post-${databaseId}`}
         >
-          <header className="entry-header has-text-align-center header-footer-group">
+          <header
+            className="entry-header has-text-align-center header-footer-group header-cta"
+            style={{ background: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url('${featuredImage.node.sourceUrl}') center center no-repeat` }}
+          >
             <div className="entry-header-inner section-inner medium">
               <h1
                 className="entry-title"
@@ -542,7 +545,7 @@ const page = ({ data }) => {
             </div>
           </header>
 
-          <FeaturedMedia image={featuredImage} />
+          {/* <FeaturedMedia image={featuredImage} /> */}
 
           <div className="post-inner thin">
             <div
