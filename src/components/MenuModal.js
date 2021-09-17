@@ -19,7 +19,7 @@ const MenuModal = ({ isActive, toggleBackdrop }) => {
               node {
                 ... on WpContentNode {
                   uri
-                } 
+                }
               }
             }
           }
@@ -61,7 +61,8 @@ const MenuModal = ({ isActive, toggleBackdrop }) => {
             >
               <ul className="modal-menu reset-list-style">
                 {wpMenu.menuItems.nodes.map((menuItem, i) => {
-                  const path = menuItem?.connectedNode?.node?.uri ?? menuItem.url
+                  const path =
+                    menuItem?.connectedNode?.node?.uri ?? menuItem.url
 
                   const itemId = "modal-menu-item-" + menuItem.databaseId
 
@@ -87,38 +88,67 @@ const MenuModal = ({ isActive, toggleBackdrop }) => {
                     </li>
                   )
                 })}
+                <li id="menu-item-47"className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children">
+                  <a href="/our-fleet">OUR FLEET<i className="fa fa-angle-down" aria-hidden="false"></i></a>
+                    <li id="menu-item-47"><a href="/our-fleet/city-cars/"> CITY CAR</a></li>
+                    <li id="menu-item-47"><a href="/our-fleet/electric/">ELECTRIC</a></li>
+                    <li id="menu-item-47"><a href="/our-fleet/prestige/"> PRESTIGE</a></li>
+                    <li id="menu-item-47"><a href="/our-fleet/van-track/"> VAN & TRUCK</a></li>
+                </li>
+                <li id="menu-item-47" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children">
+                  <a href="#">SERVICES<i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <li><a href="/services/rent-a-car/">RENT A CAR</a></li>
+                    <li><a href="/services/chauffeur-services/">CHAUFFEUR SERVICES</a></li>
+                    <li><a href="/services/parking-services/">PARKING SERVICES</a></li>
+                </li>
+                <li id="menu-item-47" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home">
+                  <a href="/offers&news/">OFFERS & NEWS</a>
+                </li>
               </ul>
             </nav>
 
             <nav className="mobile-menu" aria-label="Mobile" role="navigation">
               <ul className="modal-menu reset-list-style">
                 {wpMenu.menuItems.nodes.map((menuItem, i) => {
-                  const path = menuItem?.connectedNode?.node?.uri ?? menuItem.url
+                  const path =
+                    menuItem?.connectedNode?.node?.uri ?? menuItem.url
 
                   const itemId = "modal-mobile-menu-item-" + menuItem.databaseId
 
                   return (
                     <li
                       id={itemId}
-                      key={itemId}
+                      key={i + menuItem.url}
                       className={
-                        "menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home " +
+                        "menu-item menu-item-type-custom menu-item-object-custom menu-item-home " +
                         itemId
                       }
                     >
-                      <div className="ancestor-wrapper">
-                        <UniversalLink
-                          to={path}
-                          activeClassName={
-                            "current-menu-item current_page_item"
-                          }
-                        >
-                          {menuItem.label}
-                        </UniversalLink>
-                      </div>
+                      <UniversalLink
+                        to={path}
+                        activeClassName={"current-menu-item current_page_item"}
+                      >
+                        {menuItem.label}
+                      </UniversalLink>
                     </li>
                   )
                 })}
+                <li id="menu-item-47"className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children">
+                  <a href="/our-fleet">OUR FLEET<i className="fa fa-angle-down" aria-hidden="false"></i></a>
+                    <li id="menu-item-47"><a href="/our-fleet/city-cars/"> CITY CAR</a></li>
+                    <li id="menu-item-47"><a href="/our-fleet/electric/">ELECTRIC</a></li>
+                    <li id="menu-item-47"><a href="/our-fleet/prestige/"> PRESTIGE</a></li>
+                    <li id="menu-item-47"><a href="/our-fleet/van-track/"> VAN & TRUCK</a></li>
+                </li>
+                <li id="menu-item-47" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children">
+                  <a href="#">SERVICES<i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <li><a href="/services/rent-a-car/">RENT A CAR</a></li>
+                    <li><a href="/services/chauffeur-services/">CHAUFFEUR SERVICES</a></li>
+                    <li><a href="/services/parking-services/">PARKING SERVICES</a></li>
+                </li>
+                <li id="menu-item-47" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home">
+                  <a href="/offers&news/">OFFERS & NEWS</a>
+                </li>
               </ul>
             </nav>
           </div>

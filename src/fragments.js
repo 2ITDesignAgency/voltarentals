@@ -99,6 +99,7 @@ export const fragments = graphql`
   }
 
   fragment PageContent on WpPage {
+    
     title
     content
     databaseId

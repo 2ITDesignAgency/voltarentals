@@ -10,7 +10,6 @@ import Chefaur from "../assets/images/chefaur.jpg"
 
 import Van from "../assets/images/van.png"
 
-
 const Menu = () => {
   const { wpMenu } = useStaticQuery(graphql`
     {
@@ -65,78 +64,24 @@ const Menu = () => {
               </UniversalLink>
             </li>
           )
-        })}        <li
-        id="menu-item-47"
-        className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children"
-      >
-        <a href="/our-fleet">
-          OUR FLEET<i className="fa fa-angle-down" aria-hidden="true"></i>
-        </a>
-        <ul className="secondary-menu fleet-menu reset-list-style">
-          <li>
-            <a href="/our-fleet/city-cars/"><img
-                  src={CityCar}
-                  className="fleet-menu-img"
-                /> CITY CAR</a>
-          </li>
-          <li>
-            <a href="/our-fleet/electric/">               <img
-                  src={Electric}
-                  className="fleet-menu-img"
-                /> ELECTRIC</a>
-          </li>
-          <li>
-            <a href="/our-fleet/prestige/"><img
-                  src={Prestige}
-                  className="fleet-menu-img"
-                /> PRESTIGE</a>
-          </li>
-          <li>
-            <a href="/our-fleet/van-track/"><img
-                  src={Van}
-                  className="fleet-menu-img"
-                /> VAN & TRUCK</a>
-          </li>
-        </ul>
-      </li>
-        <li
-          id="menu-item-47"
-          className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children"
-        >
-          <a href="#">
-            SERVICES <i className="fa fa-angle-down" aria-hidden="true"></i>
-          </a>
-          <ul className="secondary-menu service-menu reset-list-style">
-            <li>
-              <a href="/services/rent-a-car/">
-              <img
-                  src={RentaCar}
-                  className="service-menu-img"
-                />
-                RENT A CAR</a>
-            </li>
-            <li>
-              <a href="/services/chauffeur-services/">
-              <img
-                  src={Chefaur}
-                  className="service-menu-img"
-                />
-                CHAUFFEUR SERVICES</a>
-            </li>
-            <li>
-              <a href="/services/parking-services/">
-              <img
-                  src={Parking}
-                  className="service-menu-img"
-                />
-                PARKING SERVICES</a>
-            </li>
+        })}{" "}
+        <li id="menu-item-47" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children">
+          <a href="/our-fleet">OUR FLEET<i className="fa fa-angle-down" aria-hidden="true"></i></a>
+          <ul className="secondary-menu fleet-menu reset-list-style"><li><a href="/our-fleet/city-cars/">CITY CAR</a></li>
+            <li><a href="/our-fleet/electric/">ELECTRIC</a></li>
+            <li><a href="/our-fleet/prestige/">PRESTIGE</a></li>
+            <li><a href="/our-fleet/van-track/">VAN & TRUCK</a></li>
           </ul>
         </li>
-        <li
-          id="menu-item-47"
-          className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home"
-        >
+        <li id="menu-item-47" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children">
+          <a href="#">SERVICES<i className="fa fa-angle-down" aria-hidden="true"></i></a>
+          <ul className="secondary-menu service-menu reset-list-style">
+            <li><a href="/services/rent-a-car/">RENT A CAR</a></li>
+            <li><a href="/services/chauffeur-services/">CHAUFFEUR SERVICES</a></li>
+            <li><a href="/services/parking-services/">PARKING SERVICES</a></li>
+          </ul>
+        </li>
+        <li id="menu-item-47" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home">
           <a href="/offers&news/">OFFERS & NEWS</a>
         </li>
       </ul>

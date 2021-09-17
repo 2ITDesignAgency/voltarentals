@@ -1,8 +1,10 @@
 import React, { useEffect } from "react"
-import { graphql, Link } from "gatsby"
+import { graphql, Link, useStaticQuery } from "gatsby"
 import Layout from "../../components/Layout"
 import Seo from "../../components/Seo"
 import FeaturedMedia from "../../components/FeaturedMedia"
+import BackgroundSlider from "gatsby-image-background-slider"
+import Slider from "../../components/homepageelements/Slider"
 
 const page = ({ data }) => {
   const { page } = data
@@ -153,24 +155,14 @@ const page = ({ data }) => {
       <Layout
         bodyClass={`page-template-default page page-id-${databaseId} wp-embed-responsive singular missing-post-thumbnail has-no-pagination not-showing-comments footer-top-visible customize-support`}
       >
-        {/*front-page header with booking system start*/}
-        <header
-          className="header-cta section_1"
-          style={{
-            background: `url(${sliderImage}) center center`
-          }}
-        >
-          <div className="entry-content">
-            <h1 className="header-cta-title">{sliderText}</h1>
-          </div>
-          <div className="cta-booking ">
+        {/*front-page section 2 start*/}
+        <div className="sliderHome">
+        <Slider />
+        </div>
+        <div className="cyan-content section_2">
+          <div className="cta-booking">
             <div id="wheelsbook" style={{ maxWidth: `1040px` }}></div>
           </div>
-        </header>
-        {/*front-page header with booking system end*/}
-
-        {/*front-page section 2 start*/}
-        <div className="cyan-content section_2">
           <div className="entry-content">
             <div className="car-rental-title">
               <h1 className="todays-car-rental ">{offerTitle}</h1>
@@ -269,6 +261,89 @@ const page = ({ data }) => {
 
           {/* fleet categories start*/}
           <div className="entry-content">
+            {/* categories row start */}
+            <div className="section_3_row">
+              {/* fleet categories col 1*/}
+              <div className="section_3_col">
+                <Link to={`/our-fleet/cyti-cars/`}>
+                  <img src={fleetCategorie1Image} />
+                </Link>
+                <div>
+                  <h2 className="entry-title heading-size-1 archive-post-title">
+                    {fleetCategorieTitle1}
+                  </h2>
+                  <div
+                    dangerouslySetInnerHTML={{ __html: fleetCategorieText1 }}
+                    className="offer-post-excerpt"
+                  />
+                  <Link to={`/our-fleet/cyti-cars/`} className="Offer-btn">
+                    Read more
+                  </Link>
+                </div>
+              </div>
+              {/* fleet categories col 1 end */}
+
+              {/* fleet categories col 2*/}
+              <div className="section_3_col">
+                <Link to={`/our-fleet/electric/`}>
+                  <img src={fleetCategorie2Image} />
+                </Link>
+                <div>
+                  <h2 className="entry-title heading-size-1 archive-post-title">
+                    {fleetCategorieTitle2}
+                  </h2>
+                  <div
+                    dangerouslySetInnerHTML={{ __html: fleetCategorieText2 }}
+                    className="offer-post-excerpt"
+                  />
+                  <Link to={fleetCategorieLink2} className="Offer-btn">
+                    Read more
+                  </Link>
+                </div>
+              </div>
+              {/* fleet categories col 2 end */}
+
+              {/* fleet categories col 3 */}
+              <div className="section_3_col">
+                <Link to={fleetCategorieLink3}>
+                  <img src={fleetCategorie3Image} />
+                </Link>
+                <div>
+                  <h2 className="entry-title heading-size-1 archive-post-title">
+                    {fleetCategorieTitle3}
+                  </h2>
+                  <div
+                    dangerouslySetInnerHTML={{ __html: fleetCategorieText3 }}
+                    className="offer-post-excerpt"
+                  />
+                  <Link to={fleetCategorieLink3} className="Offer-btn">
+                    Read more
+                  </Link>
+                </div>
+              </div>
+              {/* fleet categories col 3 end */}
+
+              {/* fleet categories col 4 */}
+              <div className="section_3_col">
+                <Link to={fleetCategorieLink4}>
+                  <img src={fleetCategorie4Image} />
+                </Link>
+                <div>
+                  <h2 className="entry-title heading-size-1 archive-post-title">
+                    {fleetCategorieTitle4}
+                  </h2>
+                  <div
+                    dangerouslySetInnerHTML={{ __html: fleetCategorieText4 }}
+                    className="offer-post-excerpt"
+                  />
+                  <Link to={fleetCategorieLink4} className="Offer-btn">
+                    Read more
+                  </Link>
+                </div>
+              </div>
+              {/* fleet categories col 4 end */}
+            </div>
+            {/* categories row end */}
             {/* categories row start */}
             <div className="section_3_row">
               {/* fleet categories col 1*/}
@@ -513,16 +588,12 @@ const page = ({ data }) => {
           />
         </div>
         {/* front-page section 4 end*/}
-
-        {/*front-page section 5 start*/}
-        <div className="section_3"> </div>
-        {/*front-page section 5 end*/}
       </Layout>
     )
   }
   // page template that dont have a special page
   else {
-    console.log(featuredImage);
+    console.log(featuredImage)
     return (
       <Layout
         bodyClass={`page-template-default page page-id-${databaseId} wp-embed-responsive singular missing-post-thumbnail has-no-pagination not-showing-comments footer-top-visible customize-support`}
