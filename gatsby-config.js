@@ -14,6 +14,13 @@ module.exports = {
     author: `@2itwebservices`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `backgrounds`,
+        path: `${__dirname}/src/assets/sliderImage`, // wherever background images are stored
+      },
+    },
     `gatsby-plugin-react-helmet`,
     'gatsby-plugin-sass',
     `gatsby-plugin-notifications`,

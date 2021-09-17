@@ -1,1 +1,1 @@
-{"data":{"wpMenu":null}}
+{"data":{"wpMenu":{"name":"extended","menuItems":{"nodes":[{"label":"HOME","url":"https://2itdesignagency.gr/voltarentals/","databaseId":840,"connectedNode":{"node":{"__typename":"WpPage","uri":"/"}}},{"label":"LOCATIONS","url":"/locations/","databaseId":841,"connectedNode":{"node":{"__typename":"WpPage","uri":"/locations/"}}}]}}}}

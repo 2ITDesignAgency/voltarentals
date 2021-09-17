@@ -38,12 +38,6 @@ const Header = ({ pageContext, toggleBackdrop, ...props }) => {
               </Link>
               <Menu />
             </h1>
-            {/* <div
-              className="site-description"
-              dangerouslySetInnerHTML={{
-                __html: wp.generalSettings.description,
-              }}
-            /> */}
           </div>
 
           <button
@@ -60,29 +54,6 @@ const Header = ({ pageContext, toggleBackdrop, ...props }) => {
               </span>
             </span>
           </button>
-        </div>
-
-        <div className="header-navigation-wrapper">
-          {/* <Menu /> */}
-
-          <div className="header-toggles hide-no-js">
-            <div className="toggle-wrapper nav-toggle-wrapper has-expanded-menu">
-              <button
-                className="toggle nav-toggle desktop-nav-toggle"
-                data-toggle-target=".menu-modal"
-                data-toggle-body-class="showing-menu-modal"
-                aria-expanded="false"
-                data-set-focus=".close-nav-toggle"
-                onClick={(e) => toggleBackdrop(e, true)}
-              >
-                <span className="toggle-inner">
-                  <span className="toggle-icon">
-                    <ToggleIcon />
-                  </span>
-                </span>
-              </button>
-            </div>
-          </div>
         </div>
       </div>
     </header>
