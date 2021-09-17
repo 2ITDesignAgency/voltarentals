@@ -31,6 +31,7 @@ const SliderHome = ({ children }) => (
         //   transform: "rotate(-2deg) scale(.9)",
         // }}           
       > 
+<<<<<<< HEAD
         {/* Captions in sync with background images
         <div>Woof</div>
         <div>Meow</div> */}
@@ -39,6 +40,16 @@ const SliderHome = ({ children }) => (
           I could use a hand
         </a>
         <div>I need to find better hobbies</div> */}
+=======
+        {/* Captions in sync with background images*/}
+        <div>Woof</div>
+        <div>Meow</div>
+        <>{/* Giraffes don't talk; [they aren't real](https://chivomengro.com/2017/10/23/the-truth-comes-out-giraffes-are-a-hoax/) */}</>
+        <a href="https://en.wikipedia.org/wiki/Tasmanian_devil#Conservation_status">
+          I could use a hand
+        </a>
+        <div>I need to find better hobbies</div>
+>>>>>>> abced8ec855378b05105dddb0cadeb2e9aa05f53
       </BackgroundSlider>
     </>
   )  
