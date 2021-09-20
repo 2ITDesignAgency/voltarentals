@@ -28,8 +28,10 @@ const Menu = () => {
   if (!wpMenu?.menuItems?.nodes || wpMenu.menuItems.nodes === 0) return null
 
   return (
+
       <ul>
-        <li className="footerWidgetName">MORE INFORMATION</li>
+      <li className="footerWidgetName">MORE INFORMATION</li>
+
         {wpMenu.menuItems.nodes.map((menuItem, i) => {
           const path = menuItem?.connectedNode?.node?.uri ?? menuItem.url
 
