@@ -67,10 +67,17 @@ const Menu = () => {
         })}{" "}
         <li id="menu-item-47" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children">
           <a href="/our-fleet">OUR FLEET<i className="fa fa-angle-down" aria-hidden="true"></i></a>
-          <ul className="secondary-menu fleet-menu reset-list-style"><li><a href="/our-fleet/city-cars/">CITY CAR</a></li>
-            <li><a href="/our-fleet/electric/">ELECTRIC</a></li>
-            <li><a href="/our-fleet/prestige/">PRESTIGE</a></li>
-            <li><a href="/our-fleet/van-track/">VAN & TRUCK</a></li>
+          <ul className="secondary-menu fleet-menu reset-list-style">
+            <li><a href="/our-fleet/compact/">Compact</a></li>
+            <li><a href="/our-fleet/economy/">Economy</a></li>
+            <li><a href="/our-fleet/economy-elite/">Economy Elite</a></li>
+            <li><a href="/our-fleet/luxury/">Luxury</a></li>
+            <li><a href="/our-fleet/mini/">Mini</a></li>
+            <li><a href="/our-fleet/mini-elite/">Mini Elite</a></li>
+            <li><a href="/our-fleet/premium/">Premium</a></li>
+            <li><a href="/our-fleet/suv/">SUV</a></li>
+            <li><a href="/our-fleet/premium-suv/">Premium SUV</a></li>
+            <li><a href="/our-fleet/van-track/">Van</a></li>
           </ul>
         </li>
         <li id="menu-item-47" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children">
