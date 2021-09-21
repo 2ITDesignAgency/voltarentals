@@ -213,18 +213,42 @@ export const fragments = graphql`
         fleetCategorie4Image {
           sourceUrl
         }
+        fleetCategorie5Image {
+          sourceUrl
+        }
+        fleetCategorie6Image {
+          sourceUrl
+        }
+        fleetCategorie7Image {
+          sourceUrl
+        }
+        fleetCategorie8Image {
+          sourceUrl
+        }
         fleetCategorieLink1
         fleetCategorieLink2
         fleetCategorieLink3
         fleetCategorieLink4
+        fleetCategorieLink5
+        fleetCategorieLink6
+        fleetCategorieLink7
+        fleetCategorieLink8
         fleetCategorieText1
         fleetCategorieText2
         fleetCategorieText3
         fleetCategorieText4
+        fleetCategorieText5
+        fleetCategorieText6
+        fleetCategorieText7
+        fleetCategorieText8
         fleetCategorieTitle1
         fleetCategorieTitle2
         fleetCategorieTitle3
         fleetCategorieTitle4
+        fleetCategorieTitle5
+        fleetCategorieTitle6
+        fleetCategorieTitle7
+        fleetCategorieTitle8
         fleetSubtitle
         fleetTitle
       }

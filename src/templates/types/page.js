@@ -3,7 +3,6 @@ import { graphql, Link, useStaticQuery } from "gatsby"
 import Layout from "../../components/Layout"
 import Seo from "../../components/Seo"
 import FeaturedMedia from "../../components/FeaturedMedia"
-import BackgroundSlider from "gatsby-image-background-slider"
 import Slider from "../../components/homepageelements/Slider"
 
 const page = ({ data }) => {
@@ -67,33 +66,57 @@ const page = ({ data }) => {
     const fleetTitle = frontPage.section3.fleetTitle
     const fleetSubtitle = frontPage.section3.fleetSubtitle
 
-    // section 3 fleet 1
+    // section 3 fleet item 1
     const fleetCategorieTitle1 = frontPage.section3.fleetCategorieTitle1
     const fleetCategorieText1 = frontPage.section3.fleetCategorieText1
     const fleetCategorieLink1 = frontPage.section3.fleetCategorieLink1
     const fleetCategorie1Image =
       frontPage.section3.fleetCategorie1Image.sourceUrl
 
-    // section 3 fleet 2
+    // section 3 fleet item 2
     const fleetCategorieTitle2 = frontPage.section3.fleetCategorieTitle2
     const fleetCategorieText2 = frontPage.section3.fleetCategorieText2
     const fleetCategorieLink2 = frontPage.section3.fleetCategorieLink2
     const fleetCategorie2Image =
       frontPage.section3.fleetCategorie2Image.sourceUrl
 
-    // section 3 fleet 3
+    // section 3 fleet item 3
     const fleetCategorieTitle3 = frontPage.section3.fleetCategorieTitle3
     const fleetCategorieText3 = frontPage.section3.fleetCategorieText3
     const fleetCategorieLink3 = frontPage.section3.fleetCategorieLink3
     const fleetCategorie3Image =
       frontPage.section3.fleetCategorie3Image.sourceUrl
 
-    // section 3 fleet 4
+    // section 3 fleet item 4
     const fleetCategorieTitle4 = frontPage.section3.fleetCategorieTitle4
     const fleetCategorieText4 = frontPage.section3.fleetCategorieText4
     const fleetCategorieLink4 = frontPage.section3.fleetCategorieLink4
     const fleetCategorie4Image =
       frontPage.section3.fleetCategorie4Image.sourceUrl
+
+    // section 3 fleet item 5
+    const fleetCategorieTitle5 = frontPage.section3.fleetCategorieTitle5
+    const fleetCategorieText5 = frontPage.section3.fleetCategorieText5
+    const fleetCategorieLink5 = frontPage.section3.fleetCategorieLink5
+    const fleetCategorie5Image =  frontPage.section3.fleetCategorie5Image.sourceUrl
+
+    // section 3 fleet item 6
+    const fleetCategorieTitle6 = frontPage.section3.fleetCategorieTitle6
+    const fleetCategorieText6 = frontPage.section3.fleetCategorieText6
+    const fleetCategorieLink6 = frontPage.section3.fleetCategorieLink6
+    const fleetCategorie6Image =  frontPage.section3.fleetCategorie6Image.sourceUrl    
+
+    // section 3 fleet item 7
+    const fleetCategorieTitle7 = frontPage.section3.fleetCategorieTitle7
+    const fleetCategorieText7 = frontPage.section3.fleetCategorieText7
+    const fleetCategorieLink7 = frontPage.section3.fleetCategorieLink7
+    const fleetCategorie7Image =  frontPage.section3.fleetCategorie7Image.sourceUrl
+    
+    // section 3 fleet item 8
+    const fleetCategorieTitle8 = frontPage.section3.fleetCategorieTitle8
+    const fleetCategorieText8 = frontPage.section3.fleetCategorieText8
+    const fleetCategorieLink8 = frontPage.section3.fleetCategorieLink8
+    const fleetCategorie8Image =  frontPage.section3.fleetCategorie8Image.sourceUrl       
 
     // section 3 cta 1
     const ctaTitle1 = frontPage.section3.ctaTitle1
@@ -265,7 +288,7 @@ const page = ({ data }) => {
             <div className="section_3_row">
               {/* fleet categories col 1*/}
               <div className="section_3_col">
-                <Link to={`/our-fleet/cyti-cars/`}>
+                <Link to={fleetCategorieLink1}>
                   <img src={fleetCategorie1Image} />
                 </Link>
                 <div>
@@ -276,7 +299,7 @@ const page = ({ data }) => {
                     dangerouslySetInnerHTML={{ __html: fleetCategorieText1 }}
                     className="offer-post-excerpt"
                   />
-                  <Link to={`/our-fleet/cyti-cars/`} className="Offer-btn">
+                  <Link to={fleetCategorieLink1} className="Offer-btn">
                     Read more
                   </Link>
                 </div>
@@ -344,22 +367,24 @@ const page = ({ data }) => {
               {/* fleet categories col 4 end */}
             </div>
             {/* categories row end */}
-            {/* categories row start */}
+            
+            
+            {/* categories second row start */}
             <div className="section_3_row">
               {/* fleet categories col 1*/}
               <div className="section_3_col">
-                <Link to={`/our-fleet/cyti-cars/`}>
-                  <img src={fleetCategorie1Image} />
+                <Link to={fleetCategorieLink5}>
+                  <img src={fleetCategorie5Image} />
                 </Link>
                 <div>
                   <h2 className="entry-title heading-size-1 archive-post-title">
-                    {fleetCategorieTitle1}
+                    {fleetCategorieTitle5}
                   </h2>
                   <div
-                    dangerouslySetInnerHTML={{ __html: fleetCategorieText1 }}
+                    dangerouslySetInnerHTML={{ __html: fleetCategorieText5 }}
                     className="offer-post-excerpt"
                   />
-                  <Link to={`/our-fleet/cyti-cars/`} className="Offer-btn">
+                  <Link to={fleetCategorieLink5} className="Offer-btn">
                     Read more
                   </Link>
                 </div>
@@ -368,18 +393,18 @@ const page = ({ data }) => {
 
               {/* fleet categories col 2*/}
               <div className="section_3_col">
-                <Link to={`/our-fleet/electric/`}>
-                  <img src={fleetCategorie2Image} />
+                <Link to={fleetCategorieLink6}>
+                  <img src={fleetCategorie6Image} />
                 </Link>
                 <div>
                   <h2 className="entry-title heading-size-1 archive-post-title">
-                    {fleetCategorieTitle2}
+                    {fleetCategorieTitle6}
                   </h2>
                   <div
-                    dangerouslySetInnerHTML={{ __html: fleetCategorieText2 }}
+                    dangerouslySetInnerHTML={{ __html: fleetCategorieText6 }}
                     className="offer-post-excerpt"
                   />
-                  <Link to={fleetCategorieLink2} className="Offer-btn">
+                  <Link to={fleetCategorieLink6} className="Offer-btn">
                     Read more
                   </Link>
                 </div>
@@ -388,18 +413,18 @@ const page = ({ data }) => {
 
               {/* fleet categories col 3 */}
               <div className="section_3_col">
-                <Link to={fleetCategorieLink3}>
-                  <img src={fleetCategorie3Image} />
+                <Link to={fleetCategorieLink7}>
+                  <img src={fleetCategorie7Image} />
                 </Link>
                 <div>
                   <h2 className="entry-title heading-size-1 archive-post-title">
-                    {fleetCategorieTitle3}
+                    {fleetCategorieTitle7}
                   </h2>
                   <div
-                    dangerouslySetInnerHTML={{ __html: fleetCategorieText3 }}
+                    dangerouslySetInnerHTML={{ __html: fleetCategorieText7 }}
                     className="offer-post-excerpt"
                   />
-                  <Link to={fleetCategorieLink3} className="Offer-btn">
+                  <Link to={fleetCategorieLink7} className="Offer-btn">
                     Read more
                   </Link>
                 </div>
@@ -408,18 +433,18 @@ const page = ({ data }) => {
 
               {/* fleet categories col 4 */}
               <div className="section_3_col">
-                <Link to={fleetCategorieLink4}>
-                  <img src={fleetCategorie4Image} />
+                <Link to={fleetCategorieLink8}>
+                  <img src={fleetCategorie8Image} />
                 </Link>
                 <div>
                   <h2 className="entry-title heading-size-1 archive-post-title">
-                    {fleetCategorieTitle4}
+                    {fleetCategorieTitle8}
                   </h2>
                   <div
-                    dangerouslySetInnerHTML={{ __html: fleetCategorieText4 }}
+                    dangerouslySetInnerHTML={{ __html: fleetCategorieText8 }}
                     className="offer-post-excerpt"
                   />
-                  <Link to={fleetCategorieLink4} className="Offer-btn">
+                  <Link to={fleetCategorieLink8} className="Offer-btn">
                     Read more
                   </Link>
                 </div>

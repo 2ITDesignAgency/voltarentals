@@ -7214,10 +7214,7 @@ a.to-the-top > * {
 /* submenu */
 .fleet-menu {
   justify-content: center !important;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 250px;
+
 }
 .fleet-menu::after {
   border: 0.8rem solid transparent;
