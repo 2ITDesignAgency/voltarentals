@@ -70,13 +70,10 @@ const Menu = () => {
           <ul className="secondary-menu fleet-menu reset-list-style">
             <li><a href="/our-fleet/compact/">Compact</a></li>
             <li><a href="/our-fleet/economy/">Economy</a></li>
-            <li><a href="/our-fleet/economy-elite/">Economy Elite</a></li>
             <li><a href="/our-fleet/luxury/">Luxury</a></li>
             <li><a href="/our-fleet/mini/">Mini</a></li>
-            <li><a href="/our-fleet/mini-elite/">Mini Elite</a></li>
             <li><a href="/our-fleet/premium/">Premium</a></li>
             <li><a href="/our-fleet/suv/">SUV</a></li>
-            <li><a href="/our-fleet/premium-suv/">Premium SUV</a></li>
             <li><a href="/our-fleet/van-track/">Van</a></li>
           </ul>
         </li>
