@@ -1547,7 +1547,12 @@ ul.social-icons li {
   padding: 0 4rem;
   text-align: center;
 }
-
+.menu-icon-text{
+  display: flex;
+}
+.menu-icon{
+  margin-right: 0.5rem;
+}
 #GatsbyBody:not(.enable-search-modal) .header-titles-wrapper {
   justify-content: flex-start;
   padding-left: 0;
@@ -1563,6 +1568,7 @@ ul.social-icons li {
 .site-title {
   display: flex;
   align-items: center;
+  margin-left: 1rem;
 }
 
 .site-title a {

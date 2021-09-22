@@ -1,8 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import UniversalLink from "./UniversalLink"
-
-import Van from "../assets/images/van.png"
+import Phone from "../assets/svg/phone.svg"
+import Mail from "../assets/svg/mail.svg"
 
 const Menu = () => {
   const { wpMenu } = useStaticQuery(graphql`
@@ -83,6 +83,8 @@ const Menu = () => {
         <li id="menu-item-47" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home">
           <a href="/offers&news/">OFFERS & NEWS</a>
         </li>
+        <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-icon-text"><img src={Phone} className="menu-icon"/><a href="tel:6972348949">6972348949</a></li>
+        <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-icon-text"><img src={Mail} className="menu-icon"/><a href="mailto:info@volta4you.gr">info@volta4you.gr</a></li>
       </ul>
     </nav>
   )
