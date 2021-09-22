@@ -19,7 +19,7 @@ const Archive = (props) => {
 
   return (
     <Layout bodyClass="home blog wp-embed-responsive has-no-pagination showing-comments hide-avatars footer-top-visible customize-support">
-      <Seo title="Home" description="Welcome to the Twenty Nineteen Theme." />
+      <Seo title="Home" description="Welcome to volta4u" />
       <div className="column-blog">
         {nodes &&
           nodes.map((post, index) => {

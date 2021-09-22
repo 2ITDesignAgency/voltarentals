@@ -36,17 +36,6 @@ const page = ({ data }) => {
         <Section2 />
         <FleetHome />
         <NewsFeed />
-        <ul>
-          <li>
-          <li>1</li>
-          <li>1</li>
-          <li>1</li>
-          </li>
-          <li>1</li>
-          <li>1</li>
-          <li>1</li>
-          <li>1</li>
-        </ul>
       </Layout>
     )
   }
