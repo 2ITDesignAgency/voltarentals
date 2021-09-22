@@ -1,12 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import UniversalLink from "./UniversalLink"
-import CityCar from "../assets/images/economy.png"
-import Electric from "../assets/images/zoe-hp.png"
-import Prestige from "../assets/images/luxury.png"
-import RentaCar from "../assets/images/rent-a-car.jpg"
-import Parking from "../assets/images/parking.jpg"
-import Chefaur from "../assets/images/chefaur.jpg"
 
 import Van from "../assets/images/van.png"
 
@@ -68,7 +62,7 @@ const Menu = () => {
         <li id="menu-item-47" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children">
           <a href="/our-fleet">OUR FLEET<i className="fa fa-angle-down" aria-hidden="true"></i></a>
           <ul className="secondary-menu fleet-menu reset-list-style">
-          <li><a href="/our-fleet/compact/">Compact</a></li>
+            <li><a href="/our-fleet/compact/">Compact</a></li>
             <li><a href="/our-fleet/economy/">Economy</a></li>
             <li><a href="/our-fleet/luxury/">Luxury</a></li>
             <li><a href="/our-fleet/mini/">Mini</a></li>
@@ -80,7 +74,7 @@ const Menu = () => {
         </li>
         <li id="menu-item-47" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children">
           <a href="#">SERVICES<i className="fa fa-angle-down" aria-hidden="true"></i></a>
-          <ul className="secondary-menu service-menu reset-list-style">
+          <ul className="secondary-menu fleet-menu reset-list-style">
             <li><a href="/services/rent-a-car/">RENT A CAR</a></li>
             <li><a href="/services/chauffeur-services/">CHAUFFEUR SERVICES</a></li>
             <li><a href="/services/parking-services/">PARKING SERVICES</a></li>

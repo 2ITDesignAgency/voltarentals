@@ -44,7 +44,7 @@ const TopBar = () => (
         >
           COVID 19: Information regarding hygiene and safety measures at
           voltarentals👉
-          <Link to="/" activeClassName="active">
+          <Link to="/covid19" activeClassName="active">
             Learn more
           </Link>
         </p>

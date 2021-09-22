@@ -8,7 +8,6 @@ import Section2 from "../../components/homepageelements/section2"
 import FleetHome from "../../components/homepageelements/FleetHome"
 import NewsFeed from "../../components/homepageelements/newsFeed"
 
-
 const page = ({ data }) => {
   const { page } = data
   const { title, content, featuredImage, excerpt, databaseId, frontPage } = page
@@ -26,19 +25,28 @@ const page = ({ data }) => {
 
   // homepage template
   if (homepage == title) {
-
     return (
       <Layout
         bodyClass={`page-template-default page page-id-${databaseId} wp-embed-responsive singular missing-post-thumbnail has-no-pagination not-showing-comments footer-top-visible customize-support`}
       >
-        
         {/*front-page section 2 start*/}
         <div className="sliderHome">
-        <Slider />
+          <Slider />
         </div>
         <Section2 />
         <FleetHome />
         <NewsFeed />
+        <ul>
+          <li>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+          </li>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+        </ul>
       </Layout>
     )
   }
