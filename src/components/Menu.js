@@ -59,7 +59,14 @@ const Menu = () => {
             </li>
           )
         })}{" "}
-        <li id="menu-item-47" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children">
+        <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children">
+          <a href="#">lOCATIONS<i className="fa fa-angle-down" aria-hidden="true"></i></a>
+          <ul className="secondary-menu fleet-menu reset-list-style">
+            <li><a href="/mainland">Mainland</a></li>
+            <li><a href="/Islands">islands</a></li>
+          </ul>
+        </li>
+        <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children">
           <a href="/our-fleet">OUR FLEET<i className="fa fa-angle-down" aria-hidden="true"></i></a>
           <ul className="secondary-menu fleet-menu reset-list-style">
             <li><a href="/our-fleet/compact/">Compact</a></li>
@@ -72,19 +79,25 @@ const Menu = () => {
             <li><a href="/our-fleet/cargo-vans/">Cargo Vans</a></li>
           </ul>
         </li>
-        <li id="menu-item-47" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children">
+        <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children">
           <a href="#">SERVICES<i className="fa fa-angle-down" aria-hidden="true"></i></a>
           <ul className="secondary-menu fleet-menu reset-list-style">
-            <li><a href="/services/rent-a-car/">RENT A CAR</a></li>
-            <li><a href="/services/chauffeur-services/">CHAUFFEUR SERVICES</a></li>
-            <li><a href="/services/parking-services/">PARKING SERVICES</a></li>
+            <li><a href="/services/rent-a-car/">Rent A Car</a></li>
+            <li><a href="/services/chauffeur-services/">Chauffeur Services</a></li>
+            <li><a href="/services/parking-services/">Parking Services</a></li>
           </ul>
         </li>
-        <li id="menu-item-47" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home">
-          <a href="/offers&news/">OFFERS & NEWS</a>
+        <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home">
+          <a href="/category/offers/">OFFERS</a>
         </li>
-        <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-icon-text"><img src={Phone} className="menu-icon"/><a href="tel:6972348949">6972348949</a></li>
-        <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-icon-text"><img src={Mail} className="menu-icon"/><a href="mailto:info@volta4you.gr">info@volta4you.gr</a></li>
+        <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home">
+          <a href="/category/news/">NEWS</a>
+        </li>
+        <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home">
+          <a href="/contact-us/">CONTACT US</a>
+        </li>
+        <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-icon-text phone"><img src={Phone} className="menu-icon"/> <a href="tel:6972348949"> 6972348949</a></li>
+        <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-icon-text contact-info"><img src={Mail} className="menu-icon"/> <a href="mailto:info@volta4you.gr"> info@volta4you.gr</a></li>
       </ul>
     </nav>
   )

@@ -167,7 +167,7 @@ const FleetHome = () => {
   const ctaButtonText3 = wpPage.frontPage.section3.ctaButtonText3
   const ctaButtonLink3 = wpPage.frontPage.section3.ctaButtonLink3
   const ctaIcon3 = wpPage.frontPage.section3.ctaIcon3.sourceUrl
-  console.log(wpPage)
+
   return (
     <main>
       {/* front-page section 3 start*/}

@@ -23,21 +23,21 @@ const Header = ({ pageContext, toggleBackdrop, ...props }) => {
             <h1 className="site-title">
               <Link
                 to="/"
-                // dangerouslySetInnerHTML={{ __html: wp.generalSettings.title }}
+                class="logo"
               >
                 <img
                   src={Logo}
                   alt="logo"
-                  width="147"
+                  width="190"
                   style={{
                     display: "inline-block",
                     marginBottom: 0,
-                    marginRight: `74px`,
                   }}
                 />
               </Link>
               <Menu />
             </h1>
+
           </div>
 
           <button

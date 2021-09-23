@@ -154,26 +154,14 @@ path {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.offer-post {
-  width: 31%;
-  background: #001a24;
-  box-shadow: 0 0 3px 0 rgb(0 0 0 / 15%);
-  border-radius: 2px;
-  overflow: hidden;
-  color: white;
-  padding-bottom: 3rem;
-  margin-bottom: 3rem;
-}
-.col-4 {
-  width: 24% !important;
-}
 
 .Offer-btn {
   margin: 1rem !important;
-  padding-bottom: 1rem;
+  padding-bottom: 0rem;
 }
 .offer-post-excerpt {
-  margin: 1rem !important;
+  margin: 1rem;
+  margin-bottom: 2rem;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -184,6 +172,12 @@ span.screen-reader-text {
 }
 .offer-post img {
   width: 100%;
+}
+.post-content-single {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 15.5rem;
 }
 .entry-content h2 {
   margin: 1rem !important;
@@ -462,7 +456,7 @@ Inter variable font. Usage:
 /*	2. Element Base
 /* ---------------------------------------------*---------------------------- */
 .header-cta {
-  min-height: 60vh;
+  min-height: 18vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1156,12 +1150,6 @@ th {
   min-height: calc(100vh - 32px);
 }
 
-@media (max-width: 782px) {
-  .admin-bar .screen-height {
-    min-height: calc(100vh - 46px);
-  }
-}
-
 .screen-width {
   position: relative;
   left: calc(50% - 50vw);
@@ -1537,7 +1525,27 @@ ul.social-icons li {
   padding: 3.15rem 0;
   z-index: 100;
 }
+/* website scroll bar */
+/* Let's get this party started */
+::-webkit-scrollbar {
+  width: 12px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #49b850; 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+background: #49b850; 
+}
 /* Header Titles ----------------------------- */
 
 .header-titles-wrapper {
@@ -1641,11 +1649,7 @@ ul.social-icons li {
   top: 32px;
 }
 
-@media (max-width: 782px) {
-  .admin-bar.overlay-header #site-header {
-    top: 46px;
-  }
-}
+
 
 /* Header Navigation ------------------------- */
 
@@ -2002,11 +2006,7 @@ ul.primary-menu {
   top: 32px;
 }
 
-@media (max-width: 782px) {
-  .admin-bar .menu-modal {
-    top: 46px;
-  }
-}
+
 
 .menu-modal.show-modal {
   display: flex;
@@ -2044,7 +2044,7 @@ button.close-nav-toggle {
   color: #fff;
   font-weight: 500;
   justify-content: flex-end;
-  padding: 3.1rem 1.5rem;
+  padding: 1rem 1.5rem;
   width: 100%;
 }
 
@@ -2053,6 +2053,19 @@ button.close-nav-toggle svg {
   height: 1.6rem;
   width: 1.6rem;
   outline: none;
+}
+
+.contact-info {
+  display: flex;
+  color: white;
+  justify-content: space-around;
+}
+.contact-item a{
+  color: white;
+  text-decoration: none;
+}
+span.contact-item {
+  display: flex;
 }
 
 button.close-nav-toggle .toggle-text {
@@ -2083,8 +2096,8 @@ button.close-nav-toggle .toggle-text {
 
 .modal-menu > li > a,
 .modal-menu > li > .ancestor-wrapper > a {
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 1.1rem;
+  font-weight: 600;
   letter-spacing: -0.0375em;
 }
 
@@ -2100,7 +2113,7 @@ button.close-nav-toggle .toggle-text {
 
 .modal-menu a {
   display: block;
-  padding: 1rem 2.5rem;
+  padding: 0.5rem 2.5rem;
   text-decoration: none;
   width: 100%;
 }
@@ -2265,11 +2278,7 @@ button.sub-menu-toggle.active svg {
   top: 32px;
 }
 
-@media (max-width: 782px) {
-  .admin-bar .search-modal.active {
-    top: 46px;
-  }
-}
+
 
 .search-modal-inner {
   background: #fff;
@@ -2621,12 +2630,15 @@ button.search-untoggle {
   padding-top: 1rem;
 }
 .archive-post-title {
-  font-size: 1.4286rem !important;
+  font-size: 1.4286rem!important;
   justify-content: flex-start;
   text-align: left;
   margin-left: 2rem !important;
 }
-
+.post-content-single h2 {
+  height: 2.5rem;
+  font-size: 1.185rem !important;
+}
 .article-post .post-meta li {
   margin: 1.4rem 0 0 3rem;
 }
@@ -4797,7 +4809,908 @@ a.to-the-top > * {
 /*	17. Media Queries
 /* -------------------------------------------------------------------------- */
 
+#WheelsBookingEngineWrapper .calendarContainerFocus input.calendar,
+#WheelsBookingEngineWrapper .calendarContainerFocusRight input.calendar {
+  background-color: #fff !important;
+}
+
+#WheelsBookingEngineWrapper .calendarContainerFocus > *,
+#WheelsBookingEngineWrapper .calendarContainerFocusRight > * {
+  background-color: #e8f1f2;
+}
+.WheelsContainer p {
+  color: #212121 !important;
+}
+#WheelsBookingEngineWrapper .calendarContainerFocus input.calendar {
+  color: white !important;
+}
+
+#WheelsBookingEngineWrapper .calendarContainerFocus > * {
+  background: #e8f1f2 !important;
+}
+#WheelsBookingEngineWrapper .calendarContainerFocusRight > * {
+  background: #e8f1f2 !important;
+}
+#WheelsBookingEngineWrapper .calendarContainerFocusRight input.calendar {
+  color: white !important;
+}
+
+/* navigation drop down */
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff !important;
+  font-size: 1.1em;
+  padding-right: 0.7em;
+}
+
+/* submenu */
+.fleet-menu {
+  justify-content: center !important;
+
+}
+.fleet-menu::after {
+  border: 0.8rem solid transparent;
+  border-bottom-color: #fff;
+  right: auto !important;
+  left: 90% !important;
+}
+.fleet-menu a {
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+}
+.menu-item .fa {
+  padding-left: 0.5em;
+}
+.fleet-menu-img {
+  width: 6.5rem;
+}
+.fleet-menu a:hover {
+  text-decoration: none;
+}
+.service-menu {
+  justify-content: center !important;
+}
+.service-menu::after {
+  border: 0.8rem solid transparent;
+  border-bottom-color: #fff;
+
+  // right: 12rem !important;
+  right: auto !important;
+  left: 90% !important;
+}
+.service-menu a {
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+}
+.service-menu a:hover {
+  text-decoration: none;
+}
+.service-item .fa {
+  padding-left: 0.5em;
+}
+.service-menu-img {
+  width: 10.6rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 3px 0 rgb(0 0 0 / 15%);
+}
+
+// fleet css start
+.wp-block-getwid-custom-post-type__post {
+  width: 48%;
+  margin: 1%;
+  justify-content: center;
+  align-items: center;
+}
+.wp-block-getwid-custom-post-type__wrapper.getwid-columns.getwid-columns-3 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.wp-block-getwid-custom-post-type__post-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  box-shadow: 0 0 3px 0 rgb(0 0 0 / 15%);
+  align-items: center;
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+.wp-block-getwid-custom-post-type__content-wrapper {
+  margin-bottom: 2rem;
+  margin-top: -2rem;
+}
+
+.wp-block-getwid-custom-post-type__post-header {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+
+.header-cta {
+  background-size: cover !important;
+}
+// booking form
+
+#WheelsBookingEngineWrapper,
+.WheelsContainer {
+  background-color: #e8f1f2 !important;
+  // border: 1px solid black;
+  padding: 1rem;
+  box-shadow: 0 0 4px 0 #00000033;
+}
+
+#BookingSearch h4 {
+  font-weight: 400 !important;
+  color: white;
+}
+.WebString_Text_managebooking, .WebString_Text_BookedBtn {
+  color: white !important;
+}
+.WheelsContainer label {
+  color: #212121;
+}
+.WebString_Text_alreadybook{
+  color: #212121 !important;
+}
+#locationResults li span {
+  color: #212121;
+}
+#responseResults h4 {
+  font-size: 36px !important;
+  padding-bottom: 40px !important;
+}
+.WheelsContainer span {
+  font-size: 1.2rem !important;
+  font-weight: 400 !important;
+}
+.WheelsContainer .wbeInputElement {
+  font-size: 1.2rem !important;
+  background-color: white !important;
+}
+
+.WheelsContainer .wbeInputIcon {
+  background-color: white !important;
+}
+.searchClick {
+  background-color: #108740 !important;
+}
+.WheelsContainer .wbeInputElement {
+  color: #212121 !important;
+  font-weight: 300;
+}
+.fa-search {
+  display: none;
+}
+.wbeInputElementCheck {
+  background-color: white;
+}
+#WheelsBookingEngineWrapper,
+.WheelsContainer {
+  line-height: 1;
+  --background-color: #e8f1f2 !important;
+  --button-background-color-hover: #e8f1f2 !important;
+  --button-secondary-background-color: #108740 !important;
+  --button-secondary-background-color-hover: #108740 !important;
+}
+.WheelsContainer .wbeInputElementCheck:checked::before {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  content: "✔";
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+  line-height: 20px;
+  background-color: white;
+  color: #212121;
+}
+.WheelsContainer .wbeInputElementCheck:hover {
+  background-color: white !important;
+}
+.WheelsContainer .wbeInputElementCheck {
+  background-color: white !important;
+}
+.WheelsContainer .wbeInputElementCheck:checked::before {
+  left: 4px;
+  font-size: 13px !important;
+  text-align: center;
+  line-height: 20px;
+}
+
+#responseResults .wbeDealImageContainer {
+  background: #fff;
+  color: #212121;
+}
+
+#responseResults .wbeDealInfoContainer {
+  background: #fff;
+  color: #212121;
+}
+
+#responseResults .wbeDealBook {
+  background: #fff;
+  color: #fff;
+}
+#responseResults button.DealInfoBook:hover {
+  background-color: #108740 !important;
+  box-shadow: 0 0 5px 0 #00000033;
+}
+#responseResults button.DealInfoBook {
+  background-color: #108740 !important;
+  box-shadow: 0 0 5px 0 #00000033;
+}
+
+#wbeFiltersMenu {
+  background: #fff !important;
+  box-shadow: 0 0 4px 0 #00000033 !important;  
+}
+.WebString_Text_Book{
+  color: #fff !important;
+}
+.WheelsContainer div,
+.WheelsContainer p {
+  color: #212121 !important;
+}
+
+#dealBookTemplate {
+  margin-top: 0px !important;
+}
+#dealImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+#OptionsMenu .wbeDealOptionsSummaryContainer h5,
+#OptionsMenu #DealPriceDiv,
+#BookingSearchRes .wbeManageBookVehicle h3,
+#BookingSearchRes .wbeManageBookPriceButtonContainer {
+  background: #fff !important;
+}
+#WheelsBookingEngineWrapper #dealOptions button {
+  padding-bottom: 2.8rem !important;
+  padding-top: 0.5rem !important;
+}
+.WheelsContainer ol, .WheelsContainer ul {
+  list-style: none;
+  background-color: grey !important;
+}
+
+#WheelsBookingEngineWrapper
+  #dealOptions
+  .wbeDealOptionsSummaryButtonContainer
+  button {
+  color: #212121 !important;
+  padding-bottom: 2rem;
+  padding-top: 0.5rem;
+}
+#WheelsBookingEngineWrapper #dealOptions button{
+  min-width: 30%;
+  background-color: var(--button-background-color);
+  height: 34px;
+  font-size: inherit;
+  outline: none;
+  border: none;
+  color: var(--button-color);
+  font-weight: bold;
+  margin: 0;
+  margin-left: 5%;
+  float: right;
+  cursor: pointer;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding-bottom: 2rem;
+  padding-top: 0.5rem;
+}
+#wbeFiltersMenu .fa {
+  color: black !important;
+}
+#responseResults .cardata p {
+  font-size: 1.2rem !important;
+}
+.fa-info-circle:before {
+  font-size: 1.2rem !important;
+}
+.wbeDealOptionsSummaryContent{
+  background: #fff !important;
+
+}
+#CDMRprice {
+  font-size: 1.8rem !important;
+}
+#GroupCDMRprice{
+font-size: 1.8rem !important;
+}
+
+#ResultsCategories,
+#ResultsPassengers {
+  border-bottom: 0px var(--text-color) solid !important;
+  margin-bottom: 0.5em;
+}
+
+.WebString_Text_Coupon {
+  color: #212121 !important;
+}
+
+.WebString_Text_DriverAge {
+  color: #212121 !important;
+}
+
+.fa-times:before {
+  content: "\f00d";
+  font-weight: 300;
+  font-size: 2.3rem;
+  text-align: center;
+}
+
+#responseResults .warningIndicator {
+  position: relative;
+  padding-left: 40px;
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+#WheelsBookingEngineWrapper .calendarContainerFocus input.calendar, #WheelsBookingEngineWrapper .calendarContainerFocusRight input.calendar {
+  background-color: #fff !important;
+  color: #212121 !important;
+  font-family: "Open Sans", sans-serif, -apple-system, BlinkMacSystemFont !important;
+}
+#wbeFiltersMenu .WebString_Text_Filters, .filterButton span{
+  color: #212121 !important;
+  font-weight: 600 !important;
+}
+
+#wbeFiltersMenu .WebString_Text_Filters{
+  font-weight: 600 !important;
+  text-decoration: none !important;
+}
+
+#wbeFiltersMenu .WebString_Text_CarType span {
+  font-weight: 600 !important;
+}
+
+label.inline, input[type=checkbox] + label {
+  display: inline;
+  font-weight: 400;
+  margin-left: 0.5rem;
+  color: #706c80;
+  font-size: 14px;
+}
+
+
+/* extra css */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
+body {
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+p {
+  line-height: 1.5;
+  margin: 0 0 1em 0;
+}
+
+.logo-img {
+  max-width: 280px;
+  margin-bottom: 2rem;
+}
+#wheelsbook {
+  max-width: 880px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 3rem;
+}
+
+.cta-booking {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+body {
+  box-sizing: border-box;
+  color: #000;
+  font-family: -apple-system, BlinkMacSystemFont, "Open Sans", sans-serif;
+  font-size: 1rem;
+  letter-spacing: -0.015em;
+  text-align: left;
+}
+
+/* booking form */
+
+#WheelsBookingEngineWrapper,
+.WheelsContainer {
+  background-color: #e8f1f2 !important;
+  padding: 1rem;
+}
+
+#BookingSearch h4 {
+  font-weight: 400 !important;
+  color: white;
+}
+.WebString_Text_managebooking,
+.WebString_Text_BookedBtn {
+  color: white !important;
+}
+.WheelsContainer label {
+  color: #212121;
+}
+.WebString_Text_alreadybook {
+  color: #212121 !important;
+}
+#locationResults li span {
+  color: #212121;
+}
+#responseResults h4 {
+  font-size: 36px !important;
+  padding-bottom: 40px !important;
+}
+.WheelsContainer span {
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+}
+.WheelsContainer .wbeInputElement {
+  font-size: 0.8rem !important;
+  background-color: white !important;
+}
+
+.WheelsContainer .wbeInputIcon {
+  background-color: white !important;
+}
+.searchClick {
+  background-color: #108740 !important;
+}
+.WheelsContainer .wbeInputElement {
+  color: #212121 !important;
+  font-weight: 300;
+}
+.fa-search {
+  display: none;
+}
+.wbeInputElementCheck {
+  background-color: white;
+}
+#WheelsBookingEngineWrapper,
+.WheelsContainer {
+  line-height: 1;
+  --background-color: #e8f1f2 !important;
+  --button-background-color-hover: #e8f1f2 !important;
+  --button-secondary-background-color: #108740 !important;
+  --button-secondary-background-color-hover: #108740 !important;
+}
+.WheelsContainer .wbeInputElementCheck:checked::before {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  content: "✔";
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+  line-height: 20px;
+  background-color: white;
+  color: #212121;
+}
+.WheelsContainer .wbeInputElementCheck:hover {
+  background-color: white !important;
+}
+.WheelsContainer .wbeInputElementCheck {
+  background-color: white !important;
+}
+.WheelsContainer .wbeInputElementCheck:checked::before {
+  left: 4px;
+  font-size: 13px !important;
+  text-align: center;
+  line-height: 20px;
+}
+
+#responseResults .wbeDealImageContainer {
+  background: #fff;
+  color: #212121;
+}
+
+#responseResults .wbeDealInfoContainer {
+  background: #fff;
+  color: #212121;
+}
+
+#responseResults .wbeDealBook {
+  background: #fff;
+  color: #fff;
+}
+#responseResults button.DealInfoBook:hover {
+  background-color: #108740 !important;
+  box-shadow: 0 0 5px 0 #00000033;
+}
+#responseResults button.DealInfoBook {
+  background-color: #108740 !important;
+  box-shadow: 0 0 5px 0 #00000033;
+}
+
+#wbeFiltersMenu {
+  background: #fff !important;
+  box-shadow: 0 0 4px 0 #00000033 !important;
+}
+.WebString_Text_Book {
+  color: #fff !important;
+}
+.WheelsContainer div,
+.WheelsContainer p {
+  color: #212121 !important;
+}
+
+#dealBookTemplate {
+  margin-top: 0px !important;
+}
+#dealImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+#OptionsMenu .wbeDealOptionsSummaryContainer h5,
+#OptionsMenu #DealPriceDiv,
+#BookingSearchRes .wbeManageBookVehicle h3,
+#BookingSearchRes .wbeManageBookPriceButtonContainer {
+  background: #fff !important;
+}
+#WheelsBookingEngineWrapper #dealOptions button {
+  padding-bottom: 2.8rem !important;
+  padding-top: 0.5rem !important;
+}
+.WheelsContainer ol,
+.WheelsContainer ul {
+  list-style: none;
+  background-color: grey !important;
+}
+
+#WheelsBookingEngineWrapper
+  #dealOptions
+  .wbeDealOptionsSummaryButtonContainer
+  button {
+  color: #212121 !important;
+  padding-bottom: 2rem;
+  padding-top: 0.5rem;
+}
+#WheelsBookingEngineWrapper #dealOptions button {
+  min-width: 30%;
+  background-color: var(--button-background-color);
+  height: 34px;
+  font-size: inherit;
+  outline: none;
+  border: none;
+  color: var(--button-color);
+  font-weight: bold;
+  margin: 0;
+  margin-left: 5%;
+  float: right;
+  cursor: pointer;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding-bottom: 2rem;
+  padding-top: 0.5rem;
+}
+#wbeFiltersMenu .fa {
+  color: black !important;
+}
+#responseResults .cardata p {
+  font-size: 1.2rem !important;
+}
+.fa-info-circle:before {
+  font-size: 1.2rem !important;
+}
+.wbeDealOptionsSummaryContent {
+  background: #fff !important;
+}
+#CDMRprice {
+  font-size: 1.8rem !important;
+}
+
+#ResultsCategories,
+#ResultsPassengers {
+  border-bottom: 0px var(--text-color) solid !important;
+  margin-bottom: 0.5em;
+}
+
+.WebString_Text_Coupon {
+  color: #212121 !important;
+}
+
+.WebString_Text_DriverAge {
+  color: #212121 !important;
+}
+
+.fa-times:before {
+  content: "\f00d";
+  font-weight: 300;
+  font-size: 2.3rem;
+  text-align: center;
+}
+
+#responseResults .warningIndicator {
+  position: relative;
+  padding-left: 40px;
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+#WheelsBookingEngineWrapper .calendarContainerFocus input.calendar,
+#WheelsBookingEngineWrapper .calendarContainerFocusRight input.calendar {
+  background-color: #fff !important;
+  color: #212121 !important;
+  font-family: "Open Sans", sans-serif, -apple-system, BlinkMacSystemFont !important;
+}
+#wbeFiltersMenu .WebString_Text_Filters,
+.filterButton span {
+  color: #212121 !important;
+  font-weight: 600 !important;
+}
+
+#wbeFiltersMenu .WebString_Text_Filters {
+  font-weight: 600 !important;
+  text-decoration: none !important;
+}
+
+#wbeFiltersMenu .WebString_Text_CarType span {
+  font-weight: 600 !important;
+}
+
+label.inline,
+input[type="checkbox"] + label {
+  display: inline;
+  font-weight: 400;
+  margin-left: 0.5rem;
+  color: #706c80;
+  font-size: 14px;
+}
+
+#WheelsBookingEngineWrapper .calendarContainerFocus input.calendar,
+#WheelsBookingEngineWrapper .calendarContainerFocusRight input.calendar {
+  background-color: #fff !important;
+}
+
+#WheelsBookingEngineWrapper .calendarContainerFocus > *,
+#WheelsBookingEngineWrapper .calendarContainerFocusRight > * {
+  background-color: #e8f1f2;
+}
+.WheelsContainer p {
+  color: #212121 !important;
+}
+
+#WheelsBookingEngineWrapper .calendarContainerFocus > * {
+  background: #e8f1f2 !important;
+}
+#WheelsBookingEngineWrapper .calendarContainerFocusRight > * {
+  background: #e8f1f2 !important;
+}
+#BookingSearch h4 {
+  font-weight: 400 !important;
+  color: #212121;
+}
+
+#wbebookedBackBtn:hover {
+  background-color: #333 !important;
+}
+#wbeFindyourBooking:hover {
+  background-color: #333 !important;
+}
+
+.contact-text{
+  color: #212121;
+  font-size: 1.1rem;
+  background-color: #e8f1f2;
+  min-width:880px;
+  text-align: center;
+  padding: 1rem 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.contact-text a{
+  color: #212121;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: center;
+}
+
+#wheelsbook{
+  margin-top: -5rem;
+}
+
+.contact-us{
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+#responseResults .cardata p {
+    font-size: 1.2rem !important;
+    color: #212121 !important;
+  }
+
+  .WheelsContainer .wbeInputContainerCheck {
+    position: relative;
+    display: block;
+    padding-left: 1em;
+}
+
+
+
+#WheelsBookingEngineWrapper, .WheelsContainer {
+    width: 880px;
+}
+#OptionsMenu, #carDataOptionsTemplate {
+    min-height: auto;
+}
+
+#OptionsMenu.wbeDealOptionsContainer, #BookingSearchRes .wbeBookingSearchResContainer {
+    background-color: white;
+}
+.WheelsContainer span {
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    color: #212121;
+}
+#WheelsBookingEngineWrapper #dealOptions button{
+    background-color: #212121;
+    color: white;
+}
+#WheelsBookingEngineWrapper #dealOptions button:hover{
+    background-color: #212121;
+    color: white;
+}
+
+#OptionsMenu .WebString_Text_FinalPrice, #BookingSearchRes .WebString_Text_FinalPrice {
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+}
+span#GroupMDMRprice {
+    font-size: 1.5rem !important;
+}
+
+
+
+
+  
+#WheelsBookingEngineWrapper #dealOptions .wbeOptionInput {
+    width: auto;
+    height: auto;
+    float: right;
+    background-color: var(--background-color);
+    border: none;
+    outline: none;
+    padding: 0.8em 1em;
+}
+
+#WheelsBookingEngineWrapper #dealOptions .wbeOptionBtns {
+    width: auto;
+    min-width: auto;
+    height: auto;
+    font-size: 25px;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    padding: 0.17em 0.4em !important;
+}
+.NonInclusive .wbeNonInclusiveActions {
+    -ms-flex-preferred-size: 95px;
+    flex-basis: 110px;
+}
+
+.NonInclusive .wbeNonInclusiveContent {
+    -ms-flex-preferred-size: calc(100% - 130px);
+    flex-basis: calc(100% - 130px);
+    display: inline-block;
+}
+
+#WheelsBookingEngineWrapper #dealOptions .wbeOptionInput {
+    background-color: #108740;
+}
+
+.WheelsContainer span {
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    color:inherit;
+}
+
+.WheelsContainer .wbeInputElement {
+    font-weight: 300;
+    color: rgb(33, 33, 33) !important;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+#wbeCustIdIssueDate, #wbeCustIdExpiryDate, #wbeCustLicenseIssueDate, #wbeCustLicenseExpiryDate{
+    font-weight: 400;
+    font-size: 13px;
+    background-color: green !important;
+    color: white !important; 
+    font-weight: 300 !important;
+    font-size: 0.8rem !important;
+}
+#wbeDealOptionsContent{
+    background-color: blue;
+}
+#selection2b, #wbeaddress, #wbeaddress3, #coupon, #wbedatepicker1, #time1, #wbedatepicker2, #time2{
+    box-shadow: none;
+
+}
+
+#OptionsMenu .ChargeCategory {
+    font-size: 16px !important;
+    margin-bottom: 10px;
+    display: block;
+    font-weight: bold !important;
+    text-transform: uppercase;
+}
+
+#GroupEDMRprice{
+    font-size: 1.4rem !important;
+    padding-right: 1rem;
+}  
+
+#dealOptions p.priceAnalysisTitle, #BookingSearchRes .priceAnalysisTitle {
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    margin: 20px 0 10px;
+}
+
+// slider css
+.sliderHome{
+  min-height: 550px;
+}
+
+.display-none{
+display: none;
+}
+.offer-post {
+  background: #001a24;
+  box-shadow: 0 0 3px 0 rgb(0 0 0 / 15%);
+  border-radius: 2px;
+  overflow: hidden;
+  color: white;
+  padding-bottom: 0rem;
+  margin-bottom: 3rem;
+}
+
+// responsive css 
 @media (max-width: 479px) {
+  .enjoy-cta-row {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    flex-wrap: wrap;
+}
+.md-2 {
+  max-width: 98%;
+}
+  .offer-post .col-4 {
+    width: 48%;
+    box-shadow: 0 0 3px 0 rgb(0 0 0 / 15%);
+    border-radius: 2px;
+    overflow: hidden;
+    color: white;
+    padding-bottom: 0rem;
+    margin-bottom: 3rem;
+  }
   /* Blocks -------------------------------- */
 
   .wp-block-pullquote.alignleft,
@@ -4826,7 +5739,184 @@ a.to-the-top > * {
     margin: 3em 0 0 0;
   }
 }
+@media (max-width: 576px) {
+  .section_3_col .col-4{
+    width: 100%;
+    flex-wrap: wrap;
+}
+  .logo-img {
+    max-width: 150px;
+    margin-bottom: 1rem;
+  }
+  #wheelsbook {
+    width: 330px !important;
+    align-items: center !important;
+    justify-content: center !important;
+    display: flex !important;
+    margin-top: 0px !important;
 
+  }
+  .cta-booking {
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: -1.2rem;
+    background-color: #e8f1f2 !important;
+    padding: 1rem;
+  }
+  .contact-text{
+    color: #212121;
+    font-size: 1.1rem;
+    background-color: #e8f1f2;
+    min-width:330px;
+    text-align: center;
+    padding: 1rem 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-text a{
+    color: #212121;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .contact-us{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding-right: auto;
+  }
+  #WheelsBookingEngineWrapper, .WheelsContainer {
+      width: 330px;
+  }
+}
+@media (max-width: 599px) {
+  /* Blocks -------------------------------- */
+  /* SECTION DIVIDER -------------------------------- */
+  .article-post {
+    width: 100%;
+    margin-right: 0.6rem;
+    margin-left: 0.6rem;
+  }
+  .column-blog {
+    flex-wrap: wrap;
+  }
+  .col-4 {
+    width: 100% !important;
+  }
+  .cta-col {
+    width: 100%;
+  }
+  .section_3_col {
+    width: 48%;
+    flex-wrap: wrap;
+  }
+  .md-2 {
+    max-width: 100%;
+    padding-bottom: 2rem;
+  }
+  #WheelsBookingEngineWrapper,
+  .WheelsContainer {
+    margin-top: -40rem;
+  }
+  .header-inner {
+    max-width: 35rem;
+  }
+  .section-divider {
+    background-color: #001a24;
+    padding: 40px;
+    transform: skew(0deg, -3deg) translateY(-49px);
+  }
+  /* FOOTER COLUMN ITEMS */
+  .widget-content li {
+    font-size: 1rem;
+    list-style: none;
+    border-bottom: 1px solid green;
+    padding-bottom: 1rem;
+  }
+  .widget-content li a {
+    text-decoration: none;
+  }
+  /* BLOCK: COLUMNS */
+
+  /* While columns are stacked */
+  .wp-block-column:last-child {
+    margin-bottom: 0;
+  }
+
+  .wp-block-columns + .wp-block-columns {
+    margin-top: 0.2rem;
+  }
+
+  .wp-block-columns.alignwide + .wp-block-columns.alignwide {
+    margin-top: -0.8rem;
+  }
+
+  .wp-block-columns.alignfull + .wp-block-columns.alignfull {
+    margin-top: -1.8rem;
+  }
+
+  /* Template -------------------------------- */
+
+  /* TEMPLATE: COVER */
+
+  .template-cover .post-inner .post-meta-wrapper,
+  .template-cover .post-inner .author-bio {
+    width: calc(100% - 4rem);
+  }
+
+  /* Post Footer --------------------------- */
+
+  /* POST NAV LINKS */
+
+  .post-nav-links {
+    margin: 3em 0 0 0;
+  }
+}
+@media (min-width: 600px){
+  .section_3_col {
+    width: 48%;
+    flex-wrap: wrap;
+}
+  .enjoy-cta-row {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    flex-wrap: wrap;
+}
+.md-2 {
+  max-width: 98%;
+}
+  .offer-post .col-4 {
+    width: 100%;
+    background: #001a24;
+    box-shadow: 0 0 3px 0 rgb(0 0 0 / 15%);
+    border-radius: 2px;
+    overflow: hidden;
+    color: white;
+    padding-bottom: 0rem;
+    margin-bottom: 3rem;
+  }
+  #responseResults .wbeDealInfo {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+  }
+  #responseResults .wbeDealBook {padding: 20px 20px 20px !important;}
+  
+}
 @media (min-width: 480px) {
   /* Blocks -------------------------------- */
   .article-post {
@@ -4897,94 +5987,6 @@ a.to-the-top > * {
     margin: 3em 0 0 0;
   }
 }
-
-@media (max-width: 599px) {
-  /* Blocks -------------------------------- */
-  /* SECTION DIVIDER -------------------------------- */
-  .article-post {
-    width: 100%;
-    margin-right: 0.6rem;
-    margin-left: 0.6rem;
-  }
-  .column-blog {
-    flex-wrap: wrap;
-  }
-  .col-4 {
-    width: 100% !important;
-  }
-  .cta-col {
-    width: 100%;
-  }
-  .section_3_col {
-    width: 48%;
-    flex-wrap: wrap;
-  }
-  .md-2 {
-    max-width: 100%;
-    padding-bottom: 2rem;
-  }
-  .offer-post {
-    width: 100%;
-  }
-  #WheelsBookingEngineWrapper,
-  .WheelsContainer {
-    margin-top: -40rem;
-  }
-  .header-inner {
-    max-width: 35rem;
-  }
-  .section-divider {
-    background-color: #001a24;
-    padding: 40px;
-    transform: skew(0deg, -3deg) translateY(-49px);
-  }
-  /* FOOTER COLUMN ITEMS */
-  .widget-content li {
-    font-size: 1rem;
-    list-style: none;
-    border-bottom: 1px solid green;
-    padding-bottom: 1rem;
-  }
-  .widget-content li a {
-    text-decoration: none;
-  }
-  /* BLOCK: COLUMNS */
-
-  /* While columns are stacked */
-  .wp-block-column:last-child {
-    margin-bottom: 0;
-  }
-
-  .wp-block-columns + .wp-block-columns {
-    margin-top: 0.2rem;
-  }
-
-  .wp-block-columns.alignwide + .wp-block-columns.alignwide {
-    margin-top: -0.8rem;
-  }
-
-  .wp-block-columns.alignfull + .wp-block-columns.alignfull {
-    margin-top: -1.8rem;
-  }
-
-  /* Template -------------------------------- */
-
-  /* TEMPLATE: COVER */
-
-  .template-cover .post-inner .post-meta-wrapper,
-  .template-cover .post-inner .author-bio {
-    width: calc(100% - 4rem);
-  }
-
-  /* Post Footer --------------------------- */
-
-  /* POST NAV LINKS */
-
-  .post-nav-links {
-    margin: 3em 0 0 0;
-  }
-}
-
 @media (min-width: 600px) {
   /* Blocks -------------------------------- */
   .article-post {
@@ -5026,7 +6028,6 @@ a.to-the-top > * {
     margin: 3em 0 0 0;
   }
 }
-
 @media (min-width: 660px) {
   /* Blocks -------------------------------- */
   .article-post {
@@ -5143,9 +6144,84 @@ a.to-the-top > * {
     margin: 3em auto 0 auto;
   }
 }
-
+@media (max-width: 782px) {
+  .singular .entry-header {
+    background-color: #e8f1f2;
+    height: 60vh;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+  .col-4{
+    width: 48%;
+  }
+  .cta-col {
+    display: flex !important;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 48%;
+    text-align: center;
+}
+  .enjoy-cta-row {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    flex-wrap: wrap;
+}
+.md-2 {
+  max-width: 98%;
+}
+  .section_3_col {
+    width: 48%;
+    flex-wrap: wrap;
+}
+  .admin-bar .screen-height {
+    min-height: calc(100vh - 46px);
+  }
+  .admin-bar.overlay-header #site-header {
+    top: 46px;
+  }
+  .admin-bar .menu-modal {
+    top: 46px;
+  }
+  .admin-bar .search-modal.active {
+    top: 46px;
+  }
+  .wp-block-getwid-custom-post-type__post {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .wp-block-getwid-custom-post-type__post-wrapper {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 3px 0 rgb(0 0 0 / 15%);
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    border-radius: 15px;
+    padding: 1rem;
+  }
+}
 @media (min-width: 700px) {
+
   /* Element Base ------------------------- */
+  .offer-post-excerpt{
+    font-size: 0.94rem;
+  }
+  .col-4 {
+    width: 48% !important;
+  }
+  .cta-col {
+    display: flex !important;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 33%;
+    text-align: center;
+}
   .article-post {
     width: 48%;
     margin-right: 0.3rem;
@@ -5370,7 +6446,6 @@ a.to-the-top > * {
   .modal-menu {
     left: auto;
     width: 100%;
-    display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
   }
@@ -6116,9 +7191,35 @@ a.to-the-top > * {
     display: none;
   }
 }
-
 @media (min-width: 782px) {
+  .enjoy-cta-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    flex-wrap: wrap;
+}
+.md-2 {
+  max-width: 48%;
+}
+  .section_3_col {
+    width: 48%;
+    flex-wrap: wrap;
+}
+  .offer-post  .col-4{
+    width: 48%;
+    background: #001a24;
+    box-shadow: 0 0 3px 0 rgb(0 0 0 / 15%);
+    border-radius: 2px;
+    overflow: hidden;
+    color: white;
+    padding-bottom: 0rem;
+    margin-bottom: 3rem;
+  }
   /* Blocks -------------------------------- */
+
   .article-post {
     width: 48%;
     margin-right: 0.3rem;
@@ -6139,9 +7240,26 @@ a.to-the-top > * {
     margin-top: -2.8rem;
   }
 }
-
+@media (min-width: 992px) {
+  .section_3_col {
+    width: 46%;
+    flex-wrap: wrap;
+}
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+  }
+}
 @media (min-width: 1000px) {
   /* Document Setup ------------------------ */
+  .col-4 {
+    width: 24% !important;
+  }
+  .section_3_col {
+    width: 25%;
+    flex-wrap: wrap;
+}
   .article-post {
     width: 31%;
     margin-right: 0.3rem;
@@ -6150,6 +7268,16 @@ a.to-the-top > * {
   }
   .column-blog {
     flex-wrap: wrap;
+  }
+  .offer-post .col-4 {
+    width: 31%;
+    background: #001a24;
+    box-shadow: 0 0 3px 0 rgb(0 0 0 / 15%);
+    border-radius: 2px;
+    overflow: hidden;
+    color: white;
+    padding-bottom: 0rem;
+    margin-bottom: 3rem;
   }
   /* Helper Classes ------------------------ */
 
@@ -6644,7 +7772,6 @@ a.to-the-top > * {
     margin: 1.2rem 0 0 2.4rem;
   }
 }
-
 @media (min-width: 1220px) {
   /* Element Base -------------------------- */
   .site-title {
@@ -6652,9 +7779,9 @@ a.to-the-top > * {
 }
   /* SECTION DIVIDER -------------------------------- */
   .section-divider {
-    background-color: #001a24;
-    padding: 40px;
-    transform: skew(0deg, -3deg) translateY(-49px);
+    padding-top: 90px;
+    -webkit-transform: skew(0deg, -2deg) translateY(-76px);
+    transform: skew(0deg, -2deg) translateY(-34px);
   }
   /* FOOTER COLUMN ITEMS */
   .widget-content li {
@@ -6869,7 +7996,6 @@ a.to-the-top > * {
     max-width: 24%;
   }
 }
-
 @media (min-width: 1240px) {
   /* Blocks -------------------------------- */
   .site-title {
@@ -6915,7 +8041,6 @@ a.to-the-top > * {
     text-decoration: none;
   }
 }
-
 @media (min-width: 1280px) {
   .entry-content
     > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
@@ -6956,8 +8081,8 @@ a.to-the-top > * {
   /* SECTION DIVIDER -------------------------------- */
   .section-divider {
     background-color: #001a24;
-    padding: 50px;
-    transform: skew(0deg, -3deg) translateY(-49px);
+    padding: 57px;
+    transform: skew(0deg,-2deg) translateY(-76px);
   }
   /* FOOTER COLUMN ITEMS */
   .widget-content li {
@@ -7095,7 +8220,6 @@ a.to-the-top > * {
     margin-right: 0;
   }
 }
-
 @media (min-width: 1330px) {
   /* Entry Content ------------------------- */
   /* content for laptops */
@@ -7176,966 +8300,4 @@ a.to-the-top > * {
   .wp-block-pullquote.is-style-solid-color.alignright::before {
     top: 0;
   }
-}
-#WheelsBookingEngineWrapper .calendarContainerFocus input.calendar,
-#WheelsBookingEngineWrapper .calendarContainerFocusRight input.calendar {
-  background-color: #fff !important;
-}
-
-#WheelsBookingEngineWrapper .calendarContainerFocus > *,
-#WheelsBookingEngineWrapper .calendarContainerFocusRight > * {
-  background-color: #e8f1f2;
-}
-.WheelsContainer p {
-  color: #212121 !important;
-}
-#WheelsBookingEngineWrapper .calendarContainerFocus input.calendar {
-  color: white !important;
-}
-
-#WheelsBookingEngineWrapper .calendarContainerFocus > * {
-  background: #e8f1f2 !important;
-}
-#WheelsBookingEngineWrapper .calendarContainerFocusRight > * {
-  background: #e8f1f2 !important;
-}
-#WheelsBookingEngineWrapper .calendarContainerFocusRight input.calendar {
-  color: white !important;
-}
-
-/* navigation drop down */
-@media (min-width: 992px) {
-  .navbar-expand-lg .navbar-nav .dropdown-menu {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-  }
-}
-.navbar-dark .navbar-nav .nav-link {
-  color: #fff !important;
-  font-size: 1.1em;
-  padding-right: 0.7em;
-}
-
-/* submenu */
-.fleet-menu {
-  justify-content: center !important;
-
-}
-.fleet-menu::after {
-  border: 0.8rem solid transparent;
-  border-bottom-color: #fff;
-  right: auto !important;
-  left: 90% !important;
-}
-.fleet-menu a {
-  text-align: center;
-  text-decoration: none;
-  font-weight: 600;
-}
-.menu-item .fa {
-  padding-left: 0.5em;
-}
-.fleet-menu-img {
-  width: 6.5rem;
-}
-.fleet-menu a:hover {
-  text-decoration: none;
-}
-.service-menu {
-  justify-content: center !important;
-}
-.service-menu::after {
-  border: 0.8rem solid transparent;
-  border-bottom-color: #fff;
-
-  // right: 12rem !important;
-  right: auto !important;
-  left: 90% !important;
-}
-.service-menu a {
-  text-align: center;
-  text-decoration: none;
-  font-weight: 700;
-}
-.service-menu a:hover {
-  text-decoration: none;
-}
-.service-item .fa {
-  padding-left: 0.5em;
-}
-.service-menu-img {
-  width: 10.6rem;
-  margin-bottom: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 0 3px 0 rgb(0 0 0 / 15%);
-}
-
-// fleet css start
-.wp-block-getwid-custom-post-type__post {
-  width: 48%;
-  margin: 1%;
-  justify-content: center;
-  align-items: center;
-}
-.wp-block-getwid-custom-post-type__wrapper.getwid-columns.getwid-columns-3 {
-  display: flex;
-  flex-wrap: wrap;
-}
-.wp-block-getwid-custom-post-type__post-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  box-shadow: 0 0 3px 0 rgb(0 0 0 / 15%);
-  align-items: center;
-  border-radius: 15px;
-  padding: 1rem;
-}
-
-.wp-block-getwid-custom-post-type__content-wrapper {
-  margin-bottom: 2rem;
-  margin-top: -2rem;
-}
-
-.wp-block-getwid-custom-post-type__post-header {
-  font-weight: 700;
-  font-size: 1.5rem;
-}
-
-@media (max-width: 782px) {
-  .wp-block-getwid-custom-post-type__post {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  .wp-block-getwid-custom-post-type__post-wrapper {
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 0 3px 0 rgb(0 0 0 / 15%);
-    align-content: center;
-    align-items: center;
-    align-self: center;
-    border-radius: 15px;
-    padding: 1rem;
-  }
-}
-.header-cta {
-  background-size: cover !important;
-}
-// booking form
-
-#WheelsBookingEngineWrapper,
-.WheelsContainer {
-  background-color: #e8f1f2 !important;
-  // border: 1px solid black;
-  padding: 1rem;
-  box-shadow: 0 0 4px 0 #00000033;
-}
-
-#BookingSearch h4 {
-  font-weight: 400 !important;
-  color: white;
-}
-.WebString_Text_managebooking, .WebString_Text_BookedBtn {
-  color: white !important;
-}
-.WheelsContainer label {
-  color: #212121;
-}
-.WebString_Text_alreadybook{
-  color: #212121 !important;
-}
-#locationResults li span {
-  color: #212121;
-}
-#responseResults h4 {
-  font-size: 36px !important;
-  padding-bottom: 40px !important;
-}
-.WheelsContainer span {
-  font-size: 1.2rem !important;
-  font-weight: 400 !important;
-}
-.WheelsContainer .wbeInputElement {
-  font-size: 1.2rem !important;
-  background-color: white !important;
-}
-@media (min-width: 600px){
-  #responseResults .wbeDealBook {
-    padding: 20px 20px 20px !important;
-}
-}
-.WheelsContainer .wbeInputIcon {
-  background-color: white !important;
-}
-.searchClick {
-  background-color: #108740 !important;
-}
-.WheelsContainer .wbeInputElement {
-  color: #212121 !important;
-  font-weight: 300;
-}
-.fa-search {
-  display: none;
-}
-.wbeInputElementCheck {
-  background-color: white;
-}
-#WheelsBookingEngineWrapper,
-.WheelsContainer {
-  line-height: 1;
-  --background-color: #e8f1f2 !important;
-  --button-background-color-hover: #e8f1f2 !important;
-  --button-secondary-background-color: #108740 !important;
-  --button-secondary-background-color-hover: #108740 !important;
-}
-.WheelsContainer .wbeInputElementCheck:checked::before {
-  height: 20px;
-  width: 20px;
-  position: absolute;
-  content: "✔";
-  display: inline-block;
-  font-size: 20px;
-  text-align: center;
-  line-height: 20px;
-  background-color: white;
-  color: #212121;
-}
-.WheelsContainer .wbeInputElementCheck:hover {
-  background-color: white !important;
-}
-.WheelsContainer .wbeInputElementCheck {
-  background-color: white !important;
-}
-.WheelsContainer .wbeInputElementCheck:checked::before {
-  left: 4px;
-  font-size: 13px !important;
-  text-align: center;
-  line-height: 20px;
-}
-
-#responseResults .wbeDealImageContainer {
-  background: #fff;
-  color: #212121;
-}
-
-#responseResults .wbeDealInfoContainer {
-  background: #fff;
-  color: #212121;
-}
-
-#responseResults .wbeDealBook {
-  background: #fff;
-  color: #fff;
-}
-#responseResults button.DealInfoBook:hover {
-  background-color: #108740 !important;
-  box-shadow: 0 0 5px 0 #00000033;
-}
-#responseResults button.DealInfoBook {
-  background-color: #108740 !important;
-  box-shadow: 0 0 5px 0 #00000033;
-}
-
-#wbeFiltersMenu {
-  background: #fff !important;
-  box-shadow: 0 0 4px 0 #00000033 !important;  
-}
-.WebString_Text_Book{
-  color: #fff !important;
-}
-.WheelsContainer div,
-.WheelsContainer p {
-  color: #212121 !important;
-}
-
-#dealBookTemplate {
-  margin-top: 0px !important;
-}
-#dealImage {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 1rem;
-}
-
-#OptionsMenu .wbeDealOptionsSummaryContainer h5,
-#OptionsMenu #DealPriceDiv,
-#BookingSearchRes .wbeManageBookVehicle h3,
-#BookingSearchRes .wbeManageBookPriceButtonContainer {
-  background: #fff !important;
-}
-#WheelsBookingEngineWrapper #dealOptions button {
-  padding-bottom: 2.8rem !important;
-  padding-top: 0.5rem !important;
-}
-.WheelsContainer ol, .WheelsContainer ul {
-  list-style: none;
-  background-color: grey !important;
-}
-
-#WheelsBookingEngineWrapper
-  #dealOptions
-  .wbeDealOptionsSummaryButtonContainer
-  button {
-  color: #212121 !important;
-  padding-bottom: 2rem;
-  padding-top: 0.5rem;
-}
-#WheelsBookingEngineWrapper #dealOptions button{
-  min-width: 30%;
-  background-color: var(--button-background-color);
-  height: 34px;
-  font-size: inherit;
-  outline: none;
-  border: none;
-  color: var(--button-color);
-  font-weight: bold;
-  margin: 0;
-  margin-left: 5%;
-  float: right;
-  cursor: pointer;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  padding-bottom: 2rem;
-  padding-top: 0.5rem;
-}
-#wbeFiltersMenu .fa {
-  color: black !important;
-}
-#responseResults .cardata p {
-  font-size: 1.2rem !important;
-}
-.fa-info-circle:before {
-  font-size: 1.2rem !important;
-}
-.wbeDealOptionsSummaryContent{
-  background: #fff !important;
-
-}
-#CDMRprice {
-  font-size: 1.8rem !important;
-}
-#GroupCDMRprice{
-font-size: 1.8rem !important;
-}
-
-#ResultsCategories,
-#ResultsPassengers {
-  border-bottom: 0px var(--text-color) solid !important;
-  margin-bottom: 0.5em;
-}
-
-.WebString_Text_Coupon {
-  color: #212121 !important;
-}
-
-.WebString_Text_DriverAge {
-  color: #212121 !important;
-}
-
-.fa-times:before {
-  content: "\f00d";
-  font-weight: 300;
-  font-size: 2.3rem;
-  text-align: center;
-}
-
-#responseResults .warningIndicator {
-  position: relative;
-  padding-left: 40px;
-  font-size: 1.3rem;
-  font-weight: 300;
-  text-align: center;
-}
-
-#WheelsBookingEngineWrapper .calendarContainerFocus input.calendar, #WheelsBookingEngineWrapper .calendarContainerFocusRight input.calendar {
-  background-color: #fff !important;
-  color: #212121 !important;
-  font-family: "Open Sans", sans-serif, -apple-system, BlinkMacSystemFont !important;
-}
-#wbeFiltersMenu .WebString_Text_Filters, .filterButton span{
-  color: #212121 !important;
-  font-weight: 600 !important;
-}
-
-#wbeFiltersMenu .WebString_Text_Filters{
-  font-weight: 600 !important;
-  text-decoration: none !important;
-}
-
-#wbeFiltersMenu .WebString_Text_CarType span {
-  font-weight: 600 !important;
-}
-
-label.inline, input[type=checkbox] + label {
-  display: inline;
-  font-weight: 400;
-  margin-left: 0.5rem;
-  color: #706c80;
-  font-size: 14px;
-}
-
-
-/* extra css */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
-
-body {
-  background-image: url("/img/background-image-island.jpg");
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-}
-
-p {
-  line-height: 1.5;
-  margin: 0 0 1em 0;
-}
-
-.logo-img {
-  max-width: 280px;
-  margin-bottom: 2rem;
-}
-#wheelsbook {
-  max-width: 880px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  margin-top: 3rem;
-}
-
-.cta-booking {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 3rem;
-}
-
-body {
-  box-sizing: border-box;
-  color: #000;
-  font-family: -apple-system, BlinkMacSystemFont, "Open Sans", sans-serif;
-  font-size: 1rem;
-  letter-spacing: -0.015em;
-  text-align: left;
-}
-
-/* booking form */
-
-#WheelsBookingEngineWrapper,
-.WheelsContainer {
-  background-color: #e8f1f2 !important;
-  padding: 1rem;
-}
-
-#BookingSearch h4 {
-  font-weight: 400 !important;
-  color: white;
-}
-.WebString_Text_managebooking,
-.WebString_Text_BookedBtn {
-  color: white !important;
-}
-.WheelsContainer label {
-  color: #212121;
-}
-.WebString_Text_alreadybook {
-  color: #212121 !important;
-}
-#locationResults li span {
-  color: #212121;
-}
-#responseResults h4 {
-  font-size: 36px !important;
-  padding-bottom: 40px !important;
-}
-.WheelsContainer span {
-  font-size: 1rem !important;
-  font-weight: 400 !important;
-}
-.WheelsContainer .wbeInputElement {
-  font-size: 0.8rem !important;
-  background-color: white !important;
-}
-@media (min-width: 600px) {
-  #responseResults .wbeDealBook {
-    padding: 20px 20px 20px !important;
-  }
-}
-.WheelsContainer .wbeInputIcon {
-  background-color: white !important;
-}
-.searchClick {
-  background-color: #108740 !important;
-}
-.WheelsContainer .wbeInputElement {
-  color: #212121 !important;
-  font-weight: 300;
-}
-.fa-search {
-  display: none;
-}
-.wbeInputElementCheck {
-  background-color: white;
-}
-#WheelsBookingEngineWrapper,
-.WheelsContainer {
-  line-height: 1;
-  --background-color: #e8f1f2 !important;
-  --button-background-color-hover: #e8f1f2 !important;
-  --button-secondary-background-color: #108740 !important;
-  --button-secondary-background-color-hover: #108740 !important;
-}
-.WheelsContainer .wbeInputElementCheck:checked::before {
-  height: 20px;
-  width: 20px;
-  position: absolute;
-  content: "✔";
-  display: inline-block;
-  font-size: 20px;
-  text-align: center;
-  line-height: 20px;
-  background-color: white;
-  color: #212121;
-}
-.WheelsContainer .wbeInputElementCheck:hover {
-  background-color: white !important;
-}
-.WheelsContainer .wbeInputElementCheck {
-  background-color: white !important;
-}
-.WheelsContainer .wbeInputElementCheck:checked::before {
-  left: 4px;
-  font-size: 13px !important;
-  text-align: center;
-  line-height: 20px;
-}
-
-#responseResults .wbeDealImageContainer {
-  background: #fff;
-  color: #212121;
-}
-
-#responseResults .wbeDealInfoContainer {
-  background: #fff;
-  color: #212121;
-}
-
-#responseResults .wbeDealBook {
-  background: #fff;
-  color: #fff;
-}
-#responseResults button.DealInfoBook:hover {
-  background-color: #108740 !important;
-  box-shadow: 0 0 5px 0 #00000033;
-}
-#responseResults button.DealInfoBook {
-  background-color: #108740 !important;
-  box-shadow: 0 0 5px 0 #00000033;
-}
-
-#wbeFiltersMenu {
-  background: #fff !important;
-  box-shadow: 0 0 4px 0 #00000033 !important;
-}
-.WebString_Text_Book {
-  color: #fff !important;
-}
-.WheelsContainer div,
-.WheelsContainer p {
-  color: #212121 !important;
-}
-
-#dealBookTemplate {
-  margin-top: 0px !important;
-}
-#dealImage {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 1rem;
-}
-
-#OptionsMenu .wbeDealOptionsSummaryContainer h5,
-#OptionsMenu #DealPriceDiv,
-#BookingSearchRes .wbeManageBookVehicle h3,
-#BookingSearchRes .wbeManageBookPriceButtonContainer {
-  background: #fff !important;
-}
-#WheelsBookingEngineWrapper #dealOptions button {
-  padding-bottom: 2.8rem !important;
-  padding-top: 0.5rem !important;
-}
-.WheelsContainer ol,
-.WheelsContainer ul {
-  list-style: none;
-  background-color: grey !important;
-}
-
-#WheelsBookingEngineWrapper
-  #dealOptions
-  .wbeDealOptionsSummaryButtonContainer
-  button {
-  color: #212121 !important;
-  padding-bottom: 2rem;
-  padding-top: 0.5rem;
-}
-#WheelsBookingEngineWrapper #dealOptions button {
-  min-width: 30%;
-  background-color: var(--button-background-color);
-  height: 34px;
-  font-size: inherit;
-  outline: none;
-  border: none;
-  color: var(--button-color);
-  font-weight: bold;
-  margin: 0;
-  margin-left: 5%;
-  float: right;
-  cursor: pointer;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  padding-bottom: 2rem;
-  padding-top: 0.5rem;
-}
-#wbeFiltersMenu .fa {
-  color: black !important;
-}
-#responseResults .cardata p {
-  font-size: 1.2rem !important;
-}
-.fa-info-circle:before {
-  font-size: 1.2rem !important;
-}
-.wbeDealOptionsSummaryContent {
-  background: #fff !important;
-}
-#CDMRprice {
-  font-size: 1.8rem !important;
-}
-
-#ResultsCategories,
-#ResultsPassengers {
-  border-bottom: 0px var(--text-color) solid !important;
-  margin-bottom: 0.5em;
-}
-
-.WebString_Text_Coupon {
-  color: #212121 !important;
-}
-
-.WebString_Text_DriverAge {
-  color: #212121 !important;
-}
-
-.fa-times:before {
-  content: "\f00d";
-  font-weight: 300;
-  font-size: 2.3rem;
-  text-align: center;
-}
-
-#responseResults .warningIndicator {
-  position: relative;
-  padding-left: 40px;
-  font-size: 1.3rem;
-  font-weight: 300;
-  text-align: center;
-}
-
-#WheelsBookingEngineWrapper .calendarContainerFocus input.calendar,
-#WheelsBookingEngineWrapper .calendarContainerFocusRight input.calendar {
-  background-color: #fff !important;
-  color: #212121 !important;
-  font-family: "Open Sans", sans-serif, -apple-system, BlinkMacSystemFont !important;
-}
-#wbeFiltersMenu .WebString_Text_Filters,
-.filterButton span {
-  color: #212121 !important;
-  font-weight: 600 !important;
-}
-
-#wbeFiltersMenu .WebString_Text_Filters {
-  font-weight: 600 !important;
-  text-decoration: none !important;
-}
-
-#wbeFiltersMenu .WebString_Text_CarType span {
-  font-weight: 600 !important;
-}
-
-label.inline,
-input[type="checkbox"] + label {
-  display: inline;
-  font-weight: 400;
-  margin-left: 0.5rem;
-  color: #706c80;
-  font-size: 14px;
-}
-
-#WheelsBookingEngineWrapper .calendarContainerFocus input.calendar,
-#WheelsBookingEngineWrapper .calendarContainerFocusRight input.calendar {
-  background-color: #fff !important;
-}
-
-#WheelsBookingEngineWrapper .calendarContainerFocus > *,
-#WheelsBookingEngineWrapper .calendarContainerFocusRight > * {
-  background-color: #e8f1f2;
-}
-.WheelsContainer p {
-  color: #212121 !important;
-}
-
-#WheelsBookingEngineWrapper .calendarContainerFocus > * {
-  background: #e8f1f2 !important;
-}
-#WheelsBookingEngineWrapper .calendarContainerFocusRight > * {
-  background: #e8f1f2 !important;
-}
-#BookingSearch h4 {
-  font-weight: 400 !important;
-  color: #212121;
-}
-
-#wbebookedBackBtn:hover {
-  background-color: #333 !important;
-}
-#wbeFindyourBooking:hover {
-  background-color: #333 !important;
-}
-
-.contact-text{
-  color: #212121;
-  font-size: 1.1rem;
-  background-color: #e8f1f2;
-  min-width:880px;
-  text-align: center;
-  padding: 1rem 0;
-  margin-bottom: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.contact-text a{
-  color: #212121;
-  font-weight: 400;
-  text-decoration: none;
-  text-align: center;
-}
-
-#wheelsbook{
-  margin-top: -13rem;
-}
-
-.contact-us{
-  text-align: center;
-  font-weight: 600;
-  font-size: 1.2rem;
-}
-
-#responseResults .cardata p {
-    font-size: 1.2rem !important;
-    color: #212121 !important;
-  }
-
-  .WheelsContainer .wbeInputContainerCheck {
-    position: relative;
-    display: block;
-    padding-left: 1em;
-}
-
-@media (min-width: 600px){
-    #responseResults .wbeDealInfo {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        align-items: center;
-        background-color: white;
-    }
-}
-
-#WheelsBookingEngineWrapper, .WheelsContainer {
-    width: 880px;
-}
-#OptionsMenu, #carDataOptionsTemplate {
-    min-height: auto;
-}
-
-#OptionsMenu.wbeDealOptionsContainer, #BookingSearchRes .wbeBookingSearchResContainer {
-    background-color: white;
-}
-.WheelsContainer span {
-    font-size: 1rem !important;
-    font-weight: 400 !important;
-    color: #212121;
-}
-#WheelsBookingEngineWrapper #dealOptions button{
-    background-color: #212121;
-    color: white;
-}
-#WheelsBookingEngineWrapper #dealOptions button:hover{
-    background-color: #212121;
-    color: white;
-}
-
-#OptionsMenu .WebString_Text_FinalPrice, #BookingSearchRes .WebString_Text_FinalPrice {
-    font-size: 1.2rem !important;
-    font-weight: 600 !important;
-}
-span#GroupMDMRprice {
-    font-size: 1.5rem !important;
-}
-
-
-@media (max-width: 576px) {
-    .logo-img {
-      max-width: 150px;
-      margin-bottom: 1rem;
-    }
-    #wheelsbook {
-      width: 330px !important;
-      align-items: center !important;
-      justify-content: center !important;
-      display: flex !important;
-      margin-top: 0px !important;
-
-    }
-    .cta-booking {
-      width: 100vw;
-      align-items: center;
-      justify-content: center;
-      display: flex;
-      margin-left: -1.2rem;
-      background-color: #e8f1f2 !important;
-      padding: 1rem;
-      box-shadow: 0 0 4px 0 #00000033;
-    }
-    .contact-text{
-      color: #212121;
-      font-size: 1.1rem;
-      background-color: #e8f1f2;
-      min-width:330px;
-      text-align: center;
-      padding: 1rem 0;
-      margin-bottom: 0;
-      display: flex;
-      flex-direction: column;
-    }
-    
-    .contact-text a{
-      color: #212121;
-      font-weight: 400;
-      text-decoration: none;
-      text-align: center;
-    }
-    
-    .contact-us{
-      text-align: center;
-      font-weight: 600;
-      font-size: 1.2rem;
-      padding-right: auto;
-    }
-    #WheelsBookingEngineWrapper, .WheelsContainer {
-        width: 330px;
-    }
-  }
-
-  
-#WheelsBookingEngineWrapper #dealOptions .wbeOptionInput {
-    width: auto;
-    height: auto;
-    float: right;
-    background-color: var(--background-color);
-    border: none;
-    outline: none;
-    padding: 0.8em 1em;
-}
-
-#WheelsBookingEngineWrapper #dealOptions .wbeOptionBtns {
-    width: auto;
-    min-width: auto;
-    height: auto;
-    font-size: 25px;
-    -webkit-transform: none;
-    -ms-transform: none;
-    transform: none;
-    padding: 0.17em 0.4em !important;
-}
-.NonInclusive .wbeNonInclusiveActions {
-    -ms-flex-preferred-size: 95px;
-    flex-basis: 110px;
-}
-
-.NonInclusive .wbeNonInclusiveContent {
-    -ms-flex-preferred-size: calc(100% - 130px);
-    flex-basis: calc(100% - 130px);
-    display: inline-block;
-}
-
-#WheelsBookingEngineWrapper #dealOptions .wbeOptionInput {
-    background-color: #108740;
-}
-
-.WheelsContainer span {
-    font-size: 1rem !important;
-    font-weight: 400 !important;
-    color:inherit;
-}
-
-.WheelsContainer .wbeInputElement {
-    font-weight: 300;
-    color: rgb(33, 33, 33) !important;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-}
-
-#wbeCustIdIssueDate, #wbeCustIdExpiryDate, #wbeCustLicenseIssueDate, #wbeCustLicenseExpiryDate{
-    font-weight: 400;
-    font-size: 13px;
-    background-color: green !important;
-    color: white !important; 
-    font-weight: 300 !important;
-    font-size: 0.8rem !important;
-}
-#wbeDealOptionsContent{
-    background-color: blue;
-}
-#selection2b, #wbeaddress, #wbeaddress3, #coupon, #wbedatepicker1, #time1, #wbedatepicker2, #time2{
-    box-shadow: none;
-
-}
-
-#OptionsMenu .ChargeCategory {
-    font-size: 16px !important;
-    margin-bottom: 10px;
-    display: block;
-    font-weight: bold !important;
-    text-transform: uppercase;
-}
-
-#GroupEDMRprice{
-    font-size: 1.4rem !important;
-    padding-right: 1rem;
-}  
-
-#dealOptions p.priceAnalysisTitle, #BookingSearchRes .priceAnalysisTitle {
-    text-align: center;
-    width: 100%;
-    font-size: 18px;
-    margin: 20px 0 10px;
-}
-
-// slider css
-.sliderHome{
-  min-height: 550px;
-}
-
-.display-none{
-display: none;
 }

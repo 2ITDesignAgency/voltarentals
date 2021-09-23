@@ -128,7 +128,7 @@ const NewsFeed = () => {
   const featuredPost4Img =
     wpPage.frontPage.section4.featuredPosts4.featuredImage.node.sourceUrl
   return (
-    <main>
+    <articles>
       {/* front-page section 4 start*/}
       <div className="cyan-content section_2">
         <div
@@ -145,7 +145,7 @@ const NewsFeed = () => {
               <Link to={featuredPost1Slug}>
                 <img src={featuredPost1Img} />
               </Link>
-              <div>
+              <div class="post-content-single">
                 <h2 className="entry-title heading-size-1 archive-post-title">
                   {featuredPost1Title}
                 </h2>
@@ -163,7 +163,7 @@ const NewsFeed = () => {
               <Link to={featuredPost2Slug}>
                 <img src={featuredPost2Img} />
               </Link>
-              <div>
+              <div class="post-content-single">
                 <h2 className="entry-title heading-size-1 archive-post-title">
                   {featuredPost2Title}
                 </h2>
@@ -181,7 +181,7 @@ const NewsFeed = () => {
               <Link to={featuredPost3Slug}>
                 <img src={featuredPost3Img} />
               </Link>
-              <div>
+              <div class="post-content-single">
                 <h2 className="entry-title heading-size-1 archive-post-title">
                   {featuredPost3Title}
                 </h2>
@@ -199,7 +199,7 @@ const NewsFeed = () => {
               <Link to={featuredPost4Slug}>
                 <img src={featuredPost4Img} />
               </Link>
-              <div>
+              <div class="post-content-single">
                 <h2 className="entry-title heading-size-1 archive-post-title">
                   {featuredPost4Title}
                 </h2>
@@ -217,7 +217,7 @@ const NewsFeed = () => {
         </div>
       </div>
       {/* front-page section 4 end*/}
-    </main>
+    </articles>
   )
 }
 // Step 3: Export your component

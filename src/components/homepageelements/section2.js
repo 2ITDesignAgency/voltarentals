@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, Link, graphql } from "gatsby"
+import WheelsBook from "./WheelsBook"
 import Layout from "../../components/Layout"
 
 // Step 2: Define your component
@@ -124,14 +125,10 @@ const Section2 = () => {
   const travelExperienceImage =
     wpPage.frontPage.section2.travelExperienceImage.sourceUrl
   // const travelExperienceImage = frontPage.section2.travelExperienceImage
-  console.log(wpPage)
   return (
-    <main>
+    <container>
       <div className="cyan-content section_2">
-        <div className="cta-booking">
-          <h1>hello</h1>
-          <div id="wheelsbook" style={{ maxWidth: `1040px` }}></div>
-        </div>
+      <WheelsBook />
         <div className="entry-content">
           <div className="car-rental-title">
             <h1 className="todays-car-rental ">{offerTitle}</h1>
@@ -143,7 +140,7 @@ const Section2 = () => {
               <Link to={offerPost1Slug}>
                 <img src={offerPost1Img} />
               </Link>
-              <div>
+              <div class="post-content-single">
                 <h2 className="entry-title heading-size-1 archive-post-title">
                   {offerPost1Title}
                 </h2>
@@ -161,7 +158,7 @@ const Section2 = () => {
               <Link to={offerPost2Slug}>
                 <img src={offerPost2Img} />
               </Link>
-              <div>
+              <div class="post-content-single">
                 <h2 className="entry-title heading-size-1 archive-post-title">
                   {offerPost2Title}
                 </h2>
@@ -179,7 +176,7 @@ const Section2 = () => {
               <Link to={offerPost3Slug}>
                 <img src={offerPost3Img} />
               </Link>
-              <div>
+              <div class="post-content-single">
                 <h2 className="entry-title heading-size-1 archive-post-title">
                   {offerPost3Title}
                 </h2>
@@ -212,7 +209,7 @@ const Section2 = () => {
         </div>
       </div>
       {/*front-page section 2 end*/}
-    </main>
+    </container>
   )
 }
 // Step 3: Export your component
