@@ -30,7 +30,7 @@ const Footer = ({}) => {
                 marginBottom: 0,
               }}
             >
-              Build with Love by SNS
+              Copyright © volta4u. All Rights Reserved.
             </a>
           </p>
         </div>
