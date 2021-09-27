@@ -96,8 +96,8 @@ const Menu = () => {
         <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home">
           <a href="/contact-us/">CONTACT US</a>
         </li>
-        <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-icon-text phone"><img src={Phone} className="menu-icon"/> <a href="tel:6972348949"> 6972348949</a></li>
-        <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-icon-text contact-info"><img src={Mail} className="menu-icon"/> <a href="mailto:info@volta4you.gr"> info@volta4you.gr</a></li>
+        <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-icon-text phone"><img src={Phone} className="menu-icon"/> <a href="tel:2109735000"> 2109735000</a></li>
+        <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-icon-text contact-info"><img src={Mail} className="menu-icon"/> <a href="mailto:reservations@volta4u.com"> reservations@volta4u.com</a></li>
       </ul>
     </nav>
   )

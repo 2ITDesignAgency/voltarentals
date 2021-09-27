@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import SocialMenu from "../SocialMenu"
-import Logo from "../../assets/images/logo-icon.png"
+import FooterLogo from "../../assets/images/footer-logo.png"
 
 const Footer = ({}) => {
   return (
@@ -12,7 +12,7 @@ const Footer = ({}) => {
             © {new Date().getFullYear()}
             <Link to={"/"}>
               <img
-                src={Logo}
+                src={FooterLogo}
                 alt="logo"
                 width="147"
                 style={{
