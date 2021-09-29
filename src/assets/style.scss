@@ -8300,3 +8300,15 @@ display: none;
     top: 0;
   }
 }
+
+// header css
+.singular .entry-header .post-meta {
+  color: #fff !important;
+}
+.singular:not(.overlay-header) .entry-header .post-meta a {
+  color: #fff !important;
+}
+.singular .entry-header {
+  background-color: #49b850;
+  height: 20vh;
+}
