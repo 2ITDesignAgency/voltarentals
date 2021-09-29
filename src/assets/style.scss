@@ -6540,7 +6540,9 @@ display: none;
     > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
     width: calc(100% - 8rem);
   }
-
+  .entry-content {
+    margin-bottom: 4rem !important;
+}
   #GatsbyBody.template-full-width
     .alignfull:not(.has-background)
     > .wp-block-group__inner-container
@@ -8317,4 +8319,7 @@ color:#fff !important;
 }
 .singular .featured-media::before {
   background: #fff;
+}
+.entry-content {
+  margin-bottom: 4rem;
 }
