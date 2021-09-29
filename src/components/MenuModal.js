@@ -139,10 +139,10 @@ const MenuModal = ({ isActive, toggleBackdrop }) => {
                   <li><a href="/services/parking-services/">Parking Services</a></li>
                 </li>
                 <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home">
-                  <a href="/category/news/">NEWS</a>
+                  <a href="/blog/news/">NEWS</a>
                 </li>
                 <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home">
-                  <a href="/category/offers/">OFFERS </a>
+                  <a href="/blog/offers/">OFFERS </a>
                 </li>
                 <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home">
                 <a href="/contact-us/">CONTACT US</a>

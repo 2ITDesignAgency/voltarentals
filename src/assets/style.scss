@@ -8310,5 +8310,11 @@ display: none;
 }
 .singular .entry-header {
   background-color: #49b850;
-  height: 20vh;
+  height: 25vh;
+}
+.singular:not(.overlay-header) .entry-header a, h1.entry-title, h2.entry-title {
+color:#fff !important;
+}
+.singular .featured-media::before {
+  background: #fff;
 }
