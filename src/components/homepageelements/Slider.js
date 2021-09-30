@@ -30,7 +30,7 @@ const SliderHome = ({ children }) => (
       transition={4} // transition duration between images
       duration={8} // how long an image is shown
       // specify images to include (and their order) according to `relativePath`
-      images={["1.png", "2.jpg", "3.jpg", "4.jpg", "5.jpg"]}
+      images={["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"]}
     >
      {/* Captions in sync with background images*/}
       <div>Woof</div>
