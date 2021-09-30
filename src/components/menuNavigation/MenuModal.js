@@ -1,11 +1,11 @@
 import React from "react"
-import CloseIcon from "../assets/svg/close.inline.svg"
+import CloseIcon from "../../assets/svg/close.inline.svg"
 import { graphql, useStaticQuery } from "gatsby"
-import stopPropagation from "../utils/stop-propagation"
-import UniversalLink from "./UniversalLink"
-import SocialMenu from "./SocialMenu"
-import Phone from "../assets/svg/phone.svg"
-import Mail from "../assets/svg/mail.svg"
+import stopPropagation from "../../utils/stop-propagation"
+import UniversalLink from "../UniversalLink"
+import SocialMenu from "../SocialMenu"
+import Phone from "../../assets/svg/phone.svg"
+import Mail from "../../assets/svg/mail.svg"
 
 const MenuModal = ({ isActive, toggleBackdrop }) => {
   const { wpMenu } = useStaticQuery(graphql`
@@ -117,9 +117,9 @@ const MenuModal = ({ isActive, toggleBackdrop }) => {
             <nav className="mobile-menu" aria-label="Mobile" role="navigation">
               <ul className="modal-menu reset-list-style">
               <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children">
-                <a href="#">lOCATIONS<i className="fa fa-angle-down" aria-hidden="true"></i></a>
+                <a href="#">LOCATIONS<i className="fa fa-angle-down" aria-hidden="true"></i></a>
                   <li><a href="/mainland">Mainland</a></li>
-                  <li><a href="/Islands">islands</a></li>
+                  <li><a href="/islands">islands</a></li>
               </li>
                 <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children">
                   <a href="/our-fleet">OUR FLEET<i className="fa fa-angle-down" aria-hidden="false"></i></a>
@@ -153,7 +153,7 @@ const MenuModal = ({ isActive, toggleBackdrop }) => {
 
           <div className="menu-bottom">
             <div className="contact-info">
-              <span className="contact-item"><img src={Phone} className="menu-icon"/><a href="tel:6972348949">6972348949</a></span>
+              <span className="contact-item"><img src={Phone} className="menu-icon"/><a href="tel:+30 210 97 35 000">+30 210 97 35 000</a></span>
               <span className="contact-item"><img src={Mail} className="menu-icon"/><a href="mailto:info@volta4you.gr">info@volta4you.gr</a></span>
             </div>
             <SocialMenu isExpanded />

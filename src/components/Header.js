@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, Link, useStaticQuery } from "gatsby"
-import Menu from "./Menu"
+import Menu from "./menuNavigation/Menu"
 import ToggleIcon from "../assets/svg/toggle.inline.svg"
 import Logo from "../assets/images/logo-icon.png"
 

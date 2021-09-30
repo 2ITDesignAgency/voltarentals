@@ -3,7 +3,7 @@ import Header from "./Header"
 import Footer from "./footerelements/Footer"
 import TopBar from "./Topbar"
 import FooterMenusWidgets from "./footerelements/FooterMenusWidgets"
-import MenuModal from "./MenuModal"
+import MenuModal from "../components/menuNavigation/MenuModal"
 import Seo from "./Seo"
 import Helmet from "react-helmet"
 

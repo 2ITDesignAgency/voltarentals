@@ -1,8 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import UniversalLink from "./UniversalLink"
-import Phone from "../assets/svg/phone.svg"
-import Mail from "../assets/svg/mail.svg"
+import UniversalLink from "../UniversalLink"
+import Phone from "../../assets/svg/phone.svg"
+import Mail from "../../assets/svg/mail.svg"
 
 const Menu = () => {
   const { wpMenu } = useStaticQuery(graphql`
@@ -60,7 +60,7 @@ const Menu = () => {
           )
         })}{" "}
         <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children">
-          <a href="#">lOCATIONS<i className="fa fa-angle-down" aria-hidden="true"></i></a>
+          <a href="#">LOCATIONS <i className="fa fa-angle-down" aria-hidden="true"></i></a>
           <ul className="secondary-menu fleet-menu reset-list-style">
             <li><a href="/mainland">Mainland</a></li>
             <li><a href="/Islands">islands</a></li>
@@ -96,8 +96,8 @@ const Menu = () => {
         <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home">
           <a href="/contact-us/">CONTACT US</a>
         </li>
-        <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-icon-text phone"><img src={Phone} className="menu-icon"/> <a href="tel:2109735000"> 2109735000</a></li>
-        <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-icon-text contact-info"><img src={Mail} className="menu-icon"/> <a href="mailto:reservations@volta4u.com"> reservations@volta4u.com</a></li>
+        <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-icon-text phone"><img src={Phone} className="menu-icon"/> <a href="tel:+30 210 97 35 000"> +30 210 97 35 000</a></li>
+        <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-icon-text contact-info"><img src={Mail} className="menu-icon"/> <a href="mailto:info@volta4you.gr"> info@volta4you.gr</a></li>
       </ul>
     </nav>
   )
