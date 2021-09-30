@@ -1519,10 +1519,12 @@ ul.social-icons li {
   background: #fff;
   position: relative;
 }
-
+.desktop-menu{
+  margin-bottom: -10px;
+}
 .header-inner {
   max-width: 90rem;
-  padding: 3.15rem 0;
+  padding: 1rem 0;
   z-index: 100;
 }
 /* website scroll bar */
@@ -2718,7 +2720,7 @@ button.search-untoggle {
   margin: 0.5rem 0 0 1rem;
   text-decoration: none;
   text-transform: uppercase;
-  color: #000 !important;
+  color: #000;
 }
 
 .entry-categories a:focus,
@@ -5656,7 +5658,7 @@ body {
   /* Site Header --------------------------- */
 
   .header-inner {
-    padding: 3.8rem 0;
+    padding: 1rem 0;
   }
 
   .site-title {
@@ -7499,7 +7501,13 @@ body {
 
   .header-inner {
     max-width: 90rem;
+    padding: 0px;
   }
+  .logo {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    height: 70px;
+}
   .entry-content
     > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
     max-width: 90rem;
@@ -7567,14 +7575,14 @@ body {
 
 // header css
 .singular .entry-header .post-meta {
-  color: #fff !important;
+  color: #fff;
 }
 .singular:not(.overlay-header) .entry-header .post-meta a {
   color: #fff !important;
 }
 .singular .entry-header {
   background-color: #49b850;
-  height: 18vh;
+  height: 14vh;
 }
 .singular:not(.overlay-header) .entry-header a,
 h1.entry-title,
@@ -8241,6 +8249,7 @@ span#GroupMDMRprice {
 #wbedatepicker2,
 #time2 {
   box-shadow: none;
+  font-size: 1.1rem !important;
 }
 #OptionsMenu .ChargeCategory {
   font-size: 16px !important;

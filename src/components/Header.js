@@ -20,14 +20,15 @@ const Header = ({ pageContext, toggleBackdrop, ...props }) => {
       <div className="header-inner section-inner">
         <div className="header-titles-wrapper">
           <div className="header-titles">
-            <h1 className="site-title">
+            <h1 className="site-title desktop-menu">
               <Link
                 to="/"
-                class="logo"
+                className="logo"
               >
                 <img
                   src={Logo}
                   alt="logo"
+                  className="desktop-menu"
                   width="190"
                   style={{
                     display: "inline-block",
