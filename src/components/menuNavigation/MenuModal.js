@@ -153,8 +153,8 @@ const MenuModal = ({ isActive, toggleBackdrop }) => {
 
           <div className="menu-bottom">
             <div className="contact-info">
-              <span className="contact-item"><img src={Phone} className="menu-icon"/><a href="tel:+30 210 97 35 000">+30 210 97 35 000</a></span>
-              <span className="contact-item"><img src={Mail} className="menu-icon"/><a href="mailto:info@volta4you.gr">info@volta4you.gr</a></span>
+              <span className="contact-item"><img src={Phone} className="menu-icon"/><a href="tel:+302109735000">+30 210 97 35 000</a></span>
+              <span className="contact-item"><img src={Mail} className="menu-icon"/><a href="mailto:info@volta4u.com">info@volta4u.com</a></span>
             </div>
             <SocialMenu isExpanded />
           </div>
