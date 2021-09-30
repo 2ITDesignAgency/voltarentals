@@ -55,7 +55,7 @@ const post = ({ data }) => {
               className="intro-text section-inner max-percentage small"
               dangerouslySetInnerHTML={{ __html: excerpt }}
             /> */}
-            <PostMeta title={title} author={author} date={date} />
+            {/* <PostMeta title={title} author={author} date={date} /> */}
           </div>
         </header>
         <FeaturedMedia image={featuredImage} />

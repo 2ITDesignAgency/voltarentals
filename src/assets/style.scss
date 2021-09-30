@@ -2692,7 +2692,7 @@ button.search-untoggle {
 
 .singular .entry-header {
   background-color: #e8f1f2;
-  height: 33vh;
+  height: 18vh;
   background-position: center;
   display: flex;
   align-items: center;
@@ -7574,12 +7574,12 @@ body {
 }
 .singular .entry-header {
   background-color: #49b850;
-  height: 25vh;
+  height: 18vh;
 }
 .singular:not(.overlay-header) .entry-header a,
 h1.entry-title,
 h2.entry-title {
-  color: #fff !important;
+  color: #fff;
 }
 .singular .featured-media::before {
   background: #fff;
@@ -7589,6 +7589,10 @@ h2.entry-title {
 }
 
 //booking css start
+.wbeDealInclusives {
+  display: flex;
+  flex-direction: column;
+}
 #WheelsBookingEngineWrapper .calendarContainerFocus input.calendar,
 #WheelsBookingEngineWrapper .calendarContainerFocusRight input.calendar {
   background-color: #fff !important;
