@@ -191,7 +191,7 @@ const FleetHome = () => {
                 <img src={fleetCategorie1Image} />
               </Link>
               <div>
-                <h2 className="entry-title heading-size-1 archive-post-title">
+                <h2 className="entry-title heading-size-1 archive-post-title car-category-title">
                   {fleetCategorieTitle1}
                 </h2>
                 <div
@@ -211,7 +211,7 @@ const FleetHome = () => {
                 <img src={fleetCategorie2Image} />
               </Link>
               <div>
-                <h2 className="entry-title heading-size-1 archive-post-title">
+                <h2 className="entry-title heading-size-1 archive-post-title car-category-title">
                   {fleetCategorieTitle2}
                 </h2>
                 <div
@@ -231,7 +231,7 @@ const FleetHome = () => {
                 <img src={fleetCategorie3Image} />
               </Link>
               <div>
-                <h2 className="entry-title heading-size-1 archive-post-title">
+                <h2 className="entry-title heading-size-1 archive-post-title car-category-title">
                   {fleetCategorieTitle3}
                 </h2>
                 <div
@@ -251,7 +251,7 @@ const FleetHome = () => {
                 <img src={fleetCategorie4Image} />
               </Link>
               <div>
-                <h2 className="entry-title heading-size-1 archive-post-title">
+                <h2 className="entry-title heading-size-1 archive-post-title car-category-title">
                   {fleetCategorieTitle4}
                 </h2>
                 <div
@@ -275,7 +275,7 @@ const FleetHome = () => {
                 <img src={fleetCategorie5Image} />
               </Link>
               <div>
-                <h2 className="entry-title heading-size-1 archive-post-title">
+                <h2 className="entry-title heading-size-1 archive-post-title car-category-title">
                   {fleetCategorieTitle5}
                 </h2>
                 <div
@@ -295,7 +295,7 @@ const FleetHome = () => {
                 <img src={fleetCategorie6Image} />
               </Link>
               <div>
-                <h2 className="entry-title heading-size-1 archive-post-title">
+                <h2 className="entry-title heading-size-1 archive-post-title car-category-title">
                   {fleetCategorieTitle6}
                 </h2>
                 <div
@@ -315,7 +315,7 @@ const FleetHome = () => {
                 <img src={fleetCategorie7Image} />
               </Link>
               <div>
-                <h2 className="entry-title heading-size-1 archive-post-title">
+                <h2 className="entry-title heading-size-1 archive-post-title car-category-title">
                   {fleetCategorieTitle7}
                 </h2>
                 <div
@@ -335,7 +335,7 @@ const FleetHome = () => {
                 <img src={fleetCategorie8Image} />
               </Link>
               <div>
-                <h2 className="entry-title heading-size-1 archive-post-title">
+                <h2 className="entry-title heading-size-1 archive-post-title car-category-title">
                   {fleetCategorieTitle8}
                 </h2>
                 <div
