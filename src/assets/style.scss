@@ -7861,13 +7861,18 @@ input[type="checkbox"] + label {
 }
 /* extra css */
 #wheelsbook {
-  max-width: 880px;
+  max-width: 950px;
   align-items: center;
   justify-content: center;
   display: flex;
   margin-top: 3rem;
 }
 
+h1.entry-title.page-text {
+  font-size: 2.2rem;
+  font-weight: 300;
+  margin-left: 1rem;
+}
 /* booking form */
 
 #WheelsBookingEngineWrapper,
@@ -8304,7 +8309,7 @@ span#GroupMDMRprice {
 @media (max-width: 599px) {
   #WheelsBookingEngineWrapper,
   .WheelsContainer {
-    margin-top: -10rem;
+    margin-top: -2rem;
   }
 }
 @media (min-width: 600px) {
