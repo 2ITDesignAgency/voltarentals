@@ -135,7 +135,7 @@ const NewsFeed = () => {
           className="section-divider"
           style={{ backgroundColor: `#e8f1f2` }}
         ></div>
-        <div className="entry-content">
+        <div className="entry-content news-post-section">
           <h1 className="todays-car-rental">{featuredPostTitle}</h1>
           <h3 className="section_3_sub_title">{featuredPostSutitle}</h3>
           {/* 3 column offers start */}

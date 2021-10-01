@@ -2577,6 +2577,7 @@ button.search-untoggle {
 /*	8. Post: Archive
 /* -------------------------------------------------------------------------- */
 /* archive layout */
+
 .car-category-title{
   color: #212121 !important;
 }
@@ -6457,6 +6458,9 @@ body {
   .to-the-top-short {
     display: none;
   }
+  .news-post-section{
+     margin-bottom: 0rem!important;
+     }
 }
 @media (min-width: 782px) {
   .enjoy-cta-row {
