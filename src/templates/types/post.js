@@ -5,9 +5,9 @@ import Seo from "../../components/Seo"
 import Comments from "../../components/Comments"
 import ContentTypePagination from "../../components/ContentTypePagination"
 import AuthorBio from "../../components/AuthorBio"
-import PostMeta from "../../components/PostMeta"
 import PostCategories from "../../components/PostCategories"
 import FeaturedMedia from "../../components/FeaturedMedia"
+import WheelsBook from "../../components/homepageelements/WheelsBook"
 
 const post = ({ data }) => {
   const { nextPage, previousPage, page } = data
@@ -55,14 +55,11 @@ const post = ({ data }) => {
               className="intro-text section-inner max-percentage small"
               dangerouslySetInnerHTML={{ __html: excerpt }}
             /> */}
-            {/* <PostMeta title={title} author={author} date={date} /> */}
           </div>
         </header>
         <FeaturedMedia image={featuredImage} />
+        <WheelsBook />
         <div className="post-inner thin">
-          <div className="cta-booking-post">
-            <div id="wheelsbook" style={{ maxWidth: `900px` }}></div>
-          </div>
           {/* {post.Blocks && <post.Blocks />} */}
           <div
             className="entry-content"

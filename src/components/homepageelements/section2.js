@@ -1,7 +1,6 @@
 import React from "react"
 import { useStaticQuery, Link, graphql } from "gatsby"
 import WheelsBook from "./WheelsBook"
-import Layout from "../../components/Layout"
 
 // Step 2: Define your component
 
