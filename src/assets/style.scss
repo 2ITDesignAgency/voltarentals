@@ -7591,23 +7591,25 @@ body {
   background-color: #49b850;
   height: 14vh;
 }
-.singular:not(.overlay-header) .entry-header a,
-h1.entry-title,
-h2.entry-title {
-  color: #fff;
-}
+// .singular:not(.overlay-header) .entry-header a,
+// h1.entry-title,
+// h2.entry-title {
+//   color: #fff;
+// }
 .singular .featured-media::before {
   background: #fff;
 }
 .entry-content {
   margin-bottom: 4rem;
 }
-
-
+h1.entry-title{
+  color: white;
+  font-weight: lighter;
+}
+// .archive-post-title{
+//   color: #212121;
+// }
 
 
 
 // wordpress style
-.wp-block-columns{
-  display: flex;
-}

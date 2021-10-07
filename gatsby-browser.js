@@ -1,7 +1,14 @@
-
+import "./src/assets/wordpress.css"
 import "./src/assets/style.scss"
 // import "./src/assets/style-rtl.css"
 import "./src/assets/print.scss"
 import "./src/assets/style-theme.scss"
 import "./src/sass/_gutenberg-default.scss"
 
+import "./src/sass/_colors.scss"
+import "./src/sass/_variables.scss"
+import "./src/sass/_mixins.scss"
+import "./src/sass/_breakpoints.scss"
+import "./src/sass/_animations.scss"
+import "./src/sass/_z-index.scss"
+// import "./src/sass/_default-custom-properties.scss"

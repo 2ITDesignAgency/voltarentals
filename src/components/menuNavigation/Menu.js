@@ -63,7 +63,7 @@ const Menu = () => {
           <a href="#">LOCATIONS <i className="fa fa-angle-down" aria-hidden="true"></i></a>
           <ul className="secondary-menu fleet-menu reset-list-style">
             <li><a href="/mainland">Mainland</a></li>
-            <li><a href="/Islands">islands</a></li>
+            <li><a href="/islands">islands</a></li>
           </ul>
         </li>
         <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children">
