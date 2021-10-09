@@ -29,7 +29,7 @@ const page = ({ data }) => {
       <Layout
         bodyClass={`page-template-default page page-id-${databaseId} wp-embed-responsive singular missing-post-thumbnail has-no-pagination not-showing-comments footer-top-visible customize-support`}
       >
-        {/*front-page section 2 start*/}
+        <Seo title={title} description={excerpt} />
         <div className="sliderHome">
           <Slider />
         </div>

@@ -1,0 +1,115 @@
+.nav-link {
+    color: #212121 !important;
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: block;
+    line-height: 1.2;
+    text-decoration: none;
+    word-break: normal;
+    word-wrap: normal;
+  }
+  .menu-icon-text {
+    display: flex !important;
+    margin-right: 0.8rem !important;
+  }
+  .menu-icon {
+    margin-right: 0.5rem;
+  }
+  .contact-info {
+    display: flex !important;
+    margin-left: 0.8rem !important;
+    color: white;
+    justify-content: space-around;
+    color: #212121 !important;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  .phone {
+    display: flex !important;
+    color: white;
+    justify-content: space-around;
+    color: #212121 !important;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  .navbar-brand {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+  }
+  .navbar {
+    padding: 0rem 0rem !important;
+  }
+  .nav-item {
+    margin: 0.5rem 0 0 1.2rem !important;
+  }
+  ul.navbar-nav {
+    margin-right: 2rem !important;
+  }
+  .navbar-text a:hover {
+    text-decoration: none;
+  }
+  .dropdown-item {
+    background-color: transparent !important;
+  }
+  .dropdown-item:hover {
+    background-color: #e9ecef !important;
+  }
+  .dropdown-item a {
+    font-weight: 400;
+  }
+  @media (min-width: 768px) {
+    .navbar-expand-md .navbar-nav .dropdown-menu {
+      position: absolute;
+      min-width: 250px;
+      text-align: center;
+      font-weight: 200;
+    }
+    .navbar-expand-md .navbar-collapse {
+      display: flex!important;
+      flex-direction: row;
+  }
+  }
+  
+  @media (max-width: 767px) {
+    ul.navbar-nav {
+      margin-right: 2rem !important;
+      text-align: center;
+    }
+    .header-inner {
+      max-width: 90rem;
+      padding: 0rem 0;
+      z-index: 100;
+    }
+    .navbar-nav .dropdown-menu {
+      text-align: center;
+    }
+    .dropdown-menu {
+      border: none !important;
+      border-radius: .25rem;
+  }
+  .navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 4;
+    align-items: center;
+    min-height: 84vh;
+  }
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+  }
+  
+  .contact-info {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .navbar{
+    background-color: #49b850 !important;
+  }
+  .navbar-light .navbar-toggler {
+background-color: white;
+}
+  }
+  
+

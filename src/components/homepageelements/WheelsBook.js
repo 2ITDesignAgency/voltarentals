@@ -1,5 +1,5 @@
 import React from "react"
-import style from "./WheelsBook.scss"
+import './WheelsBook.scss'
 const WheelsBook = () => {
   return (
     <div className="cta-booking">

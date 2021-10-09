@@ -1,11 +1,11 @@
 import React, { useState } from "react"
 import Header from "./Header"
 import Footer from "./footerelements/Footer"
-import TopBar from "./Topbar"
+import TopBar from "./menuNavigation/Topbar"
 import FooterMenusWidgets from "./footerelements/FooterMenusWidgets"
-import MenuModal from "../components/menuNavigation/MenuModal"
 import Seo from "./Seo"
 import Helmet from "react-helmet"
+import { Container } from "reactstrap"
 
 
 const backdropClasses = " backdrop"
@@ -31,12 +31,11 @@ const Layout = ({ children, bodyClass }) => {
         <script type="text/javascript" src="https://ecigr.wheelsys.ms/jsHandler.ashx?elementId=wheelsbook&language=en" defer/>
       </Helmet>
       <TopBar />
-      <Header toggleBackdrop={toggleBackdrop} />
-      <MenuModal isActive={backdropActive} toggleBackdrop={toggleBackdrop} />
+      <Header />
       <main id="site-content" role="main">
         {children}
       </main>
-      <FooterMenusWidgets />
+        <FooterMenusWidgets />
       <Footer />
     </div>
   )

@@ -1,7 +1,17 @@
 import React from "react"
 import { useStaticQuery, Link, graphql } from "gatsby"
-import Layout from "../Layout"
-
+import {
+  Container,
+  Row,
+  Col,
+  Card,
+  CardImg,
+  CardText,
+  CardBody,
+  CardTitle,
+  Button,
+} from "reactstrap"
+import "./hompageBootstrap.scss"
 // Step 2: Define your component
 
 const NewsFeed = () => {
@@ -128,96 +138,122 @@ const NewsFeed = () => {
   const featuredPost4Img =
     wpPage.frontPage.section4.featuredPosts4.featuredImage.node.sourceUrl
   return (
-    <articles>
-      {/* front-page section 4 start*/}
-      <div className="cyan-content section_2">
-        <div
-          className="section-divider"
-          style={{ backgroundColor: `#e8f1f2` }}
-        ></div>
-        <div className="entry-content news-post-section">
-          <h1 className="todays-car-rental">{featuredPostTitle}</h1>
-          <h3 className="section_3_sub_title">{featuredPostSutitle}</h3>
-          {/* 3 column offers start */}
-          <div className="offer-row">
-            {/* post 1 */}
-            <div className="offer-post col-4">
+    <Container fluid className="cyan-content">
+      <Container>
+        <Row className="car-rental-title d-flex flex-column">
+          <h1 className="todays-car-rental text-center">{featuredPostTitle}</h1>
+          <h3 className="section_3_sub_title text-center">
+            {featuredPostSutitle}
+          </h3>
+        </Row>
+        <Row>
+          {/* post 1 */}
+          <Col xs="12" sm="6" md="3">
+            <Card>
               <Link to={featuredPost1Slug}>
-                <img src={featuredPost1Img} />
+                <CardImg
+                  top
+                  width="100%"
+                  src={featuredPost1Img}
+                  alt="Card image cap"
+                />
               </Link>
-              <div class="post-content-single">
-                <h2 className="entry-title heading-size-1 archive-post-title">
-                  {featuredPost1Title}
-                </h2>
-                <div
+              <CardBody>
+              <Link to={featuredPost1Slug} className="CardTitleLink">
+                <CardTitle tag="h5">{featuredPost1Title}</CardTitle>
+                </Link>
+                <CardText
                   dangerouslySetInnerHTML={{ __html: featuredPost1Excerpt }}
-                  className="offer-post-excerpt"
-                />
-                <Link to={featuredPost1Slug} className="Offer-btn">
-                  Read more
-                </Link>
-              </div>
-            </div>
-            {/* post 2 */}
-            <div className="offer-post col-4">
+                ></CardText>
+                <Button color="success">
+                  <Link to={featuredPost1Slug} className="readMore">
+                    Read more
+                  </Link>
+                </Button>
+              </CardBody>
+            </Card>
+          </Col>
+          {/* post 2 */}
+          <Col xs="12" sm="6" md="3">
+            <Card>
               <Link to={featuredPost2Slug}>
-                <img src={featuredPost2Img} />
+                <CardImg
+                  top
+                  width="100%"
+                  src={featuredPost2Img}
+                  alt="Card image cap"
+                />
               </Link>
-              <div class="post-content-single">
-                <h2 className="entry-title heading-size-1 archive-post-title">
-                  {featuredPost2Title}
-                </h2>
-                <div
+              <CardBody>
+              <Link to={featuredPost2Slug} className="CardTitleLink">
+                <CardTitle tag="h5">{featuredPost2Title}</CardTitle>
+                </Link>
+                <CardText
                   dangerouslySetInnerHTML={{ __html: featuredPost2Excerpt }}
-                  className="offer-post-excerpt"
-                />
-                <Link to={featuredPost2Slug} className="Offer-btn">
-                  Read more
-                </Link>
-              </div>
-            </div>
-            {/* post 3 */}
-            <div className="offer-post col-4">
+                ></CardText>
+                <Button color="success">
+                  <Link to={featuredPost3Slug} className="readMore">
+                    Read more
+                  </Link>
+                </Button>
+              </CardBody>
+            </Card>
+          </Col>
+          {/* post 3 */}
+          <Col xs="12" sm="6" md="3">
+            <Card>
               <Link to={featuredPost3Slug}>
-                <img src={featuredPost3Img} />
+                <CardImg
+                  top
+                  width="100%"
+                  src={featuredPost3Img}
+                  alt="Card image cap"
+                />
               </Link>
-              <div class="post-content-single">
-                <h2 className="entry-title heading-size-1 archive-post-title">
-                  {featuredPost3Title}
-                </h2>
-                <div
+              <CardBody>
+                <Link to={featuredPost3Slug} className="CardTitleLink">
+                  <CardTitle tag="h5">{featuredPost3Title}</CardTitle>
+                </Link>
+                <CardText
                   dangerouslySetInnerHTML={{ __html: featuredPost3Excerpt }}
-                  className="offer-post-excerpt"
-                />
-                <Link to={featuredPost3Slug} className="Offer-btn">
-                  Read more
-                </Link>
-              </div>
-            </div>
-            {/* post 4 */}
-            <div className="offer-post col-4">
+                ></CardText>
+                <Button color="success">
+                  <Link to={featuredPost3Slug} className="readMore">
+                    Read more
+                  </Link>
+                </Button>
+              </CardBody>
+            </Card>
+          </Col>
+          {/* post 4 */}
+          <Col xs="12" sm="6" md="3">
+            <Card>
               <Link to={featuredPost4Slug}>
-                <img src={featuredPost4Img} />
-              </Link>
-              <div class="post-content-single">
-                <h2 className="entry-title heading-size-1 archive-post-title">
-                  {featuredPost4Title}
-                </h2>
-                <div
-                  dangerouslySetInnerHTML={{ __html: featuredPost4Excerpt }}
-                  className="offer-post-excerpt"
+                <CardImg
+                  top
+                  width="100%"
+                  src={featuredPost4Img}
+                  alt="Card image cap"
                 />
-                <Link to={featuredPost4Slug} className="Offer-btn">
-                  Read more
+              </Link>
+              <CardBody>
+              <Link to={featuredPost4Slug} className="CardTitleLink">
+                <CardTitle tag="h5">{featuredPost4Title}</CardTitle>
                 </Link>
-              </div>
-            </div>
-          </div>
-          {/* 3 column offers end*/}
-        </div>
-      </div>
-      {/* front-page section 4 end*/}
-    </articles>
+                <CardText
+                  dangerouslySetInnerHTML={{ __html: featuredPost4Excerpt }}
+                ></CardText>
+                <Button color="success">
+                  <Link to={featuredPost4Slug} className="readMore">
+                    Read more
+                  </Link>
+                </Button>
+              </CardBody>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
+    </Container>
   )
 }
 // Step 3: Export your component

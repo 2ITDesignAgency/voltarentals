@@ -1,0 +1,204 @@
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  max-width: 90rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-success {
+  background-color: #49b850;
+  border-color: #49b850;
+}
+.todays-car-rental {
+  max-width: 130rem !important;
+  padding-top: 0rem !important;
+  padding-bottom: 0.5rem;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.53;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+  font-family: Open Sans;
+}
+.readMore {
+  text-decoration: none;
+  color: #fff;
+}
+.readMore:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.card-text p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.card {
+  margin-bottom: 1rem;
+}
+.container-fluid {
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// loyaltyProgram css
+.loyaltyProgram {
+  margin: 2rem auto;
+}
+h3.enjoy-cta {
+  align-self: flex-start;
+  margin: 1rem 0rem !important;
+  text-align: left;
+  font-family: Open Sans;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.33;
+  color: #000000;
+}
+
+@media (max-width: 756px) {
+  .row-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .section-divider {
+    display: none;
+  }
+
+  .container-fluid {
+    padding-bottom: 1rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section-divider {
+    display: none;
+  }
+
+  .container-fluid {
+    padding-bottom: 1rem;
+  }
+}
+
+.cardFleet {
+  background-clip: none;
+  border: none;
+  border-radius: none;
+}
+
+.cardFleet:hover {
+  background-clip: border-box;
+  border: 1px solid #49b850;
+  border-radius: 0.25rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+.fleetText {
+  min-height: 60px;
+}
+h5.card-title {
+    color: #212121;
+} 
+h5.card-title:hover {
+  color: #212121 !important;
+}
+
+
+// footer css bootstrap
+.footerCardBody{
+    background-color: #001a24;
+    padding: 0rem;
+    border: none;
+}
+.footerCardBody ul{
+margin: 0 0 3rem 0rem;
+}
+.footerCard.card {
+    background-color: #001a24;
+}
+.footter-btn {
+    border-top: 1px solid #49b850;
+    border-bottom: 1px solid #49b850;
+    border-left: 0px solid;
+    border-right: 0px solid;
+    padding: 1rem 0;
+    background-color: #001a24;
+    border-radius: 0px;
+}
+.footter-btn:hover {
+    border-top: 1px solid #49b850;
+    border-bottom: 1px solid #49b850;
+    border-left: 0px solid;
+    border-right: 0px solid;
+    padding: 1rem 0;
+    background-color: #001a24;
+    border-radius: 0px;
+}
+.footter-btn:active {
+    border-top: 1px solid #49b850;
+    border-bottom: 1px solid #49b850;
+    border-left: 0px solid;
+    border-right: 0px solid;
+    padding: 1rem 0;
+    background-color: #001a24;
+    border-radius: 0px;
+}
+.footter-btn:focus {
+    border-top: 1px solid #49b850;
+    border-bottom: 1px solid #49b850;
+    border-left: 0px solid;
+    border-right: 0px solid;
+    padding: 1rem 0;
+    background-color: #001a24;
+    border-radius: 0px;
+}
+.site-footer-bootstrap{
+    background-color: #001a24;
+}
+
+@media(max-width:720px){
+    .footer-desktop{
+        display: none;
+    }
+    .contact-info-desktop{
+        display:none !important;
+    }
+}
+
+@media(min-width:721px){
+    .footer-mobile{
+        display: none;
+    }
+    .contact-info-mobile{
+        display: none !important;
+    }
+}
+
+
+@media (max-width: 755px){
+    .header-inner {
+        width: 100VW;
+        padding: 0rem 0;
+        z-index: 100;
+    }
+}
+
+@media (min-width: 756px){
+    .header-inner {
+        width: 100VW;
+        padding: 0rem 0;
+        z-index: 100;
+    }
+}

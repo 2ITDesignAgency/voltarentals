@@ -1,7 +1,17 @@
 import React from "react"
 import { useStaticQuery, Link, graphql } from "gatsby"
-import Layout from "../Layout"
-
+import {
+  Container,
+  Row,
+  Col,
+  Card,
+  CardImg,
+  CardText,
+  CardBody,
+  CardTitle,
+  Button,
+} from "reactstrap"
+import "./hompageBootstrap.scss"
 // Step 2: Define your component
 
 const FleetHome = () => {
@@ -169,255 +179,207 @@ const FleetHome = () => {
   const ctaIcon3 = wpPage.frontPage.section3.ctaIcon3.sourceUrl
 
   return (
-    <main>
-      {/* front-page section 3 start*/}
-      <div
-        className="section-divider"
-        style={{ backgroundColor: `#e8f1f2` }}
-      ></div>
-      <div className="section_3">
-        {/* fleet categories title and subtitle start*/}
-        <h1 className="section_3_title">{fleetTitle}</h1>
-        <h3 className="section_3_sub_title">{fleetSubtitle}</h3>
-        {/* fleet categories title and subtitle start*/}
+    <Container fluid>
+      <Container>
+        <Row className="car-rental-title d-flex flex-column">
+          <h1 className="section_3_title">{fleetTitle}</h1>
+          <h3 className="section_3_sub_title">{fleetSubtitle}</h3>
+        </Row>
 
-        {/* fleet categories start*/}
-        <div className="entry-content">
-          {/* categories row start */}
-          <div className="section_3_row">
-            {/* fleet categories col 1*/}
-            <div className="section_3_col">
+        <Row>
+          <Col xs="12" sm="6" md="3">
+          <Card className="cardFleet">
               <Link to={fleetCategorieLink1}>
-                <img src={fleetCategorie1Image} />
+                <CardImg
+                  top
+                  width="100%"
+                  src={fleetCategorie1Image}
+                  alt="Card image cap"
+                />
               </Link>
-              <div>
-                <h2 className="entry-title heading-size-1 archive-post-title car-category-title">
-                  {fleetCategorieTitle1}
-                </h2>
-                <div
+              <CardBody>
+                <CardTitle tag="h5">{fleetCategorieTitle1}</CardTitle>
+                <CardText className="fleetText"
                   dangerouslySetInnerHTML={{ __html: fleetCategorieText1 }}
-                  className="offer-post-excerpt"
+                ></CardText>
+                <Button color="success">
+                  <Link to={fleetCategorieLink1} className="readMore">
+                    Read more
+                  </Link>
+                </Button>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col xs="12" sm="6" md="3">
+          <Card className="cardFleet">
+              <Link to={fleetCategorieLink2}>
+                <CardImg
+                  top
+                  width="100%"
+                  src={fleetCategorie2Image}
+                  alt="Card image cap"
                 />
-                <Link to={fleetCategorieLink1} className="Offer-btn">
-                  Read more
-                </Link>
-              </div>
-            </div>
-            {/* fleet categories col 1 end */}
-
-            {/* fleet categories col 2*/}
-            <div className="section_3_col">
-              <Link to={`/our-fleet/electric/`}>
-                <img src={fleetCategorie2Image} />
               </Link>
-              <div>
-                <h2 className="entry-title heading-size-1 archive-post-title car-category-title">
-                  {fleetCategorieTitle2}
-                </h2>
-                <div
+              <CardBody>
+                <CardTitle tag="h5">{fleetCategorieTitle2}</CardTitle>
+                <CardText className="fleetText"
                   dangerouslySetInnerHTML={{ __html: fleetCategorieText2 }}
-                  className="offer-post-excerpt"
-                />
-                <Link to={fleetCategorieLink2} className="Offer-btn">
-                  Read more
-                </Link>
-              </div>
-            </div>
-            {/* fleet categories col 2 end */}
-
-            {/* fleet categories col 3 */}
-            <div className="section_3_col">
+                ></CardText>
+                <Button color="success">
+                  <Link to={fleetCategorieLink2} className="readMore">
+                    Read more
+                  </Link>
+                </Button>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col xs="12" sm="6" md="3">
+          <Card className="cardFleet">
               <Link to={fleetCategorieLink3}>
-                <img src={fleetCategorie3Image} />
+                <CardImg
+                  top
+                  width="100%"
+                  src={fleetCategorie3Image}
+                  alt="Card image cap"
+                />
               </Link>
-              <div>
-                <h2 className="entry-title heading-size-1 archive-post-title car-category-title">
-                  {fleetCategorieTitle3}
-                </h2>
-                <div
+              <CardBody>
+                <CardTitle tag="h5">{fleetCategorieTitle3}</CardTitle>
+                <CardText className="fleetText"
                   dangerouslySetInnerHTML={{ __html: fleetCategorieText3 }}
-                  className="offer-post-excerpt"
-                />
-                <Link to={fleetCategorieLink3} className="Offer-btn">
-                  Read more
-                </Link>
-              </div>
-            </div>
-            {/* fleet categories col 3 end */}
-
-            {/* fleet categories col 4 */}
-            <div className="section_3_col">
+                ></CardText>
+                <Button color="success">
+                  <Link to={fleetCategorieLink3} className="readMore">
+                    Read more
+                  </Link>
+                </Button>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col xs="12" sm="6" md="3">
+          <Card className="cardFleet">
               <Link to={fleetCategorieLink4}>
-                <img src={fleetCategorie4Image} />
+                <CardImg
+                  top
+                  width="100%"
+                  src={fleetCategorie4Image}
+                  alt="Card image cap"
+                />
               </Link>
-              <div>
-                <h2 className="entry-title heading-size-1 archive-post-title car-category-title">
-                  {fleetCategorieTitle4}
-                </h2>
-                <div
+              <CardBody>
+                <CardTitle tag="h5">{fleetCategorieTitle4}</CardTitle>
+                <CardText className="fleetText"
                   dangerouslySetInnerHTML={{ __html: fleetCategorieText4 }}
-                  className="offer-post-excerpt"
-                />
-                <Link to={fleetCategorieLink4} className="Offer-btn">
-                  Read more
-                </Link>
-              </div>
-            </div>
-            {/* fleet categories col 4 end */}
-          </div>
-          {/* categories row end */}
+                ></CardText>
+                <Button color="success">
+                  <Link to={fleetCategorieLink4} className="readMore">
+                    Read more
+                  </Link>
+                </Button>
+              </CardBody>
+            </Card>
+          </Col>
+        </Row>
 
-          {/* categories second row start */}
-          <div className="section_3_row">
-            {/* fleet categories col 1*/}
-            <div className="section_3_col">
+        <Row>
+          <Col xs="12" sm="6" md="3">
+          <Card className="cardFleet">
               <Link to={fleetCategorieLink5}>
-                <img src={fleetCategorie5Image} />
+                <CardImg
+                  top
+                  width="100%"
+                  src={fleetCategorie5Image}
+                  alt="Card image cap"
+                />
               </Link>
-              <div>
-                <h2 className="entry-title heading-size-1 archive-post-title car-category-title">
-                  {fleetCategorieTitle5}
-                </h2>
-                <div
+              <CardBody>
+                <CardTitle tag="h5">{fleetCategorieTitle5}</CardTitle>
+                <CardText className="fleetText"
                   dangerouslySetInnerHTML={{ __html: fleetCategorieText5 }}
-                  className="offer-post-excerpt"
-                />
-                <Link to={fleetCategorieLink5} className="Offer-btn">
-                  Read more
-                </Link>
-              </div>
-            </div>
-            {/* fleet categories col 1 end */}
-
-            {/* fleet categories col 2*/}
-            <div className="section_3_col">
+                ></CardText>
+                <Button color="success">
+                  <Link to={fleetCategorieLink5} className="readMore">
+                    Read more
+                  </Link>
+                </Button>
+              </CardBody>
+            </Card>
+            <Link to={fleetCategorieLink5} className="Offer-btn">
+              Read more
+            </Link>
+          </Col>
+          <Col xs="12" sm="6" md="3">
+          <Card className="cardFleet">
               <Link to={fleetCategorieLink6}>
-                <img src={fleetCategorie6Image} />
+                <CardImg
+                  top
+                  width="100%"
+                  src={fleetCategorie6Image}
+                  alt="Card image cap"
+                />
               </Link>
-              <div>
-                <h2 className="entry-title heading-size-1 archive-post-title car-category-title">
-                  {fleetCategorieTitle6}
-                </h2>
-                <div
+              <CardBody>
+                <CardTitle tag="h5">{fleetCategorieTitle6}</CardTitle>
+                <CardText className="fleetText"
                   dangerouslySetInnerHTML={{ __html: fleetCategorieText6 }}
-                  className="offer-post-excerpt"
-                />
-                <Link to={fleetCategorieLink6} className="Offer-btn">
-                  Read more
-                </Link>
-              </div>
-            </div>
-            {/* fleet categories col 2 end */}
-
-            {/* fleet categories col 3 */}
-            <div className="section_3_col">
+                ></CardText>
+                <Button color="success">
+                  <Link to={fleetCategorieLink6} className="readMore">
+                    Read more
+                  </Link>
+                </Button>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col xs="12" sm="6" md="3">
+          <Card className="cardFleet">
               <Link to={fleetCategorieLink7}>
-                <img src={fleetCategorie7Image} />
+                <CardImg
+                  top
+                  width="100%"
+                  src={fleetCategorie7Image}
+                  alt="Card image cap"
+                />
               </Link>
-              <div>
-                <h2 className="entry-title heading-size-1 archive-post-title car-category-title">
-                  {fleetCategorieTitle7}
-                </h2>
-                <div
+              <CardBody>
+                <CardTitle tag="h5">{fleetCategorieTitle7}</CardTitle>
+                <CardText className="fleetText"
                   dangerouslySetInnerHTML={{ __html: fleetCategorieText7 }}
-                  className="offer-post-excerpt"
-                />
-                <Link to={fleetCategorieLink7} className="Offer-btn">
-                  Read more
-                </Link>
-              </div>
-            </div>
-            {/* fleet categories col 3 end */}
-
-            {/* fleet categories col 4 */}
-            <div className="section_3_col">
+                ></CardText>
+                <Button color="success">
+                  <Link to={fleetCategorieLink7} className="readMore">
+                    Read more
+                  </Link>
+                </Button>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col xs="12" sm="6" md="3">
+          <Card className="cardFleet">
               <Link to={fleetCategorieLink8}>
-                <img src={fleetCategorie8Image} />
+                <CardImg
+                  top
+                  width="100%"
+                  src={fleetCategorie8Image}
+                  alt="Card image cap"
+                />
               </Link>
-              <div>
-                <h2 className="entry-title heading-size-1 archive-post-title car-category-title">
-                  {fleetCategorieTitle8}
-                </h2>
-                <div
+              <CardBody>
+                <CardTitle tag="h5">{fleetCategorieTitle8}</CardTitle>
+                <CardText className="fleetText"
                   dangerouslySetInnerHTML={{ __html: fleetCategorieText8 }}
-                  className="offer-post-excerpt"
-                />
-                <Link to={fleetCategorieLink8} className="Offer-btn">
-                  Read more
-                </Link>
-              </div>
-            </div>
-            {/* fleet categories col 4 end */}
-          </div>
-          {/* categories row end */}
-
-          <div className="section_3_row cta">
-            {/* fleet categories col 1*/}
-            <div className="cta cta-col">
-              <Link to={ctaButtonLink1}>
-                <img src={ctaIcon1} className="cta-icon" />
-              </Link>
-              <div>
-                <h2 className="entry-title heading-size-1 archive-post-title cta">
-                  {ctaTitle1}
-                </h2>
-                <div
-                  dangerouslySetInnerHTML={{ __html: ctaSubtitle1 }}
-                  className="offer-post-excerpt"
-                />
-                <Link to={ctaButtonLink1} className="enjoy-btn cta">
-                  {ctaButtonText1}
-                </Link>
-              </div>
-            </div>
-            {/* fleet categories col 1 end */}
-
-            {/* fleet categories col 2*/}
-            <div className="cta cta-col">
-              <Link to={ctaButtonLink2}>
-                <img src={ctaIcon2} className="cta-icon" />
-              </Link>
-              <div>
-                <h2 className="entry-title heading-size-1 archive-post-title cta">
-                  {ctaTitle2}
-                </h2>
-                <div
-                  dangerouslySetInnerHTML={{ __html: ctaSubtitle2 }}
-                  className="offer-post-excerpt"
-                />
-                <Link to={ctaButtonLink2} className="enjoy-btn cta">
-                  {ctaButtonText2}
-                </Link>
-              </div>
-            </div>
-            {/* fleet categories col 2 end */}
-
-            {/* fleet categories col 3 */}
-            <div className="cta cta-col">
-              <Link to={ctaButtonLink3}>
-                <img src={ctaIcon3} className="cta-icon" />
-              </Link>
-              <div>
-                <h2 className="entry-title heading-size-1 archive-post-title cta">
-                  {ctaTitle3}
-                </h2>
-                <div
-                  dangerouslySetInnerHTML={{ __html: ctaSubtitle3 }}
-                  className="offer-post-excerpt"
-                />
-                <Link to={ctaButtonLink3} className="enjoy-btn cta">
-                  {ctaButtonText3}
-                </Link>
-              </div>
-            </div>
-            {/* fleet categories col 3 end */}
-          </div>
-          {/* categories row end */}
-        </div>
-        {/* fleet categories end*/}
-      </div>
-      {/* front-page section 3 end*/}
-    </main>
+                ></CardText>
+                <Button color="success">
+                  <Link to={fleetCategorieLink8} className="readMore">
+                    Read more
+                  </Link>
+                </Button>
+              </CardBody>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
+    </Container>
   )
 }
 // Step 3: Export your component
