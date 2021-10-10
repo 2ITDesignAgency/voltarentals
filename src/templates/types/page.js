@@ -9,8 +9,8 @@ import NewsFeed from "../../components/homepageelements/newsFeed"
 import WheelsBook from "../../components/homepageelements/WheelsBook"
 import OffersHome from "../../components/homepageelements/OffersHome"
 import LoayaltyProgram from "../../components/homepageelements/LoyaltyProgram"
-import BottomDivider from "../../components/homepageelements/BottomDivider"
-import TopDivider from "../../components/homepageelements/TopDivider"
+import BottomDivider from "../../components/homepageelements/DividerBottom"
+import TopDivider from "../../components/homepageelements/DividerTop"
 
 const page = ({ data }) => {
   const { page } = data
@@ -38,11 +38,11 @@ const page = ({ data }) => {
         <Slider className="footer-desktop"/>
         <WheelsBook />
         <OffersHome />
-        {/* <TopDivider /> */}
+        <TopDivider />
         <LoayaltyProgram />
-        {/* <BottomDivider /> */}
+        <BottomDivider />
         <FleetHome />
-        {/* <TopDivider /> */}
+        <TopDivider />
         <NewsFeed />
       </Layout>
     )
