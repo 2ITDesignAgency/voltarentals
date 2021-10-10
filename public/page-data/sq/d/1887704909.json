@@ -1,1 +1,1 @@
-{"data":{"wpMenu":{"name":"primary","menuItems":{"nodes":[{"label":"HOME","url":"https://2itdesignagency.gr/voltarentals/","databaseId":50,"connectedNode":{"node":{"__typename":"WpPage","uri":"/"}}},{"label":"LOCATIONS","url":"/locations/","databaseId":572,"connectedNode":{"node":{"__typename":"WpPage","uri":"/locations/"}}}]}}}}
+{"data":{"wpMenu":{"name":"primary","menuItems":{"nodes":[{"label":"HOME","url":"https://2itdesignagency.gr/voltarentals/","databaseId":50,"connectedNode":{"node":{"__typename":"WpPage","uri":"/"}}}]}}}}

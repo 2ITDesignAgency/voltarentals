@@ -34,6 +34,7 @@ query SINGLE_CONTENT_QUERY($id: ID!) {
     enclosure
     guid
     id
+    isRevision
     lastEditedBy {
       node {
         id
@@ -2250,6 +2251,59 @@ fragment BlockFragment on Block {
       }
     }
   }
+  ... on WpBootstrapBlocksContainerBlock {
+    attributes__typename_WpBootstrapBlocksContainerBlockAttributes: attributes {
+      className
+      fluidBreakpoint
+      isFluid
+      marginAfter
+    }
+  }
+  ... on WpBootstrapBlocksColumnBlock {
+    attributes__typename_WpBootstrapBlocksColumnBlockAttributes: attributes {
+      bgColor
+      centerContent
+      className
+      contentVerticalAlignment
+      equalWidthLg
+      equalWidthMd
+      equalWidthSm
+      equalWidthXl
+      equalWidthXs
+      equalWidthXxl
+      padding
+      sizeLg
+      sizeMd
+      sizeSm
+      sizeXl
+      sizeXs
+      sizeXxl
+    }
+  }
+  ... on WpBootstrapBlocksRowBlock {
+    attributes__typename_WpBootstrapBlocksRowBlockAttributes: attributes {
+      align
+      alignment
+      className
+      editorStackColumns
+      horizontalGutters
+      noGutters
+      template
+      verticalAlignment
+      verticalGutters
+    }
+  }
+  ... on WpBootstrapBlocksButtonBlock {
+    attributes__typename_WpBootstrapBlocksButtonBlockAttributes: attributes {
+      alignment
+      className
+      linkTarget
+      rel
+      style
+      text
+      url
+    }
+  }
   ... on CoreParagraphBlock {
     attributes__typename_CoreParagraphBlockAttributesUnion: attributes {
       __typename
@@ -2596,6 +2650,7 @@ fragment BlockFragment on Block {
       fontSize
       gradient
       ordered
+      placeholder
       reversed
       start
       textColor
@@ -2683,8 +2738,8 @@ fragment BlockFragment on Block {
         align
         anchor
         backgroundColor
-        borderRadius
         className
+        fontSize
         gradient
         linkTarget
         placeholder
@@ -2699,8 +2754,8 @@ fragment BlockFragment on Block {
         align
         anchor
         backgroundColor
-        borderRadius
         className
+        fontSize
         gradient
         linkTarget
         placeholder
@@ -2715,8 +2770,8 @@ fragment BlockFragment on Block {
         align
         anchor
         backgroundColor
-        borderRadius
         className
+        fontSize
         gradient
         linkTarget
         placeholder
@@ -2731,8 +2786,8 @@ fragment BlockFragment on Block {
         align
         anchor
         backgroundColor
-        borderRadius
         className
+        fontSize
         gradient
         linkTarget
         placeholder
@@ -2747,8 +2802,8 @@ fragment BlockFragment on Block {
         align
         anchor
         backgroundColor
-        borderRadius
         className
+        fontSize
         gradient
         linkTarget
         placeholder
@@ -2763,8 +2818,8 @@ fragment BlockFragment on Block {
         align
         anchor
         backgroundColor
-        borderRadius
         className
+        fontSize
         gradient
         linkTarget
         placeholder
@@ -2779,8 +2834,40 @@ fragment BlockFragment on Block {
         align
         anchor
         backgroundColor
-        borderRadius
         className
+        fontSize
+        gradient
+        linkTarget
+        placeholder
+        rel
+        text
+        textColor
+        title
+        url
+        width
+      }
+      ... on CoreButtonBlockDeprecatedV7Attributes {
+        align
+        anchor
+        backgroundColor
+        className
+        fontSize
+        gradient
+        linkTarget
+        placeholder
+        rel
+        text
+        textColor
+        title
+        url
+        width
+      }
+      ... on CoreButtonBlockDeprecatedV8Attributes {
+        align
+        anchor
+        backgroundColor
+        className
+        fontSize
         gradient
         linkTarget
         placeholder
@@ -2883,15 +2970,19 @@ fragment BlockFragment on Block {
       __typename
       ... on CoreColumnBlockAttributes {
         anchor
+        backgroundColor
         className
-        templateLock
+        gradient
+        textColor
         verticalAlignment
         width
       }
       ... on CoreColumnBlockDeprecatedV1Attributes {
         anchor
+        backgroundColor
         className
-        templateLock
+        gradient
+        textColor
         verticalAlignment
         width
       }
@@ -3060,10 +3151,12 @@ fragment BlockFragment on Block {
       align
       anchor
       className
+      displayPreview
       downloadButtonText
       fileName
       href
       id
+      previewHeight
       showDownloadButton
       textLinkHref
       textLinkTarget
@@ -3076,40 +3169,50 @@ fragment BlockFragment on Block {
         align
         anchor
         backgroundColor
+        borderColor
         className
         gradient
         tagName
-        templateLock
         textColor
       }
       ... on CoreGroupBlockDeprecatedV1Attributes {
         align
         anchor
         backgroundColor
+        borderColor
         className
         gradient
         tagName
-        templateLock
         textColor
       }
       ... on CoreGroupBlockDeprecatedV2Attributes {
         align
         anchor
         backgroundColor
+        borderColor
         className
         gradient
         tagName
-        templateLock
         textColor
       }
       ... on CoreGroupBlockDeprecatedV3Attributes {
         align
         anchor
         backgroundColor
+        borderColor
         className
         gradient
         tagName
-        templateLock
+        textColor
+      }
+      ... on CoreGroupBlockDeprecatedV4Attributes {
+        align
+        anchor
+        backgroundColor
+        borderColor
+        className
+        gradient
+        tagName
         textColor
       }
     }
@@ -3297,12 +3400,20 @@ fragment BlockFragment on Block {
       noTeaser
     }
   }
+  ... on CorePageListBlock {
+    attributes__typename_CorePageListBlockAttributes: attributes {
+      className
+    }
+  }
   ... on CorePreformattedBlock {
     attributes__typename_CorePreformattedBlockAttributes: attributes {
       anchor
+      backgroundColor
       className
       content
       fontSize
+      gradient
+      textColor
     }
   }
   ... on CorePullquoteBlock {
@@ -3518,13 +3629,7 @@ fragment BlockFragment on Block {
       anchor
       className
       height
-    }
-  }
-  ... on CoreSubheadBlock {
-    attributes__typename_CoreSubheadBlockAttributes: attributes {
-      align
-      className
-      content
+      width
     }
   }
   ... on CoreTableBlock {
@@ -3542,6 +3647,7 @@ fragment BlockFragment on Block {
             tag
           }
         }
+        borderColor
         caption
         className
         foot__typename_CoreTableBlockAttributesFoot: foot {
@@ -3552,6 +3658,7 @@ fragment BlockFragment on Block {
             tag
           }
         }
+        gradient
         hasFixedLayout
         head__typename_CoreTableBlockAttributesHead: head {
           cells {
@@ -3561,8 +3668,44 @@ fragment BlockFragment on Block {
             tag
           }
         }
+        textColor
       }
       ... on CoreTableBlockDeprecatedV1Attributes {
+        align
+        anchor
+        backgroundColor
+        body__typename_CoreTableBlockDeprecatedV1AttributesBody: body {
+          cells {
+            align
+            content
+            scope
+            tag
+          }
+        }
+        borderColor
+        caption
+        className
+        foot__typename_CoreTableBlockDeprecatedV1AttributesFoot: foot {
+          cells {
+            align
+            content
+            scope
+            tag
+          }
+        }
+        gradient
+        hasFixedLayout
+        head__typename_CoreTableBlockDeprecatedV1AttributesHead: head {
+          cells {
+            align
+            content
+            scope
+            tag
+          }
+        }
+        textColor
+      }
+      ... on CoreTableBlockDeprecatedV2Attributes {
         align
         anchor
         backgroundColor
@@ -3574,6 +3717,7 @@ fragment BlockFragment on Block {
             tag
           }
         }
+        borderColor
         caption
         className
         foot {
@@ -3584,6 +3728,7 @@ fragment BlockFragment on Block {
             tag
           }
         }
+        gradient
         hasFixedLayout
         head {
           cells {
@@ -3593,6 +3738,7 @@ fragment BlockFragment on Block {
             tag
           }
         }
+        textColor
       }
     }
   }
@@ -3619,22 +3765,28 @@ fragment BlockFragment on Block {
       __typename
       ... on CoreVerseBlockAttributes {
         anchor
+        backgroundColor
         className
         content
         fontSize
+        gradient
         textAlign
+        textColor
       }
       ... on CoreVerseBlockDeprecatedV1Attributes {
         anchor
+        backgroundColor
         className
         content
         fontSize
+        gradient
         textAlign
+        textColor
       }
     }
   }
   ... on CoreVideoBlock {
-    attributes {
+    attributes__typename_CoreVideoBlockAttributes: attributes {
       align
       anchor
       autoplay
@@ -3649,6 +3801,187 @@ fragment BlockFragment on Block {
       preload
       src
       tracks
+    }
+  }
+  ... on CoreSiteLogoBlock {
+    attributes__typename_CoreSiteLogoBlockAttributes: attributes {
+      align
+      className
+      isLink
+      linkTarget
+      width
+    }
+  }
+  ... on CoreSiteTaglineBlock {
+    attributes__typename_CoreSiteTaglineBlockAttributes: attributes {
+      backgroundColor
+      className
+      fontSize
+      gradient
+      textAlign
+      textColor
+    }
+  }
+  ... on CoreSiteTitleBlock {
+    attributes__typename_CoreSiteTitleBlockAttributes: attributes {
+      align
+      backgroundColor
+      className
+      fontSize
+      gradient
+      level
+      textAlign
+      textColor
+    }
+  }
+  ... on CoreQueryBlock {
+    attributes__typename_CoreQueryBlockAttributesUnion: attributes {
+      __typename
+      ... on CoreQueryBlockAttributes {
+        align
+        backgroundColor
+        className
+        displayLayout
+        gradient
+        query
+        queryId
+        tagName
+        textColor
+      }
+      ... on CoreQueryBlockDeprecatedV1Attributes {
+        align
+        backgroundColor
+        className
+        displayLayout
+        gradient
+        query
+        queryId
+        tagName
+        textColor
+      }
+    }
+  }
+  ... on CorePostTemplateBlock {
+    attributes__typename_CorePostTemplateBlockAttributes: attributes {
+      align
+      className
+    }
+  }
+  ... on CoreQueryTitleBlock {
+    attributes__typename_CoreQueryTitleBlockAttributes: attributes {
+      align
+      backgroundColor
+      className
+      fontSize
+      gradient
+      level
+      textAlign
+      textColor
+      type
+    }
+  }
+  ... on CoreQueryPaginationBlock {
+    attributes__typename_CoreQueryPaginationBlockAttributes: attributes {
+      align
+      backgroundColor
+      className
+      gradient
+      textColor
+    }
+  }
+  ... on CoreQueryPaginationNextBlock {
+    attributes__typename_CoreQueryPaginationNextBlockAttributes: attributes {
+      backgroundColor
+      className
+      fontSize
+      gradient
+      label
+      textColor
+    }
+  }
+  ... on CoreQueryPaginationNumbersBlock {
+    attributes__typename_CoreQueryPaginationNumbersBlockAttributes: attributes {
+      className
+    }
+  }
+  ... on CoreQueryPaginationPreviousBlock {
+    attributes__typename_CoreQueryPaginationPreviousBlockAttributes: attributes {
+      backgroundColor
+      className
+      fontSize
+      gradient
+      label
+      textColor
+    }
+  }
+  ... on CorePostTitleBlock {
+    attributes__typename_CorePostTitleBlockAttributes: attributes {
+      align
+      backgroundColor
+      className
+      fontSize
+      gradient
+      isLink
+      level
+      linkTarget
+      rel
+      textAlign
+      textColor
+    }
+  }
+  ... on CorePostContentBlock {
+    attributes__typename_CorePostContentBlockAttributes: attributes {
+      align
+      className
+    }
+  }
+  ... on CorePostDateBlock {
+    attributes__typename_CorePostDateBlockAttributes: attributes {
+      backgroundColor
+      className
+      fontSize
+      format
+      gradient
+      isLink
+      textAlign
+      textColor
+    }
+  }
+  ... on CorePostExcerptBlock {
+    attributes__typename_CorePostExcerptBlockAttributes: attributes {
+      backgroundColor
+      className
+      fontSize
+      gradient
+      moreText
+      showMoreOnNewLine
+      textAlign
+      textColor
+    }
+  }
+  ... on CorePostFeaturedImageBlock {
+    attributes__typename_CorePostFeaturedImageBlockAttributes: attributes {
+      align
+      className
+      isLink
+    }
+  }
+  ... on CorePostTermsBlock {
+    attributes__typename_CorePostTermsBlockAttributes: attributes {
+      backgroundColor
+      className
+      fontSize
+      gradient
+      term
+      textAlign
+      textColor
+    }
+  }
+  ... on CoreLoginoutBlock {
+    attributes {
+      className
+      displayLoginAsForm
+      redirectToCurrent
     }
   }
 }

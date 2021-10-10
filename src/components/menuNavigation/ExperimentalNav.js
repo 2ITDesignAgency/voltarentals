@@ -30,7 +30,6 @@ const ExperimentalNav = (props) => {
 }
 
   return (
-    <div className="">
       <Navbar color="white" light expand="md">
         <NavbarBrand href="/">
           <img
@@ -145,7 +144,6 @@ const ExperimentalNav = (props) => {
           </div>
         </Collapse>
       </Navbar>
-    </div>
   )
 }
 
