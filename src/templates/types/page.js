@@ -38,11 +38,11 @@ const page = ({ data }) => {
         <Slider className="footer-desktop"/>
         <WheelsBook />
         <OffersHome />
-        <TopDivider />
+        {/* <TopDivider /> */}
         <LoayaltyProgram />
-        <BottomDivider />
+        {/* <BottomDivider /> */}
         <FleetHome />
-        <TopDivider />
+        {/* <TopDivider /> */}
         <NewsFeed />
       </Layout>
     )
