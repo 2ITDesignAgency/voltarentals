@@ -7,7 +7,7 @@ import ContentTypePagination from "../../components/ContentTypePagination"
 import AuthorBio from "../../components/AuthorBio"
 import PostCategories from "../../components/PostCategories"
 import FeaturedMedia from "../../components/FeaturedMedia"
-import WheelsBook from "../../components/homepageelements/WheelsBook"
+import { Container, Row } from "reactstrap"
 
 const post = ({ data }) => {
   const { nextPage, previousPage, page } = data
@@ -38,10 +38,7 @@ const post = ({ data }) => {
         className={`post-${databaseId} post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized`}
         id={`post-${databaseId}`}
       >
-        <header
-          className="entry-header has-text-align-center header-footer-group"
-          style={{ backgroundImage: `url(${featuredImage})` }}
-        >
+        <header className="entry-header has-text-align-center header-footer-group">
           <div className="entry-header-inner section-inner medium">
             <PostCategories
               categories={categories}
@@ -57,14 +54,17 @@ const post = ({ data }) => {
             /> */}
           </div>
         </header>
+        <Container fluid>
         <FeaturedMedia image={featuredImage} />
-        <WheelsBook />
-        <div className="post-inner thin">
-          {/* {post.Blocks && <post.Blocks />} */}
-          <div
-            className="entry-content"
+        <Row
             dangerouslySetInnerHTML={{ __html: content }}
+            className="entry-content post-content"
           />
+        </Container>
+        
+        <div className="post-inner thin">
+          {post.Blocks && <post.Blocks />}
+
         </div>
         <div className="section-inner">
           <AuthorBio author={author} />

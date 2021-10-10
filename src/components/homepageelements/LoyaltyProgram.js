@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, Link, graphql } from "gatsby"
 import { Row, Col, Container } from "reactstrap"
 import "./hompageBootstrap.scss"
+
 // Step 2: Define your component
 
 const LoayaltyProgram = () => {
@@ -29,7 +30,8 @@ const LoayaltyProgram = () => {
   const travelExperienceImage =
     wpPage.frontPage.section2.travelExperienceImage.sourceUrl
   return (
-    <Container className="loyaltyProgram">
+    <Container fluid className="loyaltyProgram cyan-content ">
+      <Container className="loyaltyProgram">
       <Row className="row-reverse">
         <Col className="align-self-center" xs="12" md="6" order="2">
           <h3 className="enjoy-cta">{travelExperianceTitle}</h3>
@@ -39,9 +41,10 @@ const LoayaltyProgram = () => {
           </Link>
         </Col>
         <Col sm="12" md="6" order="1">
-          <img src={travelExperienceImage} />
+          <img src={travelExperienceImage} className="img-fluid box-shadow"/>
         </Col>
       </Row>
+      </Container>
     </Container>
   )
 }

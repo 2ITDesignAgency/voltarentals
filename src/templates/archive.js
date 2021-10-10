@@ -8,7 +8,10 @@ import Seo from "../components/Seo"
 // import PreviousIcon from "../../components/icons/previous"
 import PostPreview from "../components/PostPreview"
 import ArchivePagination from "../components/ArchivePagination"
-
+import {
+  Container,
+  Row,
+} from "reactstrap"
 const Archive = (props) => {
   const {
     data: {
@@ -20,7 +23,8 @@ const Archive = (props) => {
   return (
     <Layout bodyClass="home blog wp-embed-responsive has-no-pagination showing-comments hide-avatars footer-top-visible customize-support">
       <Seo title="Home" description="Welcome to volta4u" />
-      <div className="column-blog">
+      <Container>
+      <Row>
         {nodes &&
           nodes.map((post, index) => {
             return (
@@ -31,8 +35,9 @@ const Archive = (props) => {
               />
             )
           })}
-      </div>
+      </Row>
       <ArchivePagination {...pageInfo} archivePath={archivePath} />
+      </Container>
     </Layout>
   )
 }

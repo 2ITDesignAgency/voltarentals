@@ -3,7 +3,7 @@ import './WheelsBook.scss'
 const WheelsBook = () => {
   return (
     <div className="cta-booking">
-      <div id="wheelsbook"></div>
+      <div id="wheelsbook" className="shadow-sm"></div>
     </div>
   )
 }

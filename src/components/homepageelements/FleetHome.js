@@ -157,37 +157,16 @@ const FleetHome = () => {
   const fleetCategorie8Image =
     wpPage.frontPage.section3.fleetCategorie8Image.sourceUrl
 
-  // section 3 cta 1
-  const ctaTitle1 = wpPage.frontPage.section3.ctaTitle1
-  const ctaSubtitle1 = wpPage.frontPage.section3.ctaSubtitle1
-  const ctaButtonText1 = wpPage.frontPage.section3.ctaButtonText1
-  const ctaButtonLink1 = wpPage.frontPage.section3.ctaButtonLink1
-  const ctaIcon1 = wpPage.frontPage.section3.ctaIcon1.sourceUrl
-
-  // section 3 cta 2
-  const ctaTitle2 = wpPage.frontPage.section3.ctaTitle2
-  const ctaSubtitle2 = wpPage.frontPage.section3.ctaSubtitle2
-  const ctaButtonText2 = wpPage.frontPage.section3.ctaButtonText2
-  const ctaButtonLink2 = wpPage.frontPage.section3.ctaButtonLink2
-  const ctaIcon2 = wpPage.frontPage.section3.ctaIcon2.sourceUrl
-
-  // section 3 cta 3
-  const ctaTitle3 = wpPage.frontPage.section3.ctaTitle3
-  const ctaSubtitle3 = wpPage.frontPage.section3.ctaSubtitle3
-  const ctaButtonText3 = wpPage.frontPage.section3.ctaButtonText3
-  const ctaButtonLink3 = wpPage.frontPage.section3.ctaButtonLink3
-  const ctaIcon3 = wpPage.frontPage.section3.ctaIcon3.sourceUrl
-
   return (
-    <Container fluid>
+    <Container>
       <Container>
         <Row className="car-rental-title d-flex flex-column">
-          <h1 className="section_3_title">{fleetTitle}</h1>
+          <h1 className="sectionTitle">{fleetTitle}</h1>
           <h3 className="section_3_sub_title">{fleetSubtitle}</h3>
         </Row>
 
         <Row>
-          <Col xs="12" sm="6" md="3">
+          <Col xs="6" sm="6" md="3">
           <Card className="cardFleet">
               <Link to={fleetCategorieLink1}>
                 <CardImg
@@ -210,7 +189,7 @@ const FleetHome = () => {
               </CardBody>
             </Card>
           </Col>
-          <Col xs="12" sm="6" md="3">
+          <Col xs="6" sm="6" md="3">
           <Card className="cardFleet">
               <Link to={fleetCategorieLink2}>
                 <CardImg
@@ -233,7 +212,7 @@ const FleetHome = () => {
               </CardBody>
             </Card>
           </Col>
-          <Col xs="12" sm="6" md="3">
+          <Col xs="6" sm="6" md="3">
           <Card className="cardFleet">
               <Link to={fleetCategorieLink3}>
                 <CardImg
@@ -256,7 +235,7 @@ const FleetHome = () => {
               </CardBody>
             </Card>
           </Col>
-          <Col xs="12" sm="6" md="3">
+          <Col xs="6" sm="6" md="3">
           <Card className="cardFleet">
               <Link to={fleetCategorieLink4}>
                 <CardImg
@@ -282,7 +261,7 @@ const FleetHome = () => {
         </Row>
 
         <Row>
-          <Col xs="12" sm="6" md="3">
+          <Col xs="6" sm="6" md="3">
           <Card className="cardFleet">
               <Link to={fleetCategorieLink5}>
                 <CardImg
@@ -308,7 +287,7 @@ const FleetHome = () => {
               Read more
             </Link>
           </Col>
-          <Col xs="12" sm="6" md="3">
+          <Col xs="6" sm="6" md="3">
           <Card className="cardFleet">
               <Link to={fleetCategorieLink6}>
                 <CardImg
@@ -331,7 +310,7 @@ const FleetHome = () => {
               </CardBody>
             </Card>
           </Col>
-          <Col xs="12" sm="6" md="3">
+          <Col xs="6" sm="6" md="3">
           <Card className="cardFleet">
               <Link to={fleetCategorieLink7}>
                 <CardImg
@@ -354,7 +333,7 @@ const FleetHome = () => {
               </CardBody>
             </Card>
           </Col>
-          <Col xs="12" sm="6" md="3">
+          <Col xs="6" sm="6" md="3">
           <Card className="cardFleet">
               <Link to={fleetCategorieLink8}>
                 <CardImg

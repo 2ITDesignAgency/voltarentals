@@ -8,7 +8,7 @@ const FeaturedMedia = ({ image }) => {
     <div className="featured-media">
       <div className="featured-media-inner section-inner">
         <NonStretchedImage
-          className="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+          className="img-fluid post-cover"
           fluid={image.node.localFile.childImageSharp.fluid}
         />
       </div>

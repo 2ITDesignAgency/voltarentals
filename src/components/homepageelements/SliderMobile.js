@@ -6,11 +6,11 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from 'reactstrap';
-import SliderImg1 from "../../assets/sliderImage/1.jpg"
-import SliderImg2 from "../../assets/sliderImage/2.jpg"
-import SliderImg3 from "../../assets/sliderImage/3.jpg"
-import SliderImg4 from "../../assets/sliderImage/4.jpg"
-import SliderImg5 from "../../assets/sliderImage/5.jpg"
+import SliderImg1 from "../../assets/sliderImage/mobile1.jpg"
+import SliderImg2 from "../../assets/sliderImage/mobile2.jpg"
+import SliderImg3 from "../../assets/sliderImage/mobile3.jpg"
+import SliderImg4 from "../../assets/sliderImage/mobile4.jpg"
+import SliderImg5 from "../../assets/sliderImage/mobile5.jpg"
 
 
 const items = [
@@ -82,7 +82,7 @@ const SliderMobile = (props) => {
       activeIndex={activeIndex}
       next={next}
       previous={previous}
-      className="slider-desktop"
+      className="slider-mobile"
     >
       <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
       {slides}

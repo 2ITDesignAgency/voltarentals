@@ -542,7 +542,7 @@
   }
   
   #wheelsbook {
-    margin-top: -5rem;
+    margin-top: -10rem;
   }
   #responseResults .cardata p {
     font-size: 1.2rem !important;
@@ -691,12 +691,12 @@
   }
   @media (max-width: 576px) {
     #wheelsbook {
-      width: 330px !important;
       align-items: center !important;
       justify-content: center !important;
       display: flex !important;
       margin-top: 0px !important;
     }
+
     #WheelsBookingEngineWrapper,
     .WheelsContainer {
       width: 330px;

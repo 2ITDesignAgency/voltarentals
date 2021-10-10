@@ -3,6 +3,7 @@ body {
   border: none;
   margin: 0;
   padding: 0;
+  font-family: Open Sans,sans-serif !important;
 }
 
 h1,
@@ -134,13 +135,13 @@ path {
 .car-rental-title {
   padding-top: 1rem !important;
 }
-.todays-car-rental {
+.sectionTitle {
   max-width: 130rem !important;
   padding-top: 0rem !important;
   padding-bottom: 0.5rem;
-  font-family: OpenSans;
+  font-family: Open Sans,sans-serif;
   font-size: 30px;
-  font-weight: bold;
+  font-weight: 600;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.53;
@@ -1969,7 +1970,9 @@ ul.social-icons li {
 .no-search-results-form {
   padding-top: 5rem;
 }
-
+.feuturedPost{
+  max-height: 450px;
+}
 /* -------------------------------------------------------------------------- */
 
 /*	9. Post: Single
@@ -3699,7 +3702,9 @@ div.comment:first-of-type {
 .widget select {
   max-width: 100%;
 }
-
+.post-content{
+margin-top: 4rem;
+}
 /* Font Families ----------------------------- */
 
 .widget_text p,
@@ -4247,11 +4252,6 @@ body {
   font-size: 1.2rem;
 }
 
-// slider css
-.sliderHome {
-  min-height: 550px;
-}
-
 .display-none {
   display: none;
 }
@@ -4325,14 +4325,7 @@ body {
     max-width: 150px;
     margin-bottom: 1rem;
   }
-  .cta-booking {
-    width: 100vw;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    background-color: #e8f1f2 !important;
-    padding: 1rem;
-  }
+  
   .contact-text {
     color: #212121;
     font-size: 1.1rem;
@@ -5312,8 +5305,8 @@ body {
   .wp-block-quote.is-style-large,
   .wp-block-verse,
   .wp-block-video:not(.alignwide):not(.alignfull) {
-    margin-bottom: 4rem;
-    margin-top: 4rem;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
   }
 
   /* BLOCK: COLUMNS */
@@ -6803,6 +6796,8 @@ body {
     > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
     max-width: 90rem;
     width: calc(100% - 4rem);
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
   .column-blog {
     max-width: 90rem;

@@ -113,7 +113,7 @@ const offersHome = () => {
   return (
     <Container>
       <Row className="car-rental-title">
-        <h1 className="todays-car-rental text-center">{offerTitle}</h1>
+        <h1 className="sectionTitle text-center">{offerTitle}</h1>
       </Row>
       {/* 3 column offers start */}
       <Row>

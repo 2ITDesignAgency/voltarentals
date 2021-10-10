@@ -138,17 +138,17 @@ const NewsFeed = () => {
   const featuredPost4Img =
     wpPage.frontPage.section4.featuredPosts4.featuredImage.node.sourceUrl
   return (
-    <Container fluid className="cyan-content">
+    <Container fluid className="cyan-content ">
       <Container>
         <Row className="car-rental-title d-flex flex-column">
-          <h1 className="todays-car-rental text-center">{featuredPostTitle}</h1>
+          <h1 className="sectionTitle text-center">{featuredPostTitle}</h1>
           <h3 className="section_3_sub_title text-center">
             {featuredPostSutitle}
           </h3>
         </Row>
         <Row>
           {/* post 1 */}
-          <Col xs="12" sm="6" md="3">
+          <Col xs="6" sm="6" md="3">
             <Card>
               <Link to={featuredPost1Slug}>
                 <CardImg
@@ -174,7 +174,7 @@ const NewsFeed = () => {
             </Card>
           </Col>
           {/* post 2 */}
-          <Col xs="12" sm="6" md="3">
+          <Col xs="6" sm="6" md="3">
             <Card>
               <Link to={featuredPost2Slug}>
                 <CardImg
@@ -200,7 +200,7 @@ const NewsFeed = () => {
             </Card>
           </Col>
           {/* post 3 */}
-          <Col xs="12" sm="6" md="3">
+          <Col xs="6" sm="6" md="3">
             <Card>
               <Link to={featuredPost3Slug}>
                 <CardImg
@@ -226,7 +226,7 @@ const NewsFeed = () => {
             </Card>
           </Col>
           {/* post 4 */}
-          <Col xs="12" sm="6" md="3">
+          <Col xs="6" sm="6" md="3">
             <Card>
               <Link to={featuredPost4Slug}>
                 <CardImg

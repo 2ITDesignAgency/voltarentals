@@ -1,5 +1,4 @@
 import React from "react"
-import WheelsBook from "./WheelsBook"
 import OffersHome from "./OffersHome"
 import LoayaltyProgram from "./LoyaltyProgram"
 import {
@@ -9,8 +8,7 @@ import {
 
 const Section2 = () => {
   return (
-    <Container fluid className="cyan-content">
-      <WheelsBook />
+    <Container fluid >
       <OffersHome />
       <LoayaltyProgram />
     </Container>

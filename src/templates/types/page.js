@@ -4,9 +4,14 @@ import Layout from "../../components/Layout"
 import Seo from "../../components/Seo"
 import FeaturedMedia from "../../components/FeaturedMedia"
 import Slider from "../../components/homepageelements/Slider"
-import Section2 from "../../components/homepageelements/section2"
+import SliderMobile from "../../components/homepageelements/SliderMobile"
 import FleetHome from "../../components/homepageelements/FleetHome"
 import NewsFeed from "../../components/homepageelements/newsFeed"
+import WheelsBook from "../../components/homepageelements/WheelsBook"
+import OffersHome from "../../components/homepageelements/OffersHome"
+import LoayaltyProgram from "../../components/homepageelements/LoyaltyProgram"
+import BottomDivider from "../../components/homepageelements/BottomDivider"
+import TopDivider from "../../components/homepageelements/TopDivider"
 
 const page = ({ data }) => {
   const { page } = data
@@ -24,17 +29,21 @@ const page = ({ data }) => {
   const services = "SERVICES"
 
   // homepage template
-  if (homepage == title) {
+  if (homepage == pageName) {
     return (
       <Layout
         bodyClass={`page-template-default page page-id-${databaseId} wp-embed-responsive singular missing-post-thumbnail has-no-pagination not-showing-comments footer-top-visible customize-support`}
       >
         <Seo title={title} description={excerpt} />
-        <div className="sliderHome">
-          <Slider />
-        </div>
-        <Section2 />
+        <SliderMobile className="footer-mobile"/>
+        <Slider className="footer-desktop"/>
+        <WheelsBook />
+        <OffersHome />
+        <TopDivider />
+        <LoayaltyProgram />
+        <BottomDivider />
         <FleetHome />
+        <TopDivider />
         <NewsFeed />
       </Layout>
     )
