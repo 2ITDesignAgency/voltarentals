@@ -1,5 +1,5 @@
 --- 
 deployment: 
      tasks: 
-          - export DEPLOYPATH=/home/volta4u/volta4u/
+          - export DEPLOYPATH=/home/volta4u/public_html/
           - /bin/cp -R public/* $DEPLOYPATH
