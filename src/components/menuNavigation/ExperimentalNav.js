@@ -66,29 +66,29 @@ const ExperimentalNav = (props) => {
               <DropdownToggle nav caret>
                 Our Fleet
               </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>
+              <DropdownMenu right className="fleat-menu">
+                <DropdownItem className="fleat-item">
                   <NavLink href="/our-fleet/compact">Compact</NavLink>
                 </DropdownItem>
-                <DropdownItem>
+                <DropdownItem className="fleat-item">
                   <NavLink href="/our-fleet/economy">Economy</NavLink>
                 </DropdownItem>
-                <DropdownItem>
+                <DropdownItem className="fleat-item">
                   <NavLink href="/our-fleet/luxury/">Luxury</NavLink>
                 </DropdownItem>
-                <DropdownItem>
+                <DropdownItem className="fleat-item">
                   <NavLink href="/our-fleet/mini/">Mini</NavLink>
                 </DropdownItem>
-                <DropdownItem>
+                <DropdownItem className="fleat-item">
                   <NavLink href="/our-fleet/premium/">Premium</NavLink>
                 </DropdownItem>
-                <DropdownItem>
+                <DropdownItem className="fleat-item">
                   <NavLink href="/our-fleet/suv/">SUV</NavLink>
                 </DropdownItem>
-                <DropdownItem>
+                <DropdownItem className="fleat-item">
                   <NavLink href="/our-fleet/vans/">Vans</NavLink>
                 </DropdownItem>
-                <DropdownItem>
+                <DropdownItem className="fleat-item">
                   <NavLink href="/our-fleet/cargo-vans/">Cargo Vans</NavLink>
                 </DropdownItem>
               </DropdownMenu>
