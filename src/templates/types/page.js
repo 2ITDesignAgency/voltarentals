@@ -12,6 +12,10 @@ import LoayaltyProgram from "../../components/homepageelements/LoyaltyProgram"
 import BottomDivider from "../../components/homepageelements/DividerBottom"
 import TopDivider from "../../components/homepageelements/DividerTop"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {
+  Container,
+  Row
+} from "reactstrap"
 
 const page = ({ data }) => {
   const { page } = data
@@ -73,9 +77,12 @@ const page = ({ data }) => {
           </header>
 
           {/* <FeaturedMedia image={featuredImage} /> */}
-
-          <div className="post-inner thin">
+          <Container className="WheelsBookContainer">
+          <Row>
           <WheelsBook />
+          </Row>
+          </Container>
+          <div className="post-inner thin">
             <div
               className="entry-content"
               dangerouslySetInnerHTML={{ __html: content }}
