@@ -177,13 +177,13 @@ const FleetHome = () => {
                 />
               </Link>
               <CardBody>
-                <CardTitle tag="h5">{fleetCategorieTitle1}</CardTitle>
+                <CardTitle tag="h5" className="offers-title">{fleetCategorieTitle1}</CardTitle>
                 <CardText className="fleetText"
                   dangerouslySetInnerHTML={{ __html: fleetCategorieText1 }}
                 ></CardText>
                 <Button color="success">
                   <Link to={fleetCategorieLink1} className="readMore">
-                    Read more
+                    Discover more
                   </Link>
                 </Button>
               </CardBody>
@@ -200,13 +200,13 @@ const FleetHome = () => {
                 />
               </Link>
               <CardBody>
-                <CardTitle tag="h5">{fleetCategorieTitle2}</CardTitle>
+                <CardTitle tag="h5" className="offers-title">{fleetCategorieTitle2}</CardTitle>
                 <CardText className="fleetText"
                   dangerouslySetInnerHTML={{ __html: fleetCategorieText2 }}
                 ></CardText>
                 <Button color="success">
                   <Link to={fleetCategorieLink2} className="readMore">
-                    Read more
+                    Discover more
                   </Link>
                 </Button>
               </CardBody>
@@ -223,13 +223,13 @@ const FleetHome = () => {
                 />
               </Link>
               <CardBody>
-                <CardTitle tag="h5">{fleetCategorieTitle3}</CardTitle>
+                <CardTitle tag="h5" className="offers-title">{fleetCategorieTitle3}</CardTitle>
                 <CardText className="fleetText"
                   dangerouslySetInnerHTML={{ __html: fleetCategorieText3 }}
                 ></CardText>
                 <Button color="success">
                   <Link to={fleetCategorieLink3} className="readMore">
-                    Read more
+                    Discover more
                   </Link>
                 </Button>
               </CardBody>
@@ -246,13 +246,13 @@ const FleetHome = () => {
                 />
               </Link>
               <CardBody>
-                <CardTitle tag="h5">{fleetCategorieTitle4}</CardTitle>
+                <CardTitle tag="h5" className="offers-title">{fleetCategorieTitle4}</CardTitle>
                 <CardText className="fleetText"
                   dangerouslySetInnerHTML={{ __html: fleetCategorieText4 }}
                 ></CardText>
                 <Button color="success">
                   <Link to={fleetCategorieLink4} className="readMore">
-                    Read more
+                    Discover more
                   </Link>
                 </Button>
               </CardBody>
@@ -272,19 +272,19 @@ const FleetHome = () => {
                 />
               </Link>
               <CardBody>
-                <CardTitle tag="h5">{fleetCategorieTitle5}</CardTitle>
+                <CardTitle tag="h5" className="offers-title">{fleetCategorieTitle5}</CardTitle>
                 <CardText className="fleetText"
                   dangerouslySetInnerHTML={{ __html: fleetCategorieText5 }}
                 ></CardText>
                 <Button color="success">
                   <Link to={fleetCategorieLink5} className="readMore">
-                    Read more
+                    Discover more
                   </Link>
                 </Button>
               </CardBody>
             </Card>
             <Link to={fleetCategorieLink5} className="Offer-btn">
-              Read more
+              Discover more
             </Link>
           </Col>
           <Col xs="6" sm="6" md="3">
@@ -298,13 +298,13 @@ const FleetHome = () => {
                 />
               </Link>
               <CardBody>
-                <CardTitle tag="h5">{fleetCategorieTitle6}</CardTitle>
+                <CardTitle tag="h5" className="offers-title">{fleetCategorieTitle6}</CardTitle>
                 <CardText className="fleetText"
                   dangerouslySetInnerHTML={{ __html: fleetCategorieText6 }}
                 ></CardText>
                 <Button color="success">
                   <Link to={fleetCategorieLink6} className="readMore">
-                    Read more
+                    Discover more
                   </Link>
                 </Button>
               </CardBody>
@@ -321,13 +321,13 @@ const FleetHome = () => {
                 />
               </Link>
               <CardBody>
-                <CardTitle tag="h5">{fleetCategorieTitle7}</CardTitle>
+                <CardTitle tag="h5" className="offers-title">{fleetCategorieTitle7}</CardTitle>
                 <CardText className="fleetText"
                   dangerouslySetInnerHTML={{ __html: fleetCategorieText7 }}
                 ></CardText>
                 <Button color="success">
                   <Link to={fleetCategorieLink7} className="readMore">
-                    Read more
+                    Discover more
                   </Link>
                 </Button>
               </CardBody>
@@ -344,13 +344,13 @@ const FleetHome = () => {
                 />
               </Link>
               <CardBody>
-                <CardTitle tag="h5">{fleetCategorieTitle8}</CardTitle>
+                <CardTitle tag="h5" className="offers-title">{fleetCategorieTitle8}</CardTitle>
                 <CardText className="fleetText"
                   dangerouslySetInnerHTML={{ __html: fleetCategorieText8 }}
                 ></CardText>
                 <Button color="success">
                   <Link to={fleetCategorieLink8} className="readMore">
-                    Read more
+                    Discover more
                   </Link>
                 </Button>
               </CardBody>

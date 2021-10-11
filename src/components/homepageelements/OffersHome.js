@@ -118,76 +118,88 @@ const offersHome = () => {
       {/* 3 column offers start */}
       <Row>
         {/* post 1 */}
-        <Col xs="12" sm="6" md="4" >
-            <Card>
+        <Col xs="12" sm="6" md="4">
+          <Card>
+            <Link to={offerPost1Slug}>
+              <CardImg
+                top
+                width="100%"
+                src={offerPost1Img}
+                alt="Card image cap"
+              />
+            </Link>
+            <CardBody>
               <Link to={offerPost1Slug}>
-                <CardImg
-                  top
-                  width="100%"
-                  src={offerPost1Img}
-                  alt="Card image cap"
-                />
+                <CardTitle tag="h5" className="offers-title">
+                  {offerPost1Title}
+                </CardTitle>
               </Link>
-              <CardBody>
-                <CardTitle tag="h5">{offerPost1Title}</CardTitle>
-                <CardText
-                  dangerouslySetInnerHTML={{ __html: offerPost1Excerpt }}
-                ></CardText>
-                <Button color="success">
-                  <Link to={offerPost1Slug} className="readMore">
-                    Read more
-                  </Link>
-                </Button>
-              </CardBody>
-            </Card>
+              <CardText
+                dangerouslySetInnerHTML={{ __html: offerPost1Excerpt }}
+              ></CardText>
+              <Button color="success">
+                <Link to={offerPost1Slug} className="readMore">
+                  Read more
+                </Link>
+              </Button>
+            </CardBody>
+          </Card>
         </Col>
         {/* post 2 */}
         <Col xs="12" sm="6" md="4">
-            <Card>
+          <Card>
+            <Link to={offerPost2Slug}>
+              <CardImg
+                top
+                width="100%"
+                src={offerPost2Img}
+                alt="Card image cap"
+              />
+            </Link>
+            <CardBody>
               <Link to={offerPost2Slug}>
-                <CardImg
-                  top
-                  width="100%"
-                  src={offerPost2Img}
-                  alt="Card image cap"
-                />
-              </Link>
-              <CardBody>
-                <CardTitle tag="h5">{offerPost2Title}</CardTitle>
-                <CardText
-                  dangerouslySetInnerHTML={{ __html: offerPost2Excerpt }}
-                ></CardText>
-                <Button color="success">
-                  <Link to={offerPost3Slug} className="readMore">
-                    Read more
-                  </Link>
-                </Button>
-              </CardBody>
-            </Card>
+                <CardTitle tag="h5" className="offers-title">
+                  {offerPost2Title}
+                </CardTitle>
+              </Link>{" "}
+              <CardText
+                dangerouslySetInnerHTML={{ __html: offerPost2Excerpt }}
+              ></CardText>
+              <Button color="success">
+                <Link to={offerPost3Slug} className="readMore">
+                  Read more
+                </Link>
+              </Button>
+            </CardBody>
+          </Card>
         </Col>
         {/* post 3 */}
         <Col xs="12" sm="6" md="4">
-            <Card>
+          <Card>
+            <Link to={offerPost3Slug}>
+              <CardImg
+                top
+                width="100%"
+                src={offerPost3Img}
+                alt="Card image cap"
+              />
+            </Link>
+            <CardBody>
               <Link to={offerPost3Slug}>
-                <CardImg
-                  top
-                  width="100%"
-                  src={offerPost3Img}
-                  alt="Card image cap"
-                />
+                <CardTitle tag="h5" className="offers-title">
+                  {offerPost3Title}
+                </CardTitle>
               </Link>
-              <CardBody>
-                <CardTitle tag="h5">{offerPost3Title}</CardTitle>
-                <CardText
-                  dangerouslySetInnerHTML={{ __html: offerPost3Excerpt }}
-                ></CardText>
-                <Button color="success">
-                  <Link to={offerPost3Slug} className="readMore">
-                    Read more
-                  </Link>
-                </Button>
-              </CardBody>
-            </Card>
+              <CardText
+                dangerouslySetInnerHTML={{ __html: offerPost3Excerpt }}
+              ></CardText>
+              <Button color="success">
+                <Link to={offerPost3Slug} className="readMore">
+                  Read more
+                </Link>
+              </Button>
+            </CardBody>
+          </Card>
         </Col>
       </Row>
       {/* 3 column offers end*/}
