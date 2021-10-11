@@ -11,6 +11,7 @@ import OffersHome from "../../components/homepageelements/OffersHome"
 import LoayaltyProgram from "../../components/homepageelements/LoyaltyProgram"
 import BottomDivider from "../../components/homepageelements/DividerBottom"
 import TopDivider from "../../components/homepageelements/DividerTop"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const page = ({ data }) => {
   const { page } = data
@@ -74,6 +75,7 @@ const page = ({ data }) => {
           {/* <FeaturedMedia image={featuredImage} /> */}
 
           <div className="post-inner thin">
+          <WheelsBook />
             <div
               className="entry-content"
               dangerouslySetInnerHTML={{ __html: content }}

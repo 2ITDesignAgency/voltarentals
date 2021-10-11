@@ -148,7 +148,19 @@ h5.offers-title {
   color: #212121;
   min-height: 1.5rem;
 }
-
+.fleet-icon{
+  margin-right: 1rem;
+}
+span.fleet-archive-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.fleet-car-title{
+  font-weight: 700;
+    font-size: 1.3rem;
+    max-width: 135px;
+    min-height: 4rem;
+}
 // footer css bootstrap
 .footerCardBody {
   background-color: #001a24;
