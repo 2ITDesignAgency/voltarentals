@@ -112,6 +112,12 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
         templateName
         __typename
       }
+      terms(first: 100) {
+        nodes {
+          id
+          __typename
+        }
+      }
       title
       uri
       __typename

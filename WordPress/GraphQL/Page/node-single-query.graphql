@@ -367,6 +367,12 @@ query SINGLE_CONTENT_QUERY($id: ID!) {
       templateName
       __typename
     }
+    terms(first: 100) {
+      nodes {
+        id
+        __typename
+      }
+    }
     title
     uri
     __typename

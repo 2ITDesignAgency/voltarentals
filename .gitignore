@@ -60,7 +60,6 @@ typings/
 .yarn-integrity
 
 .cache/
-public
 yarn-error.log
 .DS_Store
 .env.*
