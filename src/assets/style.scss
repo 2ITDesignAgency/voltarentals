@@ -3,7 +3,7 @@ body {
   border: none;
   margin: 0;
   padding: 0;
-  font-family: Open Sans,sans-serif !important;
+  font-family: Open Sans, sans-serif !important;
 }
 
 h1,
@@ -139,7 +139,7 @@ path {
   max-width: 130rem !important;
   padding-top: 0rem !important;
   padding-bottom: 0.5rem;
-  font-family: Open Sans,sans-serif;
+  font-family: Open Sans, sans-serif;
   font-size: 30px;
   font-weight: 600;
   font-stretch: normal;
@@ -1655,8 +1655,6 @@ ul.social-icons li {
   top: 32px;
 }
 
-
-
 /* -------------------------------------------------------------------------- */
 
 /*	7a. Template: Cover Template
@@ -1970,7 +1968,7 @@ ul.social-icons li {
 .no-search-results-form {
   padding-top: 5rem;
 }
-.feuturedPost{
+.feuturedPost {
   max-height: 450px;
 }
 /* -------------------------------------------------------------------------- */
@@ -3702,8 +3700,8 @@ div.comment:first-of-type {
 .widget select {
   max-width: 100%;
 }
-.post-content{
-margin-top: 4rem;
+.post-content {
+  margin-top: 4rem;
 }
 /* Font Families ----------------------------- */
 
@@ -4325,7 +4323,7 @@ body {
     max-width: 150px;
     margin-bottom: 1rem;
   }
-  
+
   .contact-text {
     color: #212121;
     font-size: 1.1rem;
@@ -6881,3 +6879,40 @@ h1.entry-title {
   font-weight: lighter;
 }
 
+.erroPageContainer {
+  min-height: 80vh;
+}
+
+.erroPageContainer {
+  background-image: url(../assets/sliderImage/2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-weight: 800;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.erroPageHeader {
+  display: block;
+  font-size: 4rem;
+  color: white;
+  font-weight: 600;
+}
+.erroPageSubHeader {
+  font-size: 1.7rem;
+  color: white;
+  font-weight: 300;
+  text-align: left;
+  margin: 0rem !important;
+  max-width: 500px;
+}
+.erroPageButton{
+  margin-top: 1rem;
+}
+.erroPageButtonText{
+  font-size:1.2rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0px !important;
+}

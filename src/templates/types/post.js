@@ -2,15 +2,13 @@ import React, {useEffect} from "react"
 import { graphql } from "gatsby"
 import Layout from "../../components/Layout"
 import Seo from "../../components/Seo"
-import Comments from "../../components/Comments"
-import ContentTypePagination from "../../components/ContentTypePagination"
 import AuthorBio from "../../components/AuthorBio"
 import PostCategories from "../../components/PostCategories"
 import FeaturedMedia from "../../components/FeaturedMedia"
 import { Container, Row } from "reactstrap"
 
 const post = ({ data }) => {
-  const { nextPage, previousPage, page } = data
+  const { page } = data
   const {
     title,
     content,
@@ -19,8 +17,6 @@ const post = ({ data }) => {
     excerpt,
     databaseId,
     author,
-    date,
-    Blocks,
   } = page
 
   useEffect(() => {
@@ -48,10 +44,6 @@ const post = ({ data }) => {
               className="entry-title"
               dangerouslySetInnerHTML={{ __html: title }}
             />
-            {/* <div
-              className="intro-text section-inner max-percentage small"
-              dangerouslySetInnerHTML={{ __html: excerpt }}
-            /> */}
           </div>
         </header>
         <Container fluid>
@@ -68,12 +60,6 @@ const post = ({ data }) => {
         </div>
         <div className="section-inner">
           <AuthorBio author={author} />
-          <ContentTypePagination
-            previousPage={previousPage}
-            nextPage={nextPage}
-            contentType={"Post"}
-          />
-          <Comments />
         </div>
       </article>
     </Layout>

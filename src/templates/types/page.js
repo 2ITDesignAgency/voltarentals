@@ -66,7 +66,6 @@ const page = ({ data }) => {
         >
           <header
             className="entry-header "
-            // style={{ background: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url('${featuredImage.node.sourceUrl}') center center no-repeat` }}
           >
             <div className="entry-header-inner section-inner medium">
               <h1
@@ -75,8 +74,6 @@ const page = ({ data }) => {
               />
             </div>
           </header>
-
-          {/* <FeaturedMedia image={featuredImage} /> */}
           <Container className="WheelsBookContainer">
           <Row>
           <WheelsBook />

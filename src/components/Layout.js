@@ -6,6 +6,7 @@ import FooterMenusWidgets from "./footerelements/FooterMenusWidgets"
 import Seo from "./Seo"
 import Helmet from "react-helmet"
 import { Container } from "reactstrap"
+import Favicon from "../assets/images/gatsby-icon.png"
 
 
 const backdropClasses = " backdrop"
@@ -28,6 +29,7 @@ const Layout = ({ children, bodyClass }) => {
       }
     >
       <Helmet>
+      <meta name="icon" href="../assets/images/gatsby-icon.png" />
         <script type="text/javascript" src="https://ecigr.wheelsys.ms/jsHandler.ashx?elementId=wheelsbook&language=en" defer/>
       </Helmet>
       <TopBar />

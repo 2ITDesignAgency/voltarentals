@@ -1,11 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
-// import PostEntry from "../../components/post-entry"
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
-// import SEO from "../../components/seo"
-// import NextIcon from "../../components/icons/next"
-// import PreviousIcon from "../../components/icons/previous"
 import PostPreview from "../components/PostPreview"
 import ArchivePagination from "../components/ArchivePagination"
 import {
