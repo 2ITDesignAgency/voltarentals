@@ -11,6 +11,8 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+
+
 .post-archive-img{
   margin-top: 0rem !important;
 }
@@ -156,10 +158,8 @@ span.fleet-archive-text {
   font-weight: 600;
 }
 .fleet-car-title{
-  font-weight: 700;
-    font-size: 1.3rem;
-    max-width: 135px;
-    min-height: 4rem;
+  font-weight: 600;
+  font-size: 1.3rem;
 }
 // footer css bootstrap
 .footerCardBody {
@@ -326,4 +326,134 @@ span.fleet-archive-text {
 .bottom-divider .shape-fill {
   fill: #E8F1F2 !important
   ;
+}
+
+span.attachment-post-thumbnail.size-post-thumbnail.wp-post-image.inline-gatsby-image-wrapper.gatsby-image-wrapper {
+  width: 100% !important;
+  object-fit: cover !important;
+}
+.wp-block-getwid-custom-post-type__content-wrapper {
+  margin-bottom: 0px;
+}
+.wp-block-getwid-custom-post-type__post-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+  padding: 0.5rem;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
+}
+.article-post {
+  background-color: white;
+}
+
+@media (max-width: 1024px){
+  .car-specifications{
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .nav-link {
+    color: #212121 !important;
+    font-weight: 500;
+    font-size: 1rem;
+    display: block;
+    line-height: 1.2;
+    text-decoration: none;
+    word-break: normal;
+    word-wrap: normal;
+}
+
+.nav-item {
+    margin: 0.5rem 0 0 0rem !important;
+}
+
+}
+
+@media (max-width: 1000px){
+  .fleet-mobile{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+  .car-specifications {
+    justify-content: space-evenly !important;
+  }
+  .fleet-car-title {
+    font-weight: 700;
+    font-size: 1.3rem;
+    min-width: 300px !important;
+    display: block;
+    text-align:center;
+}
+.wp-block-getwid-custom-post-type__post-wrapper{
+  display: flex !important;
+  flex-direction: column !important;
+  flex-wrap: wrap !important;
+}
+.fleet-container.car-specifications {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.fleet-row{
+  margin-right: 1rem !important;
+  margin-top: 1rem !important;
+}
+.wp-block-getwid-custom-post-type__post {
+  width: 48%;
+  justify-content: center;
+  align-items: center;
+}
+h1.entry-title, h2.entry-title {
+  padding-bottom: 3rem;
+  height: 50px; 
+  font-size: 1.1rem;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
+}
+#site-footer a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+.to-the-top {
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem !important;
+  margin-right: 1rem;
+}
+}
+
+@media (max-width: 620px){
+  .wp-block-getwid-custom-post-type__post {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+article{
+  background-color: #f8f8f8;
+  margin-bottom: 0rem !important;
+}
+
+.post-cover{
+  position: relative;
+  overflow: hidden;
+  max-width: 1260px !important;
+  margin: 0 auto;
+  max-height: 590px !important;
+}
+.archive-post{
+  padding-bottom: 0px !important;
+}
+.singular .featured-media::before {
+  bottom: 100%;
 }

@@ -134,6 +134,8 @@ path {
 }
 .car-rental-title {
   padding-top: 1rem !important;
+  text-align: center;
+  display: block !important;
 }
 .sectionTitle {
   max-width: 130rem !important;
@@ -4738,7 +4740,7 @@ body {
   }
   .wp-block-getwid-custom-post-type__post-wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
     box-shadow: 0 0 3px 0 rgb(0 0 0 / 15%);
     align-content: center;
     align-items: center;
@@ -5083,7 +5085,7 @@ body {
     width: calc(100% - 8rem);
   }
   .entry-content {
-    margin-bottom: 4rem !important;
+    padding-bottom: 3rem;
   }
   #GatsbyBody.template-full-width
     .alignfull:not(.has-background)
@@ -5447,8 +5449,7 @@ body {
   }
 
   .entry-content h1,
-  .entry-content h2,
-  .entry-content h3 {
+  .entry-content h2 {
     margin: 3rem auto 0rem;
   }
 
@@ -6871,9 +6872,6 @@ body {
 .singular .featured-media::before {
   background: #fff;
 }
-.entry-content {
-  margin-bottom: 4rem;
-}
 h1.entry-title {
   color: white;
   font-weight: lighter;
@@ -6921,4 +6919,10 @@ h1.entry-title {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+.post-cover{
+  position: relative;
+  overflow: hidden;
+  max-width: 1260px !important;
+  margin: 0 auto;
 }

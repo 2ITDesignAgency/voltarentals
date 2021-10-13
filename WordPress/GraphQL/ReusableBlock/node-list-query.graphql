@@ -2297,6 +2297,7 @@ fragment BlockFragment on Block {
       align
       alignment
       className
+      cssGridGutters
       editorStackColumns
       horizontalGutters
       noGutters
