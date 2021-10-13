@@ -135,7 +135,7 @@ const offersHome = () => {
                 </CardTitle>
               </Link>
               <CardText
-                dangerouslySetInnerHTML={{ __html: offerPost1Excerpt }}
+                dangerouslySetInnerHTML={{ __html:`<div>${offerPost1Excerpt}</div>`  }}
               ></CardText>
               <Button color="success">
                 <Link to={offerPost1Slug} className="readMore">
@@ -163,8 +163,8 @@ const offersHome = () => {
                 </CardTitle>
               </Link>{" "}
               <CardText
-                dangerouslySetInnerHTML={{ __html: offerPost2Excerpt }}
-              ></CardText>
+                dangerouslySetInnerHTML={{ __html:`<div>${offerPost2Excerpt}</div>`  }}
+                ></CardText>
               <Button color="success">
                 <Link to={offerPost3Slug} className="readMore">
                   Read more
@@ -191,8 +191,8 @@ const offersHome = () => {
                 </CardTitle>
               </Link>
               <CardText
-                dangerouslySetInnerHTML={{ __html: offerPost3Excerpt }}
-              ></CardText>
+                dangerouslySetInnerHTML={{ __html:`<div>${offerPost3Excerpt}</div>`  }}
+                ></CardText>
               <Button color="success">
                 <Link to={offerPost3Slug} className="readMore">
                   Read more

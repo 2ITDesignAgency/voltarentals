@@ -163,7 +163,7 @@ const NewsFeed = () => {
                 <CardTitle tag="h5">{featuredPost1Title}</CardTitle>
                 </Link>
                 <CardText
-                  dangerouslySetInnerHTML={{ __html: featuredPost1Excerpt }}
+                  dangerouslySetInnerHTML={{ __html: `<div>${featuredPost1Excerpt}</div>` }}
                 ></CardText>
                 <Button color="success">
                   <Link to={featuredPost1Slug} className="readMore">
@@ -189,8 +189,8 @@ const NewsFeed = () => {
                 <CardTitle tag="h5">{featuredPost2Title}</CardTitle>
                 </Link>
                 <CardText
-                  dangerouslySetInnerHTML={{ __html: featuredPost2Excerpt }}
-                ></CardText>
+                  dangerouslySetInnerHTML={{ __html: `<div>${featuredPost1Excerpt}</div>` }}
+                  ></CardText>
                 <Button color="success">
                   <Link to={featuredPost3Slug} className="readMore">
                     Read more
@@ -215,8 +215,8 @@ const NewsFeed = () => {
                   <CardTitle tag="h5">{featuredPost3Title}</CardTitle>
                 </Link>
                 <CardText
-                  dangerouslySetInnerHTML={{ __html: featuredPost3Excerpt }}
-                ></CardText>
+                  dangerouslySetInnerHTML={{ __html: `<div>${featuredPost1Excerpt}</div>` }}
+                  ></CardText>
                 <Button color="success">
                   <Link to={featuredPost3Slug} className="readMore">
                     Read more
@@ -241,8 +241,8 @@ const NewsFeed = () => {
                 <CardTitle tag="h5">{featuredPost4Title}</CardTitle>
                 </Link>
                 <CardText
-                  dangerouslySetInnerHTML={{ __html: featuredPost4Excerpt }}
-                ></CardText>
+                  dangerouslySetInnerHTML={{ __html: `<div>${featuredPost1Excerpt}</div>` }}
+                  ></CardText>
                 <Button color="success">
                   <Link to={featuredPost4Slug} className="readMore">
                     Read more
