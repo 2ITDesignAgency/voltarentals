@@ -71,209 +71,6 @@ query NON_NODE_QUERY {
       showBlogPage
     }
 
-    contentTypes {
-      actionMonitorAction {
-        archive {
-          archiveLink
-          breadcrumbTitle
-          fullHead
-          hasArchive
-          metaDesc
-          metaRobotsNoindex
-          title
-        }
-
-        metaDesc
-        metaRobotsNoindex
-
-        schema {
-          raw
-        }
-
-        schemaType
-        title
-      }
-
-      blockEditorPreview {
-        archive {
-          archiveLink
-          breadcrumbTitle
-          fullHead
-          hasArchive
-          metaDesc
-          metaRobotsNoindex
-          title
-        }
-
-        metaDesc
-        metaRobotsNoindex
-
-        schema {
-          raw
-        }
-
-        schemaType
-        title
-      }
-
-      mediaItem {
-        archive {
-          archiveLink
-          breadcrumbTitle
-          fullHead
-          hasArchive
-          metaDesc
-          metaRobotsNoindex
-          title
-        }
-
-        metaDesc
-        metaRobotsNoindex
-
-        schema {
-          raw
-        }
-
-        schemaType
-        title
-      }
-
-      offer {
-        archive {
-          archiveLink
-          breadcrumbTitle
-          fullHead
-          hasArchive
-          metaDesc
-          metaRobotsNoindex
-          title
-        }
-
-        metaDesc
-        metaRobotsNoindex
-
-        schema {
-          raw
-        }
-
-        schemaType
-        title
-      }
-
-      page {
-        archive {
-          archiveLink
-          breadcrumbTitle
-          fullHead
-          hasArchive
-          metaDesc
-          metaRobotsNoindex
-          title
-        }
-
-        metaDesc
-        metaRobotsNoindex
-
-        schema {
-          raw
-        }
-
-        schemaType
-        title
-      }
-
-      post {
-        archive {
-          archiveLink
-          breadcrumbTitle
-          fullHead
-          hasArchive
-          metaDesc
-          metaRobotsNoindex
-          title
-        }
-
-        metaDesc
-        metaRobotsNoindex
-
-        schema {
-          raw
-        }
-
-        schemaType
-        title
-      }
-
-      reusableBlock {
-        archive {
-          archiveLink
-          breadcrumbTitle
-          fullHead
-          hasArchive
-          metaDesc
-          metaRobotsNoindex
-          title
-        }
-
-        metaDesc
-        metaRobotsNoindex
-
-        schema {
-          raw
-        }
-
-        schemaType
-        title
-      }
-
-      vehicles {
-        archive {
-          archiveLink
-          breadcrumbTitle
-          fullHead
-          hasArchive
-          metaDesc
-          metaRobotsNoindex
-          title
-        }
-
-        metaDesc
-        metaRobotsNoindex
-
-        schema {
-          raw
-        }
-
-        schemaType
-        title
-      }
-    }
-
-    openGraph {
-      defaultImage {
-        __typename
-        id
-      }
-
-      frontPage {
-        description
-
-        image {
-          __typename
-          id
-        }
-
-        title
-      }
-    }
-
-    redirects {
-      format
-      origin
-      target
-      type
-    }
-
     schema {
       companyLogo {
         __typename
@@ -282,7 +79,6 @@ query NON_NODE_QUERY {
 
       companyName
       companyOrPerson
-      inLanguage
 
       logo {
         __typename
@@ -294,7 +90,6 @@ query NON_NODE_QUERY {
         id
       }
 
-      personName
       siteName
       siteUrl
       wordpressSiteName
@@ -355,6 +150,7 @@ query NON_NODE_QUERY {
 
   wpGatsby {
     arePrettyPermalinksEnabled
+    isPreviewFrontendOnline
   }
 
   writingSettings {

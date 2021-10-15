@@ -19,7 +19,6 @@ const TopBar = () => (
       <div
         className="top-bar"
         style={{
-        //   padding: `1rem 1rem 0 0`,
           background: `#012a37`,
           paddingBottom: `0rem`,
           paddingTop: `0rem`,
