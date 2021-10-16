@@ -32,7 +32,6 @@ module.exports = {
         path: `${__dirname}/src/assets/images`,
       },
     },
-    `gatsby-plugin-netlify-cache`,
     {
       resolve: `gatsby-source-wordpress`,
       options: {
