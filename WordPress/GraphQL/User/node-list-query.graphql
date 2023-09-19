@@ -13,18 +13,24 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
         url
         width
       }
+
       blockEditorPreviews(first: 100) {
         nodes {
+          __typename
           id
         }
       }
+
       capKey
       capabilities
+
       comments(first: 100) {
         nodes {
+          __typename
           id
         }
       }
+
       databaseId
       description
       email
@@ -38,30 +44,54 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
       name
       nicename
       nickname
+
       pages(first: 100) {
         nodes {
+          __typename
           id
         }
       }
+
       posts(first: 100) {
         nodes {
+          __typename
           id
         }
       }
+
       registeredDate
+
       roles(first: 100) {
         nodes {
+          __typename
           id
         }
       }
+
       seo {
+        breadcrumbTitle
+        canonical
         fullHead
+        language
         metaDesc
         metaRobotsNofollow
         metaRobotsNoindex
+        opengraphDescription
+
+        opengraphImage {
+          __typename
+          id
+        }
+
+        opengraphTitle
+        region
+
         schema {
+          articleType
+          pageType
           raw
         }
+
         social {
           facebook
           instagram
@@ -73,8 +103,18 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
           wikipedia
           youTube
         }
+
         title
+        twitterDescription
+
+        twitterImage {
+          __typename
+          id
+        }
+
+        twitterTitle
       }
+
       slug
       uri
       url

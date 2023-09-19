@@ -13,27 +13,6 @@ import FooterWidget4Mobile from "./FooterWidget4Mobile"
 
 const FooterMenusWidgets = ({}) => {
   return (
-    //   <Container fluid className="site-footer-bootstrap">
-    //     <Row>
-    //     <Col xs="12" sm="6" md="3">
-    //       <FooterMenusOne className="footer-desktop"/>
-    //       <FooterWidget1Mobile className="footer-mobile"/>
-    //       </Col>
-    //       <Col xs="12" sm="6" md="3">
-    //       <FooterMenusTwo className="footer-desktop"/>
-    //       <FooterWidget2Mobile className="footer-mobile"/>
-    //       </Col>
-    //       <Col xs="12" sm="6" md="3">
-    //       <FooterMenusThree className="footer-desktop"/>
-    //       <FooterWidget3Mobile className="footer-mobile"/>
-    //       </Col>
-    //       <Col xs="12" sm="6" md="3">
-    //       <FooterMenusfour className="footer-desktop"/>
-    //       <FooterWidget4Mobile className="footer-mobile"/>
-    //       </Col>
-    //     </Row>
-    // </Container>
-
     <Container fluid className="footer-nav-widgets-wrapper header-footer-group">
       <DividerFooter />
       <div className="footer-inner section-inner">

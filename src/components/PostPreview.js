@@ -34,11 +34,13 @@ const PostPreview = ({ post, isLast }) => {
                 className="card-text"
               />
             </div>
-            <Button color="btn btn-success btn-block mb-4">
+            <div class="d-grid gap-2">
+            <Button color="btn btn-success mb-4">
               <Link to={post.uri} className="readMore">
                 Read more
               </Link>
             </Button>
+            </div>
           </div>
         </div>
       </article>

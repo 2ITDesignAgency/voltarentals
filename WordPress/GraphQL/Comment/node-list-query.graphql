@@ -3,44 +3,69 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
     nodes {
       agent
       approved
+
       author {
         node {
+          avatar {
+            default
+            extraAttr
+            forceDefault
+            foundAvatar
+            height
+            rating
+            scheme
+            size
+            url
+            width
+          }
+
           databaseId
           email
           id
           name
           url
+
           __typename
+
           ... on User {
             id
           }
         }
       }
+
       authorIp
+
       commentedOn {
         node {
-          id
           __typename
+          id
         }
       }
+
       content
       databaseId
       date
       dateGmt
       id
       karma
+
       wpParent: parent {
         node {
+          __typename
           id
         }
       }
+
       parentDatabaseId
       parentId
+
       replies(first: 100) {
         nodes {
+          __typename
           id
         }
       }
+
       type
       __typename
     }

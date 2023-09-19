@@ -2,38 +2,50 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
   mediaItems(first: $first, after: $after) {
     nodes {
       altText
+
       ancestors(first: 100) {
         nodes {
-          id
           __typename
+          id
         }
       }
+
       author {
         node {
+          __typename
           id
         }
       }
+
       authorDatabaseId
       authorId
       caption
+
       wpChildren: children(first: 100) {
         nodes {
-          id
           __typename
+          id
         }
       }
+
       commentCount
       commentStatus
+
       comments(first: 100) {
         nodes {
+          __typename
           id
         }
       }
+
       contentType {
         node {
+          __typename
           id
         }
       }
+
+      contentTypeName
       databaseId
       date
       dateGmt
@@ -45,15 +57,20 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
       id
       isContentNode
       isTermNode
+
       lastEditedBy {
         node {
+          __typename
           id
         }
       }
+
       link
+
       mediaDetails {
         file
         height
+
         meta {
           aperture
           camera
@@ -68,6 +85,7 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
           shutterSpeed
           title
         }
+
         sizes {
           file
           fileSize
@@ -77,26 +95,32 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
           sourceUrl
           width
         }
+
         width
       }
+
       mediaItemUrl
       mediaType
       mimeType
       modified
       modifiedGmt
+
       wpParent: parent {
         node {
-          id
           __typename
+          id
         }
       }
+
       parentDatabaseId
       parentId
+
       seo {
         breadcrumbs {
           text
           url
         }
+
         canonical
         cornerstone
         focuskw
@@ -107,10 +131,12 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
         metaRobotsNoindex
         opengraphAuthor
         opengraphDescription
+
         opengraphImage {
           __typename
           id
         }
+
         opengraphModifiedTime
         opengraphPublishedTime
         opengraphPublisher
@@ -119,29 +145,37 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
         opengraphType
         opengraphUrl
         readingTime
+
         schema {
           articleType
           pageType
           raw
         }
+
         schemaDetails
         title
         twitterDescription
+
         twitterImage {
           __typename
           id
         }
+
         twitterTitle
       }
+
       sizes
       slug
       sourceUrl
       srcSet
       status
+
       template {
         templateName
+
         __typename
       }
+
       title
       uri
       __typename

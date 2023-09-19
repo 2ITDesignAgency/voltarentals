@@ -3,17 +3,21 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
     nodes {
       archivePath
       canExport
+
       connectedTaxonomies(first: 100) {
         nodes {
+          __typename
           id
         }
       }
+
       contentNodes(first: 100) {
         nodes {
-          id
           __typename
+          id
         }
       }
+
       deleteWithUser
       description
       excludeFromSearch
@@ -27,6 +31,7 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
       isPostsPage
       isTermNode
       label
+
       labels {
         addNew
         addNewItem
@@ -54,6 +59,7 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
         viewItem
         viewItems
       }
+
       menuIcon
       menuPosition
       name

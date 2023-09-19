@@ -166,7 +166,7 @@ const offersHome = () => {
                 dangerouslySetInnerHTML={{ __html:`<div>${offerPost2Excerpt}</div>`  }}
                 ></CardText>
               <Button color="success">
-                <Link to={offerPost3Slug} className="readMore">
+                <Link to={offerPost2Slug} className="readMore">
                   Read more
                 </Link>
               </Button>

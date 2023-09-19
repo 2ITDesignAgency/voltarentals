@@ -20,7 +20,7 @@ const Archive = (props) => {
     <Layout bodyClass="home blog wp-embed-responsive has-no-pagination showing-comments hide-avatars footer-top-visible customize-support">
       <Seo title="Home" description="Welcome to volta4u" />
       <Container>
-      <Row>
+      <Row xs="1" lg="3">
         {nodes &&
           nodes.map((post, index) => {
             return (

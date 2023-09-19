@@ -15,20 +15,43 @@
 .menu-icon {
   margin-right: 0.5rem;
 }
-@media(min-width: 780px){
-.fleat-menu.dropdown-menu.dropdown-menu-right.show {
-  position: absolute;
-  width: 310px;
+@media (min-width: 768px){
+  .dropdown-menu.show {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+}
+.offerterms-row{
+  align-items: center;
+}
+.offerterms-row .wp-block-quote{
+  min-height: 200px;
+  align-items: center;
+  align-self: center;
+}
+.offerterms-row p, h2{
   text-align: center;
-  font-weight: 200;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+}
+.offerterms-row ul{
+margin-left: 0px;
+padding-left: 0px;
+}
+@media(min-width: 780px){
+  .fleat-menu.dropdown-menu.dropdown-menu-end.show {
+    display: flex !important;
+    flex-direction: row;
+    max-width: 390px;
+    flex-wrap: wrap;
 }
 button.fleat-item.dropdown-item {
-width: 48%;
+  max-width: 48%;
 }
 }
+.container-fluid {
+  padding: 0px;
+}
+
 .contact-info {
   display: flex !important;
   margin-left: 0.8rem !important;

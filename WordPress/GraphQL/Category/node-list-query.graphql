@@ -3,50 +3,74 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
     nodes {
       ancestors(first: 100) {
         nodes {
+          __typename
           id
         }
       }
+
       wpChildren: children(first: 100) {
         nodes {
+          __typename
           id
         }
       }
+
       contentNodes(first: 100) {
         nodes {
-          id
           __typename
+          id
         }
       }
+
       count
       databaseId
       description
       id
       isContentNode
       isTermNode
+
+      language {
+        code
+        homeUrl
+        id
+        locale
+        name
+        slug
+      }
+
       link
       name
+
       offers(first: 100) {
         nodes {
+          __typename
           id
         }
       }
+
       wpParent: parent {
         node {
+          __typename
           id
         }
       }
+
       parentDatabaseId
       parentId
+
       posts(first: 100) {
         nodes {
+          __typename
           id
         }
       }
+
       seo {
         breadcrumbs {
           text
           url
         }
+
         canonical
         cornerstone
         focuskw
@@ -57,10 +81,12 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
         metaRobotsNoindex
         opengraphAuthor
         opengraphDescription
+
         opengraphImage {
           __typename
           id
         }
+
         opengraphModifiedTime
         opengraphPublishedTime
         opengraphPublisher
@@ -68,25 +94,40 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
         opengraphTitle
         opengraphType
         opengraphUrl
+
         schema {
           raw
         }
+
         title
         twitterDescription
+
         twitterImage {
           __typename
           id
         }
+
         twitterTitle
       }
+
       slug
+
       taxonomy {
         node {
+          __typename
           id
         }
       }
+
+      taxonomyName
       termGroupId
       termTaxonomyId
+
+      translations {
+        __typename
+        id
+      }
+
       uri
       __typename
     }

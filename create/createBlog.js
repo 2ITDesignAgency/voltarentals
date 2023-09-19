@@ -5,14 +5,14 @@ module.exports = async ({ actions, graphql }, options) => {
   const { perPage, blogURI } = options
 
   const { data } = await graphql(/* GraphQL */ `
-    {
-      allWpPost(sort: { fields: modifiedGmt, order: DESC }) {
-        nodes {
-          uri
-          id
-        }
-      }
+{
+  allWpPost(sort: {modifiedGmt: DESC}) {
+    nodes {
+      uri
+      id
     }
+  }
+}
   `)
 
   const chunkedContentNodes = chunk(data.allWpPost.nodes, perPage)

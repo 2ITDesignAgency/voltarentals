@@ -1,0 +1,51 @@
+// cookie banner css
+@media (max-width: 1024px) {
+  .d-flex.justify-content-between.cookie-notice {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+  }
+  button.btn.btn-primary.btn-lg.mx-2,
+  button.btn.btn-secondary.btn-lg.mx-2 {
+    border-radius: 0 !important;
+    font-weight: 300 !important;
+    display: block !important;
+    width: 100% !important;
+    margin-bottom: 1rem !important;
+    font-size: inherit !important;
+    margin-left: 0px !important;
+  }
+  button.btn.btn-primary.btn-lg.mx-2,
+  button.btn.btn-secondary.btn-lg.mx-2 {
+    border-radius: 0 !important;
+    font-weight: 300 !important;
+    display: block !important;
+    width: 100% !important;
+  }
+  button.my-btn-classes {
+    font-weight: 300 !important;
+    margin-bottom: 1rem !important;
+  }
+  ::-webkit-scrollbar {
+    width: 0px !important;
+  }
+  .bg-cookie h4 {
+    text-align: center !important;
+  }
+  .bg-cookie p {
+    font-size: 14px;
+    font-weight: 200;
+    padding-top: 1rem;
+    text-align: center;
+  }
+}
+
+.bg-cookie p {
+    font-size: 14px;
+    font-weight: 200;
+    padding-top: 1rem;
+  }
+
+  .btn-group-lg>.btn, .btn-lg {
+    --bs-btn-font-size: inherit;
+}

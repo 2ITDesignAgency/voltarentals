@@ -3,165 +3,222 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
     nodes {
       ancestors(first: 100) {
         nodes {
-          id
           __typename
+          id
         }
       }
+
       author {
         node {
+          __typename
           id
         }
       }
+
       authorDatabaseId
       authorId
+
       blocks {
         innerBlocks {
           innerBlocks {
             innerBlocks {
               innerBlocks {
                 ...BlockFragment
+
                 __typename
               }
+
               ...BlockFragment
+
               __typename
             }
+
             ...BlockFragment
+
             __typename
           }
+
           ...BlockFragment
+
           __typename
         }
+
         ...BlockFragment
+
         __typename
       }
+
       blocksJSON
       bodyClasses
+
       wpChildren: children(first: 100) {
         nodes {
-          id
           __typename
+          id
         }
       }
+
       commentCount
       commentStatus
+
       comments(first: 100) {
         nodes {
+          __typename
           id
         }
       }
+
       content
+
       contentType {
         node {
+          __typename
           id
         }
       }
+
+      contentTypeName
       databaseId
       date
       dateGmt
       desiredSlug
       enclosure
+
       featuredImage {
         node {
           __typename
           id
         }
       }
+
       featuredImageDatabaseId
       featuredImageId
+
       frontPage {
         fieldGroupName
+
         heroCta {
           ctaForm
           ctaText
           fieldGroupName
+
           imageBackground {
             __typename
             id
           }
         }
+
         section2 {
           buttonTravelExperience
+
           featuredPost1 {
             __typename
+
             ... on Post {
               id
             }
+
             ... on Page {
               id
             }
+
             ... on MediaItem {
               id
             }
+
             ... on ReusableBlock {
               id
             }
+
             ... on Vehicles {
               id
             }
+
             ... on Offer {
               id
             }
+
             ... on BlockEditorPreview {
               id
             }
           }
+
           featuredPost2 {
             __typename
+
             ... on Post {
               id
             }
+
             ... on Page {
               id
             }
+
             ... on MediaItem {
               id
             }
+
             ... on ReusableBlock {
               id
             }
+
             ... on Vehicles {
               id
             }
+
             ... on Offer {
               id
             }
+
             ... on BlockEditorPreview {
               id
             }
           }
+
           featuredPost3 {
             __typename
+
             ... on Post {
               id
             }
+
             ... on Page {
               id
             }
+
             ... on MediaItem {
               id
             }
+
             ... on ReusableBlock {
               id
             }
+
             ... on Vehicles {
               id
             }
+
             ... on Offer {
               id
             }
+
             ... on BlockEditorPreview {
               id
             }
           }
+
           fieldGroupName
           offersTitle
           travelExperianceTitle
+
           travelExperienceImage {
             __typename
             id
           }
+
           travelParagraph
         }
+
         section3 {
           ctaButtonLink1
           ctaButtonLink2
@@ -169,18 +226,22 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
           ctaButtonText1
           ctaButtonText2
           ctaButtonText3
+
           ctaIcon1 {
             __typename
             id
           }
+
           ctaIcon2 {
             __typename
             id
           }
+
           ctaIcon3 {
             __typename
             id
           }
+
           ctaSubtitle1
           ctaSubtitle2
           ctaSubtitle3
@@ -188,38 +249,47 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
           ctaTitle2
           ctaTitle3
           fieldGroupName
+
           fleetCategorie1Image {
             __typename
             id
           }
+
           fleetCategorie2Image {
             __typename
             id
           }
+
           fleetCategorie3Image {
             __typename
             id
           }
+
           fleetCategorie4Image {
             __typename
             id
           }
+
           fleetCategorie5Image {
             __typename
             id
           }
+
           fleetCategorie6Image {
             __typename
             id
           }
+
           fleetCategorie7Image {
             __typename
             id
           }
+
           fleetCategorie8Image {
             __typename
             id
           }
+
           fleetCategorieLink1
           fleetCategorieLink2
           fleetCategorieLink3
@@ -247,36 +317,47 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
           fleetSubtitle
           fleetTitle
         }
+
         section4 {
           featuredPostSutitle
           featuredPostTitle
+
           featuredPosts1 {
             __typename
+
             ... on Post {
               id
             }
           }
+
           featuredPosts2 {
             __typename
+
             ... on Post {
               id
             }
           }
+
           featuredPosts3 {
             __typename
+
             ... on Post {
               id
             }
           }
+
           featuredPosts4 {
             __typename
+
             ... on Post {
               id
             }
           }
+
           fieldGroupName
         }
       }
+
       guid
       id
       isContentNode
@@ -285,49 +366,76 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
       isPrivacyPage
       isRevision
       isTermNode
+
+      language {
+        code
+        homeUrl
+        id
+        locale
+        name
+        slug
+      }
+
       lastEditedBy {
         node {
+          __typename
           id
         }
       }
+
       link
       menuOrder
       modified
       modifiedGmt
+
       wpParent: parent {
         node {
-          id
           __typename
+          id
         }
       }
+
       parentDatabaseId
       parentId
+
       previewBlocks {
         innerBlocks {
           innerBlocks {
             innerBlocks {
               innerBlocks {
                 ...BlockFragment
+
                 __typename
               }
+
               ...BlockFragment
+
               __typename
             }
+
             ...BlockFragment
+
             __typename
           }
+
           ...BlockFragment
+
           __typename
         }
+
         ...BlockFragment
+
         __typename
       }
+
       previewBlocksJSON
+
       seo {
         breadcrumbs {
           text
           url
         }
+
         canonical
         cornerstone
         focuskw
@@ -338,10 +446,12 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
         metaRobotsNoindex
         opengraphAuthor
         opengraphDescription
+
         opengraphImage {
           __typename
           id
         }
+
         opengraphModifiedTime
         opengraphPublishedTime
         opengraphPublisher
@@ -350,33 +460,41 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
         opengraphType
         opengraphUrl
         readingTime
+
         schema {
           articleType
           pageType
           raw
         }
+
         schemaDetails
         title
         twitterDescription
+
         twitterImage {
           __typename
           id
         }
+
         twitterTitle
       }
+
       slug
       status
+
       template {
         templateName
+
         __typename
       }
-      terms(first: 100) {
-        nodes {
-          id
-          __typename
-        }
-      }
+
       title
+
+      translations {
+        __typename
+        id
+      }
+
       uri
       __typename
     }
@@ -386,6 +504,7 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
     }
   }
 }
+
 fragment BlockFragment on Block {
   attributesJSON
   dynamicContent
@@ -393,84 +512,125 @@ fragment BlockFragment on Block {
   name
   order
   originalContent
+
   parentNode {
     id
+
     __typename
+
     ... on ContentType {
       id
     }
+
     ... on Taxonomy {
       id
     }
+
     ... on User {
       id
     }
+
     ... on BlockEditorPreview {
       id
     }
+
     ... on MediaItem {
       id
     }
+
     ... on Comment {
       id
     }
+
     ... on Page {
       id
     }
+
     ... on Post {
       id
     }
+
     ... on Category {
       id
     }
+
     ... on Offer {
       id
     }
+
     ... on Tag {
       id
     }
+
     ... on PostFormat {
       id
     }
+
     ... on ReusableBlock {
       id
     }
+
     ... on Vehicles {
       id
     }
+
     ... on Brands {
       id
     }
+
     ... on Types {
       id
     }
+
     ... on UserRole {
       id
     }
+
     ... on Menu {
       id
     }
+
     ... on MenuItem {
       id
     }
+
     ... on CommentAuthor {
+      avatar {
+        default
+        extraAttr
+        forceDefault
+        foundAvatar
+        height
+        rating
+        scheme
+        size
+        url
+        width
+      }
+
       databaseId
       email
       name
       url
     }
   }
+
   parentNodeDatabaseId
   saveContent
+
   __typename
+
   ... on YoastSeoBreadcrumbsBlock {
     attributes__typename_YoastSeoBreadcrumbsBlockAttributes: attributes {
       className
+      lock
     }
   }
+
   ... on GetwidSectionBlock {
     attributes__typename_GetwidSectionBlockAttributesUnion: attributes {
       __typename
+
       ... on GetwidSectionBlockAttributes {
         align
         anchor
@@ -529,6 +689,7 @@ fragment BlockFragment on Block {
         horizontalAlign
         horizontalAlignMobile
         horizontalAlignTablet
+        lock
         marginBottom
         marginBottomMobile
         marginBottomTablet
@@ -568,11 +729,13 @@ fragment BlockFragment on Block {
         sliderAnimationDuration
         sliderAnimationEffect
         sliderAnimationSpeed
+
         sliderImages__typename_GetwidSectionBlockAttributesSliderImages: sliderImages {
           alt
           id
           url
         }
+
         verticalAlign
         verticalAlignMobile
         verticalAlignTablet
@@ -582,6 +745,7 @@ fragment BlockFragment on Block {
         youTubeVideoScale
         youTubeVideoUrl
       }
+
       ... on GetwidSectionBlockDeprecatedV1Attributes {
         align
         anchor
@@ -640,6 +804,7 @@ fragment BlockFragment on Block {
         horizontalAlign
         horizontalAlignMobile
         horizontalAlignTablet
+        lock
         marginBottom
         marginBottomMobile
         marginBottomTablet
@@ -679,11 +844,13 @@ fragment BlockFragment on Block {
         sliderAnimationDuration
         sliderAnimationEffect
         sliderAnimationSpeed
+
         sliderImages__typename_GetwidSectionBlockDeprecatedV1AttributesSliderImages: sliderImages {
           alt
           id
           url
         }
+
         verticalAlign
         verticalAlignMobile
         verticalAlignTablet
@@ -693,6 +860,7 @@ fragment BlockFragment on Block {
         youTubeVideoScale
         youTubeVideoUrl
       }
+
       ... on GetwidSectionBlockDeprecatedV2Attributes {
         align
         anchor
@@ -751,6 +919,7 @@ fragment BlockFragment on Block {
         horizontalAlign
         horizontalAlignMobile
         horizontalAlignTablet
+        lock
         marginBottom
         marginBottomMobile
         marginBottomTablet
@@ -790,11 +959,13 @@ fragment BlockFragment on Block {
         sliderAnimationDuration
         sliderAnimationEffect
         sliderAnimationSpeed
+
         sliderImages__typename_GetwidSectionBlockDeprecatedV2AttributesSliderImages: sliderImages {
           alt
           id
           url
         }
+
         verticalAlign
         verticalAlignMobile
         verticalAlignTablet
@@ -804,6 +975,7 @@ fragment BlockFragment on Block {
         youTubeVideoScale
         youTubeVideoUrl
       }
+
       ... on GetwidSectionBlockDeprecatedV3Attributes {
         align
         anchor
@@ -862,6 +1034,7 @@ fragment BlockFragment on Block {
         horizontalAlign
         horizontalAlignMobile
         horizontalAlignTablet
+        lock
         marginBottom
         marginBottomMobile
         marginBottomTablet
@@ -901,11 +1074,13 @@ fragment BlockFragment on Block {
         sliderAnimationDuration
         sliderAnimationEffect
         sliderAnimationSpeed
+
         sliderImages {
           alt
           id
           url
         }
+
         verticalAlign
         verticalAlignMobile
         verticalAlignTablet
@@ -917,9 +1092,11 @@ fragment BlockFragment on Block {
       }
     }
   }
+
   ... on GetwidMediaTextSliderBlock {
     attributes__typename_GetwidMediaTextSliderBlockAttributesUnion: attributes {
       __typename
+
       ... on GetwidMediaTextSliderBlockAttributes {
         align
         className
@@ -929,6 +1106,7 @@ fragment BlockFragment on Block {
         contentMaxWidth
         horizontalAlign
         imageSize
+        lock
         minHeight
         overlayColor
         overlayOpacity
@@ -948,6 +1126,7 @@ fragment BlockFragment on Block {
         textColor
         verticalAlign
       }
+
       ... on GetwidMediaTextSliderBlockDeprecatedV1Attributes {
         align
         className
@@ -957,6 +1136,7 @@ fragment BlockFragment on Block {
         contentMaxWidth
         horizontalAlign
         imageSize
+        lock
         minHeight
         overlayColor
         overlayOpacity
@@ -978,18 +1158,23 @@ fragment BlockFragment on Block {
       }
     }
   }
+
   ... on GetwidMediaTextSliderSlideBlock {
     attributes__typename_GetwidMediaTextSliderSlideBlockAttributesUnion: attributes {
       __typename
+
       ... on GetwidMediaTextSliderSlideBlockAttributes {
         className
+        lock
         mediaId
         outerParent
         slideId
         url
       }
+
       ... on GetwidMediaTextSliderSlideBlockDeprecatedV1Attributes {
         className
+        lock
         mediaId
         outerParent
         slideId
@@ -997,20 +1182,25 @@ fragment BlockFragment on Block {
       }
     }
   }
+
   ... on GetwidMediaTextSliderSlideContentBlock {
     attributes__typename_GetwidMediaTextSliderSlideContentBlockAttributesUnion: attributes {
       __typename
+
       ... on GetwidMediaTextSliderSlideContentBlockAttributes {
         className
         innerParent
+        lock
         mediaAlt
         mediaId
         mediaType
         mediaUrl
       }
+
       ... on GetwidMediaTextSliderSlideContentBlockDeprecatedV1Attributes {
         className
         innerParent
+        lock
         mediaAlt
         mediaId
         mediaType
@@ -1018,9 +1208,11 @@ fragment BlockFragment on Block {
       }
     }
   }
+
   ... on GetwidImagesSliderBlock {
     attributes__typename_GetwidImagesSliderBlockAttributesUnion: attributes {
       __typename
+
       ... on GetwidImagesSliderBlockAttributes {
         align
         captionPosition
@@ -1030,6 +1222,7 @@ fragment BlockFragment on Block {
         imageAlignment
         imageFit
         imageSize
+
         images__typename_GetwidImagesSliderBlockAttributesImages: images {
           alt
           caption
@@ -1041,7 +1234,9 @@ fragment BlockFragment on Block {
           originalUrl
           url
         }
+
         linkTo
+        lock
         showCaption
         slideHeight
         sliderAnimationEffect
@@ -1060,6 +1255,7 @@ fragment BlockFragment on Block {
         sliderSpacing
         sliderVariableWidth
       }
+
       ... on GetwidImagesSliderBlockDeprecatedV1Attributes {
         align
         captionPosition
@@ -1069,6 +1265,7 @@ fragment BlockFragment on Block {
         imageAlignment
         imageFit
         imageSize
+
         images__typename_GetwidImagesSliderBlockDeprecatedV1AttributesImages: images {
           alt
           caption
@@ -1080,7 +1277,9 @@ fragment BlockFragment on Block {
           originalUrl
           url
         }
+
         linkTo
+        lock
         showCaption
         slideHeight
         sliderAnimationEffect
@@ -1099,6 +1298,7 @@ fragment BlockFragment on Block {
         sliderSpacing
         sliderVariableWidth
       }
+
       ... on GetwidImagesSliderBlockDeprecatedV2Attributes {
         align
         captionPosition
@@ -1108,6 +1308,7 @@ fragment BlockFragment on Block {
         imageAlignment
         imageFit
         imageSize
+
         images__typename_GetwidImagesSliderBlockDeprecatedV2AttributesImages: images {
           alt
           caption
@@ -1119,7 +1320,9 @@ fragment BlockFragment on Block {
           originalUrl
           url
         }
+
         linkTo
+        lock
         showCaption
         slideHeight
         sliderAnimationEffect
@@ -1138,6 +1341,7 @@ fragment BlockFragment on Block {
         sliderSpacing
         sliderVariableWidth
       }
+
       ... on GetwidImagesSliderBlockDeprecatedV3Attributes {
         align
         captionPosition
@@ -1147,6 +1351,7 @@ fragment BlockFragment on Block {
         imageAlignment
         imageFit
         imageSize
+
         images {
           alt
           caption
@@ -1158,7 +1363,9 @@ fragment BlockFragment on Block {
           originalUrl
           url
         }
+
         linkTo
+        lock
         showCaption
         slideHeight
         sliderAnimationEffect
@@ -1179,6 +1386,7 @@ fragment BlockFragment on Block {
       }
     }
   }
+
   ... on GetwidIconBlock {
     attributes__typename_GetwidIconBlockAttributes: attributes {
       align
@@ -1194,6 +1402,7 @@ fragment BlockFragment on Block {
       iconStyle
       link
       linkTarget
+      lock
       marginBottom
       marginLeft
       marginRight
@@ -1204,6 +1413,7 @@ fragment BlockFragment on Block {
       textColor
     }
   }
+
   ... on GetwidIconBoxBlock {
     attributes__typename_GetwidIconBoxBlockAttributes: attributes {
       align
@@ -1221,6 +1431,7 @@ fragment BlockFragment on Block {
       layout
       link
       linkTarget
+      lock
       marginBottom
       marginLeft
       marginRight
@@ -1233,9 +1444,11 @@ fragment BlockFragment on Block {
       textColor
     }
   }
+
   ... on GetwidBannerBlock {
     attributes__typename_GetwidBannerBlockAttributesUnion: attributes {
       __typename
+
       ... on GetwidBannerBlockAttributes {
         align
         backgroundColor
@@ -1250,6 +1463,7 @@ fragment BlockFragment on Block {
         imageSize
         link
         linkTarget
+        lock
         minHeight
         rel
         text
@@ -1260,6 +1474,7 @@ fragment BlockFragment on Block {
         url
         verticalAlign
       }
+
       ... on GetwidBannerBlockDeprecatedV1Attributes {
         align
         backgroundColor
@@ -1274,6 +1489,7 @@ fragment BlockFragment on Block {
         imageSize
         link
         linkTarget
+        lock
         minHeight
         rel
         text
@@ -1286,43 +1502,55 @@ fragment BlockFragment on Block {
       }
     }
   }
+
   ... on GetwidTabsBlock {
     attributes__typename_GetwidTabsBlockAttributesUnion: attributes {
       __typename
+
       ... on GetwidTabsBlockAttributes {
         active
         align
         className
         headerTag
+        lock
         type
       }
+
       ... on GetwidTabsBlockDeprecatedV1Attributes {
         active
         align
         className
         headerTag
+        lock
         type
       }
     }
   }
+
   ... on GetwidTabsItemBlock {
     attributes__typename_GetwidTabsItemBlockAttributesUnion: attributes {
       __typename
+
       ... on GetwidTabsItemBlockAttributes {
         className
+        lock
         outerParent
         title
       }
+
       ... on GetwidTabsItemBlockDeprecatedV1Attributes {
         className
+        lock
         outerParent
         title
       }
     }
   }
+
   ... on GetwidAccordionBlock {
     attributes__typename_GetwidAccordionBlockAttributesUnion: attributes {
       __typename
+
       ... on GetwidAccordionBlockAttributes {
         active
         align
@@ -1331,7 +1559,9 @@ fragment BlockFragment on Block {
         iconClose
         iconOpen
         iconPosition
+        lock
       }
+
       ... on GetwidAccordionBlockDeprecatedV1Attributes {
         active
         align
@@ -1340,19 +1570,24 @@ fragment BlockFragment on Block {
         iconClose
         iconOpen
         iconPosition
+        lock
       }
     }
   }
+
   ... on GetwidAccordionItemBlock {
     attributes__typename_GetwidAccordionItemBlockAttributes: attributes {
       className
+      lock
       outerParent
       title
     }
   }
+
   ... on GetwidToggleBlock {
     attributes__typename_GetwidToggleBlockAttributesUnion: attributes {
       __typename
+
       ... on GetwidToggleBlockAttributes {
         align
         className
@@ -1360,7 +1595,9 @@ fragment BlockFragment on Block {
         iconClose
         iconOpen
         iconPosition
+        lock
       }
+
       ... on GetwidToggleBlockDeprecatedV1Attributes {
         align
         className
@@ -1368,25 +1605,31 @@ fragment BlockFragment on Block {
         iconClose
         iconOpen
         iconPosition
+        lock
       }
     }
   }
+
   ... on GetwidToggleItemBlock {
     attributes__typename_GetwidToggleItemBlockAttributes: attributes {
       active
       className
+      lock
       outerParent
       title
     }
   }
+
   ... on GetwidImagesStackBlock {
     attributes__typename_GetwidImagesStackBlockAttributesUnion: attributes {
       __typename
+
       ... on GetwidImagesStackBlockAttributes {
         align
         className
         ids
         imageSize
+
         images__typename_GetwidImagesStackBlockAttributesImages: images {
           alt
           caption
@@ -1395,15 +1638,19 @@ fragment BlockFragment on Block {
           originalUrl
           url
         }
+
         linkTo
+        lock
         stackOverlap
         stackStyle
       }
+
       ... on GetwidImagesStackBlockDeprecatedV1Attributes {
         align
         className
         ids
         imageSize
+
         images {
           alt
           caption
@@ -1412,12 +1659,15 @@ fragment BlockFragment on Block {
           originalUrl
           url
         }
+
         linkTo
+        lock
         stackOverlap
         stackStyle
       }
     }
   }
+
   ... on GetwidMapBlock {
     attributes__typename_GetwidMapBlockAttributes: attributes {
       blockAlignment
@@ -1425,6 +1675,7 @@ fragment BlockFragment on Block {
       customStyle
       fullscreenControl
       interaction
+      lock
       mapCenter
       mapHeight
       mapMarkers
@@ -1435,6 +1686,7 @@ fragment BlockFragment on Block {
       zoomControl
     }
   }
+
   ... on GetwidRecentPostsBlock {
     attributes__typename_GetwidRecentPostsBlockAttributes: attributes {
       align
@@ -1444,6 +1696,7 @@ fragment BlockFragment on Block {
       contentLength
       cropImages
       imageSize
+      lock
       order
       orderBy
       postLayout
@@ -1457,9 +1710,11 @@ fragment BlockFragment on Block {
       titleTag
     }
   }
+
   ... on GetwidAdvancedHeadingBlock {
     attributes__typename_GetwidAdvancedHeadingBlockAttributesUnion: attributes {
       __typename
+
       ... on GetwidAdvancedHeadingBlockAttributes {
         align
         anchor
@@ -1477,6 +1732,7 @@ fragment BlockFragment on Block {
         fontWeight
         letterSpacing
         lineHeight
+        lock
         marginBottom
         marginLeft
         marginRight
@@ -1490,6 +1746,7 @@ fragment BlockFragment on Block {
         textTransform
         titleTag
       }
+
       ... on GetwidAdvancedHeadingBlockDeprecatedV1Attributes {
         align
         anchor
@@ -1507,6 +1764,7 @@ fragment BlockFragment on Block {
         fontWeight
         letterSpacing
         lineHeight
+        lock
         marginBottom
         marginLeft
         marginRight
@@ -1522,9 +1780,11 @@ fragment BlockFragment on Block {
       }
     }
   }
+
   ... on GetwidImageBoxBlock {
     attributes__typename_GetwidImageBoxBlockAttributesUnion: attributes {
       __typename
+
       ... on GetwidImageBoxBlockAttributes {
         align
         alt
@@ -1536,6 +1796,7 @@ fragment BlockFragment on Block {
         layout
         link
         linkTarget
+        lock
         marginBottom
         marginLeft
         marginRight
@@ -1546,6 +1807,7 @@ fragment BlockFragment on Block {
         textAlignment
         url
       }
+
       ... on GetwidImageBoxBlockDeprecatedV1Attributes {
         align
         alt
@@ -1557,6 +1819,7 @@ fragment BlockFragment on Block {
         layout
         link
         linkTarget
+        lock
         marginBottom
         marginLeft
         marginRight
@@ -1569,6 +1832,7 @@ fragment BlockFragment on Block {
       }
     }
   }
+
   ... on GetwidAdvancedSpacerBlock {
     attributes__typename_GetwidAdvancedSpacerBlockAttributes: attributes {
       className
@@ -1576,8 +1840,10 @@ fragment BlockFragment on Block {
       isHideDesktop
       isHideMobile
       isHideTablet
+      lock
     }
   }
+
   ... on GetwidSocialLinksBlock {
     attributes__typename_GetwidSocialLinksBlockAttributes: attributes {
       align
@@ -1585,6 +1851,7 @@ fragment BlockFragment on Block {
       className
       customBackgroundColor
       customTextColor
+
       icons {
         icon
         link
@@ -1592,15 +1859,18 @@ fragment BlockFragment on Block {
         rel
         title
       }
+
       iconsSize
       iconsSpacing
       iconsStyle
+      lock
       textAlignmentDesktop
       textAlignmentMobile
       textAlignmentTablet
       textColor
     }
   }
+
   ... on GetwidButtonGroupBlock {
     attributes__typename_GetwidButtonGroupBlockAttributes: attributes {
       alignment
@@ -1610,38 +1880,46 @@ fragment BlockFragment on Block {
       direction
       directionMobile
       directionTablet
+      lock
       spacing
       width
       widthMobile
       widthTablet
     }
   }
+
   ... on GetwidTestimonialBlock {
     attributes__typename_GetwidTestimonialBlockAttributesUnion: attributes {
       __typename
+
       ... on GetwidTestimonialBlockAttributes {
         className
         content
         imgAlt
         imgId
         imgUrl
+        lock
         subtitle
         title
       }
+
       ... on GetwidTestimonialBlockDeprecatedV1Attributes {
         className
         content
         imgAlt
         imgId
         imgUrl
+        lock
         subtitle
         title
       }
     }
   }
+
   ... on GetwidPersonBlock {
     attributes__typename_GetwidPersonBlockAttributesUnion: attributes {
       __typename
+
       ... on GetwidPersonBlockAttributes {
         className
         content
@@ -1650,9 +1928,11 @@ fragment BlockFragment on Block {
         imgAlt
         imgId
         imgUrl
+        lock
         subtitle
         title
       }
+
       ... on GetwidPersonBlockDeprecatedV1Attributes {
         className
         content
@@ -1661,20 +1941,24 @@ fragment BlockFragment on Block {
         imgAlt
         imgId
         imgUrl
+        lock
         subtitle
         title
       }
     }
   }
+
   ... on GetwidInstagramBlock {
     attributes__typename_GetwidInstagramBlockAttributes: attributes {
       align
       className
       gridColumns
+      lock
       photoCount
       spacing
     }
   }
+
   ... on GetwidProgressBarBlock {
     attributes__typename_GetwidProgressBarBlockAttributes: attributes {
       align
@@ -1684,10 +1968,12 @@ fragment BlockFragment on Block {
       customTextColor
       fillAmount
       isAnimated
+      lock
       textColor
       title
     }
   }
+
   ... on GetwidCircleProgressBarBlock {
     attributes__typename_GetwidCircleProgressBarBlockAttributes: attributes {
       align
@@ -1695,6 +1981,7 @@ fragment BlockFragment on Block {
       className
       fillAmount
       isAnimated
+      lock
       size
       textColor
       thickness
@@ -1702,9 +1989,11 @@ fragment BlockFragment on Block {
       wrapperAlign
     }
   }
+
   ... on GetwidCounterBlock {
     attributes__typename_GetwidCounterBlockAttributesUnion: attributes {
       __typename
+
       ... on GetwidCounterBlockAttributes {
         align
         className
@@ -1713,6 +2002,7 @@ fragment BlockFragment on Block {
         decimalPlaces
         duration
         end
+        lock
         numerals
         prefix
         separator
@@ -1724,6 +2014,7 @@ fragment BlockFragment on Block {
         useGrouping
         wrapperAlign
       }
+
       ... on GetwidCounterBlockDeprecatedV1Attributes {
         align
         className
@@ -1732,6 +2023,7 @@ fragment BlockFragment on Block {
         decimalPlaces
         duration
         end
+        lock
         numerals
         prefix
         separator
@@ -1745,9 +2037,11 @@ fragment BlockFragment on Block {
       }
     }
   }
+
   ... on GetwidPriceBoxBlock {
     attributes__typename_GetwidPriceBoxBlockAttributesUnion: attributes {
       __typename
+
       ... on GetwidPriceBoxBlockAttributes {
         align
         amount
@@ -1758,10 +2052,12 @@ fragment BlockFragment on Block {
         customTextColor
         features
         headerTag
+        lock
         period
         textColor
         title
       }
+
       ... on GetwidPriceBoxBlockDeprecatedV1Attributes {
         align
         amount
@@ -1772,12 +2068,14 @@ fragment BlockFragment on Block {
         customTextColor
         features
         headerTag
+        lock
         period
         textColor
         title
       }
     }
   }
+
   ... on GetwidContactFormBlock {
     attributes__typename_GetwidContactFormBlockAttributes: attributes {
       align
@@ -1785,48 +2083,59 @@ fragment BlockFragment on Block {
       className
       customBackgroundColor
       customTextColor
+      lock
       subject
       text
       textColor
     }
   }
+
   ... on GetwidFieldNameBlock {
     attributes__typename_GetwidFieldNameBlockAttributes: attributes {
       className
       id
       label
+      lock
       placeholder
       required
     }
   }
+
   ... on GetwidFieldEmailBlock {
     attributes__typename_GetwidFieldEmailBlockAttributes: attributes {
       className
       id
       label
+      lock
       placeholder
       required
     }
   }
+
   ... on GetwidFieldTextareaBlock {
     attributes__typename_GetwidFieldTextareaBlockAttributes: attributes {
       className
       id
       label
+      lock
       placeholder
       required
     }
   }
+
   ... on GetwidCaptchaBlock {
     attributes__typename_GetwidCaptchaBlockAttributes: attributes {
       className
+      lock
       size
       theme
     }
   }
+
   ... on GetwidPostCarouselBlock {
     attributes__typename_GetwidPostCarouselBlockAttributesUnion: attributes {
       __typename
+
       ... on GetwidPostCarouselBlockAttributes {
         align
         childPagesCurrentPage
@@ -1835,6 +2144,8 @@ fragment BlockFragment on Block {
         excludeCurrentPost
         filterById
         ignoreSticky
+        lock
+        metaQuery
         offset
         order
         orderBy
@@ -1859,6 +2170,7 @@ fragment BlockFragment on Block {
         taxonomy
         terms
       }
+
       ... on GetwidPostCarouselBlockDeprecatedV1Attributes {
         align
         childPagesCurrentPage
@@ -1867,6 +2179,8 @@ fragment BlockFragment on Block {
         excludeCurrentPost
         filterById
         ignoreSticky
+        lock
+        metaQuery
         offset
         order
         orderBy
@@ -1893,9 +2207,11 @@ fragment BlockFragment on Block {
       }
     }
   }
+
   ... on GetwidPostSliderBlock {
     attributes__typename_GetwidPostSliderBlockAttributesUnion: attributes {
       __typename
+
       ... on GetwidPostSliderBlockAttributes {
         align
         childPagesCurrentPage
@@ -1904,6 +2220,8 @@ fragment BlockFragment on Block {
         excludeCurrentPost
         filterById
         ignoreSticky
+        lock
+        metaQuery
         minHeight
         offset
         order
@@ -1924,6 +2242,7 @@ fragment BlockFragment on Block {
         terms
         textAlignment
       }
+
       ... on GetwidPostSliderBlockDeprecatedV1Attributes {
         align
         childPagesCurrentPage
@@ -1932,6 +2251,8 @@ fragment BlockFragment on Block {
         excludeCurrentPost
         filterById
         ignoreSticky
+        lock
+        metaQuery
         minHeight
         offset
         order
@@ -1954,6 +2275,7 @@ fragment BlockFragment on Block {
       }
     }
   }
+
   ... on GetwidCustomPostTypeBlock {
     attributes__typename_GetwidCustomPostTypeBlockAttributes: attributes {
       align
@@ -1964,6 +2286,8 @@ fragment BlockFragment on Block {
       excludeCurrentPost
       filterById
       ignoreSticky
+      lock
+      metaQuery
       offset
       order
       orderBy
@@ -1979,9 +2303,11 @@ fragment BlockFragment on Block {
       terms
     }
   }
+
   ... on GetwidPriceListBlock {
     attributes__typename_GetwidPriceListBlockAttributesUnion: attributes {
       __typename
+
       ... on GetwidPriceListBlockAttributes {
         align
         amount
@@ -1992,11 +2318,13 @@ fragment BlockFragment on Block {
         description
         dotted
         id
+        lock
         textColor
         title
         titleTag
         url
       }
+
       ... on GetwidPriceListBlockDeprecatedV1Attributes {
         align
         amount
@@ -2007,6 +2335,7 @@ fragment BlockFragment on Block {
         description
         dotted
         id
+        lock
         textColor
         title
         titleTag
@@ -2014,150 +2343,12 @@ fragment BlockFragment on Block {
       }
     }
   }
-  ... on GetwidTemplatePostTitleBlock {
-    attributes__typename_GetwidTemplatePostTitleBlockAttributes: attributes {
-      bold
-      className
-      customFontSize
-      customTextColor
-      fontSize
-      headerTag
-      italic
-      linkTo
-      textAlignment
-      textColor
-    }
-  }
-  ... on GetwidTemplatePostFeaturedImageBlock {
-    attributes__typename_GetwidTemplatePostFeaturedImageBlockAttributes: attributes {
-      align
-      className
-      imageSize
-      linkTo
-    }
-  }
-  ... on GetwidTemplatePostContentBlock {
-    attributes__typename_GetwidTemplatePostContentBlockAttributes: attributes {
-      className
-      contentLength
-      customFontSize
-      customTextColor
-      fontSize
-      showContent
-      textAlignment
-      textColor
-    }
-  }
-  ... on GetwidTemplatePostLinkBlock {
-    attributes__typename_GetwidTemplatePostLinkBlockAttributes: attributes {
-      align
-      buttonText
-      className
-      customTextColor
-      textAlignment
-      textColor
-    }
-  }
-  ... on GetwidTemplatePostButtonBlock {
-    attributes__typename_GetwidTemplatePostButtonBlockAttributes: attributes {
-      align
-      backgroundColor
-      buttonText
-      className
-      customBackgroundColor
-      customTextColor
-      textAlignment
-      textColor
-    }
-  }
-  ... on GetwidTemplatePostAuthorBlock {
-    attributes__typename_GetwidTemplatePostAuthorBlockAttributes: attributes {
-      backgroundColor
-      blockDivider
-      className
-      customBackgroundColor
-      customFontSize
-      customIconColor
-      customTextColor
-      fontSize
-      icon
-      iconColor
-      textAlignment
-      textColor
-    }
-  }
-  ... on GetwidTemplatePostCategoriesBlock {
-    attributes__typename_GetwidTemplatePostCategoriesBlockAttributes: attributes {
-      backgroundColor
-      blockDivider
-      className
-      customBackgroundColor
-      customFontSize
-      customIconColor
-      customTextColor
-      divider
-      fontSize
-      icon
-      iconColor
-      textAlignment
-      textColor
-    }
-  }
-  ... on GetwidTemplatePostCommentsBlock {
-    attributes__typename_GetwidTemplatePostCommentsBlockAttributes: attributes {
-      backgroundColor
-      blockDivider
-      className
-      customBackgroundColor
-      customFontSize
-      customIconColor
-      customTextColor
-      fontSize
-      icon
-      iconColor
-      textAlignment
-      textColor
-    }
-  }
-  ... on GetwidTemplatePostTagsBlock {
-    attributes__typename_GetwidTemplatePostTagsBlockAttributes: attributes {
-      backgroundColor
-      blockDivider
-      className
-      customBackgroundColor
-      customFontSize
-      customIconColor
-      customTextColor
-      divider
-      fontSize
-      icon
-      iconColor
-      textAlignment
-      textColor
-    }
-  }
-  ... on GetwidTemplatePostDateBlock {
-    attributes__typename_GetwidTemplatePostDateBlockAttributes: attributes {
-      backgroundColor
-      blockDivider
-      bold
-      className
-      customBackgroundColor
-      customFontSize
-      customIconColor
-      customTextColor
-      fontSize
-      icon
-      iconColor
-      italic
-      textAlignment
-      textColor
-    }
-  }
-  ... on GetwidTemplatePostFeaturedBackgroundImageBlock {
-    attributes__typename_GetwidTemplatePostFeaturedBackgroundImageBlockAttributes: attributes {
+
+  ... on GetwidTemplateAcfBackgroundImageBlock {
+    attributes__typename_GetwidTemplateAcfBackgroundImageBlockAttributes: attributes {
       className
       contentMaxWidth
+      customField
       foregroundColor
       foregroundFilter
       foregroundGradientAngle
@@ -2171,6 +2362,7 @@ fragment BlockFragment on Block {
       horizontalAlignMobile
       horizontalAlignTablet
       imageSize
+      lock
       minHeight
       paddingBottom
       paddingBottomMobile
@@ -2193,16 +2385,264 @@ fragment BlockFragment on Block {
       verticalAlignTablet
     }
   }
+
+  ... on GetwidTemplateAcfImageBlock {
+    attributes__typename_GetwidTemplateAcfImageBlockAttributes: attributes {
+      align
+      className
+      customField
+      imageSize
+      linkTo
+      lock
+    }
+  }
+
+  ... on GetwidTemplateAcfSelectBlock {
+    attributes__typename_GetwidTemplateAcfSelectBlockAttributes: attributes {
+      bold
+      className
+      customField
+      customFontSize
+      customTextColor
+      fontSize
+      italic
+      labelName
+      lock
+      separator
+      textAlignment
+      textColor
+    }
+  }
+
+  ... on GetwidTemplateAcfWysiwygBlock {
+    attributes__typename_GetwidTemplateAcfWysiwygBlockAttributes: attributes {
+      bold
+      className
+      customField
+      customFontSize
+      customTextColor
+      fontSize
+      italic
+      lock
+      textAlignment
+      textColor
+    }
+  }
+
+  ... on GetwidTemplatePostTitleBlock {
+    attributes__typename_GetwidTemplatePostTitleBlockAttributes: attributes {
+      bold
+      className
+      customFontSize
+      customTextColor
+      fontSize
+      headerTag
+      italic
+      linkTo
+      lock
+      textAlignment
+      textColor
+    }
+  }
+
+  ... on GetwidTemplatePostFeaturedImageBlock {
+    attributes__typename_GetwidTemplatePostFeaturedImageBlockAttributes: attributes {
+      align
+      className
+      imageSize
+      linkTo
+      lock
+    }
+  }
+
+  ... on GetwidTemplatePostContentBlock {
+    attributes__typename_GetwidTemplatePostContentBlockAttributes: attributes {
+      className
+      contentLength
+      customFontSize
+      customTextColor
+      fontSize
+      lock
+      showContent
+      textAlignment
+      textColor
+    }
+  }
+
+  ... on GetwidTemplatePostLinkBlock {
+    attributes__typename_GetwidTemplatePostLinkBlockAttributes: attributes {
+      align
+      buttonText
+      className
+      customTextColor
+      lock
+      textAlignment
+      textColor
+    }
+  }
+
+  ... on GetwidTemplatePostButtonBlock {
+    attributes__typename_GetwidTemplatePostButtonBlockAttributes: attributes {
+      align
+      backgroundColor
+      buttonText
+      className
+      customBackgroundColor
+      customTextColor
+      lock
+      textAlignment
+      textColor
+    }
+  }
+
+  ... on GetwidTemplatePostAuthorBlock {
+    attributes__typename_GetwidTemplatePostAuthorBlockAttributes: attributes {
+      backgroundColor
+      blockDivider
+      className
+      customBackgroundColor
+      customFontSize
+      customIconColor
+      customTextColor
+      fontSize
+      icon
+      iconColor
+      lock
+      textAlignment
+      textColor
+    }
+  }
+
+  ... on GetwidTemplatePostCategoriesBlock {
+    attributes__typename_GetwidTemplatePostCategoriesBlockAttributes: attributes {
+      backgroundColor
+      blockDivider
+      className
+      customBackgroundColor
+      customFontSize
+      customIconColor
+      customTextColor
+      divider
+      fontSize
+      icon
+      iconColor
+      lock
+      textAlignment
+      textColor
+    }
+  }
+
+  ... on GetwidTemplatePostCommentsBlock {
+    attributes__typename_GetwidTemplatePostCommentsBlockAttributes: attributes {
+      backgroundColor
+      blockDivider
+      className
+      customBackgroundColor
+      customFontSize
+      customIconColor
+      customTextColor
+      fontSize
+      icon
+      iconColor
+      lock
+      textAlignment
+      textColor
+    }
+  }
+
+  ... on GetwidTemplatePostTagsBlock {
+    attributes__typename_GetwidTemplatePostTagsBlockAttributes: attributes {
+      backgroundColor
+      blockDivider
+      className
+      customBackgroundColor
+      customFontSize
+      customIconColor
+      customTextColor
+      divider
+      fontSize
+      icon
+      iconColor
+      lock
+      textAlignment
+      textColor
+    }
+  }
+
+  ... on GetwidTemplatePostDateBlock {
+    attributes__typename_GetwidTemplatePostDateBlockAttributes: attributes {
+      backgroundColor
+      blockDivider
+      bold
+      className
+      customBackgroundColor
+      customFontSize
+      customIconColor
+      customTextColor
+      fontSize
+      icon
+      iconColor
+      italic
+      lock
+      textAlignment
+      textColor
+    }
+  }
+
+  ... on GetwidTemplatePostFeaturedBackgroundImageBlock {
+    attributes__typename_GetwidTemplatePostFeaturedBackgroundImageBlockAttributes: attributes {
+      className
+      contentMaxWidth
+      foregroundColor
+      foregroundFilter
+      foregroundGradientAngle
+      foregroundGradientFirstColor
+      foregroundGradientFirstColorLocation
+      foregroundGradientSecondColor
+      foregroundGradientSecondColorLocation
+      foregroundGradientType
+      foregroundOpacity
+      horizontalAlign
+      horizontalAlignMobile
+      horizontalAlignTablet
+      imageSize
+      linkTo
+      lock
+      minHeight
+      paddingBottom
+      paddingBottomMobile
+      paddingBottomTablet
+      paddingBottomValue
+      paddingLeft
+      paddingLeftMobile
+      paddingLeftTablet
+      paddingLeftValue
+      paddingRight
+      paddingRightMobile
+      paddingRightTablet
+      paddingRightValue
+      paddingTop
+      paddingTopMobile
+      paddingTopTablet
+      paddingTopValue
+      verticalAlign
+      verticalAlignMobile
+      verticalAlignTablet
+    }
+  }
+
   ... on GetwidTemplatePostMetaBlock {
     attributes__typename_GetwidTemplatePostMetaBlockAttributes: attributes {
       blockDivider
       className
       customTextColor
       direction
+      lock
       textAlignment
       textColor
     }
   }
+
   ... on GetwidTemplatePostCustomFieldBlock {
     attributes__typename_GetwidTemplatePostCustomFieldBlockAttributes: attributes {
       bold
@@ -2212,15 +2652,19 @@ fragment BlockFragment on Block {
       customTextColor
       fontSize
       italic
+      lock
       textAlignment
       textColor
     }
   }
+
   ... on GetwidTemplatePostLayoutHelperBlock {
     attributes__typename_GetwidTemplatePostLayoutHelperBlockAttributes: attributes {
       align
+      lock
     }
   }
+
   ... on GetwidMailchimpBlock {
     attributes__typename_GetwidMailchimpBlockAttributes: attributes {
       align
@@ -2229,43 +2673,52 @@ fragment BlockFragment on Block {
       customBackgroundColor
       customTextColor
       ids
+      lock
       text
       textColor
     }
   }
+
   ... on GetwidMailchimpFieldEmailBlock {
     attributes__typename_GetwidMailchimpFieldEmailBlockAttributes: attributes {
       className
       id
       label
+      lock
       name
       placeholder
       required
     }
   }
+
   ... on GetwidMailchimpFieldFirstNameBlock {
     attributes__typename_GetwidMailchimpFieldFirstNameBlockAttributes: attributes {
       className
       id
       label
+      lock
       name
       placeholder
       required
     }
   }
+
   ... on GetwidMailchimpFieldLastNameBlock {
     attributes__typename_GetwidMailchimpFieldLastNameBlockAttributes: attributes {
       className
       id
       label
+      lock
       name
       placeholder
       required
     }
   }
+
   ... on GetwidVideoPopupBlock {
     attributes__typename_GetwidVideoPopupBlockAttributesUnion: attributes {
       __typename
+
       ... on GetwidVideoPopupBlockAttributes {
         align
         buttonAnimation
@@ -2284,6 +2737,7 @@ fragment BlockFragment on Block {
         imageAnimation
         imageSize
         link
+        lock
         minHeight
         overlayColor
         overlayOpacity
@@ -2291,6 +2745,7 @@ fragment BlockFragment on Block {
         titleColor
         url
       }
+
       ... on GetwidVideoPopupBlockDeprecatedV1Attributes {
         align
         buttonAnimation
@@ -2309,6 +2764,7 @@ fragment BlockFragment on Block {
         imageAnimation
         imageSize
         link
+        lock
         minHeight
         overlayColor
         overlayOpacity
@@ -2318,9 +2774,11 @@ fragment BlockFragment on Block {
       }
     }
   }
+
   ... on GetwidImageHotspotBlock {
     attributes__typename_GetwidImageHotspotBlockAttributesUnion: attributes {
       __typename
+
       ... on GetwidImageHotspotBlockAttributes {
         align
         alt
@@ -2337,12 +2795,14 @@ fragment BlockFragment on Block {
         id
         imagePoints
         imageSize
+        lock
         tooltipAnimation
         tooltipArrow
         tooltipTheme
         tooltipTrigger
         url
       }
+
       ... on GetwidImageHotspotBlockDeprecatedV1Attributes {
         align
         alt
@@ -2359,6 +2819,7 @@ fragment BlockFragment on Block {
         id
         imagePoints
         imageSize
+        lock
         tooltipAnimation
         tooltipArrow
         tooltipTheme
@@ -2367,6 +2828,7 @@ fragment BlockFragment on Block {
       }
     }
   }
+
   ... on GetwidCountdownBlock {
     attributes__typename_GetwidCountdownBlockAttributes: attributes {
       align
@@ -2387,6 +2849,7 @@ fragment BlockFragment on Block {
       innerSpacings
       letterSpacing
       lineHeight
+      lock
       minutes
       months
       seconds
@@ -2397,6 +2860,7 @@ fragment BlockFragment on Block {
       years
     }
   }
+
   ... on GetwidContentTimelineBlock {
     attributes__typename_GetwidContentTimelineBlockAttributes: attributes {
       align
@@ -2408,6 +2872,7 @@ fragment BlockFragment on Block {
       fillColor
       filling
       horizontalSpace
+      lock
       marginBottom
       paddingBottom
       paddingLeft
@@ -2416,35 +2881,48 @@ fragment BlockFragment on Block {
       wrapperAlign
     }
   }
+
   ... on GetwidContentTimelineItemBlock {
     attributes__typename_GetwidContentTimelineItemBlockAttributesUnion: attributes {
       __typename
+
       ... on GetwidContentTimelineItemBlockAttributes {
         alt
         cardPosition
         className
         id
         imageSize
+        lock
         meta
         outerParent
         url
       }
+
       ... on GetwidContentTimelineItemBlockDeprecatedV1Attributes {
         alt
         cardPosition
         className
         id
         imageSize
+        lock
         meta
         outerParent
         url
       }
     }
   }
+
+  ... on GetwidTemplateLibraryBlock {
+    attributes__typename_GetwidTemplateLibraryBlockAttributes: attributes {
+      lock
+    }
+  }
+
   ... on GetwidTableBlock {
     attributes__typename_GetwidTableBlockAttributes: attributes {
       align
       backgroundColor
+
       body {
         cells {
           colSpan
@@ -2453,11 +2931,13 @@ fragment BlockFragment on Block {
           styles
         }
       }
+
       borderCollapse
       caption
       className
       customBackgroundColor
       customTextColor
+
       foot {
         cells {
           colSpan
@@ -2466,6 +2946,7 @@ fragment BlockFragment on Block {
           styles
         }
       }
+
       head {
         cells {
           colSpan
@@ -2474,18 +2955,23 @@ fragment BlockFragment on Block {
           styles
         }
       }
+
       horizontalAlign
+      lock
       tableLayout
       textColor
       verticalAlign
     }
   }
+
   ... on GetwidAnchorBlock {
     attributes__typename_GetwidAnchorBlockAttributes: attributes {
       anchor
       className
+      lock
     }
   }
+
   ... on GetwidTableOfContentsBlock {
     attributes__typename_GetwidTableOfContentsBlockAttributes: attributes {
       align
@@ -2493,11 +2979,48 @@ fragment BlockFragment on Block {
       className
       headings
       listStyle
+      lock
     }
   }
+
+  ... on GetwidContentSliderBlock {
+    attributes__typename_GetwidContentSliderBlockAttributes: attributes {
+      adaptiveHeight
+      align
+      animationEffect
+      animationSpeed
+      arrows
+      autoplay
+      autoplaySpeed
+      centerMode
+      className
+      dots
+      draggable
+      infinite
+      lock
+      pauseOnHover
+      slidesToScroll
+      slidesToScrollLaptop
+      slidesToScrollMobile
+      slidesToScrollTablet
+      slidesToShow
+      slidesToShowLaptop
+      slidesToShowMobile
+      slidesToShowTablet
+    }
+  }
+
+  ... on GetwidContentSliderSlideBlock {
+    attributes__typename_GetwidContentSliderSlideBlockAttributes: attributes {
+      className
+      lock
+    }
+  }
+
   ... on YoastHowToBlock {
     attributes__typename_YoastHowToBlockAttributesUnion: attributes {
       __typename
+
       ... on YoastHowToBlockAttributes {
         additionalListCssClasses
         className
@@ -2508,10 +3031,12 @@ fragment BlockFragment on Block {
         hasDuration
         hours
         jsonDescription
+        lock
         minutes
         steps
         unorderedList
       }
+
       ... on YoastHowToBlockDeprecatedV1Attributes {
         additionalListCssClasses
         className
@@ -2522,10 +3047,12 @@ fragment BlockFragment on Block {
         hasDuration
         hours
         jsonDescription
+        lock
         minutes
         steps
         unorderedList
       }
+
       ... on YoastHowToBlockDeprecatedV2Attributes {
         additionalListCssClasses
         className
@@ -2536,35 +3063,44 @@ fragment BlockFragment on Block {
         hasDuration
         hours
         jsonDescription
+        lock
         minutes
         steps
         unorderedList
       }
     }
   }
+
   ... on YoastFaqBlock {
     attributes__typename_YoastFaqBlockAttributesUnion: attributes {
       __typename
+
       ... on YoastFaqBlockAttributes {
         additionalListCssClasses
         className
+        lock
         questions
       }
+
       ... on YoastFaqBlockDeprecatedV1Attributes {
         additionalListCssClasses
         className
+        lock
         questions
       }
     }
   }
+
   ... on WpBootstrapBlocksContainerBlock {
     attributes__typename_WpBootstrapBlocksContainerBlockAttributes: attributes {
       className
       fluidBreakpoint
       isFluid
+      lock
       marginAfter
     }
   }
+
   ... on WpBootstrapBlocksColumnBlock {
     attributes__typename_WpBootstrapBlocksColumnBlockAttributes: attributes {
       bgColor
@@ -2577,6 +3113,7 @@ fragment BlockFragment on Block {
       equalWidthXl
       equalWidthXs
       equalWidthXxl
+      lock
       padding
       sizeLg
       sizeMd
@@ -2586,6 +3123,7 @@ fragment BlockFragment on Block {
       sizeXxl
     }
   }
+
   ... on WpBootstrapBlocksRowBlock {
     attributes__typename_WpBootstrapBlocksRowBlockAttributes: attributes {
       align
@@ -2594,26 +3132,31 @@ fragment BlockFragment on Block {
       cssGridGutters
       editorStackColumns
       horizontalGutters
+      lock
       noGutters
       template
       verticalAlignment
       verticalGutters
     }
   }
+
   ... on WpBootstrapBlocksButtonBlock {
     attributes__typename_WpBootstrapBlocksButtonBlockAttributes: attributes {
       alignment
       className
       linkTarget
+      lock
       rel
       style
       text
       url
     }
   }
+
   ... on CoreParagraphBlock {
     attributes__typename_CoreParagraphBlockAttributesUnion: attributes {
       __typename
+
       ... on CoreParagraphBlockAttributes {
         align
         anchor
@@ -2622,11 +3165,15 @@ fragment BlockFragment on Block {
         content
         direction
         dropCap
+        fontFamily
         fontSize
+        gradient
+        lock
         placeholder
         style
         textColor
       }
+
       ... on CoreParagraphBlockDeprecatedV1Attributes {
         align
         anchor
@@ -2635,11 +3182,15 @@ fragment BlockFragment on Block {
         content
         direction
         dropCap
+        fontFamily
         fontSize
+        gradient
+        lock
         placeholder
         style
         textColor
       }
+
       ... on CoreParagraphBlockDeprecatedV2Attributes {
         align
         anchor
@@ -2648,11 +3199,15 @@ fragment BlockFragment on Block {
         content
         direction
         dropCap
+        fontFamily
         fontSize
+        gradient
+        lock
         placeholder
         style
         textColor
       }
+
       ... on CoreParagraphBlockDeprecatedV3Attributes {
         align
         anchor
@@ -2661,11 +3216,15 @@ fragment BlockFragment on Block {
         content
         direction
         dropCap
+        fontFamily
         fontSize
+        gradient
+        lock
         placeholder
         style
         textColor
       }
+
       ... on CoreParagraphBlockDeprecatedV4Attributes {
         align
         anchor
@@ -2674,11 +3233,15 @@ fragment BlockFragment on Block {
         content
         direction
         dropCap
+        fontFamily
         fontSize
+        gradient
+        lock
         placeholder
         style
         textColor
       }
+
       ... on CoreParagraphBlockDeprecatedV5Attributes {
         align
         anchor
@@ -2687,20 +3250,26 @@ fragment BlockFragment on Block {
         content
         direction
         dropCap
+        fontFamily
         fontSize
+        gradient
+        lock
         placeholder
         style
         textColor
       }
     }
   }
+
   ... on CoreImageBlock {
     attributes__typename_CoreImageBlockAttributesUnion: attributes {
       __typename
+
       ... on CoreImageBlockAttributes {
         align
         alt
         anchor
+        borderColor
         caption
         className
         height
@@ -2709,6 +3278,7 @@ fragment BlockFragment on Block {
         linkClass
         linkDestination
         linkTarget
+        lock
         rel
         sizeSlug
         style
@@ -2716,10 +3286,12 @@ fragment BlockFragment on Block {
         url
         width
       }
+
       ... on CoreImageBlockDeprecatedV1Attributes {
         align
         alt
         anchor
+        borderColor
         caption
         className
         height
@@ -2728,6 +3300,7 @@ fragment BlockFragment on Block {
         linkClass
         linkDestination
         linkTarget
+        lock
         rel
         sizeSlug
         style
@@ -2735,10 +3308,12 @@ fragment BlockFragment on Block {
         url
         width
       }
+
       ... on CoreImageBlockDeprecatedV2Attributes {
         align
         alt
         anchor
+        borderColor
         caption
         className
         height
@@ -2747,6 +3322,7 @@ fragment BlockFragment on Block {
         linkClass
         linkDestination
         linkTarget
+        lock
         rel
         sizeSlug
         style
@@ -2754,10 +3330,12 @@ fragment BlockFragment on Block {
         url
         width
       }
+
       ... on CoreImageBlockDeprecatedV3Attributes {
         align
         alt
         anchor
+        borderColor
         caption
         className
         height
@@ -2766,6 +3344,51 @@ fragment BlockFragment on Block {
         linkClass
         linkDestination
         linkTarget
+        lock
+        rel
+        sizeSlug
+        style
+        title
+        url
+        width
+      }
+
+      ... on CoreImageBlockDeprecatedV4Attributes {
+        align
+        alt
+        anchor
+        borderColor
+        caption
+        className
+        height
+        href
+        id
+        linkClass
+        linkDestination
+        linkTarget
+        lock
+        rel
+        sizeSlug
+        style
+        title
+        url
+        width
+      }
+
+      ... on CoreImageBlockDeprecatedV5Attributes {
+        align
+        alt
+        anchor
+        borderColor
+        caption
+        className
+        height
+        href
+        id
+        linkClass
+        linkDestination
+        linkTarget
+        lock
         rel
         sizeSlug
         style
@@ -2775,69 +3398,90 @@ fragment BlockFragment on Block {
       }
     }
   }
+
   ... on CoreHeadingBlock {
     attributes__typename_CoreHeadingBlockAttributesUnion: attributes {
       __typename
+
       ... on CoreHeadingBlockAttributes {
         align
         anchor
         backgroundColor
         className
         content
+        fontFamily
         fontSize
+        gradient
         level
+        lock
         placeholder
         style
         textAlign
         textColor
       }
+
       ... on CoreHeadingBlockDeprecatedV1Attributes {
         align
         anchor
         backgroundColor
         className
         content
+        fontFamily
         fontSize
+        gradient
         level
+        lock
         placeholder
         style
         textAlign
         textColor
       }
+
       ... on CoreHeadingBlockDeprecatedV2Attributes {
         align
         anchor
         backgroundColor
         className
         content
+        fontFamily
         fontSize
+        gradient
         level
+        lock
         placeholder
         style
         textAlign
         textColor
       }
+
       ... on CoreHeadingBlockDeprecatedV3Attributes {
         align
         anchor
         backgroundColor
         className
         content
+        fontFamily
         fontSize
+        gradient
         level
+        lock
         placeholder
         style
         textAlign
         textColor
       }
+
       ... on CoreHeadingBlockDeprecatedV4Attributes {
         align
         anchor
         backgroundColor
         className
         content
+        fontFamily
         fontSize
+        gradient
         level
+        lock
         placeholder
         style
         textAlign
@@ -2845,17 +3489,24 @@ fragment BlockFragment on Block {
       }
     }
   }
+
   ... on CoreGalleryBlock {
     attributes__typename_CoreGalleryBlockAttributesUnion: attributes {
       __typename
+
       ... on CoreGalleryBlockAttributes {
         align
+        allowResize
         anchor
+        backgroundColor
         caption
         className
         columns
+        fixedHeight
+        gradient
         ids
         imageCrop
+
         images__typename_CoreGalleryBlockAttributesImages: images {
           alt
           caption
@@ -2864,17 +3515,30 @@ fragment BlockFragment on Block {
           link
           url
         }
+
+        layout
+        linkTarget
         linkTo
+        lock
+        shortCodeTransforms
         sizeSlug
+        style
+        textColor
       }
+
       ... on CoreGalleryBlockDeprecatedV1Attributes {
         align
+        allowResize
         anchor
+        backgroundColor
         caption
         className
         columns
+        fixedHeight
+        gradient
         ids
         imageCrop
+
         images__typename_CoreGalleryBlockDeprecatedV1AttributesImages: images {
           alt
           caption
@@ -2883,17 +3547,30 @@ fragment BlockFragment on Block {
           link
           url
         }
+
+        layout
+        linkTarget
         linkTo
+        lock
+        shortCodeTransforms
         sizeSlug
+        style
+        textColor
       }
+
       ... on CoreGalleryBlockDeprecatedV2Attributes {
         align
+        allowResize
         anchor
+        backgroundColor
         caption
         className
         columns
+        fixedHeight
+        gradient
         ids
         imageCrop
+
         images__typename_CoreGalleryBlockDeprecatedV2AttributesImages: images {
           alt
           caption
@@ -2902,17 +3579,30 @@ fragment BlockFragment on Block {
           link
           url
         }
+
+        layout
+        linkTarget
         linkTo
+        lock
+        shortCodeTransforms
         sizeSlug
+        style
+        textColor
       }
+
       ... on CoreGalleryBlockDeprecatedV3Attributes {
         align
+        allowResize
         anchor
+        backgroundColor
         caption
         className
         columns
+        fixedHeight
+        gradient
         ids
         imageCrop
+
         images__typename_CoreGalleryBlockDeprecatedV3AttributesImages: images {
           alt
           caption
@@ -2921,17 +3611,30 @@ fragment BlockFragment on Block {
           link
           url
         }
+
+        layout
+        linkTarget
         linkTo
+        lock
+        shortCodeTransforms
         sizeSlug
+        style
+        textColor
       }
+
       ... on CoreGalleryBlockDeprecatedV4Attributes {
         align
+        allowResize
         anchor
+        backgroundColor
         caption
         className
         columns
+        fixedHeight
+        gradient
         ids
         imageCrop
+
         images__typename_CoreGalleryBlockDeprecatedV4AttributesImages: images {
           alt
           caption
@@ -2940,17 +3643,94 @@ fragment BlockFragment on Block {
           link
           url
         }
+
+        layout
+        linkTarget
         linkTo
+        lock
+        shortCodeTransforms
         sizeSlug
+        style
+        textColor
       }
+
       ... on CoreGalleryBlockDeprecatedV5Attributes {
         align
+        allowResize
         anchor
+        backgroundColor
         caption
         className
         columns
+        fixedHeight
+        gradient
         ids
         imageCrop
+
+        images__typename_CoreGalleryBlockDeprecatedV5AttributesImages: images {
+          alt
+          caption
+          fullUrl
+          id
+          link
+          url
+        }
+
+        layout
+        linkTarget
+        linkTo
+        lock
+        shortCodeTransforms
+        sizeSlug
+        style
+        textColor
+      }
+
+      ... on CoreGalleryBlockDeprecatedV6Attributes {
+        align
+        allowResize
+        anchor
+        backgroundColor
+        caption
+        className
+        columns
+        fixedHeight
+        gradient
+        ids
+        imageCrop
+
+        images__typename_CoreGalleryBlockDeprecatedV6AttributesImages: images {
+          alt
+          caption
+          fullUrl
+          id
+          link
+          url
+        }
+
+        layout
+        linkTarget
+        linkTo
+        lock
+        shortCodeTransforms
+        sizeSlug
+        style
+        textColor
+      }
+
+      ... on CoreGalleryBlockDeprecatedV7Attributes {
+        align
+        allowResize
+        anchor
+        backgroundColor
+        caption
+        className
+        columns
+        fixedHeight
+        gradient
+        ids
+        imageCrop
+
         images {
           alt
           caption
@@ -2959,77 +3739,188 @@ fragment BlockFragment on Block {
           link
           url
         }
+
+        layout
+        linkTarget
         linkTo
+        lock
+        shortCodeTransforms
         sizeSlug
+        style
+        textColor
       }
     }
   }
+
   ... on CoreListBlock {
-    attributes__typename_CoreListBlockAttributes: attributes {
-      anchor
-      backgroundColor
-      className
-      fontSize
-      gradient
-      ordered
-      placeholder
-      reversed
-      start
-      style
-      textColor
-      type
-      values
+    attributes__typename_CoreListBlockAttributesUnion: attributes {
+      __typename
+
+      ... on CoreListBlockAttributes {
+        anchor
+        backgroundColor
+        className
+        fontFamily
+        fontSize
+        gradient
+        lock
+        ordered
+        placeholder
+        reversed
+        start
+        style
+        textColor
+        type
+        values
+      }
+
+      ... on CoreListBlockDeprecatedV1Attributes {
+        anchor
+        backgroundColor
+        className
+        fontFamily
+        fontSize
+        gradient
+        lock
+        ordered
+        placeholder
+        reversed
+        start
+        style
+        textColor
+        type
+        values
+      }
+
+      ... on CoreListBlockDeprecatedV2Attributes {
+        anchor
+        backgroundColor
+        className
+        fontFamily
+        fontSize
+        gradient
+        lock
+        ordered
+        placeholder
+        reversed
+        start
+        style
+        textColor
+        type
+        values
+      }
     }
   }
+
+  ... on CoreListItemBlock {
+    attributes__typename_CoreListItemBlockAttributes: attributes {
+      className
+      content
+      lock
+      placeholder
+    }
+  }
+
   ... on CoreQuoteBlock {
     attributes__typename_CoreQuoteBlockAttributesUnion: attributes {
       __typename
+
       ... on CoreQuoteBlockAttributes {
         align
         anchor
+        backgroundColor
         citation
         className
+        fontFamily
+        fontSize
+        gradient
+        lock
+        style
+        textColor
         value
       }
+
       ... on CoreQuoteBlockDeprecatedV1Attributes {
         align
         anchor
+        backgroundColor
         citation
         className
+        fontFamily
+        fontSize
+        gradient
+        lock
+        style
+        textColor
         value
       }
+
       ... on CoreQuoteBlockDeprecatedV2Attributes {
         align
         anchor
+        backgroundColor
         citation
         className
+        fontFamily
+        fontSize
+        gradient
+        lock
+        style
+        textColor
         value
       }
+
       ... on CoreQuoteBlockDeprecatedV3Attributes {
         align
         anchor
+        backgroundColor
         citation
         className
+        fontFamily
+        fontSize
+        gradient
+        lock
+        style
+        textColor
+        value
+      }
+
+      ... on CoreQuoteBlockDeprecatedV4Attributes {
+        align
+        anchor
+        backgroundColor
+        citation
+        className
+        fontFamily
+        fontSize
+        gradient
+        lock
+        style
+        textColor
         value
       }
     }
   }
-  ... on CoreShortcodeBlock {
-    attributes__typename_CoreShortcodeBlockAttributes: attributes {
-      text
-    }
-  }
+
   ... on CoreArchivesBlock {
     attributes__typename_CoreArchivesBlockAttributes: attributes {
       align
       className
       displayAsDropdown
+      fontFamily
+      fontSize
+      lock
+      showLabel
       showPostCounts
+      style
+      type
     }
   }
+
   ... on CoreAudioBlock {
     attributes__typename_CoreAudioBlockAttributesUnion: attributes {
       __typename
+
       ... on CoreAudioBlockAttributes {
         align
         anchor
@@ -3037,10 +3928,13 @@ fragment BlockFragment on Block {
         caption
         className
         id
+        lock
         loop
         preload
         src
+        style
       }
+
       ... on CoreAudioBlockDeprecatedV1Attributes {
         align
         anchor
@@ -3048,23 +3942,29 @@ fragment BlockFragment on Block {
         caption
         className
         id
+        lock
         loop
         preload
         src
+        style
       }
     }
   }
+
   ... on CoreButtonBlock {
     attributes__typename_CoreButtonBlockAttributesUnion: attributes {
       __typename
+
       ... on CoreButtonBlockAttributes {
         align
         anchor
         backgroundColor
         className
+        fontFamily
         fontSize
         gradient
         linkTarget
+        lock
         placeholder
         rel
         style
@@ -3074,14 +3974,17 @@ fragment BlockFragment on Block {
         url
         width
       }
+
       ... on CoreButtonBlockDeprecatedV1Attributes {
         align
         anchor
         backgroundColor
         className
+        fontFamily
         fontSize
         gradient
         linkTarget
+        lock
         placeholder
         rel
         style
@@ -3091,14 +3994,17 @@ fragment BlockFragment on Block {
         url
         width
       }
+
       ... on CoreButtonBlockDeprecatedV2Attributes {
         align
         anchor
         backgroundColor
         className
+        fontFamily
         fontSize
         gradient
         linkTarget
+        lock
         placeholder
         rel
         style
@@ -3108,14 +4014,17 @@ fragment BlockFragment on Block {
         url
         width
       }
+
       ... on CoreButtonBlockDeprecatedV3Attributes {
         align
         anchor
         backgroundColor
         className
+        fontFamily
         fontSize
         gradient
         linkTarget
+        lock
         placeholder
         rel
         style
@@ -3125,14 +4034,17 @@ fragment BlockFragment on Block {
         url
         width
       }
+
       ... on CoreButtonBlockDeprecatedV4Attributes {
         align
         anchor
         backgroundColor
         className
+        fontFamily
         fontSize
         gradient
         linkTarget
+        lock
         placeholder
         rel
         style
@@ -3142,14 +4054,17 @@ fragment BlockFragment on Block {
         url
         width
       }
+
       ... on CoreButtonBlockDeprecatedV5Attributes {
         align
         anchor
         backgroundColor
         className
+        fontFamily
         fontSize
         gradient
         linkTarget
+        lock
         placeholder
         rel
         style
@@ -3159,14 +4074,17 @@ fragment BlockFragment on Block {
         url
         width
       }
+
       ... on CoreButtonBlockDeprecatedV6Attributes {
         align
         anchor
         backgroundColor
         className
+        fontFamily
         fontSize
         gradient
         linkTarget
+        lock
         placeholder
         rel
         style
@@ -3176,14 +4094,17 @@ fragment BlockFragment on Block {
         url
         width
       }
+
       ... on CoreButtonBlockDeprecatedV7Attributes {
         align
         anchor
         backgroundColor
         className
+        fontFamily
         fontSize
         gradient
         linkTarget
+        lock
         placeholder
         rel
         style
@@ -3193,14 +4114,77 @@ fragment BlockFragment on Block {
         url
         width
       }
+
       ... on CoreButtonBlockDeprecatedV8Attributes {
         align
         anchor
         backgroundColor
         className
+        fontFamily
         fontSize
         gradient
         linkTarget
+        lock
+        placeholder
+        rel
+        style
+        text
+        textColor
+        title
+        url
+        width
+      }
+
+      ... on CoreButtonBlockDeprecatedV9Attributes {
+        align
+        anchor
+        backgroundColor
+        className
+        fontFamily
+        fontSize
+        gradient
+        linkTarget
+        lock
+        placeholder
+        rel
+        style
+        text
+        textColor
+        title
+        url
+        width
+      }
+
+      ... on CoreButtonBlockDeprecatedV10Attributes {
+        align
+        anchor
+        backgroundColor
+        className
+        fontFamily
+        fontSize
+        gradient
+        linkTarget
+        lock
+        placeholder
+        rel
+        style
+        text
+        textColor
+        title
+        url
+        width
+      }
+
+      ... on CoreButtonBlockDeprecatedV11Attributes {
+        align
+        anchor
+        backgroundColor
+        className
+        fontFamily
+        fontSize
+        gradient
+        linkTarget
+        lock
         placeholder
         rel
         style
@@ -3212,126 +4196,220 @@ fragment BlockFragment on Block {
       }
     }
   }
+
   ... on CoreButtonsBlock {
     attributes__typename_CoreButtonsBlockAttributesUnion: attributes {
       __typename
+
       ... on CoreButtonsBlockAttributes {
         align
         anchor
         className
-        contentJustification
-        orientation
+        fontFamily
+        fontSize
+        layout
+        lock
+        style
       }
+
       ... on CoreButtonsBlockDeprecatedV1Attributes {
         align
         anchor
         className
-        contentJustification
-        orientation
+        fontFamily
+        fontSize
+        layout
+        lock
+        style
+      }
+
+      ... on CoreButtonsBlockDeprecatedV2Attributes {
+        align
+        anchor
+        className
+        fontFamily
+        fontSize
+        layout
+        lock
+        style
       }
     }
   }
+
   ... on CoreCalendarBlock {
     attributes__typename_CoreCalendarBlockAttributes: attributes {
       align
       className
+      fontFamily
+      fontSize
+      lock
       month
+      style
       year
     }
   }
+
   ... on CoreCategoriesBlock {
     attributes__typename_CoreCategoriesBlockAttributes: attributes {
       align
       className
       displayAsDropdown
-      showHierarchy
-      showPostCounts
-    }
-  }
-  ... on CoreCodeBlock {
-    attributes__typename_CoreCodeBlockAttributes: attributes {
-      anchor
-      className
-      content
+      fontFamily
       fontSize
+      lock
+      showEmpty
+      showHierarchy
+      showOnlyTopLevel
+      showPostCounts
       style
     }
   }
+
+  ... on CoreFreeformBlock {
+    attributes__typename_CoreFreeformBlockAttributes: attributes {
+      content
+      lock
+    }
+  }
+
+  ... on CoreCodeBlock {
+    attributes__typename_CoreCodeBlockAttributes: attributes {
+      anchor
+      backgroundColor
+      borderColor
+      className
+      content
+      fontFamily
+      fontSize
+      gradient
+      lock
+      style
+      textColor
+    }
+  }
+
+  ... on CoreColumnBlock {
+    attributes__typename_CoreColumnBlockAttributesUnion: attributes {
+      __typename
+
+      ... on CoreColumnBlockAttributes {
+        allowedBlocks
+        anchor
+        backgroundColor
+        borderColor
+        className
+        fontFamily
+        fontSize
+        gradient
+        layout
+        lock
+        style
+        textColor
+        verticalAlignment
+        width
+      }
+
+      ... on CoreColumnBlockDeprecatedV1Attributes {
+        allowedBlocks
+        anchor
+        backgroundColor
+        borderColor
+        className
+        fontFamily
+        fontSize
+        gradient
+        layout
+        lock
+        style
+        textColor
+        verticalAlignment
+        width
+      }
+    }
+  }
+
   ... on CoreColumnsBlock {
     attributes__typename_CoreColumnsBlockAttributesUnion: attributes {
       __typename
+
       ... on CoreColumnsBlockAttributes {
         align
         anchor
         backgroundColor
+        borderColor
         className
+        fontFamily
+        fontSize
         gradient
+        isStackedOnMobile
+        layout
+        lock
         style
         textColor
         verticalAlignment
       }
+
       ... on CoreColumnsBlockDeprecatedV1Attributes {
         align
         anchor
         backgroundColor
+        borderColor
         className
+        fontFamily
+        fontSize
         gradient
+        isStackedOnMobile
+        layout
+        lock
         style
         textColor
         verticalAlignment
       }
+
       ... on CoreColumnsBlockDeprecatedV2Attributes {
         align
         anchor
         backgroundColor
+        borderColor
         className
+        fontFamily
+        fontSize
         gradient
+        isStackedOnMobile
+        layout
+        lock
         style
         textColor
         verticalAlignment
       }
+
       ... on CoreColumnsBlockDeprecatedV3Attributes {
         align
         anchor
         backgroundColor
+        borderColor
         className
+        fontFamily
+        fontSize
         gradient
+        isStackedOnMobile
+        layout
+        lock
         style
         textColor
         verticalAlignment
       }
     }
   }
-  ... on CoreColumnBlock {
-    attributes__typename_CoreColumnBlockAttributesUnion: attributes {
-      __typename
-      ... on CoreColumnBlockAttributes {
-        anchor
-        backgroundColor
-        className
-        gradient
-        style
-        textColor
-        verticalAlignment
-        width
-      }
-      ... on CoreColumnBlockDeprecatedV1Attributes {
-        anchor
-        backgroundColor
-        className
-        gradient
-        style
-        textColor
-        verticalAlignment
-        width
-      }
-    }
-  }
+
   ... on CoreCoverBlock {
     attributes__typename_CoreCoverBlockAttributesUnion: attributes {
       __typename
+
       ... on CoreCoverBlockAttributes {
         align
+        allowedBlocks
+        alt
         anchor
         backgroundType
         className
@@ -3340,18 +4418,26 @@ fragment BlockFragment on Block {
         customOverlayColor
         dimRatio
         focalPoint
+        fontFamily
+        fontSize
         gradient
         hasParallax
         id
+        isDark
         isRepeated
+        lock
         minHeight
         minHeightUnit
         overlayColor
         style
         url
+        useFeaturedImage
       }
+
       ... on CoreCoverBlockDeprecatedV1Attributes {
         align
+        allowedBlocks
+        alt
         anchor
         backgroundType
         className
@@ -3360,18 +4446,26 @@ fragment BlockFragment on Block {
         customOverlayColor
         dimRatio
         focalPoint
+        fontFamily
+        fontSize
         gradient
         hasParallax
         id
+        isDark
         isRepeated
+        lock
         minHeight
         minHeightUnit
         overlayColor
         style
         url
+        useFeaturedImage
       }
+
       ... on CoreCoverBlockDeprecatedV2Attributes {
         align
+        allowedBlocks
+        alt
         anchor
         backgroundType
         className
@@ -3380,18 +4474,26 @@ fragment BlockFragment on Block {
         customOverlayColor
         dimRatio
         focalPoint
+        fontFamily
+        fontSize
         gradient
         hasParallax
         id
+        isDark
         isRepeated
+        lock
         minHeight
         minHeightUnit
         overlayColor
         style
         url
+        useFeaturedImage
       }
+
       ... on CoreCoverBlockDeprecatedV3Attributes {
         align
+        allowedBlocks
+        alt
         anchor
         backgroundType
         className
@@ -3400,18 +4502,26 @@ fragment BlockFragment on Block {
         customOverlayColor
         dimRatio
         focalPoint
+        fontFamily
+        fontSize
         gradient
         hasParallax
         id
+        isDark
         isRepeated
+        lock
         minHeight
         minHeightUnit
         overlayColor
         style
         url
+        useFeaturedImage
       }
+
       ... on CoreCoverBlockDeprecatedV4Attributes {
         align
+        allowedBlocks
+        alt
         anchor
         backgroundType
         className
@@ -3420,18 +4530,26 @@ fragment BlockFragment on Block {
         customOverlayColor
         dimRatio
         focalPoint
+        fontFamily
+        fontSize
         gradient
         hasParallax
         id
+        isDark
         isRepeated
+        lock
         minHeight
         minHeightUnit
         overlayColor
         style
         url
+        useFeaturedImage
       }
+
       ... on CoreCoverBlockDeprecatedV5Attributes {
         align
+        allowedBlocks
+        alt
         anchor
         backgroundType
         className
@@ -3440,18 +4558,26 @@ fragment BlockFragment on Block {
         customOverlayColor
         dimRatio
         focalPoint
+        fontFamily
+        fontSize
         gradient
         hasParallax
         id
+        isDark
         isRepeated
+        lock
         minHeight
         minHeightUnit
         overlayColor
         style
         url
+        useFeaturedImage
       }
+
       ... on CoreCoverBlockDeprecatedV6Attributes {
         align
+        allowedBlocks
+        alt
         anchor
         backgroundType
         className
@@ -3460,37 +4586,172 @@ fragment BlockFragment on Block {
         customOverlayColor
         dimRatio
         focalPoint
+        fontFamily
+        fontSize
         gradient
         hasParallax
         id
+        isDark
         isRepeated
+        lock
         minHeight
         minHeightUnit
         overlayColor
         style
         url
+        useFeaturedImage
+      }
+
+      ... on CoreCoverBlockDeprecatedV7Attributes {
+        align
+        allowedBlocks
+        alt
+        anchor
+        backgroundType
+        className
+        contentPosition
+        customGradient
+        customOverlayColor
+        dimRatio
+        focalPoint
+        fontFamily
+        fontSize
+        gradient
+        hasParallax
+        id
+        isDark
+        isRepeated
+        lock
+        minHeight
+        minHeightUnit
+        overlayColor
+        style
+        url
+        useFeaturedImage
+      }
+
+      ... on CoreCoverBlockDeprecatedV8Attributes {
+        align
+        allowedBlocks
+        alt
+        anchor
+        backgroundType
+        className
+        contentPosition
+        customGradient
+        customOverlayColor
+        dimRatio
+        focalPoint
+        fontFamily
+        fontSize
+        gradient
+        hasParallax
+        id
+        isDark
+        isRepeated
+        lock
+        minHeight
+        minHeightUnit
+        overlayColor
+        style
+        url
+        useFeaturedImage
+      }
+
+      ... on CoreCoverBlockDeprecatedV9Attributes {
+        align
+        allowedBlocks
+        alt
+        anchor
+        backgroundType
+        className
+        contentPosition
+        customGradient
+        customOverlayColor
+        dimRatio
+        focalPoint
+        fontFamily
+        fontSize
+        gradient
+        hasParallax
+        id
+        isDark
+        isRepeated
+        lock
+        minHeight
+        minHeightUnit
+        overlayColor
+        style
+        url
+        useFeaturedImage
+      }
+
+      ... on CoreCoverBlockDeprecatedV10Attributes {
+        align
+        allowedBlocks
+        alt
+        anchor
+        backgroundType
+        className
+        contentPosition
+        customGradient
+        customOverlayColor
+        dimRatio
+        focalPoint
+        fontFamily
+        fontSize
+        gradient
+        hasParallax
+        id
+        isDark
+        isRepeated
+        lock
+        minHeight
+        minHeightUnit
+        overlayColor
+        style
+        url
+        useFeaturedImage
       }
     }
   }
+
   ... on CoreEmbedBlock {
     attributes__typename_CoreEmbedBlockAttributesUnion: attributes {
       __typename
+
       ... on CoreEmbedBlockAttributes {
         align
         allowResponsive
         caption
         className
+        lock
         previewable
         providerNameSlug
         responsive
         type
         url
       }
+
       ... on CoreEmbedBlockDeprecatedV1Attributes {
         align
         allowResponsive
         caption
         className
+        lock
+        previewable
+        providerNameSlug
+        responsive
+        type
+        url
+      }
+
+      ... on CoreEmbedBlockDeprecatedV2Attributes {
+        align
+        allowResponsive
+        caption
+        className
+        lock
         previewable
         providerNameSlug
         responsive
@@ -3499,206 +4760,202 @@ fragment BlockFragment on Block {
       }
     }
   }
+
   ... on CoreFileBlock {
-    attributes__typename_CoreFileBlockAttributes: attributes {
-      align
-      anchor
-      className
-      displayPreview
-      downloadButtonText
-      fileName
-      href
-      id
-      previewHeight
-      showDownloadButton
-      textLinkHref
-      textLinkTarget
+    attributes__typename_CoreFileBlockAttributesUnion: attributes {
+      __typename
+
+      ... on CoreFileBlockAttributes {
+        align
+        anchor
+        className
+        displayPreview
+        downloadButtonText
+        fileId
+        fileName
+        href
+        id
+        lock
+        previewHeight
+        showDownloadButton
+        textLinkHref
+        textLinkTarget
+      }
+
+      ... on CoreFileBlockDeprecatedV1Attributes {
+        align
+        anchor
+        className
+        displayPreview
+        downloadButtonText
+        fileId
+        fileName
+        href
+        id
+        lock
+        previewHeight
+        showDownloadButton
+        textLinkHref
+        textLinkTarget
+      }
+
+      ... on CoreFileBlockDeprecatedV2Attributes {
+        align
+        anchor
+        className
+        displayPreview
+        downloadButtonText
+        fileId
+        fileName
+        href
+        id
+        lock
+        previewHeight
+        showDownloadButton
+        textLinkHref
+        textLinkTarget
+      }
+
+      ... on CoreFileBlockDeprecatedV3Attributes {
+        align
+        anchor
+        className
+        displayPreview
+        downloadButtonText
+        fileId
+        fileName
+        href
+        id
+        lock
+        previewHeight
+        showDownloadButton
+        textLinkHref
+        textLinkTarget
+      }
     }
   }
+
   ... on CoreGroupBlock {
     attributes__typename_CoreGroupBlockAttributesUnion: attributes {
       __typename
+
       ... on CoreGroupBlockAttributes {
         align
         anchor
+        ariaLabel
         backgroundColor
         borderColor
         className
+        fontFamily
+        fontSize
         gradient
         layout
+        lock
+        settings
         style
         tagName
         textColor
       }
+
       ... on CoreGroupBlockDeprecatedV1Attributes {
         align
         anchor
+        ariaLabel
         backgroundColor
         borderColor
         className
+        fontFamily
+        fontSize
         gradient
         layout
+        lock
+        settings
         style
         tagName
         textColor
       }
+
       ... on CoreGroupBlockDeprecatedV2Attributes {
         align
         anchor
+        ariaLabel
         backgroundColor
         borderColor
         className
+        fontFamily
+        fontSize
         gradient
         layout
+        lock
+        settings
         style
         tagName
         textColor
       }
+
       ... on CoreGroupBlockDeprecatedV3Attributes {
         align
         anchor
+        ariaLabel
         backgroundColor
         borderColor
         className
+        fontFamily
+        fontSize
         gradient
         layout
+        lock
+        settings
         style
         tagName
         textColor
       }
+
       ... on CoreGroupBlockDeprecatedV4Attributes {
         align
         anchor
+        ariaLabel
         backgroundColor
         borderColor
         className
+        fontFamily
+        fontSize
         gradient
         layout
+        lock
+        settings
+        style
+        tagName
+        textColor
+      }
+
+      ... on CoreGroupBlockDeprecatedV5Attributes {
+        align
+        anchor
+        ariaLabel
+        backgroundColor
+        borderColor
+        className
+        fontFamily
+        fontSize
+        gradient
+        layout
+        lock
+        settings
         style
         tagName
         textColor
       }
     }
   }
-  ... on CoreFreeformBlock {
-    attributes__typename_CoreFreeformBlockAttributes: attributes {
-      content
-    }
-  }
+
   ... on CoreHtmlBlock {
     attributes__typename_CoreHtmlBlockAttributes: attributes {
       content
+      lock
     }
   }
-  ... on CoreMediaTextBlock {
-    attributes__typename_CoreMediaTextBlockAttributesUnion: attributes {
-      __typename
-      ... on CoreMediaTextBlockAttributes {
-        align
-        anchor
-        backgroundColor
-        className
-        focalPoint
-        gradient
-        href
-        imageFill
-        isStackedOnMobile
-        linkClass
-        linkDestination
-        linkTarget
-        mediaAlt
-        mediaId
-        mediaLink
-        mediaPosition
-        mediaSizeSlug
-        mediaType
-        mediaUrl
-        mediaWidth
-        rel
-        style
-        textColor
-        verticalAlignment
-      }
-      ... on CoreMediaTextBlockDeprecatedV1Attributes {
-        align
-        anchor
-        backgroundColor
-        className
-        focalPoint
-        gradient
-        href
-        imageFill
-        isStackedOnMobile
-        linkClass
-        linkDestination
-        linkTarget
-        mediaAlt
-        mediaId
-        mediaLink
-        mediaPosition
-        mediaSizeSlug
-        mediaType
-        mediaUrl
-        mediaWidth
-        rel
-        style
-        textColor
-        verticalAlignment
-      }
-      ... on CoreMediaTextBlockDeprecatedV2Attributes {
-        align
-        anchor
-        backgroundColor
-        className
-        focalPoint
-        gradient
-        href
-        imageFill
-        isStackedOnMobile
-        linkClass
-        linkDestination
-        linkTarget
-        mediaAlt
-        mediaId
-        mediaLink
-        mediaPosition
-        mediaSizeSlug
-        mediaType
-        mediaUrl
-        mediaWidth
-        rel
-        style
-        textColor
-        verticalAlignment
-      }
-      ... on CoreMediaTextBlockDeprecatedV3Attributes {
-        align
-        anchor
-        backgroundColor
-        className
-        focalPoint
-        gradient
-        href
-        imageFill
-        isStackedOnMobile
-        linkClass
-        linkDestination
-        linkTarget
-        mediaAlt
-        mediaId
-        mediaLink
-        mediaPosition
-        mediaSizeSlug
-        mediaType
-        mediaUrl
-        mediaWidth
-        rel
-        style
-        textColor
-        verticalAlignment
-      }
-    }
-  }
+
   ... on CoreLatestCommentsBlock {
     attributes__typename_CoreLatestCommentsBlockAttributes: attributes {
       align
@@ -3707,11 +4964,14 @@ fragment BlockFragment on Block {
       displayAvatar
       displayDate
       displayExcerpt
+      lock
     }
   }
+
   ... on CoreLatestPostsBlock {
     attributes__typename_CoreLatestPostsBlockAttributesUnion: attributes {
       __typename
+
       ... on CoreLatestPostsBlockAttributes {
         addLinkToFeaturedImage
         align
@@ -3728,12 +4988,17 @@ fragment BlockFragment on Block {
         featuredImageSizeHeight
         featuredImageSizeSlug
         featuredImageSizeWidth
+        fontFamily
+        fontSize
+        lock
         order
         orderBy
         postLayout
         postsToShow
         selectedAuthor
+        style
       }
+
       ... on CoreLatestPostsBlockDeprecatedV1Attributes {
         addLinkToFeaturedImage
         align
@@ -3750,104 +5015,492 @@ fragment BlockFragment on Block {
         featuredImageSizeHeight
         featuredImageSizeSlug
         featuredImageSizeWidth
+        fontFamily
+        fontSize
+        lock
         order
         orderBy
         postLayout
         postsToShow
         selectedAuthor
+        style
       }
     }
   }
+
+  ... on CoreMediaTextBlock {
+    attributes__typename_CoreMediaTextBlockAttributesUnion: attributes {
+      __typename
+
+      ... on CoreMediaTextBlockAttributes {
+        align
+        anchor
+        backgroundColor
+        className
+        focalPoint
+        fontFamily
+        fontSize
+        gradient
+        href
+        imageFill
+        isStackedOnMobile
+        linkClass
+        linkDestination
+        linkTarget
+        lock
+        mediaAlt
+        mediaId
+        mediaLink
+        mediaPosition
+        mediaSizeSlug
+        mediaType
+        mediaUrl
+        mediaWidth
+        rel
+        style
+        textColor
+        verticalAlignment
+      }
+
+      ... on CoreMediaTextBlockDeprecatedV1Attributes {
+        align
+        anchor
+        backgroundColor
+        className
+        focalPoint
+        fontFamily
+        fontSize
+        gradient
+        href
+        imageFill
+        isStackedOnMobile
+        linkClass
+        linkDestination
+        linkTarget
+        lock
+        mediaAlt
+        mediaId
+        mediaLink
+        mediaPosition
+        mediaSizeSlug
+        mediaType
+        mediaUrl
+        mediaWidth
+        rel
+        style
+        textColor
+        verticalAlignment
+      }
+
+      ... on CoreMediaTextBlockDeprecatedV2Attributes {
+        align
+        anchor
+        backgroundColor
+        className
+        focalPoint
+        fontFamily
+        fontSize
+        gradient
+        href
+        imageFill
+        isStackedOnMobile
+        linkClass
+        linkDestination
+        linkTarget
+        lock
+        mediaAlt
+        mediaId
+        mediaLink
+        mediaPosition
+        mediaSizeSlug
+        mediaType
+        mediaUrl
+        mediaWidth
+        rel
+        style
+        textColor
+        verticalAlignment
+      }
+
+      ... on CoreMediaTextBlockDeprecatedV3Attributes {
+        align
+        anchor
+        backgroundColor
+        className
+        focalPoint
+        fontFamily
+        fontSize
+        gradient
+        href
+        imageFill
+        isStackedOnMobile
+        linkClass
+        linkDestination
+        linkTarget
+        lock
+        mediaAlt
+        mediaId
+        mediaLink
+        mediaPosition
+        mediaSizeSlug
+        mediaType
+        mediaUrl
+        mediaWidth
+        rel
+        style
+        textColor
+        verticalAlignment
+      }
+
+      ... on CoreMediaTextBlockDeprecatedV4Attributes {
+        align
+        anchor
+        backgroundColor
+        className
+        focalPoint
+        fontFamily
+        fontSize
+        gradient
+        href
+        imageFill
+        isStackedOnMobile
+        linkClass
+        linkDestination
+        linkTarget
+        lock
+        mediaAlt
+        mediaId
+        mediaLink
+        mediaPosition
+        mediaSizeSlug
+        mediaType
+        mediaUrl
+        mediaWidth
+        rel
+        style
+        textColor
+        verticalAlignment
+      }
+
+      ... on CoreMediaTextBlockDeprecatedV5Attributes {
+        align
+        anchor
+        backgroundColor
+        className
+        focalPoint
+        fontFamily
+        fontSize
+        gradient
+        href
+        imageFill
+        isStackedOnMobile
+        linkClass
+        linkDestination
+        linkTarget
+        lock
+        mediaAlt
+        mediaId
+        mediaLink
+        mediaPosition
+        mediaSizeSlug
+        mediaType
+        mediaUrl
+        mediaWidth
+        rel
+        style
+        textColor
+        verticalAlignment
+      }
+    }
+  }
+
   ... on CoreMissingBlock {
     attributes__typename_CoreMissingBlockAttributes: attributes {
+      lock
       originalContent
       originalName
       originalUndelimitedContent
     }
   }
+
   ... on CoreMoreBlock {
     attributes__typename_CoreMoreBlockAttributes: attributes {
       customText
+      lock
       noTeaser
     }
   }
+
+  ... on CoreNextpageBlock {
+    attributes__typename_CoreNextpageBlockAttributes: attributes {
+      lock
+    }
+  }
+
   ... on CorePageListBlock {
     attributes__typename_CorePageListBlockAttributes: attributes {
       className
+      lock
     }
   }
+
+  ... on CorePatternBlock {
+    attributes__typename_CorePatternBlockAttributes: attributes {
+      className
+      lock
+      slug
+    }
+  }
+
   ... on CorePreformattedBlock {
     attributes__typename_CorePreformattedBlockAttributes: attributes {
       anchor
       backgroundColor
       className
       content
+      fontFamily
       fontSize
       gradient
+      lock
       style
       textColor
     }
   }
+
   ... on CorePullquoteBlock {
     attributes__typename_CorePullquoteBlockAttributesUnion: attributes {
       __typename
+
       ... on CorePullquoteBlockAttributes {
         align
         anchor
+        backgroundColor
+        borderColor
         citation
         className
-        customMainColor
-        customTextColor
-        mainColor
+        fontFamily
+        fontSize
+        gradient
+        lock
+        style
+        textAlign
         textColor
         value
       }
+
       ... on CorePullquoteBlockDeprecatedV1Attributes {
         align
         anchor
+        backgroundColor
+        borderColor
         citation
         className
-        customMainColor
-        customTextColor
-        mainColor
+        fontFamily
+        fontSize
+        gradient
+        lock
+        style
+        textAlign
         textColor
         value
       }
+
       ... on CorePullquoteBlockDeprecatedV2Attributes {
         align
         anchor
+        backgroundColor
+        borderColor
         citation
         className
-        customMainColor
-        customTextColor
-        mainColor
+        fontFamily
+        fontSize
+        gradient
+        lock
+        style
+        textAlign
         textColor
         value
       }
+
       ... on CorePullquoteBlockDeprecatedV3Attributes {
         align
         anchor
+        backgroundColor
+        borderColor
         citation
         className
-        customMainColor
-        customTextColor
-        mainColor
+        fontFamily
+        fontSize
+        gradient
+        lock
+        style
+        textAlign
         textColor
         value
       }
+
       ... on CorePullquoteBlockDeprecatedV4Attributes {
         align
         anchor
+        backgroundColor
+        borderColor
         citation
         className
-        customMainColor
-        customTextColor
-        mainColor
+        fontFamily
+        fontSize
+        gradient
+        lock
+        style
+        textAlign
+        textColor
+        value
+      }
+
+      ... on CorePullquoteBlockDeprecatedV5Attributes {
+        align
+        anchor
+        backgroundColor
+        borderColor
+        citation
+        className
+        fontFamily
+        fontSize
+        gradient
+        lock
+        style
+        textAlign
+        textColor
+        value
+      }
+
+      ... on CorePullquoteBlockDeprecatedV6Attributes {
+        align
+        anchor
+        backgroundColor
+        borderColor
+        citation
+        className
+        fontFamily
+        fontSize
+        gradient
+        lock
+        style
+        textAlign
         textColor
         value
       }
     }
   }
+
+  ... on CoreBlock {
+    attributes__typename_CoreBlockAttributes: attributes {
+      lock
+      ref
+    }
+
+    reusableBlock {
+      id
+
+      __typename
+
+      ... on ContentType {
+        id
+      }
+
+      ... on Taxonomy {
+        id
+      }
+
+      ... on User {
+        id
+      }
+
+      ... on BlockEditorPreview {
+        id
+      }
+
+      ... on MediaItem {
+        id
+      }
+
+      ... on Comment {
+        id
+      }
+
+      ... on Page {
+        id
+      }
+
+      ... on Post {
+        id
+      }
+
+      ... on Category {
+        id
+      }
+
+      ... on Offer {
+        id
+      }
+
+      ... on Tag {
+        id
+      }
+
+      ... on PostFormat {
+        id
+      }
+
+      ... on ReusableBlock {
+        id
+      }
+
+      ... on Vehicles {
+        id
+      }
+
+      ... on Brands {
+        id
+      }
+
+      ... on Types {
+        id
+      }
+
+      ... on UserRole {
+        id
+      }
+
+      ... on Menu {
+        id
+      }
+
+      ... on MenuItem {
+        id
+      }
+
+      ... on CommentAuthor {
+        avatar {
+          default
+          extraAttr
+          forceDefault
+          foundAvatar
+          height
+          rating
+          scheme
+          size
+          url
+          width
+        }
+
+        databaseId
+        email
+        name
+        url
+      }
+    }
+  }
+
   ... on CoreRssBlock {
     attributes__typename_CoreRssBlockAttributes: attributes {
       align
@@ -3860,158 +5513,162 @@ fragment BlockFragment on Block {
       excerptLength
       feedURL
       itemsToShow
+      lock
     }
   }
+
   ... on CoreSearchBlock {
     attributes__typename_CoreSearchBlockAttributes: attributes {
       align
+      backgroundColor
+      borderColor
       buttonPosition
       buttonText
       buttonUseIcon
       className
+      fontFamily
+      fontSize
+      gradient
       label
+      lock
       placeholder
+      query
       showLabel
       style
+      textColor
       width
       widthUnit
     }
   }
+
   ... on CoreSeparatorBlock {
-    attributes__typename_CoreSeparatorBlockAttributes: attributes {
-      align
-      anchor
-      className
-      color
-      customColor
-    }
-  }
-  ... on CoreBlock {
-    attributes__typename_CoreBlockAttributes: attributes {
-      ref
-    }
-    reusableBlock {
-      id
+    attributes__typename_CoreSeparatorBlockAttributesUnion: attributes {
       __typename
-      ... on ContentType {
-        id
-      }
-      ... on Taxonomy {
-        id
-      }
-      ... on User {
-        id
-      }
-      ... on BlockEditorPreview {
-        id
-      }
-      ... on MediaItem {
-        id
-      }
-      ... on Comment {
-        id
-      }
-      ... on Page {
-        id
-      }
-      ... on Post {
-        id
-      }
-      ... on Category {
-        id
-      }
-      ... on Offer {
-        id
-      }
-      ... on Tag {
-        id
-      }
-      ... on PostFormat {
-        id
-      }
-      ... on ReusableBlock {
-        id
-      }
-      ... on Vehicles {
-        id
-      }
-      ... on Brands {
-        id
-      }
-      ... on Types {
-        id
-      }
-      ... on UserRole {
-        id
-      }
-      ... on Menu {
-        id
-      }
-      ... on MenuItem {
-        id
-      }
-      ... on CommentAuthor {
-        databaseId
-        email
-        name
-        url
-      }
-    }
-  }
-  ... on CoreSocialLinksBlock {
-    attributes__typename_CoreSocialLinksBlockAttributesUnion: attributes {
-      __typename
-      ... on CoreSocialLinksBlockAttributes {
+
+      ... on CoreSeparatorBlockAttributes {
         align
         anchor
+        backgroundColor
         className
-        customIconBackgroundColor
-        customIconColor
-        iconBackgroundColor
-        iconBackgroundColorValue
-        iconColor
-        iconColorValue
-        openInNewTab
-        size
+        gradient
+        lock
+        opacity
+        style
+        textColor
       }
-      ... on CoreSocialLinksBlockDeprecatedV1Attributes {
+
+      ... on CoreSeparatorBlockDeprecatedV1Attributes {
         align
         anchor
+        backgroundColor
         className
-        customIconBackgroundColor
-        customIconColor
-        iconBackgroundColor
-        iconBackgroundColorValue
-        iconColor
-        iconColorValue
-        openInNewTab
-        size
+        gradient
+        lock
+        opacity
+        style
+        textColor
       }
     }
   }
+
+  ... on CoreShortcodeBlock {
+    attributes__typename_CoreShortcodeBlockAttributes: attributes {
+      lock
+      text
+    }
+  }
+
   ... on CoreSocialLinkBlock {
     attributes__typename_CoreSocialLinkBlockAttributes: attributes {
       className
       label
+      lock
       service
       url
     }
   }
-  ... on CoreSpacerBlock {
-    attributes__typename_CoreSpacerBlockAttributes: attributes {
-      anchor
-      className
-      height
-      width
+
+  ... on CoreSocialLinksBlock {
+    attributes__typename_CoreSocialLinksBlockAttributesUnion: attributes {
+      __typename
+
+      ... on CoreSocialLinksBlockAttributes {
+        align
+        anchor
+        backgroundColor
+        className
+        customIconBackgroundColor
+        customIconColor
+        gradient
+        iconBackgroundColor
+        iconBackgroundColorValue
+        iconColor
+        iconColorValue
+        layout
+        lock
+        openInNewTab
+        showLabels
+        size
+        style
+        textColor
+      }
+
+      ... on CoreSocialLinksBlockDeprecatedV1Attributes {
+        align
+        anchor
+        backgroundColor
+        className
+        customIconBackgroundColor
+        customIconColor
+        gradient
+        iconBackgroundColor
+        iconBackgroundColorValue
+        iconColor
+        iconColorValue
+        layout
+        lock
+        openInNewTab
+        showLabels
+        size
+        style
+        textColor
+      }
     }
   }
+
+  ... on CoreSpacerBlock {
+    attributes__typename_CoreSpacerBlockAttributesUnion: attributes {
+      __typename
+
+      ... on CoreSpacerBlockAttributes {
+        anchor
+        className
+        height
+        lock
+        style
+        width
+      }
+
+      ... on CoreSpacerBlockDeprecatedV1Attributes {
+        anchor
+        className
+        height
+        lock
+        style
+        width
+      }
+    }
+  }
+
   ... on CoreTableBlock {
     attributes__typename_CoreTableBlockAttributesUnion: attributes {
       __typename
+
       ... on CoreTableBlockAttributes {
         align
         anchor
         backgroundColor
+
         body__typename_CoreTableBlockAttributesBody: body {
           cells {
             align
@@ -4020,9 +5677,13 @@ fragment BlockFragment on Block {
             tag
           }
         }
+
         borderColor
         caption
         className
+        fontFamily
+        fontSize
+
         foot__typename_CoreTableBlockAttributesFoot: foot {
           cells {
             align
@@ -4031,8 +5692,10 @@ fragment BlockFragment on Block {
             tag
           }
         }
+
         gradient
         hasFixedLayout
+
         head__typename_CoreTableBlockAttributesHead: head {
           cells {
             align
@@ -4041,13 +5704,17 @@ fragment BlockFragment on Block {
             tag
           }
         }
+
+        lock
         style
         textColor
       }
+
       ... on CoreTableBlockDeprecatedV1Attributes {
         align
         anchor
         backgroundColor
+
         body__typename_CoreTableBlockDeprecatedV1AttributesBody: body {
           cells {
             align
@@ -4056,9 +5723,13 @@ fragment BlockFragment on Block {
             tag
           }
         }
+
         borderColor
         caption
         className
+        fontFamily
+        fontSize
+
         foot__typename_CoreTableBlockDeprecatedV1AttributesFoot: foot {
           cells {
             align
@@ -4067,8 +5738,10 @@ fragment BlockFragment on Block {
             tag
           }
         }
+
         gradient
         hasFixedLayout
+
         head__typename_CoreTableBlockDeprecatedV1AttributesHead: head {
           cells {
             align
@@ -4077,13 +5750,63 @@ fragment BlockFragment on Block {
             tag
           }
         }
+
+        lock
         style
         textColor
       }
+
       ... on CoreTableBlockDeprecatedV2Attributes {
         align
         anchor
         backgroundColor
+
+        body__typename_CoreTableBlockDeprecatedV2AttributesBody: body {
+          cells {
+            align
+            content
+            scope
+            tag
+          }
+        }
+
+        borderColor
+        caption
+        className
+        fontFamily
+        fontSize
+
+        foot__typename_CoreTableBlockDeprecatedV2AttributesFoot: foot {
+          cells {
+            align
+            content
+            scope
+            tag
+          }
+        }
+
+        gradient
+        hasFixedLayout
+
+        head__typename_CoreTableBlockDeprecatedV2AttributesHead: head {
+          cells {
+            align
+            content
+            scope
+            tag
+          }
+        }
+
+        lock
+        style
+        textColor
+      }
+
+      ... on CoreTableBlockDeprecatedV3Attributes {
+        align
+        anchor
+        backgroundColor
+
         body {
           cells {
             align
@@ -4092,9 +5815,13 @@ fragment BlockFragment on Block {
             tag
           }
         }
+
         borderColor
         caption
         className
+        fontFamily
+        fontSize
+
         foot {
           cells {
             align
@@ -4103,8 +5830,10 @@ fragment BlockFragment on Block {
             tag
           }
         }
+
         gradient
         hasFixedLayout
+
         head {
           cells {
             align
@@ -4113,110 +5842,482 @@ fragment BlockFragment on Block {
             tag
           }
         }
+
+        lock
         style
         textColor
       }
     }
   }
+
   ... on CoreTagCloudBlock {
     attributes__typename_CoreTagCloudBlockAttributes: attributes {
       align
       className
+      largestFontSize
+      lock
+      numberOfTags
       showTagCounts
+      smallestFontSize
+      style
       taxonomy
     }
   }
+
   ... on CoreTextColumnsBlock {
     attributes__typename_CoreTextColumnsBlockAttributes: attributes {
       className
       columns
+
       content {
         wpChildren: children
       }
+
+      lock
       width
     }
   }
+
   ... on CoreVerseBlock {
     attributes__typename_CoreVerseBlockAttributesUnion: attributes {
       __typename
+
       ... on CoreVerseBlockAttributes {
         anchor
         backgroundColor
         className
         content
+        fontFamily
         fontSize
         gradient
+        lock
         style
         textAlign
         textColor
       }
+
       ... on CoreVerseBlockDeprecatedV1Attributes {
         anchor
         backgroundColor
         className
         content
+        fontFamily
         fontSize
         gradient
+        lock
+        style
+        textAlign
+        textColor
+      }
+
+      ... on CoreVerseBlockDeprecatedV2Attributes {
+        anchor
+        backgroundColor
+        className
+        content
+        fontFamily
+        fontSize
+        gradient
+        lock
         style
         textAlign
         textColor
       }
     }
   }
+
   ... on CoreVideoBlock {
-    attributes__typename_CoreVideoBlockAttributes: attributes {
-      align
-      anchor
-      autoplay
-      caption
-      className
-      controls
-      id
-      loop
-      muted
-      playsInline
-      poster
-      preload
-      src
-      tracks
+    attributes__typename_CoreVideoBlockAttributesUnion: attributes {
+      __typename
+
+      ... on CoreVideoBlockAttributes {
+        align
+        anchor
+        autoplay
+        caption
+        className
+        controls
+        id
+        lock
+        loop
+        muted
+        playsInline
+        poster
+        preload
+        src
+        style
+        tracks
+      }
+
+      ... on CoreVideoBlockDeprecatedV1Attributes {
+        align
+        anchor
+        autoplay
+        caption
+        className
+        controls
+        id
+        lock
+        loop
+        muted
+        playsInline
+        poster
+        preload
+        src
+        style
+        tracks
+      }
     }
   }
+
+  ... on CoreNavigationBlock {
+    attributes__typename_CoreNavigationBlockAttributesUnion: attributes {
+      __typename
+
+      ... on CoreNavigationBlockAttributes {
+        align
+        backgroundColor
+        className
+        customBackgroundColor
+        customOverlayBackgroundColor
+        customOverlayTextColor
+        customTextColor
+        fontFamily
+        fontSize
+        hasIcon
+        icon
+        layout
+        lock
+        maxNestingLevel
+        openSubmenusOnClick
+        overlayBackgroundColor
+        overlayMenu
+        overlayTextColor
+        ref
+        rgbBackgroundColor
+        rgbTextColor
+        showSubmenuIcon
+        style
+        textColor
+        unstableLocation
+      }
+
+      ... on CoreNavigationBlockDeprecatedV1Attributes {
+        align
+        backgroundColor
+        className
+        customBackgroundColor
+        customOverlayBackgroundColor
+        customOverlayTextColor
+        customTextColor
+        fontFamily
+        fontSize
+        hasIcon
+        icon
+        layout
+        lock
+        maxNestingLevel
+        openSubmenusOnClick
+        overlayBackgroundColor
+        overlayMenu
+        overlayTextColor
+        ref
+        rgbBackgroundColor
+        rgbTextColor
+        showSubmenuIcon
+        style
+        textColor
+        unstableLocation
+      }
+
+      ... on CoreNavigationBlockDeprecatedV2Attributes {
+        align
+        backgroundColor
+        className
+        customBackgroundColor
+        customOverlayBackgroundColor
+        customOverlayTextColor
+        customTextColor
+        fontFamily
+        fontSize
+        hasIcon
+        icon
+        layout
+        lock
+        maxNestingLevel
+        openSubmenusOnClick
+        overlayBackgroundColor
+        overlayMenu
+        overlayTextColor
+        ref
+        rgbBackgroundColor
+        rgbTextColor
+        showSubmenuIcon
+        style
+        textColor
+        unstableLocation
+      }
+
+      ... on CoreNavigationBlockDeprecatedV3Attributes {
+        align
+        backgroundColor
+        className
+        customBackgroundColor
+        customOverlayBackgroundColor
+        customOverlayTextColor
+        customTextColor
+        fontFamily
+        fontSize
+        hasIcon
+        icon
+        layout
+        lock
+        maxNestingLevel
+        openSubmenusOnClick
+        overlayBackgroundColor
+        overlayMenu
+        overlayTextColor
+        ref
+        rgbBackgroundColor
+        rgbTextColor
+        showSubmenuIcon
+        style
+        textColor
+        unstableLocation
+      }
+
+      ... on CoreNavigationBlockDeprecatedV4Attributes {
+        align
+        backgroundColor
+        className
+        customBackgroundColor
+        customOverlayBackgroundColor
+        customOverlayTextColor
+        customTextColor
+        fontFamily
+        fontSize
+        hasIcon
+        icon
+        layout
+        lock
+        maxNestingLevel
+        openSubmenusOnClick
+        overlayBackgroundColor
+        overlayMenu
+        overlayTextColor
+        ref
+        rgbBackgroundColor
+        rgbTextColor
+        showSubmenuIcon
+        style
+        textColor
+        unstableLocation
+      }
+
+      ... on CoreNavigationBlockDeprecatedV5Attributes {
+        align
+        backgroundColor
+        className
+        customBackgroundColor
+        customOverlayBackgroundColor
+        customOverlayTextColor
+        customTextColor
+        fontFamily
+        fontSize
+        hasIcon
+        icon
+        layout
+        lock
+        maxNestingLevel
+        openSubmenusOnClick
+        overlayBackgroundColor
+        overlayMenu
+        overlayTextColor
+        ref
+        rgbBackgroundColor
+        rgbTextColor
+        showSubmenuIcon
+        style
+        textColor
+        unstableLocation
+      }
+
+      ... on CoreNavigationBlockDeprecatedV6Attributes {
+        align
+        backgroundColor
+        className
+        customBackgroundColor
+        customOverlayBackgroundColor
+        customOverlayTextColor
+        customTextColor
+        fontFamily
+        fontSize
+        hasIcon
+        icon
+        layout
+        lock
+        maxNestingLevel
+        openSubmenusOnClick
+        overlayBackgroundColor
+        overlayMenu
+        overlayTextColor
+        ref
+        rgbBackgroundColor
+        rgbTextColor
+        showSubmenuIcon
+        style
+        textColor
+        unstableLocation
+      }
+    }
+  }
+
+  ... on CoreNavigationLinkBlock {
+    attributes__typename_CoreNavigationLinkBlockAttributesUnion: attributes {
+      __typename
+
+      ... on CoreNavigationLinkBlockAttributes {
+        className
+        description
+        fontFamily
+        fontSize
+        id
+        isTopLevelLink
+        kind
+        label
+        lock
+        opensInNewTab
+        rel
+        style
+        title
+        type
+        url
+      }
+
+      ... on CoreNavigationLinkBlockDeprecatedV1Attributes {
+        className
+        description
+        fontFamily
+        fontSize
+        id
+        isTopLevelLink
+        kind
+        label
+        lock
+        opensInNewTab
+        rel
+        style
+        title
+        type
+        url
+      }
+    }
+  }
+
+  ... on CoreNavigationSubmenuBlock {
+    attributes__typename_CoreNavigationSubmenuBlockAttributes: attributes {
+      className
+      description
+      id
+      isTopLevelItem
+      kind
+      label
+      lock
+      opensInNewTab
+      rel
+      title
+      type
+      url
+    }
+  }
+
   ... on CoreSiteLogoBlock {
     attributes__typename_CoreSiteLogoBlockAttributes: attributes {
       align
       className
       isLink
       linkTarget
+      lock
+      shouldSyncIcon
+      style
       width
     }
   }
-  ... on CoreSiteTaglineBlock {
-    attributes__typename_CoreSiteTaglineBlockAttributes: attributes {
-      backgroundColor
-      className
-      fontSize
-      gradient
-      style
-      textAlign
-      textColor
-    }
-  }
+
   ... on CoreSiteTitleBlock {
-    attributes__typename_CoreSiteTitleBlockAttributes: attributes {
-      align
-      backgroundColor
-      className
-      fontSize
-      gradient
-      level
-      style
-      textAlign
-      textColor
+    attributes__typename_CoreSiteTitleBlockAttributesUnion: attributes {
+      __typename
+
+      ... on CoreSiteTitleBlockAttributes {
+        align
+        backgroundColor
+        className
+        fontFamily
+        fontSize
+        gradient
+        isLink
+        level
+        linkTarget
+        lock
+        style
+        textAlign
+        textColor
+      }
+
+      ... on CoreSiteTitleBlockDeprecatedV1Attributes {
+        align
+        backgroundColor
+        className
+        fontFamily
+        fontSize
+        gradient
+        isLink
+        level
+        linkTarget
+        lock
+        style
+        textAlign
+        textColor
+      }
     }
   }
+
+  ... on CoreSiteTaglineBlock {
+    attributes__typename_CoreSiteTaglineBlockAttributesUnion: attributes {
+      __typename
+
+      ... on CoreSiteTaglineBlockAttributes {
+        align
+        backgroundColor
+        className
+        fontFamily
+        fontSize
+        gradient
+        lock
+        style
+        textAlign
+        textColor
+      }
+
+      ... on CoreSiteTaglineBlockDeprecatedV1Attributes {
+        align
+        backgroundColor
+        className
+        fontFamily
+        fontSize
+        gradient
+        lock
+        style
+        textAlign
+        textColor
+      }
+    }
+  }
+
   ... on CoreQueryBlock {
     attributes__typename_CoreQueryBlockAttributesUnion: attributes {
       __typename
+
       ... on CoreQueryBlockAttributes {
         align
         backgroundColor
@@ -4224,12 +6325,15 @@ fragment BlockFragment on Block {
         displayLayout
         gradient
         layout
+        lock
+        namespace
         query
         queryId
         style
         tagName
         textColor
       }
+
       ... on CoreQueryBlockDeprecatedV1Attributes {
         align
         backgroundColor
@@ -4237,6 +6341,24 @@ fragment BlockFragment on Block {
         displayLayout
         gradient
         layout
+        lock
+        namespace
+        query
+        queryId
+        style
+        tagName
+        textColor
+      }
+
+      ... on CoreQueryBlockDeprecatedV2Attributes {
+        align
+        backgroundColor
+        className
+        displayLayout
+        gradient
+        layout
+        lock
+        namespace
         query
         queryId
         style
@@ -4245,105 +6367,81 @@ fragment BlockFragment on Block {
       }
     }
   }
-  ... on CorePostTemplateBlock {
-    attributes__typename_CorePostTemplateBlockAttributes: attributes {
+
+  ... on CoreTemplatePartBlock {
+    attributes__typename_CoreTemplatePartBlockAttributes: attributes {
       align
+      area
       className
+      lock
+      slug
+      tagName
+      theme
     }
   }
-  ... on CoreQueryTitleBlock {
-    attributes__typename_CoreQueryTitleBlockAttributes: attributes {
+
+  ... on CoreAvatarBlock {
+    attributes__typename_CoreAvatarBlockAttributes: attributes {
       align
-      backgroundColor
+      borderColor
       className
-      fontSize
-      gradient
-      level
-      style
-      textAlign
-      textColor
-      type
-    }
-  }
-  ... on CoreQueryPaginationBlock {
-    attributes__typename_CoreQueryPaginationBlockAttributes: attributes {
-      align
-      backgroundColor
-      className
-      gradient
-      style
-      textColor
-    }
-  }
-  ... on CoreQueryPaginationNextBlock {
-    attributes__typename_CoreQueryPaginationNextBlockAttributes: attributes {
-      backgroundColor
-      className
-      fontSize
-      gradient
-      label
-      style
-      textColor
-    }
-  }
-  ... on CoreQueryPaginationNumbersBlock {
-    attributes__typename_CoreQueryPaginationNumbersBlockAttributes: attributes {
-      className
-    }
-  }
-  ... on CoreQueryPaginationPreviousBlock {
-    attributes__typename_CoreQueryPaginationPreviousBlockAttributes: attributes {
-      backgroundColor
-      className
-      fontSize
-      gradient
-      label
-      style
-      textColor
-    }
-  }
-  ... on CorePostTitleBlock {
-    attributes__typename_CorePostTitleBlockAttributes: attributes {
-      align
-      backgroundColor
-      className
-      fontSize
-      gradient
       isLink
-      level
       linkTarget
-      rel
+      lock
+      size
       style
-      textAlign
-      textColor
+      userId
     }
   }
-  ... on CorePostContentBlock {
-    attributes__typename_CorePostContentBlockAttributes: attributes {
-      align
-      className
-      layout
+
+  ... on CorePostTitleBlock {
+    attributes__typename_CorePostTitleBlockAttributesUnion: attributes {
+      __typename
+
+      ... on CorePostTitleBlockAttributes {
+        align
+        backgroundColor
+        className
+        fontFamily
+        fontSize
+        gradient
+        isLink
+        level
+        linkTarget
+        lock
+        rel
+        style
+        textAlign
+        textColor
+      }
+
+      ... on CorePostTitleBlockDeprecatedV1Attributes {
+        align
+        backgroundColor
+        className
+        fontFamily
+        fontSize
+        gradient
+        isLink
+        level
+        linkTarget
+        lock
+        rel
+        style
+        textAlign
+        textColor
+      }
     }
   }
-  ... on CorePostDateBlock {
-    attributes__typename_CorePostDateBlockAttributes: attributes {
-      backgroundColor
-      className
-      fontSize
-      format
-      gradient
-      isLink
-      style
-      textAlign
-      textColor
-    }
-  }
+
   ... on CorePostExcerptBlock {
     attributes__typename_CorePostExcerptBlockAttributes: attributes {
       backgroundColor
       className
+      fontFamily
       fontSize
       gradient
+      lock
       moreText
       showMoreOnNewLine
       style
@@ -4351,30 +6449,593 @@ fragment BlockFragment on Block {
       textColor
     }
   }
+
   ... on CorePostFeaturedImageBlock {
     attributes__typename_CorePostFeaturedImageBlockAttributes: attributes {
       align
+      borderColor
       className
+      customGradient
+      customOverlayColor
+      dimRatio
+      gradient
+      height
       isLink
+      linkTarget
+      lock
+      overlayColor
+      rel
+      scale
+      sizeSlug
+      style
+      width
     }
   }
+
+  ... on CorePostContentBlock {
+    attributes__typename_CorePostContentBlockAttributes: attributes {
+      align
+      className
+      fontFamily
+      fontSize
+      layout
+      lock
+      style
+    }
+  }
+
+  ... on CorePostAuthorBlock {
+    attributes__typename_CorePostAuthorBlockAttributes: attributes {
+      avatarSize
+      backgroundColor
+      byline
+      className
+      fontFamily
+      fontSize
+      gradient
+      lock
+      showAvatar
+      showBio
+      style
+      textAlign
+      textColor
+    }
+  }
+
+  ... on CorePostDateBlock {
+    attributes__typename_CorePostDateBlockAttributesUnion: attributes {
+      __typename
+
+      ... on CorePostDateBlockAttributes {
+        backgroundColor
+        className
+        displayType
+        fontFamily
+        fontSize
+        format
+        gradient
+        isLink
+        lock
+        style
+        textAlign
+        textColor
+      }
+
+      ... on CorePostDateBlockDeprecatedV1Attributes {
+        backgroundColor
+        className
+        displayType
+        fontFamily
+        fontSize
+        format
+        gradient
+        isLink
+        lock
+        style
+        textAlign
+        textColor
+      }
+    }
+  }
+
   ... on CorePostTermsBlock {
     attributes__typename_CorePostTermsBlockAttributes: attributes {
       backgroundColor
       className
+      fontFamily
       fontSize
       gradient
+      lock
+      prefix
+      separator
       style
+      suffix
       term
       textAlign
       textColor
     }
   }
+
+  ... on CorePostNavigationLinkBlock {
+    attributes__typename_CorePostNavigationLinkBlockAttributes: attributes {
+      backgroundColor
+      className
+      fontFamily
+      fontSize
+      label
+      linkLabel
+      lock
+      showTitle
+      style
+      textAlign
+      textColor
+      type
+    }
+  }
+
+  ... on CorePostTemplateBlock {
+    attributes__typename_CorePostTemplateBlockAttributes: attributes {
+      align
+      className
+      fontFamily
+      fontSize
+      layout
+      lock
+      style
+    }
+  }
+
+  ... on CoreQueryPaginationBlock {
+    attributes__typename_CoreQueryPaginationBlockAttributesUnion: attributes {
+      __typename
+
+      ... on CoreQueryPaginationBlockAttributes {
+        align
+        backgroundColor
+        className
+        fontFamily
+        fontSize
+        gradient
+        layout
+        lock
+        paginationArrow
+        style
+        textColor
+      }
+
+      ... on CoreQueryPaginationBlockDeprecatedV1Attributes {
+        align
+        backgroundColor
+        className
+        fontFamily
+        fontSize
+        gradient
+        layout
+        lock
+        paginationArrow
+        style
+        textColor
+      }
+    }
+  }
+
+  ... on CoreQueryPaginationNextBlock {
+    attributes__typename_CoreQueryPaginationNextBlockAttributes: attributes {
+      backgroundColor
+      className
+      fontFamily
+      fontSize
+      gradient
+      label
+      lock
+      style
+      textColor
+    }
+  }
+
+  ... on CoreQueryPaginationNumbersBlock {
+    attributes__typename_CoreQueryPaginationNumbersBlockAttributes: attributes {
+      backgroundColor
+      className
+      fontFamily
+      fontSize
+      gradient
+      lock
+      style
+      textColor
+    }
+  }
+
+  ... on CoreQueryPaginationPreviousBlock {
+    attributes__typename_CoreQueryPaginationPreviousBlockAttributes: attributes {
+      backgroundColor
+      className
+      fontFamily
+      fontSize
+      gradient
+      label
+      lock
+      style
+      textColor
+    }
+  }
+
+  ... on CoreQueryNoResultsBlock {
+    attributes__typename_CoreQueryNoResultsBlockAttributes: attributes {
+      align
+      backgroundColor
+      className
+      fontFamily
+      fontSize
+      gradient
+      lock
+      style
+      textColor
+    }
+  }
+
+  ... on CoreReadMoreBlock {
+    attributes__typename_CoreReadMoreBlockAttributes: attributes {
+      backgroundColor
+      borderColor
+      className
+      content
+      fontFamily
+      fontSize
+      gradient
+      linkTarget
+      lock
+      style
+      textColor
+    }
+  }
+
+  ... on CoreCommentsBlock {
+    attributes__typename_CoreCommentsBlockAttributesUnion: attributes {
+      __typename
+
+      ... on CoreCommentsBlockAttributes {
+        align
+        backgroundColor
+        className
+        fontFamily
+        fontSize
+        gradient
+        legacy
+        lock
+        style
+        tagName
+        textColor
+      }
+
+      ... on CoreCommentsBlockDeprecatedV1Attributes {
+        align
+        backgroundColor
+        className
+        fontFamily
+        fontSize
+        gradient
+        legacy
+        lock
+        style
+        tagName
+        textColor
+      }
+    }
+  }
+
+  ... on CoreCommentAuthorNameBlock {
+    attributes__typename_CoreCommentAuthorNameBlockAttributesUnion: attributes {
+      __typename
+
+      ... on CoreCommentAuthorNameBlockAttributes {
+        backgroundColor
+        className
+        fontFamily
+        fontSize
+        gradient
+        isLink
+        linkTarget
+        lock
+        style
+        textAlign
+        textColor
+      }
+
+      ... on CoreCommentAuthorNameBlockDeprecatedV1Attributes {
+        backgroundColor
+        className
+        fontFamily
+        fontSize
+        gradient
+        isLink
+        linkTarget
+        lock
+        style
+        textAlign
+        textColor
+      }
+    }
+  }
+
+  ... on CoreCommentContentBlock {
+    attributes__typename_CoreCommentContentBlockAttributes: attributes {
+      backgroundColor
+      className
+      fontFamily
+      fontSize
+      gradient
+      lock
+      style
+      textAlign
+      textColor
+    }
+  }
+
+  ... on CoreCommentDateBlock {
+    attributes__typename_CoreCommentDateBlockAttributesUnion: attributes {
+      __typename
+
+      ... on CoreCommentDateBlockAttributes {
+        backgroundColor
+        className
+        fontFamily
+        fontSize
+        format
+        gradient
+        isLink
+        lock
+        style
+        textColor
+      }
+
+      ... on CoreCommentDateBlockDeprecatedV1Attributes {
+        backgroundColor
+        className
+        fontFamily
+        fontSize
+        format
+        gradient
+        isLink
+        lock
+        style
+        textColor
+      }
+    }
+  }
+
+  ... on CoreCommentEditLinkBlock {
+    attributes__typename_CoreCommentEditLinkBlockAttributes: attributes {
+      backgroundColor
+      className
+      fontFamily
+      fontSize
+      gradient
+      linkTarget
+      lock
+      style
+      textAlign
+      textColor
+    }
+  }
+
+  ... on CoreCommentReplyLinkBlock {
+    attributes__typename_CoreCommentReplyLinkBlockAttributes: attributes {
+      backgroundColor
+      className
+      fontFamily
+      fontSize
+      gradient
+      lock
+      style
+      textAlign
+      textColor
+    }
+  }
+
+  ... on CoreCommentTemplateBlock {
+    attributes__typename_CoreCommentTemplateBlockAttributes: attributes {
+      align
+      className
+      fontFamily
+      fontSize
+      lock
+      style
+    }
+  }
+
+  ... on CoreCommentsTitleBlock {
+    attributes__typename_CoreCommentsTitleBlockAttributesUnion: attributes {
+      __typename
+
+      ... on CoreCommentsTitleBlockAttributes {
+        align
+        backgroundColor
+        borderColor
+        className
+        fontFamily
+        fontSize
+        gradient
+        level
+        lock
+        showCommentsCount
+        showPostTitle
+        style
+        textAlign
+        textColor
+      }
+
+      ... on CoreCommentsTitleBlockDeprecatedV1Attributes {
+        align
+        backgroundColor
+        borderColor
+        className
+        fontFamily
+        fontSize
+        gradient
+        level
+        lock
+        showCommentsCount
+        showPostTitle
+        style
+        textAlign
+        textColor
+      }
+    }
+  }
+
+  ... on CoreCommentsPaginationBlock {
+    attributes__typename_CoreCommentsPaginationBlockAttributes: attributes {
+      align
+      backgroundColor
+      className
+      fontFamily
+      fontSize
+      gradient
+      layout
+      lock
+      paginationArrow
+      style
+      textColor
+    }
+  }
+
+  ... on CoreCommentsPaginationNextBlock {
+    attributes__typename_CoreCommentsPaginationNextBlockAttributes: attributes {
+      backgroundColor
+      className
+      fontFamily
+      fontSize
+      gradient
+      label
+      lock
+      style
+      textColor
+    }
+  }
+
+  ... on CoreCommentsPaginationNumbersBlock {
+    attributes__typename_CoreCommentsPaginationNumbersBlockAttributes: attributes {
+      className
+      fontFamily
+      fontSize
+      lock
+      style
+    }
+  }
+
+  ... on CoreCommentsPaginationPreviousBlock {
+    attributes__typename_CoreCommentsPaginationPreviousBlockAttributes: attributes {
+      backgroundColor
+      className
+      fontFamily
+      fontSize
+      gradient
+      label
+      lock
+      style
+      textColor
+    }
+  }
+
+  ... on CorePostCommentsFormBlock {
+    attributes__typename_CorePostCommentsFormBlockAttributes: attributes {
+      backgroundColor
+      className
+      fontSize
+      gradient
+      lock
+      style
+      textAlign
+      textColor
+    }
+  }
+
+  ... on CoreHomeLinkBlock {
+    attributes__typename_CoreHomeLinkBlockAttributes: attributes {
+      className
+      fontFamily
+      fontSize
+      label
+      lock
+      style
+    }
+  }
+
   ... on CoreLoginoutBlock {
-    attributes {
+    attributes__typename_CoreLoginoutBlockAttributes: attributes {
       className
       displayLoginAsForm
+      lock
       redirectToCurrent
+    }
+  }
+
+  ... on CoreTermDescriptionBlock {
+    attributes__typename_CoreTermDescriptionBlockAttributes: attributes {
+      align
+      backgroundColor
+      className
+      fontFamily
+      fontSize
+      lock
+      style
+      textAlign
+      textColor
+    }
+  }
+
+  ... on CoreQueryTitleBlock {
+    attributes__typename_CoreQueryTitleBlockAttributesUnion: attributes {
+      __typename
+
+      ... on CoreQueryTitleBlockAttributes {
+        align
+        backgroundColor
+        className
+        fontFamily
+        fontSize
+        gradient
+        level
+        lock
+        showPrefix
+        showSearchTerm
+        style
+        textAlign
+        textColor
+        type
+      }
+
+      ... on CoreQueryTitleBlockDeprecatedV1Attributes {
+        align
+        backgroundColor
+        className
+        fontFamily
+        fontSize
+        gradient
+        level
+        lock
+        showPrefix
+        showSearchTerm
+        style
+        textAlign
+        textColor
+        type
+      }
+    }
+  }
+
+  ... on CorePostAuthorBiographyBlock {
+    attributes {
+      backgroundColor
+      className
+      fontFamily
+      fontSize
+      gradient
+      lock
+      style
+      textAlign
+      textColor
     }
   }
 }

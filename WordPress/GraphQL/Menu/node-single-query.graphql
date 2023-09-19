@@ -4,11 +4,14 @@ query SINGLE_CONTENT_QUERY($id: ID!) {
     databaseId
     id
     locations
+
     menuItems(first: 100) {
       nodes {
+        __typename
         id
       }
     }
+
     name
     slug
     __typename

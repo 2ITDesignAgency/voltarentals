@@ -2,10 +2,11 @@ query SINGLE_CONTENT_QUERY($id: ID!) {
   postFormat(id: $id) {
     contentNodes(first: 100) {
       nodes {
-        id
         __typename
+        id
       }
     }
+
     count
     databaseId
     description
@@ -14,16 +15,20 @@ query SINGLE_CONTENT_QUERY($id: ID!) {
     isTermNode
     link
     name
+
     posts(first: 100) {
       nodes {
+        __typename
         id
       }
     }
+
     seo {
       breadcrumbs {
         text
         url
       }
+
       canonical
       cornerstone
       focuskw
@@ -34,10 +39,12 @@ query SINGLE_CONTENT_QUERY($id: ID!) {
       metaRobotsNoindex
       opengraphAuthor
       opengraphDescription
+
       opengraphImage {
         __typename
         id
       }
+
       opengraphModifiedTime
       opengraphPublishedTime
       opengraphPublisher
@@ -45,23 +52,32 @@ query SINGLE_CONTENT_QUERY($id: ID!) {
       opengraphTitle
       opengraphType
       opengraphUrl
+
       schema {
         raw
       }
+
       title
       twitterDescription
+
       twitterImage {
         __typename
         id
       }
+
       twitterTitle
     }
+
     slug
+
     taxonomy {
       node {
+        __typename
         id
       }
     }
+
+    taxonomyName
     termGroupId
     termTaxonomyId
     uri

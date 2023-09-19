@@ -11,10 +11,22 @@ query NON_NODE_QUERY {
     generalSettingsTimezone
     generalSettingsTitle
     generalSettingsUrl
+    readingSettingsPageForPosts
+    readingSettingsPageOnFront
     readingSettingsPostsPerPage
+    readingSettingsShowOnFront
     writingSettingsDefaultCategory
     writingSettingsDefaultPostFormat
     writingSettingsUseSmilies
+  }
+
+  defaultLanguage {
+    code
+    homeUrl
+    id
+    locale
+    name
+    slug
   }
 
   discussionSettings {
@@ -52,8 +64,20 @@ query NON_NODE_QUERY {
     siteTitle
   }
 
+  languages {
+    code
+    homeUrl
+    id
+    locale
+    name
+    slug
+  }
+
   readingSettings {
+    pageForPosts
+    pageOnFront
     postsPerPage
+    showOnFront
   }
 
   schemaMd5
@@ -71,6 +95,230 @@ query NON_NODE_QUERY {
       showBlogPage
     }
 
+    contentTypes {
+      actionMonitorAction {
+        archive {
+          archiveLink
+          breadcrumbTitle
+          fullHead
+          hasArchive
+          metaDesc
+          metaRobotsNoindex
+          title
+        }
+
+        metaDesc
+        metaRobotsNoindex
+
+        schema {
+          raw
+        }
+
+        schemaType
+        title
+      }
+
+      blockEditorPreview {
+        archive {
+          archiveLink
+          breadcrumbTitle
+          fullHead
+          hasArchive
+          metaDesc
+          metaRobotsNoindex
+          title
+        }
+
+        metaDesc
+        metaRobotsNoindex
+
+        schema {
+          raw
+        }
+
+        schemaType
+        title
+      }
+
+      mediaItem {
+        archive {
+          archiveLink
+          breadcrumbTitle
+          fullHead
+          hasArchive
+          metaDesc
+          metaRobotsNoindex
+          title
+        }
+
+        metaDesc
+        metaRobotsNoindex
+
+        schema {
+          raw
+        }
+
+        schemaType
+        title
+      }
+
+      offer {
+        archive {
+          archiveLink
+          breadcrumbTitle
+          fullHead
+          hasArchive
+          metaDesc
+          metaRobotsNoindex
+          title
+        }
+
+        metaDesc
+        metaRobotsNoindex
+
+        schema {
+          raw
+        }
+
+        schemaType
+        title
+      }
+
+      page {
+        archive {
+          archiveLink
+          breadcrumbTitle
+          fullHead
+          hasArchive
+          metaDesc
+          metaRobotsNoindex
+          title
+        }
+
+        metaDesc
+        metaRobotsNoindex
+
+        schema {
+          raw
+        }
+
+        schemaType
+        title
+      }
+
+      post {
+        archive {
+          archiveLink
+          breadcrumbTitle
+          fullHead
+          hasArchive
+          metaDesc
+          metaRobotsNoindex
+          title
+        }
+
+        metaDesc
+        metaRobotsNoindex
+
+        schema {
+          raw
+        }
+
+        schemaType
+        title
+      }
+
+      reusableBlock {
+        archive {
+          archiveLink
+          breadcrumbTitle
+          fullHead
+          hasArchive
+          metaDesc
+          metaRobotsNoindex
+          title
+        }
+
+        metaDesc
+        metaRobotsNoindex
+
+        schema {
+          raw
+        }
+
+        schemaType
+        title
+      }
+
+      vehicles {
+        archive {
+          archiveLink
+          breadcrumbTitle
+          fullHead
+          hasArchive
+          metaDesc
+          metaRobotsNoindex
+          title
+        }
+
+        metaDesc
+        metaRobotsNoindex
+
+        schema {
+          raw
+        }
+
+        schemaType
+        title
+      }
+    }
+
+    meta {
+      author {
+        description
+        title
+      }
+
+      config {
+        separator
+      }
+
+      homepage {
+        description
+        title
+      }
+
+      notFound {
+        breadcrumb
+        title
+      }
+    }
+
+    openGraph {
+      defaultImage {
+        __typename
+        id
+      }
+
+      frontPage {
+        description
+
+        image {
+          __typename
+          id
+        }
+
+        title
+      }
+    }
+
+    redirects {
+      format
+      origin
+      target
+      type
+    }
+
     schema {
       companyLogo {
         __typename
@@ -79,6 +327,8 @@ query NON_NODE_QUERY {
 
       companyName
       companyOrPerson
+      homeUrl
+      inLanguage
 
       logo {
         __typename
@@ -90,6 +340,7 @@ query NON_NODE_QUERY {
         id
       }
 
+      personName
       siteName
       siteUrl
       wordpressSiteName
@@ -116,6 +367,8 @@ query NON_NODE_QUERY {
       mySpace {
         url
       }
+
+      otherSocials
 
       pinterest {
         metaTag
@@ -144,8 +397,33 @@ query NON_NODE_QUERY {
     }
   }
 
+  shippingInfo {
+    shippingZones
+    storePostCode
+  }
+
   viewer {
+    __typename
     id
+  }
+
+  wooCountries {
+    billingCountries {
+      countryCode
+      countryName
+    }
+
+    shippingCountries {
+      countryCode
+      countryName
+    }
+  }
+
+  wooStates {
+    states {
+      stateCode
+      stateName
+    }
   }
 
   wpGatsby {

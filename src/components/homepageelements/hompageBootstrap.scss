@@ -35,11 +35,11 @@
   font-family: Open Sans;
 }
 .readMore {
-  text-decoration: none;
+  text-decoration: none !important;
   color: #fff;
 }
 .readMore:hover {
-  text-decoration: none;
+  text-decoration: none !important;
   color: #fff;
 }
 .card-text p {
@@ -221,7 +221,6 @@ span.fleet-archive-text {
   color: #49b850;
 }
 .navbar-toggler {
-
   margin-right: 2rem;
 }
 @media (min-width: 1220px) {
@@ -265,6 +264,11 @@ span.fleet-archive-text {
     width: 100vw;
     padding: 0rem 0;
     z-index: 100;
+  }
+  .footter-btn {
+    display: block;
+    margin: 0px;
+    width: 100%;
   }
 }
 
@@ -465,4 +469,79 @@ a:hover {
 }
 .dropdown-item:hover {
   background-color: #49b850 !important;
+}
+.contact-items{
+  display: flex;
+  padding-bottom:1rem;
+}
+.contact-items a{
+  color: #212121;
+  padding-right: 1rem;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.container-fluid {
+  padding-bottom: 0rem !important;
+}
+
+// css specific for fleet
+
+.fleet-car-title {
+  font-size: 1.3rem;
+  font-weight: 800;
+  padding-bottom: 1.2rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.price-fleet{
+  font-weight: 800;
+  font-size: 1.3rem;
+  margin-left: 0.2rem;
+}
+span.plus-tax {
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+p.price-monthly {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding-top: 2rem;
+  margin-bottom: 0.2rem;
+}
+p.monthly-code {
+  font-weight: 600 !important;
+  font-size: 0.9rem !important;
+  padding-top: 0rem !important;
+}
+.widget-content li a:hover {
+  color: white !important;
+}
+
+@media (max-width: 1000px){
+  .fleet-container.car-specifications {
+    display: flex !important;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column!important;
+    /* display: block; */
+}
+span.fleet-archive-text {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.fleet-car-title {
+  font-size: 1.3rem !important;
+}
+}
+@media (min-width: 780px){
+  .fleat-menu.dropdown-menu.dropdown-menu-right.show {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    font-weight: 200 !important;
+    position: absolute !important;
+    text-align: center !important;
+    width: 310px !important;
+}
 }

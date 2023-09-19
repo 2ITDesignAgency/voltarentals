@@ -59,7 +59,6 @@ const page = ({ data }) => {
         bodyClass={`page-template-default page page-id-${databaseId} wp-embed-responsive singular missing-post-thumbnail has-no-pagination not-showing-comments footer-top-visible customize-support`}
       >
         <Seo title={title} description={excerpt} />
-
         <article
           className={`post-${databaseId} post page type-page status-publish hentry`}
           id={`post-${databaseId}`}
@@ -74,11 +73,6 @@ const page = ({ data }) => {
               />
             </div>
           </header>
-          <Container className="WheelsBookContainer">
-          <Row>
-          <WheelsBook />
-          </Row>
-          </Container>
           <div className="post-inner thin">
             <div
               className="entry-content"

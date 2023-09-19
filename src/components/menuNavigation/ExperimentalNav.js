@@ -53,7 +53,7 @@ const ExperimentalNav = (props) => {
               <DropdownToggle nav caret>
                 Locations
               </DropdownToggle>
-              <DropdownMenu right >
+              <DropdownMenu center >
                 <DropdownItem>
                   <NavLink href="/mainland">Mainland</NavLink>
                 </DropdownItem>
@@ -66,7 +66,7 @@ const ExperimentalNav = (props) => {
               <DropdownToggle nav caret>
                 Our Fleet
               </DropdownToggle>
-              <DropdownMenu right className="fleat-menu">
+              <DropdownMenu center className="fleat-menu">
                 <DropdownItem className="fleat-item">
                   <NavLink href="/our-fleet/compact">Compact</NavLink>
                 </DropdownItem>
@@ -97,7 +97,7 @@ const ExperimentalNav = (props) => {
               <DropdownToggle nav caret>
                 Services
               </DropdownToggle>
-              <DropdownMenu right>
+              <DropdownMenu center>
                 <DropdownItem>
                   <NavLink href="/services/rent-a-car/">Rent A Car</NavLink>
                 </DropdownItem>
@@ -115,6 +115,9 @@ const ExperimentalNav = (props) => {
             </UncontrolledDropdown>
             <NavItem>
               <NavLink href="/blog/offers/">Offers</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/monthly-rental">Monthly Rental</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/blog/news/">News</NavLink>
